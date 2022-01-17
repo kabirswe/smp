@@ -1,0 +1,177 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+.main-navbar{
+	display: flex;
+	// justify-content: space-between;
+	// padding:20px 31px 14px 31px;
+	align-items: center;
+	background: $white;
+	height: 138px;
+	// @include font_style(null, $white);
+	.logo {
+		display: flex;
+		align-items: center;
+		img{
+			width: 300px;
+		}
+	}
+	.navbar-block {
+		overflow: hidden;
+		a {
+		  float: left;
+		  font-size: 14px;
+		  color: #0C0C0C;
+		  text-align: center;
+		  padding: 8px;
+		  text-decoration: none;
+          font-weight: 600;
+		  &:hover {
+			background-color: red;
+		  }
+		}
+		.nav-dropdown {
+		  float: left;
+		  overflow: hidden;
+          i {
+              font-size: 12px;
+              padding-left: 5px;
+          }
+		  .dropbtn {
+			font-size: 14px;
+			border: none;
+			outline: none;
+			color: #0C0C0C;
+			padding: 8px;
+            font-weight: 600;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		  }
+		  .dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			a {
+			  float: none;
+			  color: black;
+			  padding: 8px;
+			  text-decoration: none;
+              font-weight: 600;
+			  display: block;
+			  text-align: left;
+			  &:hover {
+				background-color: #ddd;
+			  }
+			}
+		  }
+		  &:hover {
+			    .dropdown-content {
+					display: block;
+				}
+				.dropbtn {
+					background-color: red;
+				}
+			}
+		}
+	  }
+	.call-us {
+		p {
+			font-size: 19px;
+			color: $black;
+			padding-bottom: 30px;
+            text-align: right;
+		}
+		.search-block {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.search {
+				display: flex;
+				input {
+					font-style: italic;
+					font-size: 14px;
+					text-indent: 3px;
+					display: inline-block;
+					padding: 10px;
+					margin: 0;
+					width: 100px;
+					height: 40px;
+					outline: none;
+					border: 1px solid #d6d6d6;
+					background-color: transparent;
+				}
+				i {
+					background: #b0cf4a;
+					height: 40px;
+					width: 30px;
+					display: flex;
+					color: #fff;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+			a {
+				background-color: #b0cf4a;
+				color: $white;
+				width: 150px;
+				height: 40px;
+				padding: 12px 6px;
+				border-radius: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				margin-left: 15px;
+				&:hover {
+					background-color: #165e60;
+					color: $white;
+				}
+				i {
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 12px;
+					margin-left: 21px;
+				}
+			}
+		}
+	}
+	// .nav-links {
+	//     margin-top: 20px;
+	// 	ul {
+	//         display: flex;
+	//         padding: 0px;
+	//         margin:0px;
+	// 		li {
+	// 			list-style: none;
+	//             display: inline-block;
+	// 			a{
+	// 				padding:6px 25px;
+	// 				text-decoration: none;
+	// 				@include font_style(12px, $white, 400, 18px, 0.05em);
+	// 				&.lang{
+	// 					margin:0px 7px;
+	// 					background: $white_C4;
+	// 					padding:7px;
+	// 					border-radius: 50%;
+	// 					@include font_style(10px, $black, 400);
+	// 				}
+	// 				&.links{
+	//                     margin-right: 10px;
+	// 					&:hover{
+	//                         @include common_transition;
+	// 						border:1px solid $yellow_EC;
+	// 						border-radius: 100px;
+	// 					}
+	//                 }
+	//                 &.active{
+	//                     border:1px solid $yellow_EC;
+	// 					border-radius: 100px;
+	//                 }
+	//             }
+	// 		}
+	// 	}
+	// }
+}
