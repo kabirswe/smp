@@ -129,7 +129,8 @@ footer {
                         position: absolute;
                         font-size: 10px;
                         transition: all 0.3s;
-                        opacity: 0;    transition-delay: 0.1s;
+                        opacity: 0;
+                        transition-delay: 0.1s;
                     }
                     &:hover {
                         padding-left: 20px;
