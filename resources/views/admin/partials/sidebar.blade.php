@@ -1,7 +1,7 @@
 <nav id="sidebarMenu" class="dashboard-sidebar">
     <div class="position-sticky pt-3">
         <a class="navbar-brand" href="{{ route('dashboard') }}">
-          <img src="{{ asset('images/admin/logo.svg') }}" class="navbar-brand-img" alt="...">
+          <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" class="navbar-brand-img" alt="...">
         </a>
         <ul class="nav flex-column">
             <li class="nav-item">

@@ -1266,7 +1266,7 @@ padding-bottom: 6px;
 				<div class="elementor-widget-container">
 			
 						<a class="man_logo" href="index.html">
-								<div class="man_logo_img"><img  alt="" data-src="https://smpnutra.com/wp-content/uploads/2018/07/SMP_logodrafts.jpg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="wp-content/uploads/2018/07/SMP_logodrafts.jpg" alt=""></noscript></div>
+								<div class="man_logo_img"><img  alt="" data-src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt=""></noscript></div>
 								</a>
 		
 			</div>
