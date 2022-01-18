@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Category;
+use App\Models\ProductImage;
 
-class CategorySeeder extends Seeder
+class ProductImageSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,20 +16,20 @@ class CategorySeeder extends Seeder
     {
         $datas = [
             [
-                'name' => 'Local',                
-                'price' => '20',
+                'cover_image' => 'True',                
+                'image' => 'False',
                 'created_by' => '1',
                 'updated_by' => '1'
             ],
             [
-                'name' => 'Defence',
-                'price' => '10',
+                'cover_image' => 'False',                
+                'image' => 'True',
                 'created_by' => '1',
                 'updated_by' => '1'
             ],
             [
-                'name' => 'Foreigner',
-                'price' => '50',
+                'cover_image' => 'True',                
+                'image' => 'False',
                 'created_by' => '1',
                 'updated_by' => '1'
             ],
@@ -37,7 +37,7 @@ class CategorySeeder extends Seeder
 
         foreach($datas as $data)
         {
-            Category::create($data);
+            ProductImage::create($data);
         }
     }
 }

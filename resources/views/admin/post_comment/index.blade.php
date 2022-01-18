@@ -11,20 +11,20 @@
     <section class="main-content">
         <div class="title-section d-flex justify-content-between align-items-center">
             <div class="text-block">
-                <h1 class="title">Ticket List</h1>
+                <h1 class="title">Post Comment List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Ticket</a></li>
+                        <li class="breadcrumb-item"><a href="#">Post Comment</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
             </div>
             <div class="btn-block">
-                <a class="btn" href="{{ route('ticket.create') }}">
+                <a class="btn" href="{{ route('post_comment.create') }}">
                 <ion-icon name="add-outline"></ion-icon>
-                    <span>Create Ticket</span>
-                </a>               
+                    <span>Create Post Comment</span>
+                </a>
             </div>
         </div>
         @if ($message = Session::get('success'))
@@ -38,9 +38,10 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Unit Price</th>
-                        <th>Quantity</th>
-                        <th>Total Price</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Website</th>
+                        <th>Comment</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -75,7 +76,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js" defer></script>
 
     <script type="text/javascript">
-        var listUrl = SITEURL + '/ticket';
+        var listUrl = SITEURL + '/post_comment';
 
         $(document).ready( function () {
             var table = $('#data-table').DataTable({
@@ -91,9 +92,10 @@
                 },
                 columns: [
                     { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: true },
-                    { data: 'unit_price', name: 'unit_price', orderable: true },
-                    { data: 'quantity', name: 'quantity', orderable: true },
-                    { data: 'total_price', name: 'total_price', orderable: true },
+                    { data: 'name', name: 'name', orderable: true },
+                    { data: 'email', name: 'email', orderable: true },
+                    { data: 'website', name: 'website', orderable: true },
+                    { data: 'comment', name: 'comment', orderable: true },
                     {
                         data: 'action-btn',
                         orderable: false,
@@ -115,7 +117,7 @@
                 if(isDelete) {
                     $.ajax({
                         type: "DELETE",
-                        url: SITEURL + '/ticket/' + dataId,
+                        url: SITEURL + '/post_comment/' + dataId,
                         success: function (data) {
                             var oTable = $('#data-table').dataTable();
                             oTable.fnDraw(false);

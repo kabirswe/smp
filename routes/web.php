@@ -7,9 +7,15 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\TicketController;
 use App\Http\Controllers\PagesController;
+
+use App\Http\Controllers\ProductCategoryController;
+use App\Http\Controllers\ProductLabelController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductImageController;
+use App\Http\Controllers\PostCategoryController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostCommentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,10 +63,16 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::get('user/logs',  [UserController::class, 'userLogs'])->name('user.logs');
     Route::get('user/log/show', [UserController::class, 'userLogShow'])->name('user.log.show');
     Route::get('user/log/delete', [UserController::class, 'userLogDestroy'])->name('user.log.destroy');
-    // category
-    Route::resource('category', CategoryController::class);
-    // ticket
-    Route::resource('ticket', TicketController::class);
-    Route::get('ticket/by/category/{id}', [TicketController::class, 'createByCategory'])->name('ticket.category');
-    Route::get('ticket/search', [TicketController::class, 'ticketSearch'])->name('ticket.search');
+    
+
+    Route::resource('product_category', ProductCategoryController::class);
+    Route::resource('product_label', ProductLabelController::class);
+    Route::resource('product', ProductController::class);
+    Route::resource('product_image', ProductImageController::class);
+    Route::resource('post_category', PostCategoryController::class);
+    Route::resource('post', PostController::class);
+    Route::resource('post_comment', PostCommentController::class);
+
+
+    
 });

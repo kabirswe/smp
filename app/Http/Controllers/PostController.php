@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Ticket;
-use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use DataTables;
 
-class TicketController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,8 +18,8 @@ class TicketController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $tickets = Ticket::all();
-            return DataTables::of($tickets)
+            $posts = Post::all();
+            return DataTables::of($posts)
                 ->addIndexColumn()
                 ->addColumn('action-btn', function($row) {
                     return $row->id;
@@ -28,22 +27,8 @@ class TicketController extends Controller
                 ->rawColumns(['action-btn'])
                 ->make(true);
         }
-        return view('admin.ticket.index');
+        return view('admin.post.index');
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function createByCategory(Request $request, $id)
-    {
-        $categories = Category::select('id', 'name', 'price')->get();
-        $get_category = Category::findOrFail($id);
-      
-
-        return view('admin.ticket.create_by_category', compact('categories', 'get_category'));
-    }
- 
 
     /**
      * Show the form for creating a new resource.
@@ -52,17 +37,7 @@ class TicketController extends Controller
      */
     public function create()
     {
-        return view('admin.ticket.create');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function ticketSearch()
-    {
-        return view('admin.ticket.ticket_search');
+        return view('admin.post.create');
     }
 
     /**
@@ -73,14 +48,12 @@ class TicketController extends Controller
      */
     public function store(Request $request)
     {
-      
-       
         $user = Auth::user();
         $data = $request->all();
         $validation = Validator::make($data, [
-            'unit_price' => 'required|max:200'
+            'title' => 'required|max:200'
         ],[
-            'unit_price.unique' => trans('error.unit_price')
+            'title.unique' => trans('error.name')
         ]);
         if($validation->fails()){
             return redirect()->back()->withInput()->with([
@@ -88,24 +61,23 @@ class TicketController extends Controller
             ]);
         }
 
-        $data['total_price'] = (int)$request->quantity * (int)$request->unit_price;
         $data['created_by'] = $user->id;
         $data['updated_by'] = $user->id;
 
-        $ticketData = Ticket::create($data);
+        $postData = Post::create($data);
 
-        return redirect()->route('ticket.index')->with([
-            'success' => trans('ticket create successfully')
+        return redirect()->route('post.index')->with([
+            'success' => trans('Post create successfully')
         ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Ticket  $ticket
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Ticket $ticket)
+    public function show(Post $post)
     {
         //
     }
@@ -113,20 +85,20 @@ class TicketController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Ticket  $ticket
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, $id)
     {
-        $ticket = Ticket::findOrFail($id);
-        return view('admin.ticket.edit', compact('ticket'));
+        $post = Post::findOrFail($id);
+        return view('admin.post.edit', compact('post'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Ticket  $ticket
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -134,36 +106,36 @@ class TicketController extends Controller
         $user = Auth::user();
         $data = $request->all();
         $validation = Validator::make($data, [
-            'unit_price' => 'required|max:100'
+            'title' => 'required|max:100'
         ],[
-            'unit_price.unique' => trans('error.unit_price')
+            'title.unique' => trans('error.title')
         ]);
         if($validation->fails()){
             return redirect()->back()->withInput()->with([
                 'errors' => $validation->errors()
             ]);
         }
-        $oldData = Ticket::find($id);
+        $oldData = Post::find($id);
         $oldData['updated_by'] = $user->id;
 
         $oldData->update($data);
 
-        return redirect()->route('ticket.index')->with([
-            'success' => trans('Ticket updated successfully')
+        return redirect()->route('post.index')->with([
+            'success' => trans('Post updated successfully')
         ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Ticket  $ticket
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, $id)
     {
         if ($request->ajax()) {
             try {
-                $data = Ticket::find($id);
+                $data = Post::find($id);
                 $data->delete();
                 return response()->json(['success' => 'place deleted']);
             } catch (Exception $e) {

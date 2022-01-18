@@ -11,19 +11,19 @@
     <section class="main-content">
         <div class="title-section d-flex justify-content-between align-items-center">
             <div class="text-block">
-                <h1 class="title">Category List</h1>
+                <h1 class="title">Product Label List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Category</a></li>
+                        <li class="breadcrumb-item"><a href="#">Product Label</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
             </div>
             <div class="btn-block">
-                <a class="btn" href="{{ route('category.create') }}">
+                <a class="btn" href="{{ route('product_label.create') }}">
                 <ion-icon name="add-outline"></ion-icon>
-                    <span>Create Category</span>
+                    <span>Create Product Label</span>
                 </a>
             </div>
         </div>
@@ -39,7 +39,6 @@
                     <tr>
                         <th>No</th>
                         <th>Name</th>
-                        <th>Price</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -74,7 +73,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js" defer></script>
 
     <script type="text/javascript">
-        var listUrl = SITEURL + '/category';
+        var listUrl = SITEURL + '/product_label';
 
         $(document).ready( function () {
             var table = $('#data-table').DataTable({
@@ -91,7 +90,6 @@
                 columns: [
                     { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: true },
                     { data: 'name', name: 'name', orderable: true },
-                    { data: 'price', name: 'price', orderable: true },
                     {
                         data: 'action-btn',
                         orderable: false,
@@ -113,7 +111,7 @@
                 if(isDelete) {
                     $.ajax({
                         type: "DELETE",
-                        url: SITEURL + '/category/' + dataId,
+                        url: SITEURL + '/product_label/' + dataId,
                         success: function (data) {
                             var oTable = $('#data-table').dataTable();
                             oTable.fnDraw(false);

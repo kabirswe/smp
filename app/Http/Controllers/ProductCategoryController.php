@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
+use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use DataTables;
 
-class CategoryController extends Controller
+
+class ProductCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +19,8 @@ class CategoryController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $categories = Category::all();
-            return DataTables::of($categories)
+            $product_categories = ProductCategory::all();
+            return DataTables::of($product_categories)
                 ->addIndexColumn()
                 ->addColumn('action-btn', function($row) {
                     return $row->id;
@@ -27,7 +28,7 @@ class CategoryController extends Controller
                 ->rawColumns(['action-btn'])
                 ->make(true);
         }
-        return view('admin.category.index');
+        return view('admin.product_category.index');
     }
 
     /**
@@ -37,7 +38,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.category.create');
+        return view('admin.product_category.create');
     }
 
     /**
@@ -64,20 +65,20 @@ class CategoryController extends Controller
         $data['created_by'] = $user->id;
         $data['updated_by'] = $user->id;
 
-        $categoryData = Category::create($data);
+        $product_categoryData = ProductCategory::create($data);
 
-        return redirect()->route('category.index')->with([
-            'success' => trans('Category create successfully')
+        return redirect()->route('product_category.index')->with([
+            'success' => trans('Product Category create successfully')
         ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Category  $category
+     * @param  \App\Models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show(ProductCategory $productCategory)
     {
         //
     }
@@ -85,20 +86,20 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Category  $category
+     * @param  \App\Models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, $id)
     {
-        $category = Category::findOrFail($id);
-        return view('admin.category.edit', compact('category'));
+        $product_category = ProductCategory::findOrFail($id);
+        return view('admin.product_category.edit', compact('product_category'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Category  $category
+     * @param  \App\Models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -115,27 +116,27 @@ class CategoryController extends Controller
                 'errors' => $validation->errors()
             ]);
         }
-        $oldData = Category::find($id);
+        $oldData = ProductCategory::find($id);
         $oldData['updated_by'] = $user->id;
 
         $oldData->update($data);
 
-        return redirect()->route('category.index')->with([
-            'success' => trans('Category updated successfully')
+        return redirect()->route('product_category.index')->with([
+            'success' => trans('Product Category updated successfully')
         ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Category  $category
+     * @param  \App\Models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, $id)
     {
         if ($request->ajax()) {
             try {
-                $data = Category::find($id);
+                $data = ProductCategory::find($id);
                 $data->delete();
                 return response()->json(['success' => 'place deleted']);
             } catch (Exception $e) {

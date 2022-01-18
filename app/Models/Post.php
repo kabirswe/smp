@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ticket extends Model
+class Post extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'unit_price',
-        'quantity',
-        'total_price',
-        'category_name',
+        'title',
+        'category',
+        'image',
+        'description',
         'created_by',
         'updated_by'
     ];
