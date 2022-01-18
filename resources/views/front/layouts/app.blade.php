@@ -8,16 +8,16 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'SMP') }}</title>
+    <title>{{ config('app.name', 'Gummy Specialists') }}</title>
 
     <!-- Meta data -->
-    <meta name="author" content="SMP" />
+    <meta name="author" content="Gummy Specialists" />
     <meta name="description" content="@yield('seo_description')"/>
     <meta name="Resource-type" content="@yield('seo_resource_type')" />
     <meta name="keywords" content="@yield('seo_keywords')">
     <link rel="image_src" href="@yield('seo_image')"/>
 
-    @include('admin.partials.favicon')
+    @include('front.partials.favicon')
 
     <!-- Fonts -->
     <link href="{{ asset('css/front/fonts.css') }}" rel="stylesheet" />
