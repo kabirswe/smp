@@ -29,6 +29,10 @@
     <link href="{{ asset('css/front/style.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/navbar.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/footer.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/who-to-contact.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/faq.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/fulfillment.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/product.css') }}" rel="stylesheet" />
 
      @stack('custom-style')
 

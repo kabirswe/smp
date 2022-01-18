@@ -1,0 +1,121 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+.fulfillment {
+    .man_intro_cont {
+        text-align: center;
+        width: 800px;
+        max-width: 100%;
+        padding-top: 135px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        h1 {
+            line-height: 60px;
+            font-weight: 700;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .breadcrumb {
+            background-color: #fff;
+            .breadcrumb-item {
+                color: #000;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    .fulfillment-main {
+        background-color: #f4f4f4;
+        padding: 20px 0 20px;
+        .container {
+            .fulfillment-media-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .fulfillment-media {
+                    width: calc(50% - 10px);
+                }
+                .fulfillment-text {
+                    width: calc(50% - 10px);
+                    h1 {
+                        font-size: 40px;
+                        font-family: "Oxygen", sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 34px;
+                    }
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .fulfillment-content {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 65px;
+                flex-wrap: wrap;
+                .single-item {
+                    width: calc(33.33% - 10px);
+                    margin-bottom: 60px;
+                    h1 {
+                        font-size: 40px;
+                        font-family: "Oxygen", sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 34px;
+                    }
+                }
+            }
+            .fulfillment-pricing-storage {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .pricing-details {
+                    width: calc(50% - 20px);
+                    h1 {
+                        font-size: 40px;
+                        font-family: "Oxygen", sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 100px;
+                    }
+                    h2 {
+                        font-size: 40px;
+                        font-family: "Oxygen", sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 34px;
+                    }
+                    .pricing-content {
+                        line-height: 40px;
+                        padding-bottom: 45px;
+                    }
+                }
+                .storage {
+                    width: calc(50% - 20px);
+                    h1 {
+                        margin-top: 30px;
+                        font-size: 40px;
+                        font-family: "Oxygen", sans-serif;
+                        font-weight: 700;
+                    }
+                    p {
+                        margin: 34px 0 34px;
+                    }
+                }
+            }
+            .shipping-carriers {
+                h1 {
+                    margin-bottom: 50px;
+                }
+                .shipping-details {
+                    display: flex;
+                    justify-content: center;
+                    .shipping-item {
+                        width: calc(33.33% - 10px);
+                    }
+                }
+            }
+        }
+    }
+}

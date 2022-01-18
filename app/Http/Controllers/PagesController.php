@@ -26,4 +26,20 @@ class PagesController extends Controller
     {
         return view('front.labdoor-partnership');
     }
+    public function who_to_contact()
+    {
+        return view('front.who-to-contact');
+    }
+    public function faq()
+    {
+        return view('front.faq');
+    }
+    public function fulfillment()
+    {
+        return view('front.fulfillment');
+    }
+    public function product()
+    {
+        return view('front.product');
+    }
 }

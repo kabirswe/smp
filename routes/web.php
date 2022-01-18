@@ -30,6 +30,10 @@ Route::get('/supplement-manufacturing', [PagesController::class, 'supplement_man
 Route::get('/meet-the-team', [PagesController::class, 'meet_the_team'])->name('meet_the_team');
 Route::get('/awards-certifications', [PagesController::class, 'awards_certifications'])->name('awards_certifications');
 Route::get('/labdoor-partnership', [PagesController::class, 'labdoor_partnership'])->name('labdoor_partnership');
+Route::get('/who-to-contact', [PagesController::class, 'who_to_contact'])->name('who_to_contact');
+Route::get('/faq', [PagesController::class, 'faq'])->name('faq');
+Route::get('/fulfillment', [PagesController::class, 'fulfillment'])->name('fulfillment');
+Route::get('/product', [PagesController::class, 'product'])->name('product');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
