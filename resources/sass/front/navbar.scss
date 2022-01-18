@@ -16,7 +16,7 @@
 		}
 	}
 	.navbar-block {
-		overflow: hidden;
+		// overflow: hidden;
 		a {
 		  float: left;
 		  font-size: 14px;
@@ -25,13 +25,29 @@
 		  padding: 8px;
 		  text-decoration: none;
           font-weight: 600;
+          position: relative;
+          &::after {
+              content: '';
+              bottom: 5px;
+              left: 8px;
+              right: 8px;
+              position: absolute;
+              height: 2px;
+              width: 0;
+              background-color: #b0cf4a;
+              @include common_transition();
+          }
 		  &:hover {
-			background-color: red;
+            &::after {
+                width: calc(100% - 16px);
+                @include common_transition();
+            }
 		  }
 		}
 		.nav-dropdown {
 		  float: left;
-		  overflow: hidden;
+		//   overflow: hidden;
+          position: relative;
           i {
               font-size: 12px;
               padding-left: 5px;
@@ -46,14 +62,26 @@
 			background-color: inherit;
 			font-family: inherit;
 			margin: 0;
+            &::after {
+                content: '';
+                bottom: 5px;
+                left: 8px;
+                right: 8px;
+                position: absolute;
+                height: 2px;
+                width: 0;
+                background-color: #b0cf4a;
+                @include common_transition();
+            }
 		  }
 		  .dropdown-content {
 			display: none;
 			position: absolute;
 			background-color: #f9f9f9;
-			min-width: 160px;
+			min-width: 250px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			z-index: 1;
+			z-index: 10;
+            padding: 15px 30px;
 			a {
 			  float: none;
 			  color: black;
@@ -62,9 +90,35 @@
               font-weight: 600;
 			  display: block;
 			  text-align: left;
-			  &:hover {
-				background-color: #ddd;
-			  }
+              position: relative;
+              transition: all 0.3s;
+              &::after {
+                content: '';
+                height: 0;
+                width: 0;
+                left: 0;
+                right: 0;
+                background-color: transparent;
+              }
+                &::before {
+                    content: "\e628";
+                    font-family: 'themify';
+                    opacity: 1;
+                    left: 0;
+                    position: absolute;
+                    font-size: 10px;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    transition-delay: 0.1s;
+                    top: 11px;
+                }
+                &:hover {
+                    padding-left: 20px;
+                    &::before {
+                        color: #b0cf4a;
+                        opacity: 1;
+                    }
+                }
 			}
 		  }
 		  &:hover {
@@ -72,7 +126,10 @@
 					display: block;
 				}
 				.dropbtn {
-					background-color: red;
+                    &::after {
+                        width: calc(100% - 16px);
+                        @include common_transition();
+                    }
 				}
 			}
 		}
