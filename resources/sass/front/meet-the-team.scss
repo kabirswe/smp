@@ -1,0 +1,458 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.meet-the-team-section {
+    .section-heading {
+        z-index: 1;
+        text-align: center;
+        width: 800px;
+        max-width: 100%;
+        padding-top: 235px;
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 97px;
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            font-family: Poppins;
+            line-height: 60px;
+            font-weight: 700;
+            font-style: normal;
+            color: #333;
+            font-size: 50px;
+        }
+
+        .breadcrumbs {
+            text-align: center;
+        }
+    }
+
+    .partners-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .partners-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+
+            }
+        }
+
+        .partners-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .partners-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+
+                .partner-card {
+                    width: calc(33% - 10px);
+                    margin-right: 20px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+                        .description {
+                            margin-top: 20px;
+
+                            p {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sales-team-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .sales-team-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .sales-team-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .sales-team-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                flex-wrap: wrap;
+
+                .sales-team-card {
+                    width: calc(24% - 10px);
+                    margin-right: 20px;
+
+                    &:nth-child(4) {
+                        margin-right: 0;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .administrative-team-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .administrative-team-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .administrative-team-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .administrative-team-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                flex-wrap: wrap;
+
+                .administrative-team-card {
+                    width: calc(24% - 10px);
+                    margin-right: 20px;
+
+                    &:nth-child(4) {
+                        margin-right: 0;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .operations-team-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .operations-team-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .operations-team-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .operations-team-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                flex-wrap: wrap;
+
+                .operations-team-card {
+                    width: calc(24% - 10px);
+                    margin-right: 20px;
+
+                    &:nth-child(4) {
+                        margin-right: 0;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .marketing-team-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .marketing-team-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .marketing-team-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .marketing-team-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                flex-wrap: wrap;
+
+                .marketing-team-card {
+                    width: calc(24% - 10px);
+                    margin-right: 20px;
+
+                    &:nth-child(4) {
+                        margin-right: 0;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .compliance-team-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .compliance-team-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .compliance-team-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .compliance-team-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                flex-wrap: wrap;
+
+                .compliance-team-card {
+                    width: calc(24% - 10px);
+                    margin-right: 20px;
+
+                    &:nth-child(4) {
+                        margin-right: 0;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .design-team-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .design-team-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .design-team-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .design-team-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                flex-wrap: wrap;
+
+                .design-team-card {
+                    width: calc(24% - 10px);
+                    margin-right: 20px;
+
+                    &:nth-child(4) {
+                        margin-right: 0;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .finance-team-section {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        flex-direction: column;
+
+        .finance-team-heading {
+            margin-bottom: 15px;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        .finance-team-section-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .finance-team-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 75%;
+                flex-wrap: wrap;
+
+                .finance-team-card {
+                    width: calc(24% - 10px);
+                    margin-right: 20px;
+
+                    &:nth-child(4) {
+                        margin-right: 0;
+
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .card-text {
+                        text-align: center;
+                        padding: 20px;
+
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
