@@ -1,0 +1,229 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+.labdoor-partnership {
+    .man_intro_cont {
+        text-align: center;
+        width: 800px;
+        max-width: 100%;
+        padding-top: 135px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        h1 {
+            line-height: 60px;
+            font-weight: 700;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .breadcrumb {
+            background-color: #fff;
+            .breadcrumb-item {
+                color: #000;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    .labdoor-main {
+        background-color: #f4f4f4;
+        padding: 25px 0 80px;
+        .container {
+            .labdoor {
+                text-align: center;
+                .labdoor-img {
+                    margin-bottom: 40px;
+                }
+                .labdoor-title {
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 60%;
+                    padding: 40px 0 50px;
+                    h2 {
+                        font-family: Oxygen;
+                        line-height: 50px;
+                        font-weight: 400;
+                        color: #333;
+                        font-style: normal;
+                        font-size: 40px;
+                    }
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    // .labdoor-service {
+    //     padding: 40px 0px 40px 0px;
+    //     .container {
+    //         .labdoor-content {
+    //             display: flex;
+    //             justify-content: space-between;
+    //             .labdoor-content-left {
+    //                 width: calc(50% - 20px);
+    //                 h2 {
+    //                     color: #333;
+    //                     font-family: Oxygen;
+    //                     line-height: 50px;
+    //                     font-weight: 400;
+    //                     font-style: normal;
+    //                     text-align: center;
+    //                     font-size: 40px;
+    //                     margin: 15px 0 80px;
+    //                 }
+    //                 a {
+    //                     background-color: #b0cf4a;
+    //                     color: #fff;
+    //                     width: 212px;
+    //                     height: 50px;
+    //                     padding: 12px 6px;
+    //                     border-radius: 0;
+    //                     display: flex;
+    //                     justify-content: center;
+    //                     align-items: center;
+    //                     text-align: center;
+    //                     &:hover {
+    //                         background-color: #165e60;
+    //                         color: #fff;
+    //                     }
+    //                     i {
+    //                         display: inline-block;
+    //                         vertical-align: middle;
+    //                         font-size: 12px;
+    //                         margin-left: 21px;
+    //                     }
+    //                 }
+    //             }
+    //             .labdoor-content-right {
+    //                 width: calc(50% - 20px);
+    //                 .accordion {
+    //                     .accordion-item {
+    //                         margin-bottom: 10px;
+    //                         border: 1px solid #d4d4d4;
+    //                         background-color: #f4f4f4;
+    //                         .accordion-header {
+    //                             .accordion-button.collapsed {
+    //                                 background-color: #f4f4f4;
+    //                                 font-size: 16px;
+    //                                 font-weight: 600;
+    //                                 &:not(.collapsed) {
+    //                                     color: #333;
+    //                                 }
+    //                                 &:focus {
+    //                                     box-shadow: none;
+    //                                 }
+    //                                 &::after {
+    //                                     background-image: url("{{ url(asset('images/front/add-outline.svg')) }}");
+    //                                     // background-image: url({{url("images/php_mysql.jpg")}});
+    //                                 }
+    //                             }
+    //                             .accordion-button {
+    //                                 background-color: #f4f4f4;
+    //                                 font-size: 16px;
+    //                                 font-weight: 600;
+    //                                 &:not(.collapsed) {
+    //                                     color: #333;
+    //                                 }
+    //                                 &:focus {
+    //                                     box-shadow: none;
+    //                                 }
+    //                                 &::after {
+    //                                     background-image: url(images/minus.svg);
+    //                                 }
+    //                             }
+    //                         }
+    //                         .accordion-body {
+    //                             a {
+    //                                 color: #000;
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .labdoor-test {
+        background-color: #f4f4f4;
+        padding: 25px 0 80px;
+        .container {
+            .labdoor {
+                text-align: center;
+                .labdoor-img {
+                    margin-bottom: 40px;
+                }
+                .labdoor-title {
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 60%;
+                    padding: 40px 0 50px;
+                    h2 {
+                        font-family: Oxygen;
+                        line-height: 50px;
+                        font-weight: 400;
+                        color: #333;
+                        font-style: normal;
+                        font-size: 40px;
+                    }
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .labdoor-test-contact {
+        padding: 40px 0px 40px 0px;
+        .container {
+            .labdoor-test-inner {
+                .labdoor-test-content {
+                    display: flex;
+                    justify-content: space-around;
+                    .labdoor-test-content-left {
+                        width: calc(50% - 20px);
+                        h2 {
+                            font-family: Oxygen;
+                            line-height: 50px;
+                            font-weight: 400;
+                            font-style: normal;
+                            font-size: 40px;
+                        }
+                    }
+                    .labdoor-test-content-right {
+                        width: calc(50% - 20px);
+                        p {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                a {
+                    background-color: #61ce70;
+                    margin-top: 90px;
+                    color: $white;
+                    width: 212px;
+                    height: 40px;
+                    padding: 12px 6px;
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    &:hover {
+                        background-color: #165e60;
+                        color: $white;
+                    }
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 12px;
+                        margin-left: 21px;
+                    }
+                }
+            }
+        }
+    }
+}

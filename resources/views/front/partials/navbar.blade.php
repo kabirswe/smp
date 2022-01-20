@@ -15,7 +15,7 @@
                             <a href="#">About Us</a>
                             <a href="#">Meet The Team</a>
                             <a href="#">Certifications</a>
-                            <a href="#">Labdoor Partnership</a>
+                            <a href="http://localhost:3000/labdoor-partnership">Labdoor Partnership</a>
                         </div>
                     </div>
                     <a href="#home">Blog</a>
@@ -37,21 +37,21 @@
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="https://smpnutra.com/product-category/stock-products">All Stock Private Label Products</a>
+                            <a href="http://localhost:3000/product_page">All Stock Private Label Products</a>
                             <a href="https://smpnutra.com/product-category/stock-private-label-supplements/best-sellers">Best Sellers</a>
                             <a href="https://smpnutra.com/featured-stock-products">Featured Stock Products</a>
                             <a href="https://smpnutra.com/product-category/stock-private-label-supplements/pets">Pets</a>
                             <a href="https://smpnutra.com/product-category/stock-private-label-supplements/sugar-free">Sugar-Free</a>
                         </div>
                     </div>
-                    <a href="#home">Design</a>
-                    <a href="#home">Fulfillment</a>
+                    <a href="http://localhost:3000/product_details">Design</a>
+                    <a href="http://localhost:3000/fulfillment">Fulfillment</a>
                     <div class="nav-dropdown">
                         <button class="dropbtn">FAQ
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="https://smpnutra.com/product-category/stock-products">2022 Nutraceutical Manufacturing Brochure</a>
+                            <a href="http://localhost:3000/faq">2022 Nutraceutical Manufacturing Brochure</a>
                         </div>
                     </div>
                     <div class="nav-dropdown">
@@ -59,7 +59,7 @@
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="https://smpnutra.com/product-category/stock-products">Who To Contact</a>
+                            <a href="http://localhost:3000/who-to-contact">Who To Contact</a>
                         </div>
                     </div>
                 </div>

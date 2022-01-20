@@ -39,7 +39,10 @@ Route::get('/labdoor-partnership', [PagesController::class, 'labdoor_partnership
 Route::get('/who-to-contact', [PagesController::class, 'who_to_contact'])->name('who_to_contact');
 Route::get('/faq', [PagesController::class, 'faq'])->name('faq');
 Route::get('/fulfillment', [PagesController::class, 'fulfillment'])->name('fulfillment');
-Route::get('/product', [PagesController::class, 'product'])->name('product');
+Route::get('/product_page', [PagesController::class, 'product_page'])->name('product_page');
+Route::get('/product_details', [PagesController::class, 'product_details'])->name('product_details');
+Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
+Route::get('/blog_details', [PagesController::class, 'blog_details'])->name('blog_details');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

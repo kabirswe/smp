@@ -33,6 +33,10 @@
     <link href="{{ asset('css/front/faq.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/fulfillment.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/product.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/product-details.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/blog.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/blog-details.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/labdoor-partnership.css') }}" rel="stylesheet" />
 
      @stack('custom-style')
 
