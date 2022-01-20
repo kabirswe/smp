@@ -34,7 +34,7 @@
                     </div>
                     <div class="nav-dropdown">
                         <button class="dropbtn">Stock Products
-                        <i class="ti ti-angle-down"></i>
+                        <i class="ti ti-angle-down"></i>  
                         </button>
                         <div class="dropdown-content">
                             <a href="http://localhost:3000/product_page">All Stock Private Label Products</a>
