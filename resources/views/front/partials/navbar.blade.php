@@ -3,7 +3,7 @@
         <div class="row">
             <div class="d-flex justify-content-between w-100">
                 <div class="logo">
-                    <img src="{{ asset('images/front/SMP_logodrafts.jpg') }}" alt="">
+                    <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                 </div>
                 <div class="navbar-block">
                     <a href="#home">Home</a>

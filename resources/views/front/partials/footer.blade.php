@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <img src="{{ asset('images/front/SMP_logodrafts.jpg') }}" alt="">
+                    <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                     <div class="d-flex justify-content-end align-items-center">
                         <a href="tel:833-810-9896" class="btn">Call Us: 833-810-9896<i class="ti ti-arrow-right"></i></a>
                         <a href="https://info.smpnutra.com/quote" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>

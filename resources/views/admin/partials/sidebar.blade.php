@@ -1,7 +1,7 @@
 <nav id="sidebarMenu" class="dashboard-sidebar">
     <div class="position-sticky pt-3">
         <a class="navbar-brand" href="{{ route('dashboard') }}">
-          <img src="{{ asset('images/admin/logo.svg') }}" class="navbar-brand-img" alt="...">
+          <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" class="navbar-brand-img" alt="...">
         </a>
         <ul class="nav flex-column">
             <li class="nav-item">
@@ -11,17 +11,48 @@
                 </a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link{{ Route::is('ticket.index', 'ticket.edit',  'ticket.create_by_category') ? ' active' : '' }}" href="{{ route('ticket.index') }}">
+                <a class="nav-link{{ Route::is('product_category.index', 'product_category.edit',  'product_category.create') ? ' active' : '' }}" href="{{ route('product_category.index') }}">
                     <ion-icon name="people-outline"></ion-icon>
-                    Ticket
+                    Product Category List
                 </a>
-            </li>                        
+            </li>   
             <li class="nav-item">
-                <a class="nav-link{{ Route::is('category.index', 'category.edit',  'category.create') ? ' active' : '' }}" href="{{ route('category.index') }}">
+                <a class="nav-link{{ Route::is('product_label.index', 'product_label.edit',  'product_label.create') ? ' active' : '' }}" href="{{ route('product_label.index') }}">
                     <ion-icon name="people-outline"></ion-icon>
-                    Category
+                    Product Label
+                </a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link{{ Route::is('product.index', 'product.edit',  'product.create') ? ' active' : '' }}" href="{{ route('product.index') }}">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Product
                 </a>
             </li> 
+            <li class="nav-item">
+                <a class="nav-link{{ Route::is('product_image.index', 'product_image.edit',  'product_image.create') ? ' active' : '' }}" href="{{ route('product_image.index') }}">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Product Image
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link{{ Route::is('post_category.index', 'post_category.edit',  'post_category.create') ? ' active' : '' }}" href="{{ route('post_category.index') }}">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Post Category
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link{{ Route::is('post.index', 'post.edit',  'post.create') ? ' active' : '' }}" href="{{ route('post.index') }}">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Post
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link{{ Route::is('post_comment.index', 'post_comment.edit',  'post_comment.create') ? ' active' : '' }}" href="{{ route('post_comment.index') }}">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Post Comment
+                </a>
+            </li> 
+                             
             <li class="nav-item">
                 <a class="nav-link{{ Route::is('users.index', 'users.edit', 'users.show', 'users.create') ? ' active' : '' }}" href="{{ route('users.index') }}">
                     <ion-icon name="people-outline"></ion-icon>

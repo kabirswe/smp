@@ -7,9 +7,15 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\TicketController;
 use App\Http\Controllers\PagesController;
+
+use App\Http\Controllers\ProductCategoryController;
+use App\Http\Controllers\ProductLabelController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductImageController;
+use App\Http\Controllers\PostCategoryController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostCommentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +36,10 @@ Route::get('/supplement-manufacturing', [PagesController::class, 'supplement_man
 Route::get('/meet-the-team', [PagesController::class, 'meet_the_team'])->name('meet_the_team');
 Route::get('/awards-certifications', [PagesController::class, 'awards_certifications'])->name('awards_certifications');
 Route::get('/labdoor-partnership', [PagesController::class, 'labdoor_partnership'])->name('labdoor_partnership');
+Route::get('/who-to-contact', [PagesController::class, 'who_to_contact'])->name('who_to_contact');
+Route::get('/faq', [PagesController::class, 'faq'])->name('faq');
+Route::get('/fulfillment', [PagesController::class, 'fulfillment'])->name('fulfillment');
+Route::get('/product', [PagesController::class, 'product'])->name('product');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -53,10 +63,16 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::get('user/logs',  [UserController::class, 'userLogs'])->name('user.logs');
     Route::get('user/log/show', [UserController::class, 'userLogShow'])->name('user.log.show');
     Route::get('user/log/delete', [UserController::class, 'userLogDestroy'])->name('user.log.destroy');
-    // category
-    Route::resource('category', CategoryController::class);
-    // ticket
-    Route::resource('ticket', TicketController::class);
-    Route::get('ticket/by/category/{id}', [TicketController::class, 'createByCategory'])->name('ticket.category');
-    Route::get('ticket/search', [TicketController::class, 'ticketSearch'])->name('ticket.search');
+    
+
+    Route::resource('product_category', ProductCategoryController::class);
+    Route::resource('product_label', ProductLabelController::class);
+    Route::resource('product', ProductController::class);
+    Route::resource('product_image', ProductImageController::class);
+    Route::resource('post_category', PostCategoryController::class);
+    Route::resource('post', PostController::class);
+    Route::resource('post_comment', PostCommentController::class);
+
+
+    
 });

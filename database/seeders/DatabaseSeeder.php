@@ -15,7 +15,12 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(PermissionTableSeeder::class);
         $this->call(CreateAdminUserSeeder::class);
-        $this->call(CategorySeeder::class);  
-        $this->call(TicketSeeder::class);  
+        $this->call(ProductCategorySeeder::class); 
+        $this->call(ProductLabelSeeder::class); 
+        $this->call(ProductSeeder::class); 
+        $this->call(ProductImageSeeder::class); 
+        $this->call(PostCategorySeeder::class); 
+        $this->call(PostSeeder::class); 
+        $this->call(PostCommentSeeder::class); 
     }
 }
