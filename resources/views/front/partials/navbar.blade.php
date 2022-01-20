@@ -12,9 +12,9 @@
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">About Us</a>
-                            <a href="#">Meet The Team</a>
-                            <a href="#">Certifications</a>
+                            <a href="http://localhost:8000/supplement-manufacturing">About Us</a>
+                            <a href="http://localhost:8000/meet-the-team">Meet The Team</a>
+                            <a href="http://localhost:8000/awards-certifications">Certifications</a>
                             <a href="http://localhost:3000/labdoor-partnership">Labdoor Partnership</a>
                         </div>
                     </div>
