@@ -1,0 +1,220 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.awards-certifications-section {
+    .section-heading {
+        z-index: 1;
+        text-align: center;
+        width: 800px;
+        max-width: 100%;
+        padding-top: 235px;
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 97px;
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            font-family: Poppins;
+            line-height: 60px;
+            font-weight: 700;
+            font-style: normal;
+            color: #333;
+            font-size: 50px;
+        }
+
+        .breadcrumbs {
+            text-align: center;
+
+            span {
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .approval-wrapper {
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+
+        .approvals {
+            width: 75%;
+            padding: 100px;
+
+            .heading {
+                text-align: center;
+                margin-bottom: 50px;
+
+                h1 {
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .approved-by {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .panel-section-wrapper {
+
+        .panel-section {
+            background-color: #f4f4f4;
+
+            nav {
+                display: flex;
+                justify-content: center;
+            }
+
+            .custom-class {
+                .customize {
+                    background-color: #fff;
+
+                    .company-of-year-wrapper {
+                        display: flex;
+                        justify-content: center;
+
+
+                        .company-of-year {
+                            width: 75%;
+                            display: flex;
+                            justify-content: center;
+                            padding: 100px 0;
+
+                            .cy-left {
+                                width: 50%;
+
+                                img {
+                                    margin-bottom: 10px;
+                                }
+
+                                h1 {
+                                    margin-bottom: 10px;
+                                }
+
+                                p {
+                                    margin-bottom: 10px;
+                                }
+
+                                a {
+                                    margin-top: 20px;
+                                    background-color: #61ce70;
+                                    color: #fff;
+                                    width: 212px;
+                                    height: 40px;
+                                    padding: 12px 6px;
+                                    border-radius: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    margin-right: 10px;
+
+                                    &:hover {
+                                        background-color: #165e60;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+
+                            .cy-right {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                }
+
+                            }
+                        }
+
+
+                    }
+
+                    .product-of-year-wrapper {
+                        display: flex;
+                        justify-content: center;
+
+                        .product-of-year {
+                            width: 75%;
+                            display: flex;
+                            justify-content: center;
+                            padding: 100px 0;
+
+                            .py-right {
+                                width: 50%;
+
+                                img {
+                                    margin-bottom: 10px;
+                                }
+
+                                h1 {
+                                    margin-bottom: 10px;
+                                }
+
+                                p {
+                                    margin-bottom: 10px;
+                                }
+
+                                a {
+                                    margin-top: 20px;
+                                    background-color: #61ce70;
+                                    color: #fff;
+                                    width: 212px;
+                                    height: 40px;
+                                    padding: 12px 6px;
+                                    border-radius: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    margin-right: 10px;
+
+                                    &:hover {
+                                        background-color: #165e60;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+
+                            .py-left {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                }
+
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}

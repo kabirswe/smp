@@ -1,23 +1,30 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'SMP') }}</title>
+    <title>{{ config('app.name', 'Gummy Specialists') }}</title>
 
     <!-- Meta data -->
+<<<<<<< HEAD
     <meta name="author" content="SMP" />
+    <meta name="description" content="@yield('seo_description')" />
+=======
+    <meta name="author" content="Gummy Specialists" />
     <meta name="description" content="@yield('seo_description')"/>
+>>>>>>> 1932163f314db7f3a2e4fe26510aad6cc1557521
     <meta name="Resource-type" content="@yield('seo_resource_type')" />
     <meta name="keywords" content="@yield('seo_keywords')">
-    <link rel="image_src" href="@yield('seo_image')"/>
+    <link rel="image_src" href="@yield('seo_image')" />
 
-    @include('admin.partials.favicon')
+    @include('front.partials.favicon')
 
     <!-- Fonts -->
     <link href="{{ asset('css/front/fonts.css') }}" rel="stylesheet" />
@@ -29,24 +36,33 @@
     <link href="{{ asset('css/front/style.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/navbar.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/footer.css') }}" rel="stylesheet" />
+<<<<<<< HEAD
+    <link href="{{ asset('css/front/supplement-manufacturing.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/meet-the-team.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/front/awards-certifications.css') }}" rel="stylesheet" />
+    @stack('custom-style')
+=======
     <link href="{{ asset('css/front/who-to-contact.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/faq.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/fulfillment.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/product.css') }}" rel="stylesheet" />
+<<<<<<< HEAD
     <link href="{{ asset('css/front/product-details.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/blog.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/blog-details.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/labdoor-partnership.css') }}" rel="stylesheet" />
+=======
+>>>>>>> 1932163f314db7f3a2e4fe26510aad6cc1557521
+>>>>>>> b60acf30bc4fcc05a6eb7a118bdbd83dcc629073
 
-     @stack('custom-style')
-
-     <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
          <link rel='stylesheet' href="css/ie/ie8.css">
      <![endif]-->
 
 </head>
+
 <body>
     <div id="app">
         <div class="container-fluid g-0">
@@ -66,9 +82,11 @@
     <script>
         var SITEURL = "{{ URL::to('') }}";
         var ASSET_URL = "{{ config('app.asset_url') }}/";
-        $( document ).ready( function () {
-        $.ajaxSetup({
-                headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+        $(document).ready(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
             });
         });
         var no_data_found = 'No data found';
@@ -77,4 +95,5 @@
 
     @stack('custom-scripts')
 </body>
+
 </html>
