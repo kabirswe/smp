@@ -38,8 +38,20 @@ class PagesController extends Controller
     {
         return view('front.fulfillment');
     }
-    public function product()
+    public function product_page()
     {
-        return view('front.product');
+        return view('front.product_page');
+    }
+    public function product_details()
+    {
+        return view('front.product-details');
+    }
+    public function blog()
+    {
+        return view('front.blog');
+    }
+    public function blog_details()
+    {
+        return view('front.blog-details');
     }
 }

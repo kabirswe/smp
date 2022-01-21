@@ -13,12 +13,10 @@
     <title>{{ config('app.name', 'Gummy Specialists') }}</title>
 
     <!-- Meta data -->
-    <<<<<<< HEAD <meta name="author" content="SMP" />
+    <meta name="author" content="SMP" />
     <meta name="description" content="@yield('seo_description')" />
-    =======
     <meta name="author" content="Gummy Specialists" />
     <meta name="description" content="@yield('seo_description')" />
-    >>>>>>> 1932163f314db7f3a2e4fe26510aad6cc1557521
     <meta name="Resource-type" content="@yield('seo_resource_type')" />
     <meta name="keywords" content="@yield('seo_keywords')">
     <link rel="image_src" href="@yield('seo_image')" />
