@@ -33,3 +33,25 @@ ul {
 img {
     max-width: 100%;
 }
+.common-btn {
+    background-color: #61CE70;
+    color: $white;
+    width: 212px;
+    height: 40px;
+    padding: 12px 6px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &:hover {
+        background-color: #165e60;
+        color: $white;
+    }
+    i {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        margin-left: 21px;
+    }
+}
