@@ -16,14 +16,15 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('quantity');
-            $table->string('description');
-            $table->string('label');
-            $table->string('category');
+            $table->integer('quantity')->nullable();
+            $table->text('description');
+            $table->unsignedBigInteger('product_type_id');
+            $table->foreign('product_type_id')->references('id')->on('product_types');
             $table->unsignedBigInteger('created_by');
             $table->foreign('created_by')->references('id')->on('users');
             $table->unsignedBigInteger('updated_by');
             $table->foreign('updated_by')->references('id')->on('users');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -16,29 +16,35 @@ class PostSeeder extends Seeder
     {
         $datas = [
             [
-                'title' => 'SMP Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!',                
-                'category' => 'Delivery & Dosage Technology',
-                'image' => 'image',
+                'title' => 'SMP Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
                 'description' => 'BioPerine is a patented extract from black pepper, which is a very familiar spice found in nearly every',
                 'created_by' => '1',
                 'updated_by' => '1'
             ],
             [
-                'title' => 'How to Get Started Dropshipping Bodybuilding Supplements',                
-                'category' => 'Dropshipping Supplements',
-                'image' => 'Image',
+                'title' => 'How to Get Started Dropshipping Bodybuilding Supplements',
+                'post_category_id' => 2,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
                 'description' => 'Are you planning to start a dropshipping supplement business? Well, it would be a great idea to start…',
                 'created_by' => '1',
                 'updated_by' => '1'
             ],
             [
-                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',                
-                'category' => 'Supplement Packaging',
-                'image' => 'Image',
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
                 'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
                 'created_by' => '1',
                 'updated_by' => '1'
-            ],            
+            ],
         ];
 
         foreach($datas as $data)

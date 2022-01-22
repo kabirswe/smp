@@ -16,19 +16,7 @@ class ProductImageSeeder extends Seeder
     {
         $datas = [
             [
-                'cover_image' => 'True',                
-                'image' => 'False',
-                'created_by' => '1',
-                'updated_by' => '1'
-            ],
-            [
-                'cover_image' => 'False',                
-                'image' => 'True',
-                'created_by' => '1',
-                'updated_by' => '1'
-            ],
-            [
-                'cover_image' => 'True',                
+                'product_id' => 1,
                 'image' => 'False',
                 'created_by' => '1',
                 'updated_by' => '1'
