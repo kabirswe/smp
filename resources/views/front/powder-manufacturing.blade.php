@@ -2,17 +2,17 @@
 
 @push('custom-style')
     <link rel="stylesheet" href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/front/capsule-manufacturing.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/powder-manufacturing.css') }}">
 @endpush
 
 @section('content')
-<main class="capsule-manufacturing-container">
+<main class="powder-manufacturing-container">
     <div class="man_intro_cont">
-		<h1>Custom Capsule Manufacturing</h1>
+		<h1>Custom Powder Manufacturing</h1>
 		<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
-			<li class="breadcrumb-item active" aria-current="page">Custom Capsule Manufacturing</li>
+			<li class="breadcrumb-item active" aria-current="page">Custom Powder Manufacturing</li>
 		</ol>
 		</nav>
 	</div>
@@ -25,7 +25,7 @@
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container">
             <div class="video-content">
-                <h2>Your Custom<br /> Nutraceutical Capsule<br /> Manufacturer</h2>
+                <h2>Your Custom<br /> Nutraceutical Powder<br /> Manufacturer</h2>
                 <p>GS stands for Gummy Specialists. Our team is dedicated to be your partner in most efficiently manufacturing your growing vitamin business to scale.</p>             
             </div>
         </div>
@@ -37,12 +37,12 @@
                     <div class="item">
                         <i class="ti ti-layout-media-left-alt"></i>
                         <h2>Blending</h2>
-                        <p>MBefore encapsulation, your formula must be blended to ensure even distribution of ingredients in each capsule.</p>
+                        <p>Before encapsulation, your formula must be blended to ensure even distribution of ingredients in each capsule.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-shopping-cart"></i>
-                        <h2>Encapsulation</h2>
-                        <p>Once all ingredients in your formula are blended, they are filled in capsule shells. We offer to encapsulate it in gelatin, vegetable and pullulan capsule shells.</p>
+                        <h2>Bottle/Bag Filling</h2>
+                        <p>Once all ingredients in your formula are blended, they are filled in your bottle or bag of choice. We offer amazing packaging options to fill your powder with.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-package"></i>
@@ -84,9 +84,9 @@
             <div class="capabilities">
                 <div class="content-block">
                     <p>Our Capabilities</p>
-                    <h2>Custom Nutraceutical Capsule Manufacturing</h2>
-                    <p>We have capabilities to manufacture any nutraceutical capsule formula. From sourcing each ingredient in your formula, to post encapsulation inspection; we do it all at the best prices and the fastest lead times. We have the experience to help you formulate a new product for your target audience, or discuss with you how to properly scale your manufacturing. As your partner, it is our job for long-term capsule manufacturing success.</p>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Get A Custom Capsule Quote<i class="ti ti-arrow-right"></i></a>
+                    <h2>Custom Nutraceutical Powder Manufacturing</h2>
+                    <p>We have capabilities to manufacture any nutraceutical powder formula. From sourcing each ingredient in your formula, to post filling inspection; we do it all at the best prices and the fastest lead times. We have the experience to help you formulate a new product for your target audience, or discuss with you how to properly scale your manufacturing. As your partner, it is our job for long-term powder manufacturing success.</p>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Get A Custom Powder Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="video-block">
                     <div class="video">
@@ -99,8 +99,8 @@
     <div class="network-wrapper">
         <div class="container">
             <div class="network">
-                <h2>Custom Capsule Manufacturing:</h2>
-                <p>Capsules have been a very reliable and widely accepted method form of encapsulation for nutraceutical formulas. You can have your formula blended and encapsulated into a capsule with little to no effort with the help of us.</p>
+                <h2>Custom Powder Manufacturing</h2>
+                <p>We can help you get any kind of powder formula made. Getting the right team to do this is vital to success and we are more then qualified to help you efficiently and quickly for the best overall product. As your powder manufacturer, you will be more than pleased with the results.</p>
             </div>
         </div>
     </div>   
@@ -109,16 +109,14 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Capsule Blend Preparation Process</h2>
-                    <p>As capsules are produced, plenty of work behind the scenes must be done before the capsule is ready to be bottled. The powder within capsules can be prepared in two ways: </p>  
-                    <ol>
-                        <li>Wet Granulation Process</li>
-                        <li>Dry Granulation Process&nbsp;</li>
-                    </ol>                 
+                    <h2>Powder Manufacturing Process Variations</h2>
+                    <p>Powder supplements are continually being optimized to support more facets of health and different activities. While there are numerous ways to blend a powder formula, you may find one that is the perfect match for your product. The process generally starts the same for all types of powders, with a measured level of ingredients and correct proportions made. The steps following this can vary. Some of the types of powder manufacturing include:</p>    
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/PowderBlender2-01.png') }}" alt="">
+                        <h3>Free Flowing Mixtures</h3>
+                        <h3>Cohesive Mixtures</h3>
+                        <h3>Ordered Mixtures</h3>
                     </div>                 
                 </div>
             </div>
@@ -233,8 +231,9 @@
             <div class="pre-manufactured">
                 <div class="top-block">
                     <div class="content-block">
-                        <h2>Check Out Our Private Label Capsule Products</h2>
-                        <p>We have many in-stock already manufactured supplement products in our warehouse, ready for you label to be put on. We have real-time catalog on our website updated everyday! Check to see our inventory of private label supplements. We also offer samples of every stock supplement for you to try before investing the product into your brand.</p>
+                        <h2>Check Out Our Private Label Powder Products</h2>
+                        <p>Make sure to check out our stock private label powder products. There, you can see what we believe is some of the best formulas that are on a level of their own. They possibly offer a wide variety of vitamins and nutrients that may be very beneficial. We also offer other stock products and they are just as important as our collagen products, they can be viewed here.</p>
+                        <a href="https://info.smpnutra.com/quote" class="btn common-btn">See Our Private Label Powder Products Here<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <div class="slider-block">
                         <div class="slider">
@@ -258,8 +257,7 @@
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                             </div>
-                        </div>
-                        <a href="https://info.smpnutra.com/quote" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
+                        </div>                        
                     </div>
                 </div>              
             </div>

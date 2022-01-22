@@ -38,8 +38,13 @@
                     @endif
                 </div>
                 <div class="col-md-8">
-                    {!! Form::label('category', 'Category', ['class' => 'form-label']) !!}
-                    {!! Form::text('category', null, ['class' => 'form-control']) !!}
+                    {!! Form::label('category', 'Category', ['class' => 'form-label']) !!}       
+                    <select name="category" id="category" class="form-select" onchange="userFormatState('category')" required>
+                        <option selected disabled value="">Choose...</option>
+                        @foreach($product_categories as $product_category)
+                            <option value="{{ $product_category->id }}">{{ $product_category->name }}</option>
+                        @endforeach
+                    </select>
                     @if($errors->has('category'))
                         <div class="error_msg">
                             {{ $errors->first('category') }}
@@ -57,7 +62,7 @@
                 </div>
                 <div class="col-md-8">
                     {!! Form::label('description', 'Description', ['class' => 'form-label']) !!}
-                    {!! Form::text('description', null, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('description', null, ['placeholder' => 'Description', 'class' => 'form-control', 'id' => 'description', 'type' => 'textarea']) !!}
                     @if($errors->has('description'))
                         <div class="error_msg">
                             {{ $errors->first('description') }}
@@ -72,4 +77,22 @@
     </section>
 </main>
 @endsection
+
+@push('custom-scripts')
+<script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
+<script type="text/javascript">
+     // ckeditor init js
+     setTimeout(function(){
+            CKEDITOR.replace('description', {
+                filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}",
+                filebrowserUploadMethod: 'form'
+            });
+        },100);
+</script>
+<script>
+    $(document).ready( function () { 
+        $('#category').select2();
+    });
+</script>
+@endpush
             

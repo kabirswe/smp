@@ -2,7 +2,7 @@
 
 
 @push('custom-style')
-<script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
+
 @endpush
 
 @section('content')
@@ -84,6 +84,7 @@
 @endsection
 
 @push('custom-scripts')
+    <script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
     <script type="text/javascript">
         var noImage = "{{ asset('dashboard/image/no-image.png') }}";
         // form validation js

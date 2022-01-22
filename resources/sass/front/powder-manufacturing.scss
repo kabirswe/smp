@@ -1,6 +1,6 @@
 @import "./variables.scss";
 @import "./mixins.scss";
-.capsule-manufacturing-container {
+.powder-manufacturing-container {
     .man_intro_cont {
         text-align: center;
         width: 800px;
@@ -116,8 +116,8 @@
                 display: flex;
                 justify-content: space-between;
                 .block-image-left {
-                    width: calc(50% - 20px);
-                    padding: 100px 60px;
+                    width: 50%;
+                    padding: 80px 60px;
                     img {
                         width: 100%;
                     }
@@ -125,15 +125,22 @@
                         p {
                             text-align: center;
                             margin: 30px 0 20px;
+                            transition: 0.3s;
                             &:last-child {
-                                margin-bottom: 30px;
+                                margin: 0 0 0;
+                            }
+                            &:hover {
+                                color: #fff;
                             }
                         }
                     }
+                    &:hover {
+                        background-color: #906feb;
+                    }
                 }
                 .block-image-right {
-                    width: calc(50% - 20px);
-                    padding: 100px 60px;
+                    width: 50%;
+                    padding: 80px 60px;
                     img {
                         width: 100%;
                     }
@@ -141,7 +148,14 @@
                         p {
                             text-align: center;
                             margin-top: 20px;
+                            transition: 0.3s;
+                            &:hover {
+                                color: #fff;
+                            }
                         }
+                    }
+                    &:hover {
+                        background-color: #906feb;
                     }
                 }
             }
@@ -262,14 +276,16 @@
             }
             .image-block {
                 width: calc(50% - 10px);
-                border-style: solid;
-                border-width: 0px 0px 0px 0px;
-                border-color: #ededed;
-                transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
                 .images-right {
+                    h3 {
+                        color: #31708f;
+                        background-color: #d9edf7;
+                        border-color: #bcdff1;
+                        padding: 15px;
+                        text-align: left;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
                 }
             }
         }
@@ -303,9 +319,9 @@
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
-                    font-weight: Oxygen;
+                    font-family: Oxygen;
                     line-height: 50px;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-style: normal;
                     color: #333;
                     font-size: 40px;
@@ -340,7 +356,12 @@
                 background-color: #ffffff;
                 .images-right {
                     p {
-                        margin-bottom: 30px;
+                        line-height: 26px;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #4b4b4b;
+                        font-size: 16px;
+                        margin-bottom: 20px;
                     }
                 }
             }
@@ -356,9 +377,9 @@
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
-                    font-weight: Oxygen;
+                    font-family: Oxygen;
                     line-height: 50px;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-style: normal;
                     color: #333;
                     font-size: 40px;
@@ -409,9 +430,9 @@
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
-                    font-weight: Oxygen;
+                    font-family: Oxygen;
                     line-height: 50px;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-style: normal;
                     color: #333;
                     font-size: 40px;
@@ -486,9 +507,9 @@
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
-                    font-weight: Oxygen;
+                    font-family: Oxygen;
                     line-height: 50px;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-style: normal;
                     color: #333;
                     font-size: 40px;
@@ -536,9 +557,9 @@
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
-                    font-weight: Oxygen;
+                    font-family: Oxygen;
                     line-height: 50px;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-style: normal;
                     color: #333;
                     font-size: 40px;
@@ -565,7 +586,12 @@
                 background-color: #ffffff;
                 .images-right {
                     p {
-                        margin-bottom: 30px;
+                        line-height: 26px;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #4b4b4b;
+                        font-size: 16px;
+                        margin-bottom: 20px;
                     }
                 }
             }
@@ -600,8 +626,9 @@
                     width: 50%;
                     padding-right: 20px;
                     h2 {
+                        font-family: Oxygen;
                         line-height: 50px;
-                        font-weight: 400;
+                        font-weight: 700;
                         font-style: normal;
                         color: #333;
                         font-size: 40px;
@@ -613,6 +640,10 @@
                         font-style: normal;
                         color: #4b4b4b;
                         font-size: 16px;
+                    }
+                    a {
+                        margin-top: 40px;
+                        width: 400px;
                     }
                 }
                 .slider-block {
@@ -637,10 +668,6 @@
                                 }
                             }
                         }
-                    }
-                    a {
-                        margin-top: 40px;
-                        width: 400px;
                     }
                 }
             }

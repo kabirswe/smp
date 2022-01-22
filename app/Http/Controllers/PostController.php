@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
@@ -37,7 +38,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.post.create');
+        $product_categories = ProductCategory::select('name','id')->get();
+        return view('admin.post.create', compact('product_categories'));
     }
 
     /**
