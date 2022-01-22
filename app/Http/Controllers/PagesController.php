@@ -54,4 +54,28 @@ class PagesController extends Controller
     {
         return view('front.blog-details');
     }
+    public function capsule_manufacturing()
+    {
+        return view('front.capsule-manufacturing');
+    }
+    public function tablet_manufacturing()
+    {
+        return view('front.tablet-manufacturing');
+    }
+    public function powder_manufacturing()
+    {
+        return view('front.powder-manufacturing');
+    }
+    public function softgel_manufacturing()
+    {
+        return view('front.softgel-manufacturing');
+    }
+    public function gummy_vitamin_manufacturing()
+    {
+        return view('front.gummy-vitamin-manufacturing');
+    }
+    public function liquid_capsule()
+    {
+        return view('front.liquid-capsule');
+    } 
 }

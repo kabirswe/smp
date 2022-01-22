@@ -17,7 +17,7 @@
         <div class="container">
                 <div class="video-content">
                 <h2>Your Partner In<br /> Manufacturing Amazing<br /> Nutraceuticals</h2>
-                <p>SMP stands for Supplement Manufacturing Partners. Our team is dedicated to be your partner in most efficiently manufacturing your growing vitamin business to scale.</p>
+                <p>GS stands for Gummy Specialists. Our team is dedicated to be your partner in most efficiently manufacturing your growing vitamin business to scale.</p>
                 <a href="https://info.smpnutra.com/quote" class="btn common-btn">About Our Facilities<i class="ti ti-arrow-right"></i></a>
             </div>
         </div>
@@ -54,7 +54,7 @@
                 <div class="content-block">
                     <p>About Us</p>
                     <h2>Our Capabilities</h2>
-                    <p>SMP stands for “Supplement Manufacturing Partner”. This is important to us because we look at every single business we manufacture for as Partners. This means we are dedicated towards your long-term success from the very beginning. We ensure your product formula will be market-competitive, packaging stands out from the pack and your product is safely stored & orders shipped out quickly. We only profit from returning customers who are successfully selling. It’s our job to do everything possible to help you achieve that.</p>
+                    <p>GS stands for “Gummy Specialists”. This is important to us because we look at every single business we manufacture for as Partners. This means we are dedicated towards your long-term success from the very beginning. We ensure your product formula will be market-competitive, packaging stands out from the pack and your product is safely stored & orders shipped out quickly. We only profit from returning customers who are successfully selling. It’s our job to do everything possible to help you achieve that.</p>
                     <a href="https://info.smpnutra.com/quote" class="btn common-btn">Learn More About Our Facilities<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="slider">
@@ -83,7 +83,7 @@
         <div class="container">
             <div class="network">
                 <h2>We Can Be Found On The Largest Networks</h2>
-                <p>Through our hard work and determination, SMP Nutra has been covered by some of the largest networks. SMP Nutra is dedicated to bringing the most information and quality supplements to our clients. We are thankful to have been recognized for our efforts! Some of the networks that have covered SMP Nutra: </p>
+                <p>Through our hard work and determination, Gummy Specialists Nutra has been covered by some of the largest networks. Gummy Specialists Nutra is dedicated to bringing the most information and quality supplements to our clients. We are thankful to have been recognized for our efforts! Some of the networks that have covered Gummy Specialists Nutra: </p>
                 <div class="image-block">
                     <img src="https://smpnutra.com/wp-content/uploads/2021/01/Fox-news-logo-150x150.png" alt="">
                     <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_71_9654148642.png" alt="">
@@ -91,8 +91,8 @@
                     <img src="https://smpnutra.com/wp-content/uploads/2021/01/CBS-Logo-1536x744.png" alt="">
                 </div>
                 <h2>Our Clients Can Be Found In The Biggest Retailers & On The Largest Networks</h2>
-                <p>SMP Nutra proudly works with numerous amazing brands that are on some of the best marketplaces around, including Walmart, Target, The Vitamin Shoppe, GNC, and more!
-                Build your brand and bring your supplements to these large retailers with SMP as your partner!</p>
+                <p>Gummy Specialists Nutra proudly works with numerous amazing brands that are on some of the best marketplaces around, including Walmart, Target, The Vitamin Shoppe, GNC, and more!
+                Build your brand and bring your supplements to these large retailers with Gummy Specialists as your partner!</p>
                 <div class="image-block second">
                     <img src="https://smpnutra.com/wp-content/uploads/2021/01/Fox-news-logo-150x150.png" alt="">
                     <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_71_9654148642.png" alt="">
@@ -145,6 +145,112 @@
             </div>
         </div>
     </div>
+    <div class="tablet-manufacturing-wrapper">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="manufacturing">
+                <div class="content-block">
+                    <h2>Tablet Manufacturing</h2>
+                    <p>Tablets are a powder ingredient formula compressed into a pill form to create a nutraceutical tablet. Tablets are capable of being compressed into your desired shape and size. One advantage of a tablet is you can fit more powder into a smaller sized pill compared to a capsule.</p>
+                    <h3>Direct Compression</h3>
+                    <h3>Wet Granulation Process</h3>
+                    <h3>Dry Granulation Process</h3>
+                    <h3>Multiple Tablet Type Options</h3>
+                    <h3>Tablet Coating</h3>
+                </div>
+                <div class="video-block">
+                    <div class="video">                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G2pHsRMGrBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Tablet Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Tablet Manufacturing<i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="softgel-manufacturing-wrapper">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="manufacturing">
+                <div class="content-block">
+                    <h2>Softgel Manufacturing</h2>
+                    <p>Softgels are able to have its shape, color, and size customized to however you please. Softgels offer encapsulation of liquids, instead of powder which can lead to increased absorbability.</p>
+                    <h3>Fill Material Prep</h3>
+                    <h3>Gelatin Filling & Encapsulation</h3>
+                    <h3>Tumble Drying</h3>
+                    <h3>Drying Tunnel</h3>
+                    <h3>Cleaning & Final Inspection</h3>
+                </div>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K3L3DMkfyc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gummy-manufacturing-wrapper">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="manufacturing">
+                <div class="content-block">
+                    <h2>Gummy Vitamin Manufacturing</h2>
+                    <p>We are able to help you get your gummy vitamins manufactured the fastest, and with no stress. Gummy vitamins are able to have its shape, color, and size customized to however you please. Gummies are loved by children, and adults alike. It is truly great as it is typically very tasty.</h3>
+                    <h3>Ingredient Blending</h3>
+                    <h3>Mixing & Cooling</h3>
+                    <h3>Molding</h3>
+                    <h3>Cooling & Unmolding</h3>
+                    <h3>Bottle/Bag Filling</h3>
+                </div>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6yADdNrsnes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="powder-manufacturing-wrapper">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="manufacturing">
+                <div class="content-block">
+                    <h2>Powder Manufacturing</h2>
+                    <p>Powders are a very popular form of supplement. For example products such as collagen, greens powders and whey protein are very popular powder supplements. People like the ability to mix it with whatever you like.</h3>
+                    <h3>Ingredient Blending</h3>
+                    <h3>Free Flow Mixtures</h3>
+                    <h3>Cohesive Mixtures</h3>
+                    <h3>Bottle/Bag Filling</h3>
+                    <h3>Container Polishing & Inspection</h3>
+                </div>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pzBWZNoAFMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Powder Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Powder Manufacturing<i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stock-wrapper">
+        <div class="container">
+            <div class="stock-now">
+                <div class="stock-left">
+                    <h3>See Our Incredible Private Label Supplements In-Stock Now!</h3>
+                </div>
+                <div class="stock-right">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://info.smpnutra.com/quote" class="btn">See All Current Stock Products<i class="ti ti-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
     <div class="pre-manufactured-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -184,7 +290,96 @@
                     <h2>Our New Private Label Stock Products</h2>
                     <p>We are always formulating new products, stay up to date with our latest products to get them before anyone else! </p>
                     <div class="product-wrapper">
-                        <div class="item"></div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe71.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe72.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe73.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe74.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe75.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe76.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe77.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe78.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/fe79.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

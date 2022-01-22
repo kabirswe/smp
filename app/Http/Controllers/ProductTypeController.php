@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ProductLabel;
+use App\Models\ProductType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use DataTables;
 
-class ProductLabelController extends Controller
+class ProductTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +18,8 @@ class ProductLabelController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $product_labels = ProductLabel::all();
-            return DataTables::of($product_labels)
+            $product_types = ProductType::all();
+            return DataTables::of($product_types)
                 ->addIndexColumn()
                 ->addColumn('action-btn', function($row) {
                     return $row->id;
@@ -27,7 +27,7 @@ class ProductLabelController extends Controller
                 ->rawColumns(['action-btn'])
                 ->make(true);
         }
-        return view('admin.product_label.index');
+        return view('admin.product_type.index');
     }
 
     /**
@@ -37,7 +37,7 @@ class ProductLabelController extends Controller
      */
     public function create()
     {
-        return view('admin.product_label.create');
+        return view('admin.product_type.create');
     }
 
     /**
@@ -64,20 +64,20 @@ class ProductLabelController extends Controller
         $data['created_by'] = $user->id;
         $data['updated_by'] = $user->id;
 
-        $product_labelData = ProductLabel::create($data);
+        $product_typeData = ProductType::create($data);
 
-        return redirect()->route('product_label.index')->with([
-            'success' => trans('Product Label create successfully')
+        return redirect()->route('product_type.index')->with([
+            'success' => trans('Product Type create successfully')
         ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProductLabel  $productLabel
+     * @param  \App\Models\ProductType  $ProductType
      * @return \Illuminate\Http\Response
      */
-    public function show(ProductLabel $productLabel)
+    public function show(ProductType $productType)
     {
         //
     }
@@ -85,20 +85,20 @@ class ProductLabelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ProductLabel  $productLabel
+     * @param  \App\Models\ProductType  $productType
      * @return \Illuminate\Http\Response
      */
     public function edit(Request $request, $id)
     {
-        $product_label = ProductLabel::findOrFail($id);
-        return view('admin.product_label.edit', compact('product_label'));
+        $product_type = ProductType::findOrFail($id);
+        return view('admin.product_type.edit', compact('product_type'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\ProductLabel  $productLabel
+     * @param  \App\Models\ProductType  $productType
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -115,27 +115,27 @@ class ProductLabelController extends Controller
                 'errors' => $validation->errors()
             ]);
         }
-        $oldData = ProductLabel::find($id);
+        $oldData = ProductType::find($id);
         $oldData['updated_by'] = $user->id;
 
         $oldData->update($data);
 
-        return redirect()->route('product_label.index')->with([
-            'success' => trans('Product Label updated successfully')
+        return redirect()->route('product_type.index')->with([
+            'success' => trans('Product Type updated successfully')
         ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ProductLabel  $productLabel
+     * @param  \App\Models\ProductType  $productType
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, $id)
     {
         if ($request->ajax()) {
             try {
-                $data = ProductLabel::find($id);
+                $data = ProductType::find($id);
                 $data->delete();
                 return response()->json(['success' => 'place deleted']);
             } catch (Exception $e) {

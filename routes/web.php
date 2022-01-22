@@ -10,7 +10,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\PagesController;
 
 use App\Http\Controllers\ProductCategoryController;
-use App\Http\Controllers\ProductLabelController;
+use App\Http\Controllers\ProductTypeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductImageController;
 use App\Http\Controllers\PostCategoryController;
@@ -43,6 +43,12 @@ Route::get('/product_page', [PagesController::class, 'product_page'])->name('pro
 Route::get('/product_details', [PagesController::class, 'product_details'])->name('product_details');
 Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
 Route::get('/blog_details', [PagesController::class, 'blog_details'])->name('blog_details');
+Route::get('/capsule-manufacturing', [PagesController::class, 'capsule_manufacturing'])->name('capsule_manufacturing');
+Route::get('/tablet-manufacturing', [PagesController::class, 'tablet_manufacturing'])->name('tablet_manufacturing');
+Route::get('/powder-manufacturing', [PagesController::class, 'powder_manufacturing'])->name('powder_manufacturing');
+Route::get('/softgel-manufacturing', [PagesController::class, 'softgel_manufacturing'])->name('softgel_manufacturing');
+Route::get('/gummy-vitamin-manufacturing', [PagesController::class, 'gummy_vitamin_manufacturing'])->name('gummy_vitamin_manufacturing');
+Route::get('/liquid-capsule', [PagesController::class, 'liquid_capsule'])->name('liquid_capsule');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -69,7 +75,7 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     
 
     Route::resource('product_category', ProductCategoryController::class);
-    Route::resource('product_label', ProductLabelController::class);
+    Route::resource('product_type', ProductTypeController::class);
     Route::resource('product', ProductController::class);
     Route::resource('product_image', ProductImageController::class);
     Route::resource('post_category', PostCategoryController::class);

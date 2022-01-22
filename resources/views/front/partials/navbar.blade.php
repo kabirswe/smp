@@ -6,7 +6,7 @@
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                 </div>
                 <div class="navbar-block">
-                    <a href="#home">Home</a>
+                    <a href="http://localhost:3000/">Home</a>
                     <div class="nav-dropdown">
                         <button class="dropbtn">About Us
                         <i class="ti ti-angle-down"></i>
@@ -18,18 +18,18 @@
                             <a href="http://localhost:3000/labdoor-partnership">Labdoor Partnership</a>
                         </div>
                     </div>
-                    <a href="#home">Blog</a>
+                    <a href="http://localhost:3000/who-to-contact">Blog</a>
                     <div class="nav-dropdown">
                         <button class="dropbtn">Custom
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="https://smpnutra.com/capsule-manufacturing">Capsule Manufacturing</a>
-                            <a href="https://smpnutra.com/custom-tablet-manufacturing">Tablet Manufacturing</a>
-                            <a href="https://smpnutra.com/custom-powder-manufacturing">Powder Manufacturing</a>
-                            <a href="https://smpnutra.com/softgel-manufacturing">Softgel Manufacturing</a>
-                            <a href="https://smpnutra.com/gummy-vitamin-manufacturing">Gummy Vitamin Manufacturing</a>
-                            <a href="https://smpnutra.com/liquid-capsule">Liquid Capsule Manufacturing</a>
+                            <a href="http://localhost:3000/capsule-manufacturing">Capsule Manufacturing</a>
+                            <a href="http://localhost:3000/tablet-manufacturing">Tablet Manufacturing</a>
+                            <a href="http://localhost:3000/powder-manufacturing">Powder Manufacturing</a>
+                            <a href="http://localhost:3000/softgel-manufacturing">Softgel Manufacturing</a>
+                            <a href="http://localhost:3000/gummy-vitamin-manufacturing">Gummy Vitamin Manufacturing</a>
+                            <a href="http://localhost:3000/liquid-capsule">Liquid Capsule Manufacturing</a>
                         </div>
                     </div>
                     <div class="nav-dropdown">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="call-us">
-                    <p>Call Us 24/7: (833) 810-9896</p>
+                    <p>Call Us 24/7: (000) 000-0000</p>
                     <div class="search-block">
                         <div class="search">
                             <input type="text" placeholder="search" />

@@ -9,8 +9,8 @@
                 <div class="breadcrumbs">
                     <span>
                         <a property="item" typeof="WebPage"
-                            title="Go to SMPNutra.com | Your Premier Private Label Supplement Manufacturer."
-                            href="https://smpnutra.com" class="home"><span property="name">SMPNutra.com | Your
+                            title="Go to gummyspecialists.com | Your Premier Private Label Supplement Manufacturer."
+                            href="https://smpnutra.com" class="home"><span property="name">gummyspecialists.com | Your
                                 Premier Private Label Supplement Manufacturer</span></a>
                     </span>
                     <span>
@@ -30,7 +30,7 @@
 
                         </h1>
                         <h3>
-                            SMP stands for Quality, Service, and Innovation.
+						Gummy Specialists stands for Quality, Service, and Innovation.
                         </h3>
                         <p>
                             Our loyalty is always to our customers and our community. The awards and certifications our
@@ -89,9 +89,9 @@
                                         </h1>
 
                                         <p>
-                                            SMP proudly accepted the Gold Stevie Award for the best manufacturing company of
+										Gummy Specialists proudly accepted the Gold Stevie Award for the best manufacturing company of
                                             the year! This award is a testament to the hard work and dedication that every
-                                            team member at SMP puts in to deliver an experience no other manufacturer can.
+                                            team member at Gummy Specialists puts in to deliver an experience no other manufacturer can.
                                         </p>
 
                                         <a href="https://smpnutra.com/stevie-award-2021" class="btn">View Stevie
@@ -120,9 +120,9 @@
                                         </h1>
 
                                         <p>
-                                            SMP proudly accepted the Gold Stevie Award for the best manufacturing company of
+										Gummy Specialists proudly accepted the Gold Stevie Award for the best manufacturing company of
                                             the year! This award is a testament to the hard work and dedication that every
-                                            team member at SMP puts in to deliver an experience no other manufacturer can.
+                                            team member at Gummy Specialists puts in to deliver an experience no other manufacturer can.
                                         </p>
 
                                         <a href="https://smpnutra.com/stevie-award-2021" class="btn">View Stevie
@@ -149,9 +149,9 @@
                                         </h1>
 
                                         <p>
-                                            SMP proudly accepted the Gold Stevie Award for the best manufacturing company of
+										Gummy Specialists proudly accepted the Gold Stevie Award for the best manufacturing company of
                                             the year! This award is a testament to the hard work and dedication that every
-                                            team member at SMP puts in to deliver an experience no other manufacturer can.
+                                            team member at Gummy Specialists puts in to deliver an experience no other manufacturer can.
                                         </p>
 
                                         <a href="https://smpnutra.com/stevie-award-2021" class="btn">View Stevie

@@ -1,0 +1,649 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+.capsule-manufacturing-container {
+    .man_intro_cont {
+        text-align: center;
+        width: 800px;
+        max-width: 100%;
+        padding-top: 135px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        h1 {
+            line-height: 60px;
+            font-weight: 700;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .breadcrumb {
+            background-color: #fff;
+
+            .breadcrumb-item {
+                color: #000;
+                text-align: center;
+                margin: 0 auto;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                &::before {
+                    content: none;
+                }
+                i {
+                    margin-left: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .video-container {
+        position: relative;
+        .overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(0 0 0 / 30%);
+            z-index: 1;
+        }
+        .video-content {
+            position: absolute;
+            top: 20%;
+            z-index: 10;
+            h2 {
+                color: #ffffff;
+                font-size: 42px;
+                line-height: 52px;
+                margin-bottom: 20px;
+            }
+            p {
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 24px;
+                width: 40%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .labels-wrapper {
+        position: relative;
+        margin-top: -200px;
+        z-index: 20;
+        background-color: #f4f4f4;
+        .labels-block-wrapper {
+            box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 15%);
+            background-color: $white;
+            .labels-block {
+                display: flex;
+                .item {
+                    padding: 100px 60px;
+                    border-right: 1px solid #ededed;
+                    &:hover {
+                        background-color: #906feb;
+                        i,
+                        h2,
+                        p {
+                            color: $white;
+                        }
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                    i {
+                        font-size: 72px;
+                        color: #b0cf4a;
+                    }
+                    h2 {
+                        margin-top: 40px;
+                        font-size: 26px;
+                        line-height: 36px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        line-height: 26px;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #4b4b4b;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .labels-block-image {
+                display: flex;
+                justify-content: space-between;
+                .block-image-left {
+                    width: calc(50% - 20px);
+                    padding: 100px 60px;
+                    img {
+                        width: 100%;
+                    }
+                    .block-image-content {
+                        p {
+                            text-align: center;
+                            margin: 30px 0 20px;
+                            &:last-child {
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+                .block-image-right {
+                    width: calc(50% - 20px);
+                    padding: 100px 60px;
+                    img {
+                        width: 100%;
+                    }
+                    .block-image-content {
+                        p {
+                            text-align: center;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .capabilities-wrapper {
+        padding: 110px 0 90px;
+        background-color: #f4f4f4;
+        .capabilities {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .content-block {
+                width: 50%;
+                p {
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 30px;
+                }
+                h2 {
+                    line-height: 50px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                a {
+                    width: 320px;
+                }
+            }
+            .video-block {
+                width: 50%;
+                .video {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    .network-wrapper {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s;
+        padding: 50px 50px 50px 50px;
+        background-color: #fff;
+        .network {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                line-height: 50px;
+                font-weight: 700;
+                font-style: normal;
+                color: #333;
+                font-size: 40px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            p {
+                line-height: 26px;
+                font-weight: 700;
+                font-style: normal;
+                color: #4b4b4b;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+    .manufacturing-wrapper {
+        background-attachment: fixed;
+        background-image: url(https://smpnutra.com/wp-content/uploads/2019/12/shutterstock_1288761148-1.jpg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        position: relative;
+        .overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            opacity: 0.72;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            z-index: 1;
+        }
+        .manufacturing {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-weight: Oxygen;
+                    line-height: 50px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                }
+            }
+        }
+    }
+    .wet-granulation-wrapper {
+        background-attachment: fixed;
+        background-image: url(https://smpnutra.com/wp-content/uploads/2020/01/shutterstock_35010355-1.jpg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        position: relative;
+        .overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            opacity: 0.72;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            z-index: 1;
+        }
+        .manufacturing {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-weight: Oxygen;
+                    line-height: 50px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .dry-granulation-wrapper {
+        padding: 100px 0 50px;
+        background-color: #fbfbfb;
+        .manufacturing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-weight: Oxygen;
+                    line-height: 50px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .encapsulation-process-wrapper {
+        padding: 50px 0 100px;
+        background-color: #fbfbfb;
+        .manufacturing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-weight: Oxygen;
+                    line-height: 50px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .capsule-shell {
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s;
+        padding: 60px 0px 60px 0px;
+        background-color: #fbfbfb;
+        h2 {
+            font-family: $oxygen;
+            line-height: 50px;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h4 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+    }
+    .gelatin-capsules {
+        padding: 50px 0 80px;
+        background-color: #fbfbfb;
+        .manufacturing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-weight: Oxygen;
+                    line-height: 50px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                }
+            }
+        }
+    }
+    .vegetarian-capsules {
+        padding: 50px 0 80px;
+        background-color: #fbfbfb;
+        .manufacturing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-weight: Oxygen;
+                    line-height: 50px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                    p {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .pre-manufactured-wrapper {
+        padding: 100px 0;
+        background-image: url(https://smpnutra.com/wp-content/uploads/2019/09/shutterstock_1346151257.jpg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        .overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            opacity: 0.72;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            z-index: 1;
+        }
+        .pre-manufactured {
+            position: relative;
+            z-index: 10;
+            .top-block {
+                display: flex;
+                .content-block {
+                    width: 50%;
+                    padding-right: 20px;
+                    h2 {
+                        line-height: 50px;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #333;
+                        font-size: 40px;
+                        margin-bottom: 40px;
+                    }
+                    p {
+                        line-height: 26px;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #4b4b4b;
+                        font-size: 16px;
+                    }
+                }
+                .slider-block {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    .slider {
+                        width: 100%;
+                        .swiper {
+                            width: 100%;
+                            height: 125px;
+                            .swiper-slide {
+                                background-position: center;
+                                background-size: cover;
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        margin-top: 40px;
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

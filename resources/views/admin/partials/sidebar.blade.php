@@ -17,9 +17,9 @@
                 </a>
             </li>   
             <li class="nav-item">
-                <a class="nav-link{{ Route::is('product_label.index', 'product_label.edit',  'product_label.create') ? ' active' : '' }}" href="{{ route('product_label.index') }}">
+                <a class="nav-link{{ Route::is('product_type.index', 'product_type.edit',  'product_type.create') ? ' active' : '' }}" href="{{ route('product_type.index') }}">
                     <ion-icon name="people-outline"></ion-icon>
-                    Product Label
+                    Product Type
                 </a>
             </li>  
             <li class="nav-item">

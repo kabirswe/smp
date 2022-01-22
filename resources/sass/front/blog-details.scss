@@ -1,6 +1,6 @@
 @import "./variables.scss";
 @import "./mixins.scss";
-.blog-details-wrapper {
+.blog-details-container {
     .man_intro_cont {
         text-align: center;
         width: 800px;
@@ -18,6 +18,8 @@
             background-color: #fff;
             .breadcrumb-item {
                 color: #000;
+                text-align: center;
+                margin: 0 auto;
                 a {
                     text-decoration: none;
                     color: #000;

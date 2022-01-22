@@ -5,13 +5,13 @@
 <main class="main-container">
     <div class="labdoor-partnership">
 		<div class="man_intro_cont">
-			<h1>SMP Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h1>
+			<h1>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h1>
 			<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="#">SMPNutra.com | Your Premier Private Label Supplement Manufacturer</a></li>
+				<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
 				<li class="breadcrumb-item"><a href="#">News & Research For Nutra-Brand Owners</a></li>
 				<li class="breadcrumb-item"><a href="#">Uncategorized</a></li>
-				<li class="breadcrumb-item active" aria-current="page">SMP Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</li>
+				<li class="breadcrumb-item active" aria-current="page">Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</li>
 			</ol>
 			</nav>
 		</div>
@@ -22,11 +22,11 @@
 						<img src="{{ asset('images/front/labdoor-image.png') }}" alt="">
 					</div>
 					<div class="labdoor-title">
-						<h2>Test Your Products With Labdoor, SMP Nutra's Official Testing Partner</h2>
+						<h2>Test Your Products With Labdoor, Gummy Specialists Nutra's Official Testing Partner</h2>
 					</div>
-					<p>SMP Nutra has recently partnered with the team at Labdoor to deliver world-class testing services for your formulas.</p>
+					<p>Gummy Specialists Nutra has recently partnered with the team at Labdoor to deliver world-class testing services for your formulas.</p>
 					<p>Labdoor is a leading testing facility for nutraceuticals. They evaluate any type of nutraceutical formula and put it through careful inspection <br>at their FDA-registered lab. They give each product they test a score and have a leaderboard to show which products scored the best.</p>
-					<p>SMP Nutra is proud to announce this new partnership and will be able to offer special pricing for any brand looking to get its product tested.</p>					
+					<p>Gummy Specialists Nutra is proud to announce this new partnership and will be able to offer special pricing for any brand looking to get its product tested.</p>					
 				</div>
 			</div>
 		</div>
@@ -118,7 +118,7 @@
 					<div class="labdoor-title">
 						<h2>Why You Should Test Your Products</h2>
 					</div>
-					<p>Making use of this unique partnership SMP Nutra has formed with Labdoor allows you to have the best pricing available when testing your product. </p>
+					<p>Making use of this unique partnership Gummy Specialists Nutra has formed with Labdoor allows you to have the best pricing available when testing your product. </p>
 					<p>The space for supplements is getting more competitive by the year, finding ways to stand out from the crowd is becoming more crucial to success than in previous years. Take the leap and get your products analyzed by a state-of-the-art facility for your customers to be reassured today!</p>					
 				</div>
 			</div>
@@ -128,7 +128,7 @@
 				<div class="labdoor-test-inner ">
 					<div class="labdoor-test-content">
 						<div class="labdoor-test-content-left">
-							<h2>How to Get SMP Nutra’s Special Pricing:</h2>							
+							<h2>How to Get Gummy Specialists Nutra’s Special Pricing:</h2>							
 						</div>
 						<div class="labdoor-test-content-right">
 							<p>To get these special prices, please contact your sales rep and ask them for more information about Labdoor.</p>	

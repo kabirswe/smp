@@ -18,12 +18,21 @@
             background-color: #fff;
             .breadcrumb-item {
                 color: #000;
+                text-align: center;
+                margin: 0 auto;
                 a {
                     text-decoration: none;
                     color: #000;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 26px;
+                }
+                &::before {
+                    content: none;
+                }
+                i {
+                    margin-left: 10px;
+                    font-size: 15px;
                 }
             }
         }
@@ -47,7 +56,7 @@
                 .content-area-left {
                     width: calc(45% - 20px);
                 }
-                .content-area-left {
+                .content-area-right {
                     width: calc(50% - 20px);
                     .accordion {
                         .accordion-item {
@@ -67,11 +76,6 @@
                                     }
                                     &::after {
                                         background-image: url("/images/front/add-outline.svg");
-                                        // background-image: url({{asset('images/front/add-outline.svg')}});
-                                        // background-image:url({{url('images/php_mysql.jpg')}}
-                                        // background-image: url({{asset('images/bg.jpg')}});
-                                        // background-image: url("{{ url(asset('images/front/add-outline.svg')) }}");
-                                        // background-image: url({{url("images/php_mysql.jpg")}});
                                     }
                                 }
                                 .accordion-button {
@@ -85,7 +89,7 @@
                                         box-shadow: none;
                                     }
                                     &::after {
-                                        background-image: url("/images/front/add-outline.svg");
+                                        background-image: url("/images/front/minus.svg");
                                     }
                                 }
                             }
@@ -115,8 +119,26 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+@media only screen and (max-width: 768px) {
+    .contact-wrapper {
+        .man_intro_cont {
+            .breadcrumb {
+                display: none;
+            }
+        }
+        .site-content {
+            .container {
+                .content-area {
+                    flex-direction: column-reverse;
+                    .content-area-left {
+                        width: 100%;
+                        margin-top: 100px;
+                    }
+                    .content-area-right {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

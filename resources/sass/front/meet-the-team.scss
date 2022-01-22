@@ -39,7 +39,6 @@
 
             h4 {
                 text-align: center;
-
             }
         }
 
@@ -111,13 +110,11 @@
 
                     &:nth-child(4) {
                         margin-right: 0;
-
                     }
 
                     &:last-child {
                         margin-right: 0;
                     }
-
 
                     img {
                         width: 100%;
@@ -126,8 +123,6 @@
                     .card-text {
                         text-align: center;
                         padding: 20px;
-
-
                     }
                 }
             }
@@ -164,13 +159,11 @@
 
                     &:nth-child(4) {
                         margin-right: 0;
-
                     }
 
                     &:last-child {
                         margin-right: 0;
                     }
-
 
                     img {
                         width: 100%;
@@ -179,8 +172,6 @@
                     .card-text {
                         text-align: center;
                         padding: 20px;
-
-
                     }
                 }
             }
@@ -217,13 +208,11 @@
 
                     &:nth-child(4) {
                         margin-right: 0;
-
                     }
 
                     &:last-child {
                         margin-right: 0;
                     }
-
 
                     img {
                         width: 100%;
@@ -232,8 +221,6 @@
                     .card-text {
                         text-align: center;
                         padding: 20px;
-
-
                     }
                 }
             }
@@ -270,13 +257,11 @@
 
                     &:nth-child(4) {
                         margin-right: 0;
-
                     }
 
                     &:last-child {
                         margin-right: 0;
                     }
-
 
                     img {
                         width: 100%;
@@ -285,8 +270,6 @@
                     .card-text {
                         text-align: center;
                         padding: 20px;
-
-
                     }
                 }
             }
@@ -323,13 +306,11 @@
 
                     &:nth-child(4) {
                         margin-right: 0;
-
                     }
 
                     &:last-child {
                         margin-right: 0;
                     }
-
 
                     img {
                         width: 100%;
@@ -338,8 +319,6 @@
                     .card-text {
                         text-align: center;
                         padding: 20px;
-
-
                     }
                 }
             }
@@ -376,13 +355,11 @@
 
                     &:nth-child(4) {
                         margin-right: 0;
-
                     }
 
                     &:last-child {
                         margin-right: 0;
                     }
-
 
                     img {
                         width: 100%;
@@ -391,14 +368,10 @@
                     .card-text {
                         text-align: center;
                         padding: 20px;
-
-
                     }
                 }
             }
         }
-
-
     }
 
     .finance-team-section {
@@ -431,13 +404,11 @@
 
                     &:nth-child(4) {
                         margin-right: 0;
-
                     }
 
                     &:last-child {
                         margin-right: 0;
                     }
-
 
                     img {
                         width: 100%;
@@ -446,43 +417,43 @@
                     .card-text {
                         text-align: center;
                         padding: 20px;
-
-
                     }
                 }
             }
         }
-
-
     }
 }
 
+// @media only screen and (max-width: 768px) {
+//     .meet-the-team-section {
+//         .partners-section {
+//             .partners-section-wrapper {
+//                 .partners-wrapper {
+//                     flex-direction: column;
+//                     .partner-card {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
 @media only screen and (max-width: 768px) {
-
     .meet-the-team-section {
-
-
         .partners-section {
-
-
             .partners-heading {
                 margin-bottom: 15px;
                 width: 100%;
 
                 h4 {
                     text-align: center;
-
                 }
             }
 
             .partners-section-wrapper {
-
-                flex-direction: column;
-
                 .partners-wrapper {
-
                     flex-direction: column;
-
                     .partner-card {
                         width: 100%;
                         margin-right: 0;
@@ -491,9 +462,8 @@
                             margin-right: 0;
                         }
 
-
-
-                        .card-text {}
+                        .card-text {
+                        }
                     }
                 }
             }
@@ -529,13 +499,11 @@
 
                         &:nth-child(4) {
                             margin-right: 0;
-
                         }
 
                         &:last-child {
                             margin-right: 0;
                         }
-
 
                         img {
                             width: 100%;
@@ -544,8 +512,6 @@
                         .card-text {
                             text-align: center;
                             padding: 20px;
-
-
                         }
                     }
                 }
@@ -582,13 +548,11 @@
 
                         &:nth-child(4) {
                             margin-right: 0;
-
                         }
 
                         &:last-child {
                             margin-right: 0;
                         }
-
 
                         img {
                             width: 100%;
@@ -597,8 +561,6 @@
                         .card-text {
                             text-align: center;
                             padding: 20px;
-
-
                         }
                     }
                 }
@@ -635,13 +597,11 @@
 
                         &:nth-child(4) {
                             margin-right: 0;
-
                         }
 
                         &:last-child {
                             margin-right: 0;
                         }
-
 
                         img {
                             width: 100%;
@@ -650,8 +610,6 @@
                         .card-text {
                             text-align: center;
                             padding: 20px;
-
-
                         }
                     }
                 }
@@ -688,13 +646,11 @@
 
                         &:nth-child(4) {
                             margin-right: 0;
-
                         }
 
                         &:last-child {
                             margin-right: 0;
                         }
-
 
                         img {
                             width: 100%;
@@ -703,8 +659,6 @@
                         .card-text {
                             text-align: center;
                             padding: 20px;
-
-
                         }
                     }
                 }
@@ -741,13 +695,11 @@
 
                         &:nth-child(4) {
                             margin-right: 0;
-
                         }
 
                         &:last-child {
                             margin-right: 0;
                         }
-
 
                         img {
                             width: 100%;
@@ -756,8 +708,6 @@
                         .card-text {
                             text-align: center;
                             padding: 20px;
-
-
                         }
                     }
                 }
@@ -794,13 +744,11 @@
 
                         &:nth-child(4) {
                             margin-right: 0;
-
                         }
 
                         &:last-child {
                             margin-right: 0;
                         }
-
 
                         img {
                             width: 100%;
@@ -809,14 +757,10 @@
                         .card-text {
                             text-align: center;
                             padding: 20px;
-
-
                         }
                     }
                 }
             }
-
-
         }
 
         .finance-team-section {
@@ -849,13 +793,11 @@
 
                         &:nth-child(4) {
                             margin-right: 0;
-
                         }
 
                         &:last-child {
                             margin-right: 0;
                         }
-
 
                         img {
                             width: 100%;
@@ -864,14 +806,10 @@
                         .card-text {
                             text-align: center;
                             padding: 20px;
-
-
                         }
                     }
                 }
             }
-
-
         }
     }
 }

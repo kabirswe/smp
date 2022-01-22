@@ -165,7 +165,7 @@
                             Key Service Benefits
                         </h2>
                         <h3>
-                            What to expect while working with SMP
+                            What to expect while working with Gummy Specialists
                         </h3>
 
                     </div>

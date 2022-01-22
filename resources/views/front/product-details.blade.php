@@ -8,7 +8,7 @@
             <h1>All Stock Private Label Supplements</h1>
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">SMPNutra.com | Your Premier Private Label Supplement Manufacturer</a></li>
+                <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
                 <li class="breadcrumb-item"><a href="#"> Products</a></li>
                 <li class="breadcrumb-item"><a href="#"> All Stock Private Label Supplements</a></li>
                 <li class="breadcrumb-item"><a href="#"> Beauty</a></li>
@@ -74,7 +74,7 @@
                                 <table width="189">
                                     <tbody>
                                         <tr>
-                                            <td width="125"><strong>SMP’s SKU:</strong></td>
+                                            <td width="125"><strong>Gummy Specialists’s SKU:</strong></td>
                                             <td width="64">100597</td>
                                         </tr>
                                     </tbody>

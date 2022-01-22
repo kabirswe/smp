@@ -9,7 +9,7 @@
         <h1>All Stock Private Label Supplements</h1>
         <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">SMPNutra.com | Your Premier Private Label Supplement Manufacturer</a></li>
+            <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
             <li class="breadcrumb-item"><a href="#">Library</a>Products</li>
             <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
         </ol>
@@ -20,8 +20,8 @@
             <div class="product-content-inner">
                 <div class="product-content">
                     <div class="product-content-top">
-                        <h2>SMP Nutra is Proud To Be A Premier Quality Supplier Of Private Label Supplements</h2>
-                        <p>At SMP Nutra we are dedicated to giving you the most competitive stock private label supplements available in terms of quality and price. Our products in-stock are inspired by Amazon’s best-sellers and researched market trends.</p>
+                        <h2>Gummy Specialists Nutra is Proud To Be A Premier Quality Supplier Of Private Label Supplements</h2>
+                        <p>At Gummy Specialists Nutra we are dedicated to giving you the most competitive stock private label supplements available in terms of quality and price. Our products in-stock are inspired by Amazon’s best-sellers and researched market trends.</p>
                         <p>We ensure all our formulas are better quality than what is “best-selling” in the market today.</p>
                         <p>As your partner in nutraceutical products, it is our job to make it easy for you to create a highly competitive formula quickly and inexpensively.</p>
                         <p>Below you will see a list of all of our available stock private label nutra formula products. We offer samples for all these, so if you are interested and want to try before you invest that is available for you.</p>

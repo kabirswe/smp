@@ -8,7 +8,7 @@
                     <div class="d-flex justify-content-center">
                         <a href="https://info.smpnutra.com/quote" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
-                    <p class="call-us">Or call us at <strong>(833) 810-9896</strong></p>
+                    <p class="call-us">Or call us at <strong>(000) 000-0000</strong></p>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                     <div class="d-flex justify-content-end align-items-center">
-                        <a href="tel:833-810-9896" class="btn">Call Us: 833-810-9896<i class="ti ti-arrow-right"></i></a>
+                        <a href="tel:000-000-000" class="btn">Call Us: 000-000-000<i class="ti ti-arrow-right"></i></a>
                         <a href="https://info.smpnutra.com/quote" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>
                         <a href="https://info.smpnutra.com/quote" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
@@ -39,7 +39,7 @@
                             <a href="https://smpnutra.com/blog">Blog</a>
                             <a href="https://smpnutra.com/smp-nutra-terms-and-conditions">Terms &amp; Conditions</a>
                             <a href="https://smpnutra.com/awards-certifications">Awards &amp; Certifications</a>
-                            <a href="https://smpnutra.comhttps://smpnutra.com/wp-content/uploads/2020/12/SMP-Nutra-Workflow.png">SMP Workflow</a>
+                            <a href="https://smpnutra.comhttps://smpnutra.com/wp-content/uploads/2020/12/SMP-Nutra-Workflow.png">Gummy Specialists Workflow</a>
                             <a href="https://smpnutra.com/careers">Careers</a>
                         </div>
                         <div class="item">

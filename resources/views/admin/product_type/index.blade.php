@@ -11,19 +11,19 @@
     <section class="main-content">
         <div class="title-section d-flex justify-content-between align-items-center">
             <div class="text-block">
-                <h1 class="title">Product Label List</h1>
+                <h1 class="title">Product Type List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Product Label</a></li>
+                        <li class="breadcrumb-item"><a href="#">Product Type</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
             </div>
             <div class="btn-block">
-                <a class="btn" href="{{ route('product_label.create') }}">
+                <a class="btn" href="{{ route('product_type.create') }}">
                 <ion-icon name="add-outline"></ion-icon>
-                    <span>Create Product Label</span>
+                    <span>Create Product Type</span>
                 </a>
             </div>
         </div>
@@ -73,7 +73,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js" defer></script>
 
     <script type="text/javascript">
-        var listUrl = SITEURL + '/product_label';
+        var listUrl = SITEURL + '/product_type';
 
         $(document).ready( function () {
             var table = $('#data-table').DataTable({
@@ -111,7 +111,7 @@
                 if(isDelete) {
                     $.ajax({
                         type: "DELETE",
-                        url: SITEURL + '/product_label/' + dataId,
+                        url: SITEURL + '/product_type/' + dataId,
                         success: function (data) {
                             var oTable = $('#data-table').dataTable();
                             oTable.fnDraw(false);
