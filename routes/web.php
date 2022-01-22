@@ -27,6 +27,10 @@ use App\Http\Controllers\PostCommentController;
 |
 */
 
+// Ck editor routes
+Route::get('ckeditor', 'CkeditorController@index');
+Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
+
 // Route::get('/', function () {
 //     return view('home');
 // });
@@ -72,7 +76,7 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::get('user/logs',  [UserController::class, 'userLogs'])->name('user.logs');
     Route::get('user/log/show', [UserController::class, 'userLogShow'])->name('user.log.show');
     Route::get('user/log/delete', [UserController::class, 'userLogDestroy'])->name('user.log.destroy');
-    
+
 
     Route::resource('product_category', ProductCategoryController::class);
     Route::resource('product_type', ProductTypeController::class);
@@ -83,5 +87,5 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::resource('post_comment', PostCommentController::class);
 
 
-    
+
 });
