@@ -265,18 +265,16 @@
                             <!-- Swiper -->
                             <div class="swiper preManufacturedSwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png" alt=""></div>
-                                <div class="swiper-slide"><img src="https://smpnutra.com/wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g1.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g3.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g4.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g1.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g3.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g4.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g1.png') }}" alt=""></div>
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>                              
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -292,94 +290,86 @@
                     <div class="product-wrapper">
                         <div class="item">
                             <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe71.png') }}" alt="">
+                                <img src="{{ asset('images/front/home/g1.png') }}" alt="">
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe72.png') }}" alt="">
+                                <img src="{{ asset('images/front/home/g2.png') }}" alt="">
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe73.png') }}" alt="">
+                                <img src="{{ asset('images/front/home/g3.png') }}" alt="">
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly
+(Product Availability May Vary)</h2>
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe74.png') }}" alt="">
+                                <img src="{{ asset('images/front/home/g4.png') }}" alt="">
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
+                                </a>
+                            </div>
+                        </div>     
+                        <div class="item">
+                            <div class="products-thumbnail">
+                                <img src="{{ asset('images/front/home/g1.png') }}" alt="">
+                            </div>
+                            <div class="products-description">
+                                <a href="#">
+                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe75.png') }}" alt="">
+                                <img src="{{ asset('images/front/home/g2.png') }}" alt="">
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe76.png') }}" alt="">
+                                <img src="{{ asset('images/front/home/g3.png') }}" alt="">
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly
+(Product Availability May Vary)</h2>
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe77.png') }}" alt="">
+                                <img src="{{ asset('images/front/home/g4.png') }}" alt="">
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
+                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
                                 </a>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe78.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/fe79.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>Beet Root Gummy & Nitric Oxide Booster W/ L-Arginine – L-Citrulline – Grape Seed – Niacin, Vitamin C & B12 – Natural Pomegranate Flavor – Non-GMO – Gluten Free – Vegan Friendly</h2>
-                                </a>
-                            </div>
-                        </div>
+                        </div>                   
                     </div>
                 </div>
             </div>

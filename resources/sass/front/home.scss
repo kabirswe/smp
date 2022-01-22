@@ -723,6 +723,13 @@
                         &:last-child {
                             margin-right: 0;
                         }
+                        .products-thumbnail {
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                height: 300px;
+                            }
+                        }
                         .products-description {
                             h2 {
                                 line-height: 32px;
