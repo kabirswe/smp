@@ -1,6 +1,6 @@
 @import "./variables.scss";
 @import "./mixins.scss";
-.capsule-manufacturing-container {
+.softgel-manufacturing-container {
     .man_intro_cont {
         text-align: center;
         width: 800px;
@@ -16,7 +16,6 @@
         }
         .breadcrumb {
             background-color: #fff;
-
             .breadcrumb-item {
                 color: #000;
                 text-align: center;
@@ -186,7 +185,7 @@
                     margin-bottom: 30px;
                 }
                 a {
-                    width: 320px;
+                    width: 330px;
                 }
             }
             .video-block {

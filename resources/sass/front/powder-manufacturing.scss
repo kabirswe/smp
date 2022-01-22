@@ -290,7 +290,42 @@
             }
         }
     }
-    .wet-granulation-wrapper {
+    .product-block {
+        .product-wrapper {
+            box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 15%);
+            background-color: $white;
+            display: flex;
+            margin: 15px 0;
+            flex-wrap: wrap;
+            .item {
+                width: 50%;
+                padding: 80px 40px;
+                text-align: center;
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    font-family: Oxygen;
+                    color: #333;
+                    margin: 50px 0 30px;
+                }
+                &:hover {
+                    background-color: #6ec1e4;
+                }
+                &:hover p {
+                    color: #fff;
+                }
+                &:last-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .capsule-shell {
+        // transition: background 0.3s, border 0.3s, border-radius 0.3s,
+        // box-shadow 0.3s;
+        // padding: 60px 0px 60px 0px;
+        // background-color: #fbfbfb;
         background-attachment: fixed;
         background-image: url(https://smpnutra.com/wp-content/uploads/2020/01/shutterstock_35010355-1.jpg);
         background-position: bottom right;
@@ -310,60 +345,24 @@
             transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
             z-index: 1;
         }
-        .manufacturing {
-            position: relative;
+        .capsule-shell-content {
             z-index: 10;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .content-block {
-                width: calc(50% - 10px);
-                h2 {
-                    font-family: Oxygen;
-                    line-height: 50px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
-                }
-                p {
-                    line-height: 26px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                }
+            h2 {
+                font-family: $oxygen;
+                width: 85%;
+                line-height: 50px;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 40px;
+                text-align: center;
+                margin: 0 auto;
+                color: #333;
+                padding: 30px 0;
             }
-            .image-block {
-                width: calc(50% - 10px);
-                border-style: solid;
-                border-width: 0px 0px 0px 0px;
-                border-color: #ededed;
-                transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
-                .images-right {
-                    p {
-                        line-height: 26px;
-                        font-weight: 400;
-                        font-style: normal;
-                        color: #4b4b4b;
-                        font-size: 16px;
-                        margin-bottom: 20px;
-                    }
-                }
+            p {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #4b4b4b;
             }
         }
     }
@@ -473,30 +472,6 @@
             }
         }
     }
-    .capsule-shell {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-            box-shadow 0.3s;
-        padding: 60px 0px 60px 0px;
-        background-color: #fbfbfb;
-        h2 {
-            font-family: $oxygen;
-            line-height: 50px;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 40px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h4 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-    }
     .gelatin-capsules {
         padding: 50px 0 80px;
         background-color: #fbfbfb;
@@ -543,56 +518,6 @@
                 padding: 80px 40px 80px 40px;
                 background-color: #ffffff;
                 .images-right {
-                }
-            }
-        }
-    }
-    .vegetarian-capsules {
-        padding: 50px 0 80px;
-        background-color: #fbfbfb;
-        .manufacturing {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .content-block {
-                width: calc(50% - 10px);
-                h2 {
-                    font-family: Oxygen;
-                    line-height: 50px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
-                }
-            }
-            .image-block {
-                width: calc(50% - 10px);
-                border-style: solid;
-                border-width: 0px 0px 0px 0px;
-                border-color: #ededed;
-                transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
-                .images-right {
-                    p {
-                        line-height: 26px;
-                        font-weight: 400;
-                        font-style: normal;
-                        color: #4b4b4b;
-                        font-size: 16px;
-                        margin-bottom: 20px;
-                    }
                 }
             }
         }

@@ -6,30 +6,30 @@
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                 </div>
                 <div class="navbar-block">
-                    <a href="http://localhost:3000/">Home</a>
+                    <a href="{{ route('home') }}">Home</a>
                     <div class="nav-dropdown">
                         <button class="dropbtn">About Us
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="http://localhost:8000/supplement-manufacturing">About Us</a>
-                            <a href="http://localhost:8000/meet-the-team">Meet The Team</a>
-                            <a href="http://localhost:8000/awards-certifications">Certifications</a>
-                            <a href="http://localhost:3000/labdoor-partnership">Labdoor Partnership</a>
+                            <a href="{{ route('supplement_manufacturing') }}">About Us</a>
+                            <a href="{{ route('meet_the_team') }}">Meet The Team</a>
+                            <a href="{{ route('awards_certifications') }}">Certifications</a>
+                            <a href="{{ route('labdoor_partnership') }}">Labdoor Partnership</a>
                         </div>
                     </div>
-                    <a href="http://localhost:3000/who-to-contact">Blog</a>
+                    <a href="{{ route('who_to_contact') }}">Blog</a>
                     <div class="nav-dropdown">
                         <button class="dropbtn">Custom
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="http://localhost:3000/capsule-manufacturing">Capsule Manufacturing</a>
-                            <a href="http://localhost:3000/tablet-manufacturing">Tablet Manufacturing</a>
-                            <a href="http://localhost:3000/powder-manufacturing">Powder Manufacturing</a>
-                            <a href="http://localhost:3000/softgel-manufacturing">Softgel Manufacturing</a>
-                            <a href="http://localhost:3000/gummy-vitamin-manufacturing">Gummy Vitamin Manufacturing</a>
-                            <a href="http://localhost:3000/liquid-capsule">Liquid Capsule Manufacturing</a>
+                            <a href="{{ route('capsule_manufacturing') }}">Capsule Manufacturing</a>
+                            <a href="{{ route('tablet_manufacturing') }}">Tablet Manufacturing</a>
+                            <a href="{{ route('powder_manufacturing') }}">Powder Manufacturing</a>
+                            <a href="{{ route('softgel_manufacturing') }}">Softgel Manufacturing</a>
+                            <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamin Manufacturing</a>
+                            <a href="{{ route('liquid_capsule') }}">Liquid Capsule Manufacturing</a>
                         </div>
                     </div>
                     <div class="nav-dropdown">
@@ -37,21 +37,18 @@
                         <i class="ti ti-angle-down"></i>  
                         </button>
                         <div class="dropdown-content">
-                            <a href="http://localhost:3000/product_page">All Stock Private Label Products</a>
-                            <a href="https://smpnutra.com/product-category/stock-private-label-supplements/best-sellers">Best Sellers</a>
-                            <a href="https://smpnutra.com/featured-stock-products">Featured Stock Products</a>
-                            <a href="https://smpnutra.com/product-category/stock-private-label-supplements/pets">Pets</a>
-                            <a href="https://smpnutra.com/product-category/stock-private-label-supplements/sugar-free">Sugar-Free</a>
+                            <a href="{{ route('product_page') }}">Gummy</a>
+                            <a href="#">Softgel</a>                          
                         </div>
                     </div>
-                    <a href="http://localhost:3000/product_details">Design</a>
-                    <a href="http://localhost:3000/fulfillment">Fulfillment</a>
+                    <a href="{{ route('home') }}">Design</a>
+                    <a href="{{ route('fulfillment') }}">Fulfillment</a>
                     <div class="nav-dropdown">
                         <button class="dropbtn">FAQ
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="http://localhost:3000/faq">2022 Nutraceutical Manufacturing Brochure</a>
+                            <a href="{{ route('faq') }}">2022 Nutraceutical Manufacturing Brochure</a>
                         </div>
                     </div>
                     <div class="nav-dropdown">
@@ -59,7 +56,7 @@
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="http://localhost:3000/who-to-contact">Who To Contact</a>
+                            <a href="{{ route('who_to_contact') }}">Who To Contact</a>
                         </div>
                     </div>
                 </div>

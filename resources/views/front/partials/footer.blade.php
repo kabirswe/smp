@@ -121,10 +121,10 @@
             <div class="row">
                 <div class="d-flex justify-content-between flex-column align-items-center w-100">
                     <div class="top-block">
-                        <p>© 2020 SMPNutra.com</p>
+                        <p>© 2022 gummyspecialists.com</p>
                         <div class="request">
                             <a style="color: #ffffff;" href="https://info.smpnutra.com/quote">Request A Quote</a>
-                            <p><strong>833-810-9896</strong></p>
+                            <p><strong>000-000-0000</strong></p>
                         </div>
                         <ul>
 							<li>

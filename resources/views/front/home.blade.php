@@ -62,16 +62,16 @@
                     <div class="swiper capabilitiesSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            <img src="https://smpnutra.com/wp-content/uploads/2019/07/laboratory1.jpg" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            <img src="https://smpnutra.com/wp-content/uploads/2020/03/shutterstock_1049657894.jpg" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            <img src="https://smpnutra.com/wp-content/uploads/2020/03/shutterstock_250505101.jpg" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            <img src="https://smpnutra.com/wp-content/uploads/2019/07/laboratory2.jpg" />
                             </div>
                         </div>
                     </div>
@@ -117,12 +117,12 @@
                     <div class="d-flex justify-content-center">
                         <a href="https://info.smpnutra.com/quote" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
-                    <p class="call-us">Or call us at <strong>(833) 810-9896</strong></p>
+                    <p class="call-us">Or call us at <strong>(000) 000-0000</strong></p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="manufacturing-wrapper">
+    <!-- <div class="manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
@@ -144,8 +144,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="tablet-manufacturing-wrapper">
+    </div> -->
+    <!-- <div class="tablet-manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
@@ -167,7 +167,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="softgel-manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -183,7 +183,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K3L3DMkfyc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
                     <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6yADdNrsnes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
                     <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -214,7 +214,7 @@
             </div>
         </div>
     </div>
-    <div class="powder-manufacturing-wrapper">
+    <!-- <div class="powder-manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
@@ -236,7 +236,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="stock-wrapper">
         <div class="container">
             <div class="stock-now">
