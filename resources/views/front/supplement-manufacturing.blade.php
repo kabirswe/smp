@@ -54,7 +54,7 @@
                                 and
                                 final product quality assurance. What makes us really different is also our client
                                 relationship
-                                & services. When working with SMP expect to be treated as a partner. Your long term success
+                                & services. When working with Gummy expect to be treated as a partner. Your long term success
                                 is
                                 our long term success.
                             </p>
@@ -78,7 +78,7 @@
                                 <img src="https://smpnutra.com/wp-content/uploads/2020/01/shutterstock_1325809535.jpg"
                                     alt="good-manufacturing-practice">
                                 <p>
-                                    <a href="https://smpnutra.com/wp-content/uploads/2020/01/Supplement-Manufacturing-Partner-Inc.-GMP-Statement1.pdf"
+                                    <a href="#"
                                         target="_blank">
                                         See Our GMP Registration Here
                                     </a>
@@ -497,7 +497,7 @@
                                 guarantee 4-week turnaround because most ingredients are already stored and ready in our
                                 warehouse.&nbsp;</div>
 
-                            <a href="https://info.smpnutra.com/quote" class="btn">Get a Quote
+                            <a href="#" class="btn">Get a Quote
                                 <i class="ti ti-arrow-right"></i>
                             </a>
                         </div>

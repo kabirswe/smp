@@ -3,13 +3,13 @@
 
 @section('content')
 <main class="main-container">
-    
+
 <div class="product-wrapper">
     <div class="man_intro_cont">
         <h1>All Stock Private Label Supplements</h1>
         <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
             <li class="breadcrumb-item"><a href="#">Library</a>Products</li>
             <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
         </ol>
@@ -29,7 +29,7 @@
                     <div class="shop_info">
                         <div class="result-count">
                             <p>Showing 1–100 of 338 results</p>
-                        </div>                       
+                        </div>
                         <form class="woocommerce-ordering" method="#">
                             <select name="orderby" class="orderby">
                                     <option value="menu_order" selected="selected">Default sorting</option>
@@ -51,7 +51,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div>  
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe64.png') }}" alt="product image">
@@ -60,7 +60,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe65.png') }}" alt="product image">
@@ -69,7 +69,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe66.png') }}" alt="product image">
@@ -78,7 +78,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe67.png') }}" alt="product image">
@@ -87,7 +87,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe68.png') }}" alt="product image">
@@ -96,7 +96,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe69.png') }}" alt="product image">
@@ -105,7 +105,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe70.png') }}" alt="product image">
@@ -114,7 +114,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe71.png') }}" alt="product image">
@@ -123,7 +123,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe72.png') }}" alt="product image">
@@ -132,7 +132,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe73.png') }}" alt="product image">
@@ -141,7 +141,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div> 
+                        </div>
                         <div class="single-item">
                             <div class="product-image">
                                 <img class="product-img" src="{{ asset('images/front/fe74.png') }}" alt="product image">
@@ -150,7 +150,7 @@
                             <div class="product-descriptions">
                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                             </div>
-                        </div>                      
+                        </div>
                     </div>
                 </div>
                 <div class="product-sidebar">
@@ -162,34 +162,34 @@
                     <div class="product_categories">
                         <div class="block">
                             <div class="item">
-                                <a href="https://smpnutra.com/product-category/stock-private-label-supplements">All Stock Private Label Supplements</a>
-                                <a href="https://smpnutra.com/product-category/stock-private-label-supplements/beauty">Beauty</a>
-                                <a href="https://smpnutra.com/product-category/stock-private-label-supplements/best-sellers">Best Sellers</a>
-                                <a href="https://smpnutra.com/product-category/stock-private-label-supplements/bone-broth">Bone</a>                       
-                                <a href="https://smpnutra.com/product-category/stock-private-label-supplements/capsules">Capsules</a>                       
-                                <a href="#">Collagen</a>                    
-                                <a href="#">Elderberry</a>                    
-                                <a href="#">Essential Vitamins</a>                    
-                                <a href="#">Fish Oil</a>                    
-                                <a href="#">Gummy Vitamins</a>                    
-                                <a href="#">Hair Skin & Nails</a>                    
-                                <a href="#">Herbal</a>                    
-                                <a href="#">Joint Health</a>                    
-                                <a href="#">Keto</a>                    
-                                <a href="#">Kids</a>                    
-                                <a href="#">Liquids</a>                    
-                                <a href="#">New Products</a>                    
-                                <a href="#">Non-GMO Verified</a>                    
-                                <a href="#">Pets</a>                    
-                                <a href="#">Powders</a>                    
-                                <a href="#">Sample Ready Products</a>                    
-                                <a href="#">Softgels</a>                    
-                                <a href="#">Sports Nutrition</a>                    
-                                <a href="#">Sugar-Free</a>                    
-                                <a href="#">Weight Management</a>                    
-                                <a href="#">Wellness</a>                    
-                                <a href="#">Packaging</a>                    
-                                <a href="#">Uncategorized</a> 
+                                <a href="">All Stock Private Label Supplements</a>
+                                <a href="/beauty">Beauty</a>
+                                <a href="/best-sellers">Best Sellers</a>
+                                <a href="/bone-broth">Bone</a>
+                                <a href="/capsules">Capsules</a>
+                                <a href="#">Collagen</a>
+                                <a href="#">Elderberry</a>
+                                <a href="#">Essential Vitamins</a>
+                                <a href="#">Fish Oil</a>
+                                <a href="#">Gummy Vitamins</a>
+                                <a href="#">Hair Skin & Nails</a>
+                                <a href="#">Herbal</a>
+                                <a href="#">Joint Health</a>
+                                <a href="#">Keto</a>
+                                <a href="#">Kids</a>
+                                <a href="#">Liquids</a>
+                                <a href="#">New Products</a>
+                                <a href="#">Non-GMO Verified</a>
+                                <a href="#">Pets</a>
+                                <a href="#">Powders</a>
+                                <a href="#">Sample Ready Products</a>
+                                <a href="#">Softgels</a>
+                                <a href="#">Sports Nutrition</a>
+                                <a href="#">Sugar-Free</a>
+                                <a href="#">Weight Management</a>
+                                <a href="#">Wellness</a>
+                                <a href="#">Packaging</a>
+                                <a href="#">Uncategorized</a>
                             </div>
                         </div>
                         <div class="search-products">
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 </div>

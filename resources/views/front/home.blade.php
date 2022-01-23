@@ -18,7 +18,7 @@
                 <div class="video-content">
                 <h2>Your Partner In<br /> Manufacturing Amazing<br /> Nutraceuticals</h2>
                 <p>GS stands for Gummy Specialists. Our team is dedicated to be your partner in most efficiently manufacturing your growing vitamin business to scale.</p>
-                <a href="https://info.smpnutra.com/quote" class="btn common-btn">About Our Facilities<i class="ti ti-arrow-right"></i></a>
+                <a href="#" class="btn common-btn">About Our Facilities<i class="ti ti-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -55,23 +55,23 @@
                     <p>About Us</p>
                     <h2>Our Capabilities</h2>
                     <p>GS stands for “Gummy Specialists”. This is important to us because we look at every single business we manufacture for as Partners. This means we are dedicated towards your long-term success from the very beginning. We ensure your product formula will be market-competitive, packaging stands out from the pack and your product is safely stored & orders shipped out quickly. We only profit from returning customers who are successfully selling. It’s our job to do everything possible to help you achieve that.</p>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Learn More About Our Facilities<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Learn More About Our Facilities<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="slider">
                     <!-- Swiper -->
                     <div class="swiper capabilitiesSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                            <img src="https://smpnutra.com/wp-content/uploads/2019/07/laboratory1.jpg" />
+                            <img src="{{ asset('wp-content/uploads/2019/07/laboratory1.jpg') }}" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="https://smpnutra.com/wp-content/uploads/2020/03/shutterstock_1049657894.jpg" />
+                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_1049657894.jpg') }}" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="https://smpnutra.com/wp-content/uploads/2020/03/shutterstock_250505101.jpg" />
+                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_250505101.jpg') }}" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="https://smpnutra.com/wp-content/uploads/2019/07/laboratory2.jpg" />
+                            <img src="{{ asset('wp-content/uploads/2019/07/laboratory2.jpg') }}" />
                             </div>
                         </div>
                     </div>
@@ -85,25 +85,25 @@
                 <h2>We Can Be Found On The Largest Networks</h2>
                 <p>Through our hard work and determination, Gummy Specialists Nutra has been covered by some of the largest networks. Gummy Specialists Nutra is dedicated to bringing the most information and quality supplements to our clients. We are thankful to have been recognized for our efforts! Some of the networks that have covered Gummy Specialists Nutra: </p>
                 <div class="image-block">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/Fox-news-logo-150x150.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_71_9654148642.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_55_6295447750.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/CBS-Logo-1536x744.png" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_55_6295447750.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/CBS-Logo-1536x744.png') }}" alt="">
                 </div>
                 <h2>Our Clients Can Be Found In The Biggest Retailers & On The Largest Networks</h2>
                 <p>Gummy Specialists Nutra proudly works with numerous amazing brands that are on some of the best marketplaces around, including Walmart, Target, The Vitamin Shoppe, GNC, and more!
                 Build your brand and bring your supplements to these large retailers with Gummy Specialists as your partner!</p>
                 <div class="image-block second">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/Fox-news-logo-150x150.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_71_9654148642.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_55_6295447750.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/CBS-Logo-1536x744.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/Fox-news-logo-150x150.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_71_9654148642.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_55_6295447750.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/CBS-Logo-1536x744.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/Fox-news-logo-150x150.png" alt="">
-                    <img src="https://smpnutra.com/wp-content/uploads/2021/01/imageedit_71_9654148642.png" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_55_6295447750.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/CBS-Logo-1536x744.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_55_6295447750.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/CBS-Logo-1536x744.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
+                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
                     <h2>Request A Price Quote</h2>
                     <p>Fill out our “request a quote” form so we we can give you a custom price quote to get started with manufacturing your neutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="https://info.smpnutra.com/quote" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <p class="call-us">Or call us at <strong>(000) 000-0000</strong></p>
                 </div>
@@ -139,8 +139,8 @@
                     <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Capsule Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Capsule Manufacturing<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Stock Capsule Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Custom Capsule Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -159,11 +159,11 @@
                     <h3>Tablet Coating</h3>
                 </div>
                 <div class="video-block">
-                    <div class="video">                        
+                    <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/G2pHsRMGrBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Tablet Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Tablet Manufacturing<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Stock Tablet Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Custom Tablet Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -185,8 +185,8 @@
                     <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -208,8 +208,8 @@
                     <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -231,8 +231,8 @@
                     <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/pzBWZNoAFMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Stock Powder Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="https://info.smpnutra.com/quote" class="btn common-btn">Custom Powder Manufacturing<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Stock Powder Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Custom Powder Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -245,11 +245,11 @@
                 </div>
                 <div class="stock-right">
                     <div class="d-flex justify-content-center">
-                        <a href="https://info.smpnutra.com/quote" class="btn">See All Current Stock Products<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn">See All Current Stock Products<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
     <div class="pre-manufactured-wrapper">
         <div class="overlay"></div>
@@ -274,14 +274,14 @@
                                 <div class="swiper-slide"><img src="{{ asset('images/front/home/g3.png') }}" alt=""></div>
                                 <div class="swiper-slide"><img src="{{ asset('images/front/home/g4.png') }}" alt=""></div>
                                 <div class="swiper-slide"><img src="{{ asset('images/front/home/g1.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>                              
+                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                        <a href="https://info.smpnutra.com/quote" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-block">
@@ -328,7 +328,7 @@
                                     <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
                                 </a>
                             </div>
-                        </div>     
+                        </div>
                         <div class="item">
                             <div class="products-thumbnail">
                                 <img src="{{ asset('images/front/home/g1.png') }}" alt="">
@@ -369,7 +369,7 @@
                                     <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
                                 </a>
                             </div>
-                        </div>                   
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@
             <h1>All Stock Private Label Supplements</h1>
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
                 <li class="breadcrumb-item"><a href="#">Library</a>Products</li>
                 <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
             </ol>
@@ -20,7 +20,7 @@
                     <div class="blog-content">
                         <div class="blog-item">
                             <div class="blog-image">
-                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">                          
+                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
                                 <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
@@ -28,15 +28,15 @@
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
-                                    
+
                                     <span class="comments-link"><a href="#"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
-                                
-                                </div>                          
+
+                                </div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="blog-image">
-                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">                          
+                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
                                 <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
@@ -44,15 +44,15 @@
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
-                                    
+
                                     <span class="comments-link"><a href="#"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
-                                
-                                </div>                          
+
+                                </div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="blog-image">
-                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">                          
+                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
                                 <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
@@ -60,15 +60,15 @@
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
-                                    
+
                                     <span class="comments-link"><a href="#"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
-                                
-                                </div>                          
+
+                                </div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="blog-image">
-                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">                          
+                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
                                 <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
@@ -76,15 +76,15 @@
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
-                                    
+
                                     <span class="comments-link"><a href="#"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
-                                
-                                </div>                          
+
+                                </div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="blog-image">
-                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">                          
+                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
                                 <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
@@ -92,15 +92,15 @@
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
-                                    
+
                                     <span class="comments-link"><a href="#"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
-                                
-                                </div>                          
+
+                                </div>
                             </div>
                         </div>
                         <div class="blog-item">
                             <div class="blog-image">
-                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">                          
+                                <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
                                 <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
@@ -108,13 +108,13 @@
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
-                                    
+
                                     <span class="comments-link"><a href="#"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
-                                
-                                </div>                          
+
+                                </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="blog-sidebar">
                         <div class="sidebar-top">
                             <img src="{{ asset('images/front/1581626444.png') }}" alt="">
@@ -126,7 +126,7 @@
                             <h3>ABOUT AUTHOR</h3>
                             <div class="author-box">
                                 <img src="{{ asset('images/front/authr-image.png') }}" alt="">
-                                <h3>Will Cartwright</h3>                                
+                                <h3>Will Cartwright</h3>
                             </div>
                             <p>Will is a Co-Founder of Gummy Specialists Nutra, founder of GetKnownPros, and owns a handful of supplement brands. Will has extensive knowledge of trends in the nutraceutical industry after contract-manufacturing for hundreds of brands. Will has spent the last decade learning the best online marketing & brand-building techniques for supplement & vitamin brands and enjoys sharing this unique knowledge with his nutra-entrepreneur community.</p>
                             <div class="comment-link">
@@ -143,34 +143,34 @@
                                     <a href="#">All Stock Private Label Supplements</a>
                                     <a href="#">Beauty</a>
                                     <a href="#">Best Sellers</a>
-                                    <a href="#">Bone</a>                       
-                                    <a href="#">Capsules</a>                       
-                                    <a href="#">Collagen</a>                    
-                                    <a href="#">Elderberry</a>                    
-                                    <a href="#">Essential Vitamins</a>                    
-                                    <a href="#">Fish Oil</a>                    
-                                    <a href="#">Gummy Vitamins</a>                    
-                                    <a href="#">Hair Skin & Nails</a>                    
-                                    <a href="#">Herbal</a>                    
-                                    <a href="#">Joint Health</a>                    
-                                    <a href="#">Keto</a>                    
-                                    <a href="#">Kids</a>                    
-                                    <a href="#">Liquids</a>                    
-                                    <a href="#">New Products</a>                    
-                                    <a href="#">Non-GMO Verified</a>                    
-                                    <a href="#">Pets</a>                    
-                                    <a href="#">Powders</a>                    
-                                    <a href="#">Sample Ready Products</a>                    
-                                    <a href="#">Softgels</a>                    
-                                    <a href="#">Sports Nutrition</a>                    
-                                    <a href="#">Sugar-Free</a>                    
-                                    <a href="#">Weight Management</a>                    
-                                    <a href="#">Wellness</a>                    
-                                    <a href="#">Packaging</a>                    
-                                    <a href="#">Uncategorized</a> 
+                                    <a href="#">Bone</a>
+                                    <a href="#">Capsules</a>
+                                    <a href="#">Collagen</a>
+                                    <a href="#">Elderberry</a>
+                                    <a href="#">Essential Vitamins</a>
+                                    <a href="#">Fish Oil</a>
+                                    <a href="#">Gummy Vitamins</a>
+                                    <a href="#">Hair Skin & Nails</a>
+                                    <a href="#">Herbal</a>
+                                    <a href="#">Joint Health</a>
+                                    <a href="#">Keto</a>
+                                    <a href="#">Kids</a>
+                                    <a href="#">Liquids</a>
+                                    <a href="#">New Products</a>
+                                    <a href="#">Non-GMO Verified</a>
+                                    <a href="#">Pets</a>
+                                    <a href="#">Powders</a>
+                                    <a href="#">Sample Ready Products</a>
+                                    <a href="#">Softgels</a>
+                                    <a href="#">Sports Nutrition</a>
+                                    <a href="#">Sugar-Free</a>
+                                    <a href="#">Weight Management</a>
+                                    <a href="#">Wellness</a>
+                                    <a href="#">Packaging</a>
+                                    <a href="#">Uncategorized</a>
                                 </div>
-                            </div>                            
-                        </div> 
+                            </div>
+                        </div>
                         <div class="recent-posts">
                             <h3>recent posts</h3>
                             <div class="block">
@@ -178,11 +178,11 @@
                                     <a href="#">Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
                                     <a href="#">Gummy Specialists Nutrition Labels Best Practices & Rules in 2020</a>
                                     <a href="#">Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
-                                    <a href="#">New Nutrition Labels Best Practices & Rules in 2020</a>                   
-                                    <a href="#">Capsules</a>  
+                                    <a href="#">New Nutrition Labels Best Practices & Rules in 2020</a>
+                                    <a href="#">Capsules</a>
                                 </div>
-                            </div> 
-                        </div>   
+                            </div>
+                        </div>
                         <div class="archives">
                             <h3>archives</h3>
                             <div class="block">
@@ -191,14 +191,14 @@
                                     <a href="#">September 2020</a>
                                     <a href="#">August 2020</a>
                                     <a href="#">August 2020</a>
-                                    <a href="#">August 2020</a>                                    
+                                    <a href="#">August 2020</a>
                                 </div>
-                            </div> 
-                        </div>                 
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>            
-        </div>        
+            </div>
+        </div>
     </div>
 </main>
 @endsection

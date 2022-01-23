@@ -10,7 +10,7 @@
                     <span>
                         <a property="item" typeof="WebPage"
                             title="Go to gummyspecialists.com | Your Premier Private Label Supplement Manufacturer."
-                            href="https://smpnutra.com" class="home"><span property="name">gummyspecialists.com | Your
+                            href="{{ route('home') }}" class="home"><span property="name">gummyspecialists.com | Your
                                 Premier Private Label Supplement Manufacturer</span></a>
                     </span>
                     <span>
@@ -42,22 +42,22 @@
 
                     </div>
                     <div class="approved-by">
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/fda-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/fda-removebg-preview-150x150.png') }}"
                             alt="fda">
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png') }}"
                             alt="ribus">
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png') }}"
                             alt="#">
 
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/fda-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/fda-removebg-preview-150x150.png') }}"
                             alt="fda">
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png') }}"
                             alt="ribus">
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png') }}"
                             alt="#">
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png') }}"
                             alt="ribus">
-                        <img src="https://smpnutra.com/wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png"
+                        <img src="{{ asset('wp-content/uploads/2021/04/CCMLogo_Draft2020-removebg-preview-150x150.png') }}"
                             alt="#">
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                             <div class="company-of-year-wrapper">
                                 <div class="company-of-year">
                                     <div class="cy-left">
-                                        <img src="https://smpnutra.com/wp-content/uploads/elementor/thumbs/gold-winner-p8ribh7e3k6bk8psrv7u70xxeluqq9otrlzeboz5cg.png"
+                                        <img src="{{ asset('wp-content/uploads/elementor/thumbs/gold-winner-p8ribh7e3k6bk8psrv7u70xxeluqq9otrlzeboz5cg.png') }}"
                                             alt="">
 
                                         <h1>
@@ -94,14 +94,14 @@
                                             team member at Gummy Specialists puts in to deliver an experience no other manufacturer can.
                                         </p>
 
-                                        <a href="https://smpnutra.com/stevie-award-2021" class="btn">View Stevie
+                                        <a href="#" class="btn">View Stevie
                                             Award
                                             Gallery
                                             <i class="ti ti-arrow-right"></i>
                                         </a>
                                     </div>
                                     <div class="cy-right">
-                                        <img src="https://smpnutra.com/wp-content/uploads/2020/12/IMG_0023-1024x740.jpg"
+                                        <img src="{{ asset('wp-content/uploads/2020/12/IMG_0023-1024x740.jpg') }}"
                                             alt="award">
                                     </div>
                                 </div>
@@ -110,10 +110,10 @@
                             <div class="product-of-year-wrapper">
                                 <div class="product-of-year">
                                     <div class="py-left">
-                                        <img src="https://smpnutra.com/wp-content/uploads/2021/10/JZ3A4421.jpg" alt="award">
+                                        <img src="{{ asset('wp-content/uploads/2021/10/JZ3A4421.jpg') }}" alt="award">
                                     </div>
                                     <div class="py-right">
-                                        <img src="https://smpnutra.com/wp-content/uploads/2021/10/Globee-logo.png" alt="">
+                                        <img src="{{ asset('wp-content/uploads/2021/10/Globee-logo.png') }}" alt="">
 
                                         <h1>
                                             2021 Manufacturing Company Of The Year
@@ -125,7 +125,7 @@
                                             team member at Gummy Specialists puts in to deliver an experience no other manufacturer can.
                                         </p>
 
-                                        <a href="https://smpnutra.com/stevie-award-2021" class="btn">View Stevie
+                                        <a href="#" class="btn">View Stevie
                                             Award
                                             Gallery
                                             <i class="ti ti-arrow-right"></i>
@@ -141,7 +141,7 @@
                             <div class="company-of-year-wrapper">
                                 <div class="company-of-year">
                                     <div class="cy-left">
-                                        <img src="https://smpnutra.com/wp-content/uploads/elementor/thumbs/gold-winner-p8ribh7e3k6bk8psrv7u70xxeluqq9otrlzeboz5cg.png"
+                                        <img src="{{ asset('wp-content/uploads/elementor/thumbs/gold-winner-p8ribh7e3k6bk8psrv7u70xxeluqq9otrlzeboz5cg.png') }}"
                                             alt="">
 
                                         <h1>
@@ -154,7 +154,7 @@
                                             team member at Gummy Specialists puts in to deliver an experience no other manufacturer can.
                                         </p>
 
-                                        <a href="https://smpnutra.com/stevie-award-2021" class="btn">View Stevie
+                                        <a href="#" class="btn">View Stevie
                                             Award
                                             Gallery
                                             <i class="ti ti-arrow-right"></i>
@@ -168,12 +168,10 @@
 
                             </div>
                         </div>
-<<<<<<< HEAD
-=======
                      </div>
                   </div>
                   <!--<div class="elementor-element elementor-element-30b8f22 elementor-widget elementor-widget-sm-default-button" data-id="30b8f22" data-element_type="widget" data-widget_type="sm-default-button.default">
-                     <div class="elementor-widget-container"><a class="btn " href="https://smpnutra.com/stevie-award-2021">View Stevie Award Gallery<i class="ti ti-arrow-right"></i></a></div>
+                     <div class="elementor-widget-container"><a class="btn " href="#">View Stevie Award Gallery<i class="ti ti-arrow-right"></i></a></div>
                   </div>-->
                </div>
             </div>
@@ -219,9 +217,9 @@
 				</div>
 				<div class="elementor-element elementor-element-15c1a80 elementor-widget elementor-widget-sm-default-button" data-id="15c1a80" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="wp-content/uploads/2021/04/SMP-Nutra-FDA-Registration.png" class="btn  ">View Registration<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -268,9 +266,9 @@
 				</div>
 				<div class="elementor-element elementor-element-a810c7c elementor-widget elementor-widget-sm-default-button" data-id="a810c7c" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="wp-content/uploads/2021/04/RIBUS_CCM_Cert_SupplementManufacturingPartner_Feb2021.png" class="btn  ">View Certification<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -293,9 +291,9 @@
 				</div>
 				<div class="elementor-element elementor-element-e7ec2c9 elementor-widget elementor-widget-sm-default-button" data-id="e7ec2c9" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="https://www.thomasnet.com/profile/30858854/supplement-manufacturing-partner-inc.html" class="btn  ">View TomasNet profile<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -336,9 +334,9 @@
 				</div>
 				<div class="elementor-element elementor-element-b145856 elementor-widget elementor-widget-sm-default-button" data-id="b145856" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="wp-content/uploads/2021/04/NPA-Member-in-Good-Standing-for-Supplement-Manufacturing-Partner.png" class="btn  ">View Certification<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -385,9 +383,9 @@
 				</div>
 				<div class="elementor-element elementor-element-c9deb98 elementor-widget elementor-widget-sm-default-button" data-id="c9deb98" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="wp-content/uploads/2021/04/Supplement-Manufacturing-Partner-Inc.-GMP-Statement1.png" class="btn  ">View Registration<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -416,9 +414,9 @@
 				</div>
 				<div class="elementor-element elementor-element-2c2d0b4 elementor-widget elementor-widget-sm-default-button" data-id="2c2d0b4" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="wp-content/uploads/2021/05/VIP-Letter-Of-Verification-exp-May-2022.png" class="btn  ">View Certification<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -465,9 +463,9 @@
 				</div>
 				<div class="elementor-element elementor-element-4327733 elementor-widget elementor-widget-sm-default-button" data-id="4327733" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="eurofins-non-gmo-verification.html" class="btn  ">Learn More<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -497,9 +495,9 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-30b8f22 elementor-widget elementor-widget-sm-default-button" data-id="30b8f22" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="stevie-award-2021.html" class="btn  ">View Stevie Award Gallery<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -561,9 +559,9 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 						</div>
 						</div>
 					</div>
-		
+
 	</div><!-- #content -->
-	
+
 
 			<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
 			<div class='footer-width-fixer'>		<div data-elementor-type="wp-post" data-elementor-id="103" class="elementor elementor-103" data-elementor-settings="[]">
@@ -587,9 +585,9 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-81cf5e5 elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-sm-default-button" data-id="81cf5e5" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="https://info.smpnutra.com/quote" class="btn  ">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 				<div class="elementor-element elementor-element-4bdb460 elementor-widget elementor-widget-text-editor" data-id="4bdb460" data-element_type="widget" data-widget_type="text-editor.default">
@@ -699,20 +697,20 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 							<div class="elementor-widget-wrap">
 						<div class="elementor-element elementor-element-a8e49a5 elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-sm-logo" data-id="a8e49a5" data-element_type="widget" data-widget_type="sm-logo.default">
 				<div class="elementor-widget-container">
-			
+
 						<a class="man_logo" href="index.html">
 								<div class="man_logo_img"><img  alt="" data-src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt=""></noscript></div>
 								</a>
-		
+
 			</div>
 				</div>
 				<div class="elementor-element elementor-element-1b43fd4 elementor-widget__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-sm-default-button" data-id="1b43fd4" data-element_type="widget" data-widget_type="sm-default-button.default">
 				<div class="elementor-widget-container">
-			
+
 				<a href="tel:833-810-9896" class="btn  ">Call Us: 833-810-9896<i class="ti ti-arrow-right"></i></a>
 				<a href="https://info.smpnutra.com/contact" class="btn  ">Contact Us<i class="ti ti-arrow-right"></i></a>
 				<a href="https://info.smpnutra.com/quote" class="btn  ">Get a Quote<i class="ti ti-arrow-right"></i></a>
-		
+
 			</div>
 				</div>
 						</div>
@@ -733,7 +731,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-6ccb152 elementor-widget elementor-widget-sm-menu-links" data-id="6ccb152" data-element_type="widget" data-widget_type="sm-menu-links.default">
 				<div class="elementor-widget-container">
-				
+
 		<ul class="man_menu_links menu">
 					<li>
 				<a href="index.html">Home</a>
@@ -766,7 +764,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-3eab75c elementor-widget elementor-widget-sm-menu-links" data-id="3eab75c" data-element_type="widget" data-widget_type="sm-menu-links.default">
 				<div class="elementor-widget-container">
-				
+
 		<ul class="man_menu_links menu">
 					<li>
 				<a href="frequently-asked-questions.html">Frequently Asked Questions</a>
@@ -799,7 +797,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-1bfe312 elementor-widget elementor-widget-sm-menu-links" data-id="1bfe312" data-element_type="widget" data-widget_type="sm-menu-links.default">
 				<div class="elementor-widget-container">
-				
+
 		<ul class="man_menu_links menu">
 					<li>
 				<a href="capsule-manufacturing.html">Capsules</a>
@@ -832,7 +830,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-54387c4 elementor-widget elementor-widget-sm-menu-links" data-id="54387c4" data-element_type="widget" data-widget_type="sm-menu-links.default">
 				<div class="elementor-widget-container">
-				
+
 		<ul class="man_menu_links menu">
 					<li>
 				<a href="fulfillment.html">Storage &amp; Order Fulfillment</a>
@@ -856,7 +854,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-fd6ffc5 elementor-widget elementor-widget-sm-menu-links" data-id="fd6ffc5" data-element_type="widget" data-widget_type="sm-menu-links.default">
 				<div class="elementor-widget-container">
-				
+
 		<ul class="man_menu_links menu">
 					<li>
 				<a href="collagen-manufacturing.html">Collagen</a>
@@ -925,7 +923,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-f15753d elementor-widget elementor-widget-sm-menu-links" data-id="f15753d" data-element_type="widget" data-widget_type="sm-menu-links.default">
 				<div class="elementor-widget-container">
-				
+
 		<ul class="man_menu_links menu">
 					<li>
 				<a href="product-category/stock-private-label-supplements.html">Private Labeling</a>
@@ -973,7 +971,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				</div>
 				<div class="elementor-element elementor-element-03989b4 elementor-widget elementor-widget-sm-menu-links" data-id="03989b4" data-element_type="widget" data-widget_type="sm-menu-links.default">
 				<div class="elementor-widget-container">
-				
+
 		<ul class="man_menu_links menu">
 					<li>
 				<a href="product-category/stock-private-label-supplements.html">Stock Products</a>
@@ -1069,7 +1067,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 						</div>
 					</div>
 		</div>		</footer>
-	
+
 
 </div><!-- #page -->
 
@@ -1089,9 +1087,8 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 					s.parentNode.insertBefore(g, s);
 				})();
 			</script>
-			
+
 <div class="xoo-wsc-modal">
->>>>>>> 1932163f314db7f3a2e4fe26510aad6cc1557521
 
                     </div>
                 </div>

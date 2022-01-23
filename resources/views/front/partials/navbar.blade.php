@@ -34,11 +34,11 @@
                     </div>
                     <div class="nav-dropdown">
                         <button class="dropbtn">Stock Products
-                        <i class="ti ti-angle-down"></i>  
+                        <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
                             <a href="{{ route('product_page') }}">Gummy</a>
-                            <a href="#">Softgel</a>                          
+                            <a href="#">Softgel</a>
                         </div>
                     </div>
                     <a href="{{ route('home') }}">Design</a>
@@ -67,7 +67,7 @@
                             <input type="text" placeholder="search" />
                             <i class="ti ti-search"></i>
                         </div>
-                        <a href="https://info.smpnutra.com/quote" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

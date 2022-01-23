@@ -6,7 +6,7 @@
 	<h1>2022 Nutraceutical Manufacturing Brochure</h1>
 	<nav aria-label="breadcrumb">
 	  <ol class="breadcrumb">
-	    <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+	    <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
 	    <li class="breadcrumb-item active" aria-current="page">2022 Nutraceutical Manufacturing Brochure</li>
 	  </ol>
 	</nav>
@@ -21,13 +21,13 @@
 		</div>
 		<div class="faq-content">
 			<div class="pdf-reader">
-				<embed src="https://smpnutra.com/wp-content/uploads/2020/12/SMP-Nutra-Sales-Brochure.pdf" width="800px" height="2100px"> </embed>											
+				<embed src="https://smpnutra.com/wp-content/uploads/2020/12/SMP-Nutra-Sales-Brochure.pdf" width="800px" height="2100px"> </embed>
 			</div>
-			<div class="faq-text">			
+			<div class="faq-text">
 				<h2>Are your ready to build your own brand or enhance your current supply? Partner with us at Gummy Specialists!</h2>
-			</div>			
+			</div>
 			<div class="faq-button">
-				<div class="button-left">					
+				<div class="button-left">
 					<a href="#" class="btn">View Our Catalog of Stock Formulas</a>
 				</div>
 				<div class="button-right">

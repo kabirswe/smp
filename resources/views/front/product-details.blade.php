@@ -2,20 +2,20 @@
 @extends('front.layouts.app')
 
 @section('content')
-<main class="main-container">    
+<main class="main-container">
    <div class="product-details-wrapper">
         <div class="man_intro_cont">
             <h1>All Stock Private Label Supplements</h1>
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
                 <li class="breadcrumb-item"><a href="#"> Products</a></li>
                 <li class="breadcrumb-item"><a href="#"> All Stock Private Label Supplements</a></li>
                 <li class="breadcrumb-item"><a href="#"> Beauty</a></li>
                 <li class="breadcrumb-item active" aria-current="page">3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</li>
             </ol>
             </nav>
-        </div> 
+        </div>
         <div class="product-details-main">
             <div class="container">
                 <div class="product-details">
@@ -63,13 +63,13 @@
                                     </div>
                                 </div>
                                 <div class="product-gallery-btn">
-                                    <a href="https://info.smpnutra.com/quote" class="btn">Send Inquiry<i class="ti ti-arrow-right"></i></a>
-                                </div>                                
+                                    <a href="#" class="btn">Send Inquiry<i class="ti ti-arrow-right"></i></a>
+                                </div>
                             </div>
                             <div class="product-text">
                                 <div class="product-title">
                                     <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
-                                    <p class="availability">(Product Availability May Vary)</p>                                    
+                                    <p class="availability">(Product Availability May Vary)</p>
                                 </div>
                                 <table width="189">
                                     <tbody>
@@ -78,23 +78,23 @@
                                             <td width="64">100597</td>
                                         </tr>
                                     </tbody>
-                                </table>                                    
+                                </table>
                                 <div class="product_meta">
                                     <span class="posted_in">
                                     <b>Categories</b>
-                                    <a href="https://smpnutra.com/product-category/stock-private-label-supplements" rel="tag">All Stock Private Label Supplements</a>, 
-                                    <a href="https://smpnutra.com/product-category/stock-private-label-supplements/beauty" rel="tag">Beauty</a>,
-                                    <a href="https://smpnutra.com/product-category/stock-private-label-supplements/gummy-vitamins" rel="tag">Gummy Vitamins</a>,
-                                    <a href="https://smpnutra.com/product-category/stock-private-label-supplements/new-products" rel="tag">New Products</a>,
-                                    <a href="https://smpnutra.com/product-category/stock-private-label-supplements/wellness" rel="tag">Wellness</a></span>                                        
+                                    <a href="" rel="tag">All Stock Private Label Supplements</a>,
+                                    <a href="/beauty" rel="tag">Beauty</a>,
+                                    <a href="/gummy-vitamins" rel="tag">Gummy Vitamins</a>,
+                                    <a href="/new-products" rel="tag">New Products</a>,
+                                    <a href="/wellness" rel="tag">Wellness</a></span>
                                 </div>
-                            </div> 
-                        </div>  
+                            </div>
+                        </div>
                         <div class="product-tab">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Related Products</button>
-                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Reviews (0)</button>                                       
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Reviews (0)</button>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
@@ -108,7 +108,7 @@
                                             <div class="product-descriptions">
                                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                                             </div>
-                                        </div>  
+                                        </div>
                                         <div class="single-item">
                                             <div class="product-image">
                                                 <img class="product-img" src="{{ asset('images/front/fe64.png') }}" alt="product image">
@@ -117,7 +117,7 @@
                                             <div class="product-descriptions">
                                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                                             </div>
-                                        </div> 
+                                        </div>
                                         <div class="single-item">
                                             <div class="product-image">
                                                 <img class="product-img" src="{{ asset('images/front/fe65.png') }}" alt="product image">
@@ -126,10 +126,10 @@
                                             <div class="product-descriptions">
                                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                                             </div>
-                                        </div>                                                
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">                                 
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                     <div class="reply">
                                         <div class="noreviews">
                                             <p>There are no reviews yet.</p>
@@ -153,7 +153,7 @@
                                         <div class="reply-form">
                                             <form action="#">
                                             <label for="rating" class="text-dark">Your review * </label>
-                                                <textarea class="form-control textarea-height"></textarea> 
+                                                <textarea class="form-control textarea-height"></textarea>
                                                 <div class="custom-form">
                                                     <div class="input-left">
                                                         <label for="rating" class="text-dark">Name * </label>
@@ -169,14 +169,14 @@
                                                     <label for="checkout-create-ac">Save my name, email, and website in this browser for the next time I comment.</label>
                                                 </div>
                                                 <div class="product-gallery-btn">
-                                                    <a href="https://info.smpnutra.com/quote" class="btn">Submit</a>
-                                                </div> 
+                                                    <a href="#" class="btn">Submit</a>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>
-                                </div>                               
+                                </div>
                             </div>
-                        </div>                                                                                
+                        </div>
                     </div>
                     <div class="product-sidebar">
                         <div class="product-sidebar-top">
@@ -190,31 +190,31 @@
                                     <a href="#">All Stock Private Label Supplements</a>
                                     <a href="#">Beauty</a>
                                     <a href="#">Best Sellers</a>
-                                    <a href="#">Bone</a>                       
-                                    <a href="#">Capsules</a>                       
-                                    <a href="#">Collagen</a>                    
-                                    <a href="#">Elderberry</a>                    
-                                    <a href="#">Essential Vitamins</a>                    
-                                    <a href="#">Fish Oil</a>                    
-                                    <a href="#">Gummy Vitamins</a>                    
-                                    <a href="#">Hair Skin & Nails</a>                    
-                                    <a href="#">Herbal</a>                    
-                                    <a href="#">Joint Health</a>                    
-                                    <a href="#">Keto</a>                    
-                                    <a href="#">Kids</a>                    
-                                    <a href="#">Liquids</a>                    
-                                    <a href="#">New Products</a>                    
-                                    <a href="#">Non-GMO Verified</a>                    
-                                    <a href="#">Pets</a>                    
-                                    <a href="#">Powders</a>                    
-                                    <a href="#">Sample Ready Products</a>                    
-                                    <a href="#">Softgels</a>                    
-                                    <a href="#">Sports Nutrition</a>                    
-                                    <a href="#">Sugar-Free</a>                    
-                                    <a href="#">Weight Management</a>                    
-                                    <a href="#">Wellness</a>                    
-                                    <a href="#">Packaging</a>                    
-                                    <a href="#">Uncategorized</a> 
+                                    <a href="#">Bone</a>
+                                    <a href="#">Capsules</a>
+                                    <a href="#">Collagen</a>
+                                    <a href="#">Elderberry</a>
+                                    <a href="#">Essential Vitamins</a>
+                                    <a href="#">Fish Oil</a>
+                                    <a href="#">Gummy Vitamins</a>
+                                    <a href="#">Hair Skin & Nails</a>
+                                    <a href="#">Herbal</a>
+                                    <a href="#">Joint Health</a>
+                                    <a href="#">Keto</a>
+                                    <a href="#">Kids</a>
+                                    <a href="#">Liquids</a>
+                                    <a href="#">New Products</a>
+                                    <a href="#">Non-GMO Verified</a>
+                                    <a href="#">Pets</a>
+                                    <a href="#">Powders</a>
+                                    <a href="#">Sample Ready Products</a>
+                                    <a href="#">Softgels</a>
+                                    <a href="#">Sports Nutrition</a>
+                                    <a href="#">Sugar-Free</a>
+                                    <a href="#">Weight Management</a>
+                                    <a href="#">Wellness</a>
+                                    <a href="#">Packaging</a>
+                                    <a href="#">Uncategorized</a>
                                 </div>
                             </div>
                             <div class="search-products">
@@ -224,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
    </div>
@@ -344,7 +344,7 @@ $(window).resize(function() {
             lensFadeOut: 500,
             cursor: "https://icodefy.com/Tools/iZoom/images/zoom-out.png",
         });
-				
+
     }
 })
 
@@ -354,6 +354,6 @@ $(document).ready(function() {
 
 
 </script>
-    
+
 
 @endpush

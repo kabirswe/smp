@@ -10,7 +10,7 @@
                 <span>
                     <a property="item" typeof="WebPage"
                         title="Go to gummyspecialists.com | Your Premier Private Label Supplement Manufacturer."
-                        href="https://smpnutra.com" class="home"><span property="name">gummyspecialists.com | Your
+                        href="{{ route('home') }}" class="home"><span property="name">gummyspecialists.com | Your
                             Premier Private Label Supplement Manufacturer</span></a>
                 </span>
                 <span>
