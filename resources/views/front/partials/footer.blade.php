@@ -128,22 +128,26 @@
                         </div>
                         <ul>
 							<li>
-					            <a href="#">
+					            <a href="https://www.facebook.com/gummyspecialists">
 							        <i class="ti ti-facebook"></i>
+								</a>
+							</li><li>
+					            <a href="https://twitter.com/GummySpecs">
+							        <i class="ti ti-twitter-alt"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="#">
+					            <a href="https://www.linkedin.com/company/gummyspecs">
 							        <i class="ti ti-linkedin"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="#">
+					            <a href="https://www.youtube.com/channel/UCR9Lt2f62pphUvC155XSRZg">
 							        <i class="ti ti-youtube"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="#">
+					            <a href="https://www.instagram.com/gummyspecialists/">
 							        <i class="ti ti-instagram"></i>
 								</a>
 							</li>
