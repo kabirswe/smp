@@ -1,21 +1,21 @@
 
 @extends('front.layouts.app')
-
+@push('custom-style')
+    <link rel="stylesheet" href="{{ asset('css/front/product-details.css') }}">
+@endpush
 @section('content')
 <main class="main-container">
    <div class="product-details-wrapper">
-        <div class="man_intro_cont">
-            <h1>All Stock Private Label Supplements</h1>
-            <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
-                <li class="breadcrumb-item"><a href="#"> Products</a></li>
-                <li class="breadcrumb-item"><a href="#"> All Stock Private Label Supplements</a></li>
-                <li class="breadcrumb-item"><a href="#"> Beauty</a></li>
-                <li class="breadcrumb-item active" aria-current="page">3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</li>
-            </ol>
-            </nav>
-        </div>
+    <div class="man_intro_cont">
+		<h1>All Stock Private Label Supplements</h1>
+		<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+            <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
+			<li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
+		</ol>
+		</nav>
+	</div>
         <div class="product-details-main">
             <div class="container">
                 <div class="product-details">

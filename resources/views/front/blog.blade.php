@@ -7,12 +7,11 @@
 <main class="main-container">
     <div class="blog-wrapper">
         <div class="man_intro_cont">
-            <h1>All Stock Private Label Supplements</h1>
+            <h1>Gummy Specialists Your Premier Private Label Supplement Manufacturer</h1>
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
-                <li class="breadcrumb-item"><a href="#">Library</a>Products</li>
-                <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
+                <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+                <li class="breadcrumb-item active" aria-current="page">News & Research For Nutra-Brand Owners</li>
             </ol>
             </nav>
         </div>

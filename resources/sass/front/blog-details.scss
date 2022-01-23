@@ -16,6 +16,7 @@
         }
         .breadcrumb {
             background-color: #fff;
+
             .breadcrumb-item {
                 color: #000;
                 text-align: center;
@@ -26,6 +27,13 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 26px;
+                }
+                &::before {
+                    content: none;
+                }
+                i {
+                    margin-left: 10px;
+                    font-size: 15px;
                 }
             }
         }

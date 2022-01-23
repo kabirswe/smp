@@ -2,9 +2,10 @@
 @import "./mixins.scss";
 footer {
     .request-quote {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s;
         padding: 60px 0px 60px 0px;
-        background: linear-gradient(-45deg,#23A6D5,#23D5AB)!important;
+        background: linear-gradient(-45deg, #23a6d5, #23d5ab) !important;
         animation: Gradient 15s ease infinite;
         h2 {
             color: #f2f2f2;
@@ -22,7 +23,7 @@ footer {
             margin-bottom: 20px;
         }
         a {
-            background-color: #61CE70;
+            background-color: #61ce70;
             color: $white;
             width: 212px;
             height: 40px;
@@ -51,7 +52,8 @@ footer {
         border-style: solid;
         border-width: 1px 0px 1px 0px;
         border-color: #f4f4f4;
-        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s;
         padding: 24px 0px 24px 0px;
         img {
             width: 205px;
@@ -71,7 +73,7 @@ footer {
             height: 61px;
             &:first-child {
                 height: 40px;
-                width: 225px;
+                width: 260px;
             }
             &:hover {
                 background-color: #165e60;
@@ -86,7 +88,8 @@ footer {
         }
     }
     .footer-main {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s;
         padding: 86px 0px 86px 0px;
         .block {
             display: flex;
@@ -123,7 +126,7 @@ footer {
                     &::before {
                         display: inline-block;
                         content: "\e628";
-                        font-family: 'themify';
+                        font-family: "themify";
                         opacity: 1;
                         left: 0;
                         position: absolute;
@@ -151,7 +154,8 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                box-shadow 0.3s;
             padding: 20px 0px 20px 0px;
             p {
                 line-height: 26px;
@@ -161,7 +165,8 @@ footer {
                 font-size: 16px;
             }
             .request {
-                a, p {
+                a,
+                p {
                     line-height: 26px;
                     font-weight: 500;
                     font-style: normal;

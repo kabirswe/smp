@@ -5,17 +5,15 @@
 @endpush
 @section('content')
 <main class="blog-details-container">
-    <div class="man_intro_cont">
-        <h1>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h1>
-        <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
-            <li class="breadcrumb-item"><a href="#">News & Research For Nutra-Brand Owners</a></li>
-            <li class="breadcrumb-item"><a href="#">Uncategorized</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</li>
-        </ol>
-        </nav>
-    </div>
+        <div class="man_intro_cont">
+            <h1>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h1>
+            <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+                <li class="breadcrumb-item active" aria-current="page">Donates 1,000 Vitamin D3 Bottles for COVID Relief!</li>
+            </ol>
+            </nav>
+        </div>
     <div class="mail-blog">
         <div class="container">
             <div class="blog-content-area">
