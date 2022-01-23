@@ -277,9 +277,9 @@
                 width: calc(50% - 10px);
                 .images-right {
                     h3 {
-                        color: #31708f;
-                        background-color: #d9edf7;
-                        border-color: #bcdff1;
+                        color: #3c763d;
+                        background-color: #dff0d8;
+                        border-color: #cae6be;
                         padding: 15px;
                         text-align: left;
                         font-size: 16px;
@@ -289,9 +289,59 @@
             }
         }
     }
+    .gelatin-capsules {
+        padding: 50px 0 80px;
+        background-color: #fbfbfb;
+        .manufacturing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-family: Oxygen;
+                    line-height: 50px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                }
+            }
+        }
+    }
     .wet-granulation-wrapper {
         background-attachment: fixed;
-        background-image: url(https://smpnutra.com/wp-content/uploads/2020/01/shutterstock_35010355-1.jpg);
+        background-image: url(https://smpnutra.com/wp-content/uploads/2019/12/shutterstock_377545441-1.jpg);
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -419,133 +469,6 @@
             }
         }
     }
-    .encapsulation-process-wrapper {
-        padding: 50px 0 100px;
-        background-color: #fbfbfb;
-        .manufacturing {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .content-block {
-                width: calc(50% - 10px);
-                h2 {
-                    font-family: Oxygen;
-                    line-height: 50px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
-                }
-                p {
-                    line-height: 26px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                }
-            }
-            .image-block {
-                width: calc(50% - 10px);
-                border-style: solid;
-                border-width: 0px 0px 0px 0px;
-                border-color: #ededed;
-                transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
-                .images-right {
-                    p {
-                        margin-bottom: 30px;
-                    }
-                }
-            }
-        }
-    }
-    .capsule-shell {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-            box-shadow 0.3s;
-        padding: 60px 0px 60px 0px;
-        background-color: #fbfbfb;
-        h2 {
-            font-family: $oxygen;
-            line-height: 50px;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 40px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h4 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-    }
-    .gelatin-capsules {
-        padding: 50px 0 80px;
-        background-color: #fbfbfb;
-        .manufacturing {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .content-block {
-                width: calc(50% - 10px);
-                h2 {
-                    font-family: Oxygen;
-                    line-height: 50px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
-                }
-                p {
-                    line-height: 26px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                }
-            }
-            .image-block {
-                width: calc(50% - 10px);
-                border-style: solid;
-                border-width: 0px 0px 0px 0px;
-                border-color: #ededed;
-                transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
-                .images-right {
-                }
-            }
-        }
-    }
     .vegetarian-capsules {
         padding: 50px 0 80px;
         background-color: #fbfbfb;
@@ -564,14 +487,9 @@
                     font-size: 40px;
                     margin-bottom: 30px;
                 }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
+                a {
+                    margin-top: 40px;
+                    width: 400px;
                 }
             }
             .image-block {
@@ -640,6 +558,10 @@
                         color: #4b4b4b;
                         font-size: 16px;
                     }
+                    a {
+                        margin-top: 40px;
+                        width: 400px;
+                    }
                 }
                 .slider-block {
                     width: 50%;
@@ -663,10 +585,6 @@
                                 }
                             }
                         }
-                    }
-                    a {
-                        margin-top: 40px;
-                        width: 400px;
                     }
                 }
             }

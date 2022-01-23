@@ -109,16 +109,43 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Manufacturing Process of Softgels </h2>
+                    <h2>Manufacturing Process of Softgels</h2>
                     <p>Softgel encapsulation is a common practice, as it is very versatile. The process of producing a softgel capsule is comprised of four main stages:</p>
                     <ol>
                         <li>Preparing gelatin</li>
-                        <li>Dry Granulation Process&nbsp;</li>
+                        <li>Preparing the fill</li>
+                        <li>Begin encapsulating the fill</li>
+                        <li>Finishing touches on filled softgels</li>
                     </ol>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/PowderBlender2-01.png') }}" alt="">
+                        <h3>Preparing gelatin</h3>
+                        <h3>Preparing fill</h3>
+                        <h3>Encapsulating the fill</h3>
+                        <h3>Drying & polishing softgels</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gelatin-capsules">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="manufacturing">
+                <div class="content-block">
+                    <h2>Preparing the Gelatin</h2>
+                    <h4>Preparing the gelatin capsule is the very first step in the process. To note, this process is not identical to the process of making veggie softgels. But to begin with gelatin softgels, you must get the ingredients for it together. The four main components are:</h4>
+                    <ol>
+                        <li>Gelatin</li>
+                        <li>Plasticizer</li>
+                        <li>Water</li>
+                        <li>Additives for various traits</li>
+                    </ol>
+                </div>
+                <div class="image-block">
+                    <div class="images-right">
+                       <p>To begin, a machine will melt a large quantity of gelatin with the other three components. Not only will it melt all the ingredients, but it will allow for the appropriate mixing of all components. The four components are mixed until the blend is going to make a softgel shell that is durable and effective for the intended use. The addition of coloring agents and other additives will make every blend unique for creating the perfect softgel shell. Following the completed mixture of all ingredients, the mixture needs to stay warm, so it maintains the consistency of a liquid. </p>
                     </div>
                 </div>
             </div>
@@ -129,97 +156,49 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Wet Granulation Blend Capsule Manufacturing</h2>
-                    <h4>During the wet granulation process, you begin with the blend for the supplement ready and mixed. Then the mixed blend will then have water added to it.</h4>
-                    <p>The water will wet the powder and add an immobile layer of water between particles. With more and more water being added to the powder, it will continually grow the layer of water gets wider and will ultimately pass through the pores of the particles.</p>
+                    <h2>Encapsulating Your Formula Inside A Softgel</h2>
+                    <h4>Specifically, with softgels, the process of encapsulating the formula happens simultaneously as the shell is added to a machine along with the blend. This process all takes place in a room that is temperature-controlled and with a humidity of around 20%. Having optimal conditions for softgel manufacturing is key to producing a high-quality end product.</h4>                                                      
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <p>To then get the water out of the blend, it will be evaporated and will result in a very strong level of adhesion for the particles, which will result in the particles grouping in and becoming larger. The size of particles will be affected by many factors such as blend, density, and the type and amount of binders added are a few of those. </p>
-                        <p>The final step will be drying. For small batches, a tray drying oven is used, but for more automation and larger batches, fluid bed dryers are used. These driers utilize a stream of warm and dehumidified air running through the base of the drying chamber. To keep the powder from being pushed out of the chamber, a fine mesh is in place to keep all powder where it needs to be.</p>
-                    </div>
+                        <p>The process of creating a finished softgel starts with the blend of gelatin, which is prepared previously. The gelatin blend will be poured onto two drums, which are extremely cold. The drums roll continually, causing the gelatin blend to both solidify and roll off as a solid sheet, but it will be split in half. With both halves now ready, they will be put through a process that will cut each half to the appropriate size and shape. The two matching halves will be met together, but first, your custom blend will be inserted into a heated wedge. This heated wedge will be encased by both halves of the softgel. Once the wedge is in place, and the softgel is nearly closed, the wedge will inject the custom formula into the softgel. This being the final step of the process, the wedge is removed, and the softgel is quickly sealed or coated as directed and will be set aside to cool and settle. </p>
+                    </div>                 
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <div class="dry-granulation-wrapper">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Dry Granulation Blend Capsule Manufacturing </h2>
-                    <h4>The process of dry granulation is commonly used when the blend being used does correctly work or operate as intended when met with moisture and heat.</h4>
-                    <p>The main difference in this process is the fact that liquids are never introduced to the blend. With the prepared blend of ingredients, the powder will be fed into a machine that will apply immense pressure and force to make the powder more compact and increase the bulk density. The amount of force needed varies depending on the blend, its ingredients, and the desired density.</p>
+                    <h2>Drying & Finishing Process</h2>
+                    <h4>The softgels will  be put into a cool drum, which will rotate fast to help the gelatin congeal. The finished softgel will undergo further drying, which is a process that is comprised of a couple of steps:</h4>
+                    <ol>
+                        <li>Tumble drying</li>
+                        <li> Drying tunnel</li>
+                    </ol>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/dry.jpg') }}" alt="">
+                       <p>A tumble dryer is a machine that will dry the softgels for no more than 45 minutes. The outcome from this step is going to be the removal of nearly 25% of water within the softgel capsules.</p>
+                       <p>After being in the tumbler machine, the softgels are introduced to the drying tunnel. This is an environment where the softgels are laid on racks, and subject to swift flow of air continually flows for up to 48 hours. This is the final drying step for the softgel capsules before inspection. </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="encapsulation-process-wrapper">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="manufacturing">
-                <div class="content-block">
-                    <h2>Encapsulation Process</h2>
-                    <h4>Manufacturing a nutraceutical capsule is a process that takes many steps to make perfect.</h4>
-                    <p>When producing these capsules, the materials must be gathered. Once all materials are prepared, they are joined with hot demineralized water and mixed via vacuum, in a machine. Over time, the blend will have more hot water added, dyes and opacifants if needed. When ready, the mixture will be molded around steel pins into the correct size and shape of the capsule. Both ends of the capsule are then dried together. The level of the temperature and humidity are monitored to correctly allow for optimal drying of the capsules. </p>
-                    <p>After the process of preparing and drying the capsule, the cap and body will be trimmed to a .15 mm tolerance. The capsules are put together and are ready to be filled and sent out.</p>
-                </div>
-                <div class="image-block">
-                    <div class="images-right">
-                        <img src="{{ asset('images/front/dry.jpg') }}" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="capsule-shell">
-        <div class="container">
-            <div class="row">
-                <div class="d-flex justify-content-center flex-column w-100">
-                    <h2>Capsule Shell Choices</h2>
-                    <p>Capsule shells are distinguished between two categories:</p>
-                    <h4>Gelatin capsule</h4>
-                    <h4>Vegetarian capsule</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="gelatin-capsules">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="manufacturing">
-                <div class="content-block">
-                    <h2>Gelatin Capsules</h2>
-                    <h4>Gelatin is made from animal by-products derived from beef only such as bovine or cows.</h4>
-                    <p>The part in which it comes from is called the collagen, which is the soft protein that connects the skin, bones, muscles, and tendons of the animal. A slew of potential health benefits come with the gelatin shell since it contains protein and two amino acids; Glycine and Proline.</p>
-                </div>
-                <div class="image-block">
-                    <div class="images-right">
-                        <img src="{{ asset('images/front/gelatin.jpg') }}" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>  
     <div class="vegetarian-capsules">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Vegetarian Capsules</h2>
-                    <h4>When dealing with vegetarian capsule shells, there are two main variations:</h4>
-                    <ol>
-                        <li><h4>Hypromellose</h4></li>
-                        <li><h4>Pullulan</h4></li>
-                    </ol>
+                    <h2>Gummy Specialists Wants To Be Your Softgel Manufacturer</h2>
+                    <a href="#" class="btn common-btn">Get A Softgel Manufacturing Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
+                        <h4>If you have a great formula that you want encapsulated within a softgel, work with us and we can get your softgels.</h4>
                        <p>Hypromellose, officially known as Hydroxypropyl Methylcellulose (HPMC), only contains HPMC and purified water. This option includes no preservatives, animal by-products and is GMO-free, gelatin-free, gluten-free, starch-free and BSE free.</p>
                        <p>The other veggie capsule shell option is Pullulan. Pullulan is a water-soluble polysaccharide produced by the fermentation of starch/sugar by the fungus Aerobasidum pullulans. It is 100% natural, starch-free, gluten-free, preservative-free, and GMO-free. Unlike HPMC, Pullulan is 100% natural because it is not produced by any chemical modification</p>
                     </div>
@@ -233,8 +212,9 @@
             <div class="pre-manufactured">
                 <div class="top-block">
                     <div class="content-block">
-                        <h2>Check Out Our Private Label Capsule Products</h2>
-                        <p>We have many in-stock already manufactured supplement products in our warehouse, ready for you label to be put on. We have real-time catalog on our website updated everyday! Check to see our inventory of private label supplements. We also offer samples of every stock supplement for you to try before investing the product into your brand.</p>
+                        <h2>Check Out Our Stock Private Label Softgel Products</h2>
+                        <p>Make sure to check out our stock private label softgel products. There, you can see what we believe is some of the best formulas that are on a level of their own. They possibly offer a wide variety of vitamins and nutrients that may be very beneficial. We also offer other stock products and they are just as important as our collagen products, they can be viewed here.</p>
+                        <a href="#" class="btn common-btn">See Our Private Label Softgel Products Here<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <div class="slider-block">
                         <div class="slider">
@@ -258,8 +238,7 @@
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                             </div>
-                        </div>
-                        <a href="#" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
+                        </div>                        
                     </div>
                 </div>
             </div>

@@ -490,7 +490,7 @@
 				<div class="elementor-widget-container">
 								<div class="elementor-text-editor elementor-clearfix">
 					<h2>2021 Manufacturing Company Of The Year</h2>
-SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing company of the year</strong>! This award is a testament to the hard work and dedication that every team member at SMP puts in to deliver an experience no other manufacturer can.					</div>
+					Gummy Specialists proudly accepted the <strong>Gold Stevie Award for the best manufacturing company of the year</strong>! This award is a testament to the hard work and dedication that every team member at Gummy Specialists puts in to deliver an experience no other manufacturer can.					</div>
 						</div>
 				</div>
 				<div class="elementor-element elementor-element-30b8f22 elementor-widget elementor-widget-sm-default-button" data-id="30b8f22" data-element_type="widget" data-widget_type="sm-default-button.default">
@@ -541,7 +541,7 @@ SMP proudly accepted the <strong>Gold Stevie Award for the best manufacturing co
 				<div class="elementor-element elementor-element-6e0e589 elementor-widget elementor-widget-text-editor" data-id="6e0e589" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 								<div class="elementor-text-editor elementor-clearfix">
-					<p>Bring your supplements to the market with the industry leaders at SMP Nutra where we simplify manufacturing with stellar communication and transparency. Check out our <a href="product-category/stock-private-label-supplements.html" target="_blank" rel="noopener">250+ stock supplement formulas</a> that you can bring to your brand today!</p>					</div>
+					<p>Bring your supplements to the market with the industry leaders at Gummy Specialists where we simplify manufacturing with stellar communication and transparency. Check out our <a href="product-category/stock-private-label-supplements.html" target="_blank" rel="noopener">250+ stock supplement formulas</a> that you can bring to your brand today!</p>					</div>
 						</div>
 				</div>
 						</div>

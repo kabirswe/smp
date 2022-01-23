@@ -13,23 +13,23 @@
                         </button>
                         <div class="dropdown-content">
                             <a href="{{ route('supplement_manufacturing') }}">About Us</a>
-                            <a href="{{ route('meet_the_team') }}">Meet The Team</a>
-                            <a href="{{ route('awards_certifications') }}">Certifications</a>
+                            <!-- <a href="{{ route('meet_the_team') }}">Meet The Team</a>
+                            <a href="{{ route('awards_certifications') }}">Certifications</a> -->
                             <a href="{{ route('labdoor_partnership') }}">Labdoor Partnership</a>
                         </div>
                     </div>
-                    <a href="{{ route('who_to_contact') }}">Blog</a>
+                    <a href="{{ route('blog') }}">Blog</a>
                     <div class="nav-dropdown">
                         <button class="dropbtn">Custom
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="{{ route('capsule_manufacturing') }}">Capsule Manufacturing</a>
+                            <!-- <a href="{{ route('capsule_manufacturing') }}">Capsule Manufacturing</a>
                             <a href="{{ route('tablet_manufacturing') }}">Tablet Manufacturing</a>
-                            <a href="{{ route('powder_manufacturing') }}">Powder Manufacturing</a>
+                            <a href="{{ route('powder_manufacturing') }}">Powder Manufacturing</a> -->
                             <a href="{{ route('softgel_manufacturing') }}">Softgel Manufacturing</a>
                             <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamin Manufacturing</a>
-                            <a href="{{ route('liquid_capsule') }}">Liquid Capsule Manufacturing</a>
+                            <!-- <a href="{{ route('liquid_capsule') }}">Liquid Capsule Manufacturing</a> -->
                         </div>
                     </div>
                     <div class="nav-dropdown">
@@ -41,16 +41,17 @@
                             <a href="#">Softgel</a>
                         </div>
                     </div>
-                    <a href="{{ route('home') }}">Design</a>
-                    <a href="{{ route('fulfillment') }}">Fulfillment</a>
-                    <div class="nav-dropdown">
+                    <a class="nav-link disabled" href="{{ route('home') }}">Design</a>
+                    <a class="nav-link disabled" href="{{ route('fulfillment') }} disabled">Fulfillment</a>
+                    <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
+                    <!-- <div class="nav-dropdown">
                         <button class="dropbtn">FAQ
                         <i class="ti ti-angle-down"></i>
                         </button>
                         <div class="dropdown-content">
                             <a href="{{ route('faq') }}">2022 Nutraceutical Manufacturing Brochure</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="nav-dropdown">
                         <button class="dropbtn">Contact Us
                         <i class="ti ti-angle-down"></i>
@@ -61,7 +62,7 @@
                     </div>
                 </div>
                 <div class="call-us">
-                    <p>Call Us 24/7: (000) 000-0000</p>
+                    <p>Call Us 24/7: 1-833-MYGUMMY</p>
                     <div class="search-block">
                         <div class="search">
                             <input type="text" placeholder="search" />

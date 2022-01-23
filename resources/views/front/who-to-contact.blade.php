@@ -53,7 +53,7 @@
 						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact John Riccobono<br>
-								<a href="#">john@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>							
 							</div>
 						</div>
 						</div>				
@@ -78,7 +78,7 @@
 							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Esmerelda Rodriguez<br>
-								<a href="#">operations@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>							
 							</div>
 							</div>
 						</div>
@@ -92,11 +92,11 @@
 							<div class="accordion-body">
 								Please contact:<br>							
 								<strong>Sharon Rubin</strong><br>							
-								<a href="#">Sharon@gummyspecialists.com</a>
+								<a href="#">sales@gummyspecialists.com</a>
 								<br>
 								or
 								<strong>Karen Carrasco</strong><br>	
-								<a href="#">Karen@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>							
 							</div>
 							</div>
 						</div>
@@ -109,7 +109,7 @@
 							<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Amber Palazzo<br>
-								<a href="#">operations@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>							
 							</div>
 							</div>
 						</div>
@@ -122,7 +122,7 @@
 							<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Nick Aglio<br>
-								<a href="#">Aglio@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>							
 							</div>
 							</div>
 						</div>
@@ -135,7 +135,7 @@
 							<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Anders Fritzen<br>
-								<a href="#">Anders@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>							
 							</div>
 							</div>
 						</div>
@@ -148,7 +148,7 @@
 							<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact our fulfillment team<br>
-								<a href="#">fulfillment@gummyspecialists.com</a>
+								<a href="#">sales@gummyspecialists.com</a>
 							</div>
 							</div>
 						</div>
@@ -162,7 +162,7 @@
 							<div class="accordion-body">
 								Please contact:<br>
 								<strong>Zach Passarella</strong><br>							
-								<a href="#">Zach@gummyspecialists.com</a><br>
+								<a href="#">sales@gummyspecialists.com</a><br>
 								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
 							</div>
 							</div>
@@ -177,7 +177,7 @@
 							<div class="accordion-body">
 								Please contact:<br>
 								<strong>Zach Passarella</strong><br>		
-								<a href="#">Zach@gummyspecialists.com</a><br>	
+								<a href="#">sales@gummyspecialists.com</a><br>	
 								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
 							</div>
 							</div>
@@ -207,7 +207,7 @@
 							<div class="accordion-body">
 								Please contact:<br>
 								<strong>Zach Passarella</strong><br>
-								<a href="#">Zach@gummyspecialists.com</a><br>						
+								<a href="#">sales@gummyspecialists.com</a><br>						
 								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
 							</div>
 							</div>
@@ -221,7 +221,7 @@
 							<div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Brittany Milano<br>
-								<a href="#">operations@gummyspecialists.com.com</a>							
+								<a href="#">sales@gummyspecialists.com.com</a>							
 							</div>
 							</div>
 						</div>
@@ -234,7 +234,7 @@
 							<div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Steven Milano<br>
-								<a href="#">operations@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>							
 							</div>
 							</div>
 						</div>
@@ -247,7 +247,7 @@
 							<div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Zach Passarella<br>
-								<a href="#">Zach@gummyspecialists.com</a>
+								<a href="#">sales@gummyspecialists.com</a>
 							</div>
 							</div>
 						</div>
@@ -260,7 +260,7 @@
 							<div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact John Riccobono
-								<a href="#">John@gummyspecialists.com</a>
+								<a href="#">sales@gummyspecialists.com</a>
 							</div>
 							</div>
 						</div>
@@ -273,7 +273,7 @@
 							<div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Nick Aglio<br>
-								<a href="#">labels@gummyspecialists.com</a>					
+								<a href="#">sales@gummyspecialists.com</a>					
 								We can also print a custom company gusset bag that can fit all of your products to replace a box. (Big brands are now doing using bags over boxes)
 							</div>
 							</div>

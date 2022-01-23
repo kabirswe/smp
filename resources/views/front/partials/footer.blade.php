@@ -8,7 +8,7 @@
                     <div class="d-flex justify-content-center">
                         <a href="#" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
-                    <p class="call-us">Or call us at <strong>(000) 000-0000</strong></p>
+                    <p class="call-us">Or call us at <strong>1-833-MYGUMMY</strong></p>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                     <div class="d-flex justify-content-end align-items-center">
-                        <a href="tel:000-000-000" class="btn">Call Us: 000-000-000<i class="ti ti-arrow-right"></i></a>
+                        <a href="tel:1-833-MYGUMMY" class="btn">Call Us: 1-833-MYGUMMY<i class="ti ti-arrow-right"></i></a>
                         <a href="#" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>
                         <a href="#" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
@@ -54,13 +54,13 @@
                     <div class="block">
                         <div class="item">
                             <h2>Custom Manufacturing</h2>
-                            <a href="{{ route('capsule_manufacturing') }}">Capsules</a>
+                            <!-- <a href="{{ route('capsule_manufacturing') }}">Capsules</a>
                             <a href="{{ route('tablet_manufacturing') }}">Tablets</a>
-                            <a href="{{ route('powder_manufacturing') }}">Powder</a>
+                            <a href="{{ route('powder_manufacturing') }}">Powder</a> -->
                             <a href="{{ route('softgel_manufacturing') }}">Softgels</a>
                             <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamins</a>
-                            <a href="{{ route('liquid_capsule') }}">Liquid Capsules</a>
-                            <a href="#">Liquids</a>
+                            <!-- <a href="{{ route('liquid_capsule') }}">Liquid Capsules</a> -->
+                            <!-- <a href="#">Liquids</a> -->
                         </div>
                         <div class="item">
                             <h2>Additional Services</h2>
@@ -124,7 +124,7 @@
                         <p>© 2022 gummyspecialists.com</p>
                         <div class="request">
                             <a style="color: #ffffff;" href="#">Request A Quote</a>
-                            <p><strong>000-000-0000</strong></p>
+                            <p><strong>1-833-MYGUMMY</strong></p>
                         </div>
                         <ul>
 							<li>
@@ -150,9 +150,7 @@
 						</ul>
                     </div>
                     <div class="bottom-block">
-                        <p><em>*Price quotes are typically returned within 48 hours of receiving them fully completed.<br></em></p>
-                        <p><em>**None of the information presented on our website or blog is intended to service as legal or regulatory counsel. Users are encouraged to seek professional assistance and counsel if they are concerned about a specific legal or regulatory issue.</em></p><em>
-                        </em><p><em>***These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.</em></p>
+                        <p><em>*Before using any product, always check the product label or packaging All the information provided on this website does not, and in no way is intended to serve as legal or regulatory counsel. You are encouraged to seek legal advice or other professional advice if you are concerned about a specific legal or regulatory issue. Any statements or claims about the possible health benefits have not been evaluated by the Food and Drug Administration(FDA). These products are not intended to diagnose, treat, cure, or prevent any disease.<br></em></p>                        
                     </div>
                 </div>
             </div>

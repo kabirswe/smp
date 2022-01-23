@@ -43,7 +43,7 @@
                                     Managing Partner </strong>
                             </h4>
                             <p>
-                                Steve@gummyspecialists.com
+                                sales@gummyspecialists.com
                             </p>
                             <div class="description">
                                 <p>
@@ -81,7 +81,7 @@
                                     Managing Partner </strong>
                             </h4>
                             <p>
-                                Steve@gummyspecialists.com
+                                sales@gummyspecialists.com
                             </p>
                             <div class="description">
                                 <p>
@@ -119,7 +119,7 @@
                                     Managing Partner </strong>
                             </h4>
                             <p>
-                                Steve@gummyspecialists.com
+                                sales@gummyspecialists.com
                             </p>
                             <div class="description">
                                 <p>
@@ -171,7 +171,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -192,7 +192,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -213,7 +213,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -234,7 +234,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
                             </div>
                         </div>
@@ -254,7 +254,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
                             </div>
                         </div>
@@ -287,7 +287,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -308,7 +308,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -329,7 +329,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -350,7 +350,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
                             </div>
                         </div>
@@ -384,7 +384,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -405,7 +405,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -426,7 +426,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -447,7 +447,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
                             </div>
                         </div>
@@ -467,7 +467,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -488,7 +488,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -509,7 +509,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -530,7 +530,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
                             </div>
                         </div>
@@ -550,7 +550,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -571,7 +571,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -592,7 +592,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -613,7 +613,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
                             </div>
                         </div>
@@ -647,7 +647,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -668,7 +668,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -705,7 +705,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -726,7 +726,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -765,7 +765,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -786,7 +786,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -825,7 +825,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>
@@ -846,7 +846,7 @@
                                         Managing Partner </strong>
                                 </h4>
                                 <p>
-                                    Steve@gummyspecialists.com
+                                    sales@gummyspecialists.com
                                 </p>
 
                             </div>

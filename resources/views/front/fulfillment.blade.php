@@ -4,19 +4,19 @@
 <main class="main-container">
 <div class="fulfillment">
     <div class="man_intro_cont">
-        <h1>Fulfillment</h1>
-        <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Fulfillment</li>
-        </ol>
-        </nav>
-    </div>
+		<h1>Fulfillment</h1>
+		<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+			<li class="breadcrumb-item active" aria-current="page">Fulfillment</li>
+		</ol>
+		</nav>
+	</div>
     <div class="fulfillment-main">
         <div class="container">
             <div class="fulfillment-media-content">
                 <div class="fulfillment-media">
-                <iframe width="650" height="315" src="https://www.youtube.com/embed/VsVIOV5bMHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <iframe width="645" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="fulfillment-text">
                     <h1>We Have The Capability To Store & Ship All Of Your Products</h1>

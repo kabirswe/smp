@@ -117,7 +117,7 @@
                     <div class="d-flex justify-content-center">
                         <a href="#" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
-                    <p class="call-us">Or call us at <strong>(000) 000-0000</strong></p>
+                    <p class="call-us">Or call us at <strong>1-833-MYGUMMY</strong></p>
                 </div>
             </div>
         </div>
@@ -314,8 +314,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly
-(Product Availability May Vary)</h2>
+                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
                                 </a>
                             </div>
                         </div>
@@ -355,8 +354,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly
-(Product Availability May Vary)</h2>
+                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
                                 </a>
                             </div>
                         </div>

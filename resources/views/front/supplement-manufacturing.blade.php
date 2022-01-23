@@ -19,15 +19,11 @@
                         <iframe allowfullscreen="1"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             title="YouTube video player"
-                            src="https://www.youtube.com/embed/juXAfANaN9c?controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsmpnutra.com&amp;widgetid=1"
-                            id="widget2" style="width: 1519px; height: 854.438px;" width="640" height="360" frameborder="0">
-
+                            src="https://www.youtube.com/embed/G1nZNpPBz1o"
+                            id="widget2" style="width: 100vw; height: 854.438px;" width="100vw" height="360" frameborder="0">
                         </iframe>
                     </div>
-
                 </div>
-
-
             </div>
             <div class="widgets">
                 <div class="widget-wrapper">
@@ -665,14 +661,7 @@
                                 warehouse.&nbsp;</div>
                         </div>
                         <div class="cm-right">
-                            <iframe class="capsule-manufacturing-video" allowfullscreen="1"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                title="YouTube video player"
-                                src="https://www.youtube.com/embed/juXAfANaN9c?controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsmpnutra.com&amp;widgetid=1"
-                                id="widget2" style="width: 550px; height: 310px; left: 0px; top: -310px;" width="640"
-                                height="360" frameborder="0">
-
-                            </iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
 

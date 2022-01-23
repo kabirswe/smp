@@ -1,6 +1,6 @@
 @import "./variables.scss";
 @import "./mixins.scss";
-.capsule-manufacturing-container {
+.gummy-vitamin-manufacturing-container {
     .man_intro_cont {
         text-align: center;
         width: 800px;
@@ -186,7 +186,7 @@
                     margin-bottom: 30px;
                 }
                 a {
-                    width: 320px;
+                    width: 350px;
                 }
             }
             .video-block {
@@ -198,59 +198,10 @@
             }
         }
     }
-    .network-wrapper {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-            box-shadow 0.3s;
-        padding: 50px 50px 50px 50px;
-        background-color: #fff;
-        .network {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h2 {
-                line-height: 50px;
-                font-weight: 700;
-                font-style: normal;
-                color: #333;
-                font-size: 40px;
-                margin-bottom: 30px;
-                text-align: center;
-            }
-            p {
-                line-height: 26px;
-                font-weight: 700;
-                font-style: normal;
-                color: #4b4b4b;
-                font-size: 20px;
-                text-align: center;
-            }
-        }
-    }
+
     .manufacturing-wrapper {
-        background-attachment: fixed;
-        background-image: url(https://smpnutra.com/wp-content/uploads/2019/12/shutterstock_1288761148-1.jpg);
-        background-position: bottom right;
-        background-repeat: no-repeat;
-        background-size: cover;
         padding: 100px 0;
-        position: relative;
-        .overlay {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ffffff;
-            opacity: 0.72;
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-            z-index: 1;
-        }
         .manufacturing {
-            position: relative;
-            z-index: 10;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -265,6 +216,9 @@
                     font-size: 40px;
                     margin-bottom: 30px;
                 }
+                h4 {
+                    margin-bottom: 30px;
+                }
                 p {
                     line-height: 26px;
                     font-weight: 400;
@@ -272,11 +226,6 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
-                }
-                ol {
-                    li {
-                        color: #4b4b4b;
-                    }
                 }
             }
             .image-block {
@@ -295,7 +244,7 @@
     }
     .wet-granulation-wrapper {
         background-attachment: fixed;
-        background-image: url(https://smpnutra.com/wp-content/uploads/2020/01/shutterstock_35010355-1.jpg);
+        background-image: url(https://smpnutra.com/wp-content/uploads/2020/01/shutterstock_392703817.jpg);
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -423,6 +372,160 @@
             }
         }
     }
+    .mix-tumbler-wrapper {
+        background-attachment: fixed;
+        background-image: url(https://smpnutra.com/wp-content/uploads/2019/09/Gummyvitaminmanufacturer2-01.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        position: relative;
+        .overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            opacity: 0.72;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            z-index: 1;
+        }
+        .manufacturing {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-family: Oxygen;
+                    line-height: 50px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                    p {
+                        line-height: 26px;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #4b4b4b;
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .bottling-labeling-wrapper {
+        background-attachment: fixed;
+        background-image: url(https://smpnutra.com/wp-content/uploads/2019/11/P1510213.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        position: relative;
+        .overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            opacity: 0.72;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            z-index: 1;
+        }
+        .manufacturing {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content-block {
+                width: calc(50% - 10px);
+                h2 {
+                    font-family: Oxygen;
+                    line-height: 50px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                h4 {
+                    font-family: Poppins;
+                    line-height: 28px;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            .image-block {
+                width: calc(50% - 10px);
+                border-style: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: #ededed;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 80px 40px 80px 40px;
+                background-color: #ffffff;
+                .images-right {
+                    p {
+                        line-height: 26px;
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #4b4b4b;
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
     .encapsulation-process-wrapper {
         padding: 50px 0 100px;
         background-color: #fbfbfb;
@@ -469,35 +572,17 @@
                 padding: 80px 40px 80px 40px;
                 background-color: #ffffff;
                 .images-right {
-                    p {
-                        margin-bottom: 30px;
+                    h3 {
+                        color: #3c763d;
+                        background-color: #dff0d8;
+                        border-color: #cae6be;
+                        padding: 15px;
+                        text-align: left;
+                        font-size: 16px;
+                        font-weight: 700;
                     }
                 }
             }
-        }
-    }
-    .capsule-shell {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-            box-shadow 0.3s;
-        padding: 60px 0px 60px 0px;
-        background-color: #fbfbfb;
-        h2 {
-            font-family: $oxygen;
-            line-height: 50px;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 40px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h4 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: 700;
         }
     }
     .gelatin-capsules {
@@ -518,15 +603,6 @@
                     font-size: 40px;
                     margin-bottom: 30px;
                 }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
-                }
                 p {
                     line-height: 26px;
                     font-weight: 400;
@@ -535,47 +611,9 @@
                     font-size: 16px;
                     margin-bottom: 20px;
                 }
-            }
-            .image-block {
-                width: calc(50% - 10px);
-                border-style: solid;
-                border-width: 0px 0px 0px 0px;
-                border-color: #ededed;
-                transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
-                .images-right {
-                }
-            }
-        }
-    }
-    .vegetarian-capsules {
-        padding: 50px 0 80px;
-        background-color: #fbfbfb;
-        .manufacturing {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .content-block {
-                width: calc(50% - 10px);
-                h2 {
-                    font-family: Oxygen;
-                    line-height: 50px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
+                a {
+                    margin-top: 40px;
+                    width: 400px;
                 }
             }
             .image-block {
@@ -588,14 +626,6 @@
                 padding: 80px 40px 80px 40px;
                 background-color: #ffffff;
                 .images-right {
-                    p {
-                        line-height: 26px;
-                        font-weight: 400;
-                        font-style: normal;
-                        color: #4b4b4b;
-                        font-size: 16px;
-                        margin-bottom: 20px;
-                    }
                 }
             }
         }
@@ -624,53 +654,86 @@
             position: relative;
             z-index: 10;
             .top-block {
-                display: flex;
+                background-color: #fff;
+                padding: 80px 25px;
                 .content-block {
-                    width: 50%;
-                    padding-right: 20px;
-                    h2 {
+                    h3 {
                         font-family: Oxygen;
-                        line-height: 50px;
-                        font-weight: 700;
+                        line-height: 32px;
+                        font-weight: 400;
                         font-style: normal;
                         color: #333;
-                        font-size: 40px;
+                        text-align: center;
+                        font-size: 24px;
                         margin-bottom: 40px;
+                        margin-top: 30px;
                     }
                     p {
                         line-height: 26px;
+                        text-align: center;
                         font-weight: 400;
                         font-style: normal;
                         color: #4b4b4b;
                         font-size: 16px;
+                        margin-bottom: 20px;
                     }
                 }
-                .slider-block {
-                    width: 50%;
+                &:hover {
+                    background-color: #6ec1e4;
+                }
+                &:hover p {
+                    color: #fff;
+                }
+            }
+            .product-block {
+                background-color: rgba(194, 194, 194, 0.27);
+                padding: 25px 25px 25px 25px;
+                h2 {
+                    line-height: 32px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #333;
+                    font-size: 24px;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #4b4b4b;
+                    font-size: 16px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .product-wrapper {
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    position: relative;
-                    .slider {
-                        width: 100%;
-                        .swiper {
-                            width: 100%;
-                            height: 125px;
-                            .swiper-slide {
-                                background-position: center;
-                                background-size: cover;
-                                img {
-                                    display: block;
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
+                    margin-top: 40px;
+                    flex-wrap: wrap;
+                    .item {
+                        width: 31%;
+                        margin-right: 25px;
+                        margin-bottom: 100px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        .products-thumbnail {
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                height: 300px;
                             }
                         }
-                    }
-                    a {
-                        margin-top: 40px;
-                        width: 400px;
+                        .products-description {
+                            h2 {
+                                line-height: 32px;
+                                font-weight: normal;
+                                font-family: Oxygen;
+                                color: #333;
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
             }

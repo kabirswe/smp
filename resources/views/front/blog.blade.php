@@ -1,6 +1,8 @@
 
 @extends('front.layouts.app')
-
+@push('custom-style')
+    <link rel="stylesheet" href="{{ asset('css/front/blog.css') }}">
+@endpush
 @section('content')
 <main class="main-container">
     <div class="blog-wrapper">
@@ -23,8 +25,8 @@
                                 <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
-                                <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
-                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists Nutra donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
+                                <h2>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
+                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
@@ -39,8 +41,8 @@
                                 <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
-                                <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
-                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists Nutra donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
+                                <h2>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
+                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
@@ -55,8 +57,8 @@
                                 <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
-                                <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
-                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists Nutra donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
+                                <h2>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
+                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
@@ -71,8 +73,8 @@
                                 <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
-                                <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
-                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists Nutra donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
+                                <h2>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
+                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
@@ -87,8 +89,8 @@
                                 <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
-                                <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
-                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists Nutra donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
+                                <h2>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
+                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
@@ -103,8 +105,8 @@
                                 <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
                             </div>
                             <div class="blog-text">
-                                <h2>Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
-                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists Nutra donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
+                                <h2>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h2>
+                                <p>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin…</p>
                                 <div class="news_item_date">
                                     <span class="read-more"><a href="#"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                     <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">October 9, 2020</time></span><br>
@@ -128,7 +130,7 @@
                                 <img src="{{ asset('images/front/authr-image.png') }}" alt="">
                                 <h3>Will Cartwright</h3>
                             </div>
-                            <p>Will is a Co-Founder of Gummy Specialists Nutra, founder of GetKnownPros, and owns a handful of supplement brands. Will has extensive knowledge of trends in the nutraceutical industry after contract-manufacturing for hundreds of brands. Will has spent the last decade learning the best online marketing & brand-building techniques for supplement & vitamin brands and enjoys sharing this unique knowledge with his nutra-entrepreneur community.</p>
+                            <p>Will is a Co-Founder of Gummy Specialists, founder of GetKnownPros, and owns a handful of supplement brands. Will has extensive knowledge of trends in the nutraceutical industry after contract-manufacturing for hundreds of brands. Will has spent the last decade learning the best online marketing & brand-building techniques for supplement & vitamin brands and enjoys sharing this unique knowledge with his nutra-entrepreneur community.</p>
                             <div class="comment-link">
                                 <a href="#">Learn More About Will Here</a>
                                 <a href="#">Connect With Me On LinkedIn</a>
@@ -175,9 +177,9 @@
                             <h3>recent posts</h3>
                             <div class="block">
                                 <div class="item">
-                                    <a href="#">Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
+                                    <a href="#">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
                                     <a href="#">Gummy Specialists Nutrition Labels Best Practices & Rules in 2020</a>
-                                    <a href="#">Gummy Specialists Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
+                                    <a href="#">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
                                     <a href="#">New Nutrition Labels Best Practices & Rules in 2020</a>
                                     <a href="#">Capsules</a>
                                 </div>
