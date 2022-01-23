@@ -19,7 +19,7 @@
             <div class="blog-content-area">
                 <div class="blog-content">
                     <div class="blog-item">
-                        <img src="{{ asset('images/front/SMP-Donation-Bottle.jpg') }}" alt="">
+                        <img src="{{ asset('images/front/shutterstock_507575749.jpg') }}" alt="">
                         <h3>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin D3 w/ Organic Olive Oil softgels.</h3>
                         <p>As a supplement manufacturer, we handle manufacturing hundreds of thousands of vitamin bottles per month.With the emergence of COVID, we have experienced a huge surge in demand for manufacturing vitamins & supplements.We decided we need to give back to our community who has been more negatively affected by the effects of COVID.</p>
                     </div>

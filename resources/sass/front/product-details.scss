@@ -46,13 +46,12 @@
                 display: flex;
                 justify-content: space-between;
                 .product-details-content {
-                    width: calc(75% - 20px);
+                    width: calc(75% - 10px);
                     .product-details-inner {
                         display: flex;
                         justify-content: space-between;
                         .product-gallery {
-                            width: calc(50% - 20px);
-
+                            width: calc(50% - 10px);
                             /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
                             .fancybox-wrap,
                             .fancybox-skin,
@@ -370,7 +369,7 @@
                             }
                         }
                         .product-text {
-                            width: calc(50% - 20px);
+                            width: calc(50% - 10px);
                             .product-title {
                                 h2 {
                                     font-family: Oxygen;
@@ -652,7 +651,7 @@
                 .product-sidebar {
                     background-color: #f0f0f0;
                     padding: 30px;
-                    width: calc(25% - 20px);
+                    width: calc(25% - 10px);
                     .product-sidebar-top {
                         h3 {
                             color: #b0cf4a;

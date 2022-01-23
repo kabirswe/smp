@@ -45,112 +45,103 @@
                     <div class="product-card">
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe63.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g1.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
-                            <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                            <div class="product-descriptions">                               
+                                <a href="#">
+                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe64.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g2.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
                             <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                <a href="#">
+                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe65.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g3.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
                             <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                <a href="#">
+                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe66.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g4.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
                             <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                <a href="#">
+                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
+                                </a>
+                            </div>
+                        </div>    
+                        <div class="single-item">
+                            <div class="product-image">
+                                <img class="product-img" src="{{ asset('images/front/home/g1.png') }}" alt="product image">
+                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
+                            </div>
+                            <div class="product-descriptions">                               
+                                <a href="#">
+                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe67.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g2.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
                             <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                <a href="#">
+                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe68.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g3.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
                             <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                <a href="#">
+                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe69.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g4.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
                             <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                <a href="#">
+                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
+                                </a>
                             </div>
-                        </div>
+                        </div>    
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe70.png') }}" alt="product image">
+                                <img class="product-img" src="{{ asset('images/front/home/g4.png') }}" alt="product image">
                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
                             </div>
                             <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                <a href="#">
+                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
+                                </a>
                             </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe71.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe72.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe73.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/fe74.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
-                            </div>
-                        </div>
+                        </div>                  
                     </div>
                 </div>
                 <div class="product-sidebar">

@@ -7,21 +7,19 @@
 <main class="main-container">
     <div class="labdoor-partnership">
 		<div class="man_intro_cont">
-			<h1>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h1>
-			<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="{{ route('home') }}">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a></li>
-				<li class="breadcrumb-item"><a href="#">News & Research For Nutra-Brand Owners</a></li>
-				<li class="breadcrumb-item"><a href="#">Uncategorized</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</li>
-			</ol>
-			</nav>
-		</div>
+            <h1>Labdoor Partnership</h1>
+            <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+                <li class="breadcrumb-item active" aria-current="page">Labdoor Partnership</li>
+            </ol>
+            </nav>
+        </div>
 		<div class="labdoor-main">
 			<div class="container">
 				<div class="labdoor">
 					<div class=".labdoor-img">
-						<img src="{{ asset('images/front/labdoor-image.png') }}" alt="">
+						<img src="https://via.placeholder.com/512x279.png?text=Gummy+image+512x279" alt="">					
 					</div>
 					<div class="labdoor-title">
 						<h2>Test Your Products With Labdoor, Gummy Specialists Official Testing Partner</h2>

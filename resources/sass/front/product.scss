@@ -92,6 +92,11 @@
                                 position: relative;
                                 .product-img {
                                     z-index: 1;
+                                    height: 300px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 0 auto;
                                 }
                                 .product-img-hover {
                                     position: absolute;
@@ -112,6 +117,13 @@
                                 transition: 0.3s;
                                 &:hover {
                                     background-color: #fff;
+                                }
+                                h2 {
+                                    line-height: 32px;
+                                    font-weight: normal;
+                                    font-family: Oxygen;
+                                    color: #333;
+                                    font-size: 16px;
                                 }
                             }
                             &:hover .product-img-hover,
@@ -134,6 +146,11 @@
                             font-weight: 700;
                             line-height: 32px;
                             margin-bottom: 35px;
+                            font-family: Oxygen;
+                            &:last-child {
+                                color: #333;
+                                font-family: Poppins;
+                            }
                         }
                     }
                     .product_categories {

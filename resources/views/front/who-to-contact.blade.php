@@ -16,7 +16,7 @@
 			<h1>Order Process & Who To Contact</h1>
 			<div class="content-area">
 				<div class="content-area-left">
-					<img src="{{ asset('images/front/Untitled-design-15.png') }}" alt="">
+					<img src="https://via.placeholder.com/512x279.png?text=Gummy+image+574×1435" alt="">	
 				</div>
 				<div class="content-area-right">
 					<div class="accordion" id="accordionExample">
