@@ -6,7 +6,7 @@
                     <h2>Request  A Manufacturing Price<br />Quote</h2>
                     <p>Fill out our “request a quote” form so we we can give you a custom price quote to get started with manufacturing your nutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="https://info.smpnutra.com/quote" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <p class="call-us">Or call us at <strong>(000) 000-0000</strong></p>
                 </div>
@@ -20,8 +20,8 @@
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                     <div class="d-flex justify-content-end align-items-center">
                         <a href="tel:000-000-000" class="btn">Call Us: 000-000-000<i class="ti ti-arrow-right"></i></a>
-                        <a href="https://info.smpnutra.com/quote" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>
-                        <a href="https://info.smpnutra.com/quote" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -34,82 +34,82 @@
                     <div class="block">
                         <div class="item">
                             <h2>Company</h2>
-                            <a href="https://smpnutra.com/">Home</a>
-                            <a href="https://smpnutra.com/supplement-manufacturing">About Us</a>
-                            <a href="https://smpnutra.com/blog">Blog</a>
-                            <a href="https://smpnutra.com/smp-nutra-terms-and-conditions">Terms &amp; Conditions</a>
-                            <a href="https://smpnutra.com/awards-certifications">Awards &amp; Certifications</a>
-                            <a href="https://smpnutra.comhttps://smpnutra.com/wp-content/uploads/2020/12/SMP-Nutra-Workflow.png">Gummy Specialists Workflow</a>
-                            <a href="https://smpnutra.com/careers">Careers</a>
+                            <a href="{{ route('home') }}">Home</a>
+                            <a href="{{ route('supplement_manufacturing') }}">About Us</a>
+                            <a href="{{ route('blog') }}">Blog</a>
+                            <a href="#">Terms &amp; Conditions</a>
+                            <a href="{{ route('awards_certifications') }}">Awards &amp; Certifications</a>
+                            <a href="#">Gummy Specialists Workflow</a>
+                            <a href="#">Careers</a>
                         </div>
                         <div class="item">
                             <h2>Contact Us</h2>
-                            <a href="https://smpnutra.com/frequently-asked-questions">Frequently Asked Questions</a>
-                            <a href="https://info.smpnutra.com/contact">Contact Us</a>
-                            <a href="https://smpnutra.com/who-to-contact">Order Process &amp; Who To Contact</a>
-                            <a href="https://info.smpnutra.com/quote">Request A Quote</a>
-                            <a href="https://info.smpnutra.com/inquiry">Supplier/Vendor Inquiry</a>
+                            <a href="{{ route('faq') }}">Frequently Asked Questions</a>
+                            <a href="{{ route('who_to_contact') }}">Contact Us</a>
+                            <a href="{{ route('who_to_contact') }}">Order Process &amp; Who To Contact</a>
+                            <a href="#">Request A Quote</a>
+                            <a href="{{ route('faq') }}">Supplier/Vendor Inquiry</a>
                         </div>
                     </div>
                     <div class="block">
                         <div class="item">
                             <h2>Custom Manufacturing</h2>
-                            <a href="https://smpnutra.com/capsule-manufacturing">Capsules</a>
-                            <a href="https://smpnutra.com/custom-tablet-manufacturing">Tablets</a>
-                            <a href="https://smpnutra.com/custom-powder-manufacturing">Powder</a>
-                            <a href="https://smpnutra.com/softgel-manufacturing">Softgels</a>
-                            <a href="https://smpnutra.com/gummy-vitamin-manufacturing">Gummy Vitamins</a>
-                            <a href="https://smpnutra.com/liquid-capsule">Liquid Capsules</a>
-                            <a href="https://smpnutra.com/liquid-manufacturing">Liquids</a>
+                            <a href="{{ route('capsule_manufacturing') }}">Capsules</a>
+                            <a href="{{ route('tablet_manufacturing') }}">Tablets</a>
+                            <a href="{{ route('powder_manufacturing') }}">Powder</a>
+                            <a href="{{ route('softgel_manufacturing') }}">Softgels</a>
+                            <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamins</a>
+                            <a href="{{ route('liquid_capsule') }}">Liquid Capsules</a>
+                            <a href="#">Liquids</a>
                         </div>
                         <div class="item">
                             <h2>Additional Services</h2>
-                            <a href="https://smpnutra.com/frequently-asked-questions">Storage & Order Fulfillment</a>
-                            <a href="https://info.smpnutra.com/contact">Label & Media Design</a>
+                            <a href="#">Storage & Order Fulfillment</a>
+                            <a href="#">Label & Media Design</a>
                         </div>
                     </div>
                     <div class="block">
                         <div class="item">
                             <h2>Specialty Manufacturing</h2>
-                            <a href="https://smpnutra.com/collagen-manufacturing">Collagen</a>
-                            <a href="https://smpnutra.com/protein-powder-manufacturer">Protein</a>
-                            <a href="https://smpnutra.com/vitamin-manufacturing">Vitamins</a>
-                            <a href="https://smpnutra.com/herbal-manufacturing">Herbals</a>
-                            <a href="https://smpnutra.com/probiotic-manufacturing">Probiotics</a>
-                            <a href="https://smpnutra.com/bone-broth-manufacturing">Bone Broth</a>
-                            <a href="https://smpnutra.com/pet-supplement-manufacturing">Pet Supplements</a>
-                            <a href="https://smpnutra.com/custom-flavoring">Flavoring</a>
-                            <a href="https://smpnutra.com/fish-oil-manufacturing">Fish Oil</a>
-                            <a href="https://smpnutra.com/elderberry-manufacturing">Elderberry</a>
-                            <a href="https://smpnutra.com/skincare-manufacturing">Skincare</a>
-                            <a href="https://smpnutra.com/biotin-manufacturing">Biotin</a>
-                            <a href="https://smpnutra.com/ashwagandha-manufacturing">Ashwagandha</a>
-                            <a href="https://smpnutra.com/bcaa-manufacturing">BCAA</a>
-                            <a href="https://smpnutra.com/amino-acid-supplement-manufacturing">Amino Acid Supplements</a>
-                            <a href="https://smpnutra.com/keto-supplement-manufacturing">Keto Supplements</a>
-                            <a href="https://smpnutra.com/vegan-manufacturing">Vegan Supplements</a>
+                            <a href="#">Collagen</a>
+                            <a href="#">Protein</a>
+                            <a href="#">Vitamins</a>
+                            <a href="#">Herbals</a>
+                            <a href="#">Probiotics</a>
+                            <a href="#">Bone Broth</a>
+                            <a href="#">Pet Supplements</a>
+                            <a href="#">Flavoring</a>
+                            <a href="#">Fish Oil</a>
+                            <a href="#">Elderberry</a>
+                            <a href="#">Skincare</a>
+                            <a href="#">Biotin</a>
+                            <a href="#">Ashwagandha</a>
+                            <a href="#">BCAA</a>
+                            <a href="#">Amino Acid Supplements</a>
+                            <a href="#">Keto Supplements</a>
+                            <a href="#">Vegan Supplements</a>
                         </div>
                     </div>
                     <div class="block">
                         <div class="item">
                             <h2>Specialty Manufacturing</h2>
-                            <a href="https://smpnutra.com/private-label-supplement-manufacturing">Private Labeling</a>
-                            <a href="https://smpnutra.com/prenatal-vitamin-manufacturing">Prenatal</a>
-                            <a href="https://smpnutra.com/coq10-manufacturing">CoQ10</a>
-                            <a href="https://smpnutra.com/apple-cider-vinegar-manufacturing">Apple Cider Vinegar</a>
-                            <a href="https://smpnutra.com/fitness-supplement-manufacturing">Fitness/Sports</a>
-                            <a href="https://smpnutra.com/turmeric-manufacturing">Turmeric</a>
-                            <a href="https://smpnutra.com/creatine-manufacturing">Creatine</a>
-                            <a href="https://smpnutra.com/5-htp-manufacturing">5-HTP</a>
-                            <a href="https://smpnutra.com/glucosamine-manufacturing">Glucosamine</a>
-                            <a href="https://smpnutra.com/weight-loss-supplement-manufacturing">Weight Loss Supplements</a>
-                            <a href="https://smpnutra.com/liposomal-manufacturing">Liposomal Supplements</a>
-                            <a href="https://smpnutra.com/post-workout-supplement-manufacturing">Post Workout Supplements</a>
+                            <a href="#">Private Labeling</a>
+                            <a href="#">Prenatal</a>
+                            <a href="#">CoQ10</a>
+                            <a href="#">Apple Cider Vinegar</a>
+                            <a href="#">Fitness/Sports</a>
+                            <a href="#">Turmeric</a>
+                            <a href="#">Creatine</a>
+                            <a href="#">5-HTP</a>
+                            <a href="#">Glucosamine</a>
+                            <a href="#">Weight Loss Supplements</a>
+                            <a href="#">Liposomal Supplements</a>
+                            <a href="#">Post Workout Supplements</a>
                         </div>
                         <div class="item">
                             <h2>In-Stock Inventory</h2>
-                            <a href="https://smpnutra.com/frequently-asked-questions">Stock Products</a>
-                            <a href="https://info.smpnutra.com/contact">Packaging</a>
+                            <a href="{{ route('faq') }}">Stock Products</a>
+                            <a href="#">Packaging</a>
                         </div>
                     </div>
                 </div>
@@ -123,27 +123,27 @@
                     <div class="top-block">
                         <p>© 2022 gummyspecialists.com</p>
                         <div class="request">
-                            <a style="color: #ffffff;" href="https://info.smpnutra.com/quote">Request A Quote</a>
+                            <a style="color: #ffffff;" href="#">Request A Quote</a>
                             <p><strong>000-000-0000</strong></p>
                         </div>
                         <ul>
 							<li>
-					            <a href="https://www.facebook.com/Supplement-Manufacturing-Partners-Most-Responsive-Manufacturer-107193077299442">
+					            <a href="#">
 							        <i class="ti ti-facebook"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="https://www.facebook.com/Supplement-Manufacturing-Partners-Most-Responsive-Manufacturer-107193077299442">
+					            <a href="#">
 							        <i class="ti ti-linkedin"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="https://www.facebook.com/Supplement-Manufacturing-Partners-Most-Responsive-Manufacturer-107193077299442">
+					            <a href="#">
 							        <i class="ti ti-youtube"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="https://www.facebook.com/Supplement-Manufacturing-Partners-Most-Responsive-Manufacturer-107193077299442">
+					            <a href="#">
 							        <i class="ti ti-instagram"></i>
 								</a>
 							</li>

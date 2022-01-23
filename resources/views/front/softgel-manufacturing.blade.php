@@ -110,15 +110,13 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Manufacturing Process of Softgels </h2>
-                    <p>Softgel encapsulation is a common practice, as it is very versatile. The process of producing a softgel capsule is comprised of four main stages:</p>  
-                    <ol>
-                        <li>Preparing gelatin</li>
-                        <li>Dry Granulation Process&nbsp;</li>
-                    </ol>                 
+                    <p>Softgel encapsulation is a common practice, as it is very versatile. The process of producing a softgel capsule is comprised of four main stages:</p>    
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/PowderBlender2-01.png') }}" alt="">
+                        <h3>Free Flowing Mixtures</h3>
+                        <h3>Cohesive Mixtures</h3>
+                        <h3>Ordered Mixtures</h3>
                     </div>                 
                 </div>
             </div>
