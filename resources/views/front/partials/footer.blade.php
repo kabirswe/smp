@@ -38,7 +38,7 @@
                             <a href="{{ route('supplement_manufacturing') }}">About Us</a>
                             <a href="{{ route('blog') }}">Blog</a>
                             <a href="#">Terms &amp; Conditions</a>
-                            <a href="{{ route('awards_certifications') }}">Awards &amp; Certifications</a>
+                            <!-- <a href="{{ route('awards_certifications') }}">Awards &amp; Certifications</a> -->
                             <a href="#">Gummy Specialists Workflow</a>
                             <a href="#">Careers</a>
                         </div>
@@ -154,7 +154,7 @@
 						</ul>
                     </div>
                     <div class="bottom-block">
-                        <p><em>*Before using any product, always check the product label or packaging All the information provided on this website does not, and in no way is intended to serve as legal or regulatory counsel. You are encouraged to seek legal advice or other professional advice if you are concerned about a specific legal or regulatory issue. Any statements or claims about the possible health benefits have not been evaluated by the Food and Drug Administration(FDA). These products are not intended to diagnose, treat, cure, or prevent any disease.<br></em></p>                        
+                        <p><em>*Before using any product, always check the product label or packaging All the information provided on this website does not, and in no way is intended to serve as legal or regulatory counsel. You are encouraged to seek legal advice or other professional advice if you are concerned about a specific legal or regulatory issue. Any statements or claims about the possible health benefits have not been evaluated by the Food and Drug Administration(FDA). These products are not intended to diagnose, treat, cure, or prevent any disease.<br></em></p>
                     </div>
                 </div>
             </div>
