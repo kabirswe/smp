@@ -20,8 +20,8 @@
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                     <div class="d-flex justify-content-end align-items-center">
                         <a href="tel:1-833-MYGUMMY" class="btn">Call Us: 1-833-MYGUMMY<i class="ti ti-arrow-right"></i></a>
-                        <a href="#" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>
-                        <a href="#" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('contact') }}" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('request_quote') }}" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -45,9 +45,9 @@
                         <div class="item">
                             <h2>Contact Us</h2>
                             <a href="{{ route('faq') }}">Frequently Asked Questions</a>
-                            <a href="{{ route('who_to_contact') }}">Contact Us</a>
+                            <a href="{{ route('contact') }}">Contact Us</a>
                             <a href="{{ route('who_to_contact') }}">Order Process &amp; Who To Contact</a>
-                            <a href="#">Request A Quote</a>
+                            <a href="{{ route('request_quote') }}">Request A Quote</a>
                             <a href="{{ route('faq') }}">Supplier/Vendor Inquiry</a>
                         </div>
                     </div>

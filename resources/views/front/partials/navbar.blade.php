@@ -68,7 +68,7 @@
                             <input type="text" placeholder="search" />
                             <i class="ti ti-search"></i>
                         </div>
-                        <a href="#" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('request_quote') }}" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
