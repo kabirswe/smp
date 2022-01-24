@@ -52,6 +52,8 @@ Route::get('/tablet-manufacturing', [PagesController::class, 'tablet_manufacturi
 Route::get('/powder-manufacturing', [PagesController::class, 'powder_manufacturing'])->name('powder_manufacturing');
 Route::get('/softgel-manufacturing', [PagesController::class, 'softgel_manufacturing'])->name('softgel_manufacturing');
 Route::get('/gummy-vitamin-manufacturing', [PagesController::class, 'gummy_vitamin_manufacturing'])->name('gummy_vitamin_manufacturing');
+Route::get('/request-quote', [PagesController::class, 'request_quote'])->name('request_quote');
+Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::get('/liquid-capsule', [PagesController::class, 'liquid_capsule'])->name('liquid_capsule');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -61,7 +63,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     // User management resources
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
-
     // User management resources
     Route::resource('roles', RoleController::class);
     // Route::get('role/permission/create', 'RoleController@permissionCreate')->name('role.permission.create');
@@ -69,15 +70,11 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
 
     Route::resource('users', UserController::class);
     Route::get('users/change/status', [UserController::class, 'changeStatus']);
-
     Route::get('block/user/list', [LoginController::class, 'blockedUserList'])->name('blockedUserList');
     Route::any('unblock/user', [LoginController::class, 'unblockUser'])->name('unblock.user');
-
     Route::get('user/logs',  [UserController::class, 'userLogs'])->name('user.logs');
     Route::get('user/log/show', [UserController::class, 'userLogShow'])->name('user.log.show');
     Route::get('user/log/delete', [UserController::class, 'userLogDestroy'])->name('user.log.destroy');
-
-
     Route::resource('product_category', ProductCategoryController::class);
     Route::resource('product_type', ProductTypeController::class);
     Route::resource('product', ProductController::class);
@@ -85,7 +82,6 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::resource('post_category', PostCategoryController::class);
     Route::resource('post', PostController::class);
     Route::resource('post_comment', PostCommentController::class);
-
 
 
 });

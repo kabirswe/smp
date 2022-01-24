@@ -111,81 +111,17 @@
                             }
                             a {
                                 width: 360px;
+                                height: 50px;
                             }
                         }
                         .video-block {
                             width: 50%;
+                            margin-top: 70px;
                             .video {
                             }
                         }
                     }
                 }
-                // .pdf-reader {
-                //     margin-bottom: 20px;
-                //     embed {
-                //         max-width: 100%;
-                //         width: 100%;
-                //     }
-                // }
-                // .faq-text {
-                //     width: 50%;
-                //     margin: 0 auto;
-                //     h2 {
-                //         font-family: Oxygen;
-                //         line-height: 50px;
-                //         font-weight: 400;
-                //         font-style: normal;
-                //         color: #333;
-                //         font-size: 40px;
-                //     }
-                // }
-                // .faq-button {
-                //     display: flex;
-                //     justify-content: space-around;
-                //     margin-top: 60px;
-                //     .button-left {
-                //         width: calc(50% - 50px);
-                //         a {
-                //             display: flex;
-                //             justify-content: center;
-                //             align-items: center;
-                //             height: 71px;
-                //             width: 80%;
-                //             font-size: 20px;
-                //             font-weight: 400;
-                //             color: #fff;
-                //             text-decoration: none;
-                //             background-color: #b0cf4a;
-                //             border-radius: 5px;
-                //             transition: 0.3s;
-                //             outline-width: 0;
-                //             &:hover {
-                //                 background-color: #135d5e;
-                //             }
-                //         }
-                //     }
-                //     .button-right {
-                //         width: calc(50% - 50px);
-                //         a {
-                //             display: flex;
-                //             justify-content: center;
-                //             align-items: center;
-                //             height: 71px;
-                //             width: 60%;
-                //             font-size: 20px;
-                //             font-weight: 400;
-                //             color: #fff;
-                //             text-decoration: none;
-                //             background-color: #b0cf4a;
-                //             border-radius: 5px;
-                //             transition: 0.3s;
-                //             outline-width: 0;
-                //             &:hover {
-                //                 background-color: #135d5e;
-                //             }
-                //         }
-                //     }
-                // }
             }
         }
     }
@@ -201,32 +137,29 @@
             }
         }
         .faq-section {
+            padding: 80px 0 60px;
             .container {
-                .faq-section-title {
-                    width: 100%;
-                    h1 {
-                        width: 100%;
-                    }
-                }
                 .faq-content {
-                    .faq-text {
-                        width: 100%;
+                    .content-area {
                     }
-                    .faq-button {
-                        flex-direction: column;
-                        .button-left {
-                            width: 100%;
-                            margin-bottom: 30px;
-                            a {
-                                align-items: center;
-                                margin: 0 auto;
+                    .capabilities-wrapper {
+                        margin-top: 90px;
+                        .capabilities {
+                            flex-direction: column;
+                            .content-block {
+                                width: 100%;
+                                text-align: center;
+                                h2 {
+                                    font-size: 28px;
+                                }
+                                a {
+                                    text-align: center;
+                                    margin: auto;
+                                    display: block;
+                                }
                             }
-                        }
-                        .button-right {
-                            width: 100%;
-                            a {
-                                align-items: center;
-                                margin: 0 auto;
+                            .video-block {
+                                width: 100%;
                             }
                         }
                     }

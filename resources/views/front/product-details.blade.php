@@ -26,30 +26,22 @@
                                     <!-- Gallery -->
                                     <div class="gallery_pdp_container">
                                         <div id="gallery_pdp">
-                                            <a href="#" data-image="https://icodefy.com/Tools/iZoom/images/small/image1.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image1.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image1.jpg" />
+                                            <a href="#" data-image="{{ asset('images/front/home/g1.png') }}"
+                                            data-zoom-image="{{ asset('images/front/home/g1.png') }}">
+                                                <img id="" src="{{ asset('images/front/home/g1.png') }}" style=" width: 105px; height: 70px;" />
                                             </a>
-                                            <a href="#" data-image="https://icodefy.com/Tools/iZoom/images/small/image2.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image2.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image2.jpg" />
+                                            <a href="#" data-image="{{ asset('images/front/home/g2.png') }}"
+                                            data-zoom-image="{{ asset('images/front/home/g2.png') }}"> 
+                                                <img id="" src="{{ asset('images/front/home/g2.png') }}" style=" width: 105px; height: 70px;" />
                                             </a>
-                                            <a href="#" data-image="https://icodefy.com/Tools/iZoom/images/small/image3.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image3.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image3.jpg" />
+                                            <a href="#" data-image="{{ asset('images/front/home/g3.png') }}"
+                                            data-zoom-image="{{ asset('images/front/home/g3.png') }}"> 
+                                                <img id="" src="{{ asset('images/front/home/g3.png') }}" style=" width: 105px; height: 70px;" />
                                             </a>
-                                            <a href="#" data-image="https://icodefy.com/Tools/iZoom/images/small/image4.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image4.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image4.jpg" />
-                                            </a>
-                                            <a href="#" data-image="https://icodefy.com/Tools/iZoom/images/small/image1.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image1.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image1.jpg" />
-                                            </a>
-                                            <a href="#" data-image="https://icodefy.com/Tools/iZoom/images/small/image2.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image2.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image2.jpg" />
-                                            </a>
-                                            <a href="#" data-image="images/small/image3.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image3.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image3.jpg" />
-                                            </a>
-                                            <a href="#" data-image="images/small/image4.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image4.jpg">
-                                                <img id="" src="https://icodefy.com/Tools/iZoom/images/thumb/image4.jpg" />
-                                            </a>
+                                            <a href="#" data-image="{{ asset('images/front/home/g4.png') }}"
+                                            data-zoom-image="{{ asset('images/front/home/g4.png') }}"> 
+                                                <img id="" src="{{ asset('images/front/home/g4.png') }}" style=" width: 105px; height: 70px;" />
+                                            </a>  
                                         </div>
                                         <!-- Up and down button for vertical carousel -->
                                         <a href="#" id="ui-carousel-next" style="display: inline;"></a>
@@ -59,7 +51,7 @@
 
                                     <!-- gallery Viewer -->
                                     <div class="gallery-viewer">
-                                        <img id="zoom_10" src="https://icodefy.com/Tools/iZoom/images/small/image1.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image1.jpg" href="https://icodefy.com/Tools/iZoom/images/large/image1.jpg" />
+                                        <img id="zoom_10" src="https://icodefy.com/Tools/iZoom/images/small/image1.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image1.jpg"  href="https://icodefy.com/Tools/iZoom/images/large/image1.jpg" />
                                     </div>
                                 </div>
                                 <div class="product-gallery-btn">
@@ -218,8 +210,8 @@
                                 </div>
                             </div>
                             <div class="search-products">
-                                <label class="screen-reader-text" for="yith-s">Search for:</label>
-                                <input type="search" value="" name="s" id="yith-s" class="yith-s" placeholder="Search for products">
+                                <label>Search for:</label>
+                                <input type="search" value=""   class="form-control" placeholder="Search for products">
                                 <a class="btn">Search</a>
                             </div>
                         </div>

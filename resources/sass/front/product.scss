@@ -134,6 +134,85 @@
                             }
                         }
                     }
+                    /*Navigation*/
+                    .man_navigation {
+                        width: 100%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        margin-top: 40px;
+                        clear: both;
+                    }
+                    .man_blog_archive:after {
+                        display: block;
+                        content: "";
+                        clear: both;
+                    }
+                    .man_default_page .man_navigation .current {
+                        color: #566dfb;
+                    }
+
+                    .man_navigation i {
+                        font-size: 12px;
+                        font-weight: bold;
+                        transform: translateY(-2px);
+                        display: inline-block;
+                    }
+                    .man_navigation .next {
+                        position: absolute;
+                        right: 33%;
+                    }
+                    .col-md-9.man_main_sidebar .man_navigation .next {
+                        right: 25px;
+                    }
+                    .man_navigation .prev {
+                        position: absolute;
+                        left: 8%;
+                    }
+                    .man_navigation .next i {
+                        margin-left: 10px;
+                    }
+                    .man_navigation .prev i {
+                        margin-right: 10px;
+                    }
+
+                    .man_navigation a,
+                    .man_navigation span {
+                        display: inline-block;
+                        padding: 5px;
+                        position: relative;
+                        color: #000;
+                    }
+
+                    .man_navigation span:after {
+                        display: block;
+                        content: "";
+                        width: 21px;
+                        height: 2px;
+                        background: #333;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .page-links a {
+                        display: inline-block;
+                        padding: 8px 15px;
+                        background: #e7e7f0;
+                        margin: 0 2px;
+                        border-radius: 10px;
+                        line-height: 1.2;
+                        color: #61ce70;
+                    }
+                    .page-links a:hover {
+                        background: #566dfb;
+                        color: #fff;
+                    }
+                    .page-links {
+                        font-weight: bold;
+                        margin: 30px 0 !important;
+                    }
                 }
                 .product-sidebar {
                     background-color: #f0f0f0;
@@ -201,20 +280,16 @@
                             a {
                                 background-color: #b0cf4a;
                                 color: $white;
-                                width: 190px;
-                                height: 40px;
+                                width: 130px;
                                 padding: 12px 6px;
                                 border-radius: 0;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 text-align: center;
-                                margin-left: 15px;
+                                margin-top: 15px;
+                                font-size: 20px;
                                 height: 61px;
-                                &:first-child {
-                                    height: 40px;
-                                    width: 225px;
-                                }
                                 &:hover {
                                     background-color: #165e60;
                                     color: $white;
@@ -225,6 +300,102 @@
                                     font-size: 12px;
                                     margin-left: 21px;
                                 }
+                            }
+                            .form-control {
+                                display: block;
+                                width: 100%;
+                                height: 65px;
+                                padding: 10px 20px;
+                                font-size: 18px;
+                                font-weight: 400;
+                                color: #777;
+                                background-color: #fff;
+                                border: 1px solid #ebebeb;
+                                border-radius: 0;
+                                margin-bottom: 20px;
+                                outline-width: 0;
+                                &:focus {
+                                    background-color: #fff;
+                                    color: #777;
+                                    box-shadow: none;
+                                    outline: none;
+                                    border-color: none;
+                                }
+                            }
+                            label {
+                                color: #333;
+                                margin: 30px 0;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 32px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .product-wrapper {
+        .product-content-section {
+            .product-content-inner {
+                flex-direction: column;
+                .product-content {
+                    width: 100% !important;
+                    .man_navigation .next {
+                        right: 13% !important;
+                    }
+                }
+                .product-sidebar {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .product-wrapper {
+        .man_intro_cont {
+            h1 {
+                font-size: 40px;
+            }
+            .breadcrumb {
+                display: none;
+            }
+        }
+        .product-content-section {
+            .product-content-inner {
+                .product-content {
+                    .man_navigation .next {
+                        right: 15% !important;
+                    }
+                    .man_navigation .prev {
+                        left: 16% !important;
+                    }
+                    .product-card {
+                        .single-item {
+                            width: calc(50% - 10px) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .product-wrapper {
+        .product-content-section {
+            .product-content-inner {
+                .product-content {
+                    .product-card {
+                        .single-item {
+                            width: 100% !important;
+                            margin-bottom: 30px !important;
+                            .product-descriptions {
+                                background-color: #fff;
                             }
                         }
                     }

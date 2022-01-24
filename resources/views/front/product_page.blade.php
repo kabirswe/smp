@@ -6,14 +6,16 @@
 
 <div class="product-wrapper"> 
     <div class="man_intro_cont">
-		<h1>All Stock Private Label Supplements</h1>
-		<nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
-            <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
-			<li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
-		</ol>
-		</nav>
+        <div class="container">
+            <h1>All Stock Private Label Supplements</h1>
+            <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+                <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
+                <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
+            </ol>
+            </nav>
+        </div>		
 	</div>
     <div class="product-content-section">
         <div class="container">
@@ -142,6 +144,14 @@
                                 </a>
                             </div>
                         </div>                  
+                    </div>                    
+                    <div class="man_navigation">
+                        <a class="prev page-numbers" href="#"><i class="ti ti-arrow-left"></i>Prev</a>
+                        <a class="page-numbers" href="#">1</a>
+                        <a class="page-numbers" href="#">2</a>
+                        <span aria-current="page" class="page-numbers current">3</span>
+                        <a class="page-numbers" href="#">4</a>
+                        <a class="next page-numbers" href="#">Next<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-sidebar">
@@ -184,8 +194,8 @@
                             </div>
                         </div>
                         <div class="search-products">
-                            <label class="screen-reader-text" for="yith-s">Search for:</label>
-                            <input type="search" value="" name="s" id="yith-s" class="yith-s" placeholder="Search for products">
+                            <label>Search for:</label>
+                            <input type="search" value=""   class="form-control" placeholder="Search for products">
                             <a class="btn">Search</a>
                         </div>
                     </div>

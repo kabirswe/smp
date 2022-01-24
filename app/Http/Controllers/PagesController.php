@@ -78,4 +78,12 @@ class PagesController extends Controller
     {
         return view('front.liquid-capsule');
     } 
+    public function request_quote()
+    {
+        return view('front.request-quote');
+    }
+    public function contact()
+    {
+        return view('front.contact');
+    }
 }
