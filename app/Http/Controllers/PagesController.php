@@ -86,4 +86,6 @@ class PagesController extends Controller
     {
         return view('front.contact');
     }
+
+  
 }

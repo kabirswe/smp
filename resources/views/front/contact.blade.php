@@ -14,42 +14,43 @@
                 <p>Fill in your information below to contact us <br>Company Address: 250 Executive Drive, Unit L, Edgewood, NY, 11717<br>Office Phone: (833) 810-9896</p>
             </div>
             <div class="request-quote-form">
-                <form>
+                <form action="{{ route('store.contact') }}" method="POST" >
+                    @csrf
                     <h1>Form Title</h1>
                     <h4>Your Contact Information</h4>
                     <div class="row">           
                         <div class="form-group col-md-6">
                             <label for="fname">First name*</label>
-                            <input type="text" class="form-control" id="fname">
+                            <input type="text" name="first_name" required class="form-control" id="fname">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="lname">Last name*</label>
-                            <input type="text" class="form-control" id="lname">
+                            <input type="text" name="last_name" required class="form-control" id="lname">
                         </div>
                         <div class="form-group col-md-12">
                             <label for="email">Email*</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" name="email" required class="form-control" id="email">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="number">Phone number*</label>
-                            <input type="text" class="form-control" id="number">
+                            <input type="text" name="phone_number" required class="form-control" id="number">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="number2">Mobile phone number*</label>
-                            <input type="text" class="form-control" id="number2">
+                            <input type="text" name="mobile_number" required class="form-control" id="number2">
                         </div>                      
                         <div class="form-group col-md-12">
                              <label class="label-margin">Custom or Stock Ingredient Formula Manufacturing*</label><br>
-                             <input type="radio" id="cformula" name="formula" value="cformula">
+                             <input type="radio" required id="cformula" name="radio_box" value="Custom Formula">
                              <label for="cformula">Custom Formula</label><br>
-                             <input type="radio" id="sformula" name="formula" value="sformula">
+                             <input type="radio" required id="sformula" name="radio_box" value="Stock Formula">
                              <label for="sformula">Stock Formula</label>                        
                         </div>                       
                         <div class="form-group">
                             <label for="notes">Message*</label>
-                            <textarea class="form-control" id="notes" rows="8"></textarea>
+                            <textarea class="form-control" name="text_box" required id="notes" rows="8"></textarea>
                         </div>
-                        <button type="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
                     </div>
                 </form>
             </div>

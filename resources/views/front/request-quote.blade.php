@@ -14,60 +14,61 @@
                 <p>Fill in your information below to start the process of manufacturing your nutraceutical product</p>
             </div>
             <div class="request-quote-form">
-                <form>
+                <form action="{{ route('store.request_quote') }}" method="POST">
+                    @csrf
                     <h1>Form Title</h1>
                     <h4>Your Contact Information</h4>
                     <div class="row">           
                         <div class="form-group col-md-6">
                             <label for="fname">First name*</label>
-                            <input type="text" class="form-control" id="fname">
+                            <input type="text" name="first_name" required class="form-control" id="fname">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="lname">Last name*</label>
-                            <input type="text" class="form-control" id="lname">
+                            <input type="text" name="last_name" required class="form-control" id="lname">
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" required class="form-control" id="email">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="number">Phone number*</label>
-                            <input type="text" class="form-control" id="number">
+                            <input type="text" name="phone_number" required class="form-control" id="number">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="number2">Mobile phone number*</label>
-                            <input type="text" class="form-control" id="number2">
+                            <input type="text" name="mobile_number" class="form-control" id="number2">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="company">Company name*</label>
-                            <input type="text" class="form-control" id="company">
+                            <input type="text" name="company_name" required class="form-control" id="company">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="companyein">Company EIN</label>
-                            <input type="number" class="form-control" id="companyein">
+                            <input type="number" name="company_ein" class="form-control" id="companyein">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="web">Website URL</label>
-                            <input type="url" class="form-control" id="web">
+                            <input type="url" name="website" class="form-control" id="web">
                         </div>
                         <div class="form-group col-md-12">
                              <label class="label-margin">Custom or Stock Ingredient Formula Manufacturing*</label><br>
-                             <input type="radio" id="cformula" name="formula" value="cformula">
+                             <input type="radio" required id="cformula" name="radio_one" value="Custom Formula">
                              <label for="cformula">Custom Formula</label><br>
-                             <input type="radio" id="sformula" name="formula" value="sformula">
+                             <input type="radio"  id="sformula" name="radio_one" required value="Stock Formula">
                              <label for="sformula">Stock Formula</label>                        
                         </div>
                         <div class="form-group col-md-12">
                             <label class="label-margin" for="nmd">Nutraceutical Manufacturing Details</label><br>
                             <label class="label-margin" for="pformat">Product Format*</label><br>
-                            <input type="checkbox" id="softgel" name="softgel" value="softgel">
-                            <label for="softgel"> Softgel</label><br>                 
-                            <input type="checkbox" id="gummy" name="gummy" value="gummy">
-                            <label for="gummy"> Gummy</label>                 
+                            <input type="checkbox" name="radio_two" id="softgel" value="Softgel">
+                            <label for="softgel">Softgel</label><br>                 
+                            <input type="checkbox" name="radio_two" id="gummy" value="Gummy">
+                            <label for="gummy">Gummy</label>                 
                         </div>
                         <div class="form-group col-md-6">
                             <label for="qnt">Desired Finished Product Quantity*</label>
-                            <select id="qnt" class="form-control">
+                            <select id="qnt" name="product_quantity" required class="form-control">
                                 <option selected>Choose...</option>
                                 <option>100-500</option>
                                 <option>600-1000</option>
@@ -76,11 +77,11 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="spc">Serving Per Container</label>
-                            <input type="number" class="form-control" id="spc">
+                            <input type="number" name="serving" class="form-control" id="spc">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="bm">Budget for Manufacturing*</label>
-                            <select id="bm" class="form-control">
+                            <select id="bm" name="budget" required class="form-control">
                                 <option selected>Please Select</option>
                                 <option>100-500</option>
                                 <option>600-1000</option>
@@ -88,7 +89,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="tframe">Time Frame to Start Manufacturing*</label>
-                            <select id="tframe" class="form-control">
+                            <select id="tframe" name="delivery_period" required class="form-control">
                                 <option selected>Please Select</option>
                                 <option>Immediately</option>
                                 <option>Very Soon (2-3 weeks)</option>
@@ -97,14 +98,14 @@
                         </div>
                         <div class="form-group col-md-6">
                              <label class="label-margin" >Is This Product Currently In Production*</label><br>
-                             <input type="radio" id="yescp" name="pcp" value="yescp">
+                             <input type="radio" id="yescp" name="radio_three" required value="Yes">
                              <label for="yescp">Yes</label><br>
-                             <input type="radio" id="nocp" name="pcp" value="nocp">
+                             <input type="radio" id="nocp" name="radio_three" required value="No">
                              <label for="nocp">No</label>                        
                         </div>
                         <div class="form-group col-md-6">
                             <label for="fpw">For Packaging I Want</label>
-                            <select id="fpw" class="form-control">
+                            <select id="fpw" name="packaging" class="form-control">
                                 <option selected>Please Select</option>
                                 <option>Something Standard</option>
                                 <option>Something Unique</option>
@@ -113,42 +114,42 @@
                         </div>
                         <div class="form-group col-md-12">
                             <label class="label-margin">Desired Label Claims</label><br>
-                            <input type="checkbox" id="organic" name="desired" value="organic">
-                            <label for="organic"> Organic</label><br>                 
-                            <input type="checkbox" id="non-gmo" name="non-gmo" value="non-gmo">
-                            <label for="non-gmo"> Non-GMO</label><br>           
-                            <input type="checkbox" id="vegan" name="vegan" value="vegan">
-                            <label for="vegan"> Vegan</label><br>                 
-                            <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian">
+                            <input type="checkbox" id="organic" name="desired_label" value="Organic">
+                            <label for="organic">Organic</label><br>                 
+                            <input type="checkbox" id="non-gmo" name="desired_label" value="Non-GMO">
+                            <label for="non-gmo">Non-GMO</label><br>           
+                            <input type="checkbox" id="vegan" name="desired_label" value="Vegan">
+                            <label for="vegan">Vegan</label><br>                 
+                            <input type="checkbox" id="vegetarian" name="desired_label" value="Vegetarian">
                             <label for="vegetarian">Vegetarian</label><br>  
-                            <input type="checkbox" id="kosher" name="kosher" value="kosher">
+                            <input type="checkbox" id="kosher" name="desired_label" value="Kosher">
                             <label for="kosher">Kosher</label><br>
-                            <input type="checkbox" id="not-impor" name="not-impor" value="not-impor">
-                            <label for="not-impor"> Not Important</label><br>             
-                            <input type="checkbox" id="undecided" name="undecided" value="undecided">
+                            <input type="checkbox" id="not-impor" name="desired_label" value="Not Important">
+                            <label for="not-impor">Not Important</label><br>             
+                            <input type="checkbox" id="undecided" name="desired_label" value="Undecided">
                             <label for="undecided">Undecided</label>               
                         </div>
                         <div class="form-group col-md-12">
                              <label class="label-margin">Does this product need to be exported outside the United States?</label><br>
-                             <input type="radio" id="yes2" name="yesno" value="yes2">
+                             <input type="radio" id="yes2" name="radio_four" value="Yes">
                              <label for="yes2">Yes</label><br>
-                             <input type="radio" id="yes3" name="yesno" value="yes3">
+                             <input type="radio" id="yes3" name="radio_four" value="No">
                              <label for="yes3">No</label>                        
                         </div>
                         <div class="form-group col-md-12">
                              <label class="label-margin">Storage/Fulfillment gummy Specialists has FDA registered, climate control warehouses specifically made for vitamins & supplements. We have capabilities to store your bulk product safely.  We also offer product fulfillment to take care of shipping out orders from your customers every day, as they come into your e-commerce shopping cart, Amazon FBM, etc.</label><br>
-                             <input type="radio" id="ps" name="product" value="ps">
+                             <input type="radio" id="ps" name="storage_fulfillment" value="Product Storage">
                              <label for="ps">Product Storage</label><br>
-                             <input type="radio" id="pof" name="product" value="pof">
+                             <input type="radio" id="pof" name="storage_fulfillment" value="Product Storage + Product Order Fulfillment">
                              <label for="pof">Product Storage + Product Order Fulfillment</label><br>                      
-                             <input type="radio" id="not-int" name="product" value="not-int">
+                             <input type="radio" id="not-int" name="storage_fulfillment" value="Not Interested">
                              <label for="not-int">Not Interested</label>                        
                         </div>
                         <div class="form-group">
                             <label for="notes">Other Notes</label>
-                            <textarea class="form-control" id="notes" rows="8"></textarea>
+                            <textarea class="form-control" name="text_box" value="Other Notes" id="notes" rows="8"></textarea>
                         </div>
-                        <button type="button" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
                     </div>
                 </form>
             </div>

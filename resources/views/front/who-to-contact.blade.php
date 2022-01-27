@@ -5,10 +5,10 @@
 	<div class="man_intro_cont">
 		<h1>Who To Contact</h1>
 		<nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
-			<li class="breadcrumb-item active" aria-current="page">Who To Contact</li>
-		</ol>
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+				<li class="breadcrumb-item active" aria-current="page">Who To Contact</li>
+			</ol>
 		</nav>
 	</div>
 	<div class="site-content">
@@ -53,7 +53,7 @@
 						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact John Riccobono<br>
-								<a href="#">sales@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>	
 							</div>
 						</div>
 						</div>				
@@ -78,7 +78,7 @@
 							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Esmerelda Rodriguez<br>
-								<a href="#">sales@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>
 							</div>
 							</div>
 						</div>
@@ -96,7 +96,7 @@
 								<br>
 								or
 								<strong>Karen Carrasco</strong><br>	
-								<a href="#">sales@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>	
 							</div>
 							</div>
 						</div>
@@ -109,7 +109,7 @@
 							<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Amber Palazzo<br>
-								<a href="#">sales@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>
 							</div>
 							</div>
 						</div>
@@ -122,7 +122,7 @@
 							<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Nick Aglio<br>
-								<a href="#">sales@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>
 							</div>
 							</div>
 						</div>
@@ -135,7 +135,7 @@
 							<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Anders Fritzen<br>
-								<a href="#">sales@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>
 							</div>
 							</div>
 						</div>
@@ -155,13 +155,13 @@
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingEleven">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-								For Your Website Design Needs							
+								For Your Website Design Needs						
 							</button>
 							</h2>
 							<div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact:<br>
-								<strong>Zach Passarella</strong><br>							
+								<strong>Zach Passarella</strong><br>
 								<a href="#">sales@gummyspecialists.com</a><br>
 								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
 							</div>
@@ -207,7 +207,7 @@
 							<div class="accordion-body">
 								Please contact:<br>
 								<strong>Zach Passarella</strong><br>
-								<a href="#">sales@gummyspecialists.com</a><br>						
+								<a href="#">sales@gummyspecialists.com</a><br>					
 								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
 							</div>
 							</div>
@@ -221,7 +221,7 @@
 							<div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Brittany Milano<br>
-								<a href="#">sales@gummyspecialists.com.com</a>							
+								<a href="#">sales@gummyspecialists.com.com</a>
 							</div>
 							</div>
 						</div>
@@ -234,7 +234,7 @@
 							<div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Please contact Steven Milano<br>
-								<a href="#">sales@gummyspecialists.com</a>							
+								<a href="#">sales@gummyspecialists.com</a>	
 							</div>
 							</div>
 						</div>

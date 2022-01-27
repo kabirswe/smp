@@ -16,9 +16,9 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="d-flex justify-content-between align-items-center w-100">
+                <div class="d-flex justify-content-between align-items-center w-100 footer-block">
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
-                    <div class="d-flex justify-content-end align-items-center">
+                    <div class="d-flex justify-content-end align-items-center footer-item">
                         <a href="tel:1-833-MYGUMMY" class="btn">Call Us: 1-833-MYGUMMY<i class="ti ti-arrow-right"></i></a>
                         <a href="{{ route('contact') }}" class="btn">Contact Us<i class="ti ti-arrow-right"></i></a>
                         <a href="{{ route('request_quote') }}" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
@@ -30,7 +30,7 @@
     <div class="footer-main">
         <div class="container">
             <div class="row">
-                <div class="d-flex justify-content-between w-100">
+                <div class="d-flex justify-content-between w-100 block-item">
                     <div class="block">
                         <div class="item">
                             <h2>Company</h2>
@@ -119,7 +119,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="d-flex justify-content-between flex-column align-items-center w-100">
+                <div class="d-flex justify-content-between flex-column align-items-center w-100 footer-bottom-content">
                     <div class="top-block">
                         <p>© 2022 gummyspecialists.com</p>
                         <div class="request">

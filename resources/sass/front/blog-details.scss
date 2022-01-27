@@ -508,3 +508,86 @@
         }
     }
 }
+
+@media only screen and (max-width: 992px) {
+    .blog-details-container {
+        .mail-blog {
+            .blog-content-area {
+                flex-direction: column;
+                .blog-content {
+                    width: 100% !important;
+                }
+                .blog-sidebar {
+                    width: 100% !important;
+                }
+            }
+            .nearby_posts {
+                .nav_previous {
+                    .man_nav_txt {
+                        padding: 0 40px 0 100px !important;
+                    }
+                }
+                .nav_next {
+                    .man_nav_txt {
+                        padding: 0 40px 0 100px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .blog-details-container {
+        .man_intro_cont {
+            h1 {
+                font-size: 40px;
+            }
+            .breadcrumb {
+                display: none;
+            }
+        }
+        .mail-blog {
+            .blog-content-area {
+                .blog-content {
+                    padding: 0 15px;
+                    .reply-form {
+                        .custom-form {
+                            flex-direction: column;
+                            .input-name {
+                                width: 100% !important;
+                            }
+                            .input-email {
+                                width: 100% !important;
+                            }
+                            .input-web {
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+                .blog-sidebar {
+                    width: 100% !important;
+                    margin-top: 20px;
+                    .sidebar-top {
+                        a {
+                            width: 100% !important;
+                        }
+                    }
+                    .about-author {
+                        h3 {
+                            font-size: 18px !important;
+                        }
+                        .author-box {
+                            h3 {
+                                font-size: 22px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .nearby_posts {
+                display: none !important;
+            }
+        }
+    }
+}

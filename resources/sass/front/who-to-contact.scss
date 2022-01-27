@@ -122,13 +122,22 @@
 @media only screen and (max-width: 768px) {
     .contact-wrapper {
         .man_intro_cont {
+            h1 {
+                font-size: 24px;
+                line-height: 30px;
+            }
             .breadcrumb {
                 display: none;
             }
         }
         .site-content {
             .container {
+                h1 {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
                 .content-area {
+                    padding: 0 15px;
                     flex-direction: column-reverse;
                     .content-area-left {
                         width: 100%;
@@ -136,6 +145,12 @@
                     }
                     .content-area-right {
                         width: 100%;
+                    }
+                }
+                .content-note {
+                    padding: 0 15px;
+                    p {
+                        font-size: 12px;
                     }
                 }
             }

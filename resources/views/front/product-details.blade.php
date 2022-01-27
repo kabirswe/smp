@@ -5,17 +5,17 @@
 @endpush
 @section('content')
 <main class="main-container">
-   <div class="product-details-wrapper">
-    <div class="man_intro_cont">
-		<h1>All Stock Private Label Supplements</h1>
-		<nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
-            <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
-			<li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
-		</ol>
-		</nav>
-	</div>
+    <div class="product-details-wrapper">
+        <div class="man_intro_cont">
+            <h1>All Stock Private Label Supplements</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
+                    <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
+                    <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
+                </ol>
+            </nav>
+        </div>
         <div class="product-details-main">
             <div class="container">
                 <div class="product-details">
@@ -51,7 +51,7 @@
 
                                     <!-- gallery Viewer -->
                                     <div class="gallery-viewer">
-                                        <img id="zoom_10" src="https://icodefy.com/Tools/iZoom/images/small/image1.png" data-zoom-image="https://icodefy.com/Tools/iZoom/images/large/image1.jpg"  href="https://icodefy.com/Tools/iZoom/images/large/image1.jpg" />
+                                        <img id="zoom_10" src="{{ asset('images/front/home/g2.png') }}" data-zoom-image="{{ asset('images/front/home/g2.png') }}"  href="{{ asset('images/front/home/g2.png') }}" />
                                     </div>
                                 </div>
                                 <div class="product-gallery-btn">
@@ -219,7 +219,7 @@
                 </div>
             </div>
         </div>
-   </div>
+    </div>
 </main>
 @endsection
 

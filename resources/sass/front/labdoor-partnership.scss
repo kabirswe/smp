@@ -67,96 +67,93 @@
             }
         }
     }
-    // .labdoor-service {
-    //     padding: 40px 0px 40px 0px;
-    //     .container {
-    //         .labdoor-content {
-    //             display: flex;
-    //             justify-content: space-between;
-    //             .labdoor-content-left {
-    //                 width: calc(50% - 20px);
-    //                 h2 {
-    //                     color: #333;
-    //                     font-family: Oxygen;
-    //                     line-height: 50px;
-    //                     font-weight: 400;
-    //                     font-style: normal;
-    //                     text-align: center;
-    //                     font-size: 40px;
-    //                     margin: 15px 0 80px;
-    //                 }
-    //                 a {
-    //                     background-color: #b0cf4a;
-    //                     color: #fff;
-    //                     width: 212px;
-    //                     height: 50px;
-    //                     padding: 12px 6px;
-    //                     border-radius: 0;
-    //                     display: flex;
-    //                     justify-content: center;
-    //                     align-items: center;
-    //                     text-align: center;
-    //                     &:hover {
-    //                         background-color: #165e60;
-    //                         color: #fff;
-    //                     }
-    //                     i {
-    //                         display: inline-block;
-    //                         vertical-align: middle;
-    //                         font-size: 12px;
-    //                         margin-left: 21px;
-    //                     }
-    //                 }
-    //             }
-    //             .labdoor-content-right {
-    //                 width: calc(50% - 20px);
-    //                 .accordion {
-    //                     .accordion-item {
-    //                         margin-bottom: 10px;
-    //                         border: 1px solid #d4d4d4;
-    //                         background-color: #f4f4f4;
-    //                         .accordion-header {
-    //                             .accordion-button.collapsed {
-    //                                 background-color: #f4f4f4;
-    //                                 font-size: 16px;
-    //                                 font-weight: 600;
-    //                                 &:not(.collapsed) {
-    //                                     color: #333;
-    //                                 }
-    //                                 &:focus {
-    //                                     box-shadow: none;
-    //                                 }
-    //                                 &::after {
-    //                                     background-image: url("{{ url(asset('images/front/add-outline.svg')) }}");
-    //                                     // background-image: url({{url("images/php_mysql.jpg")}});
-    //                                 }
-    //                             }
-    //                             .accordion-button {
-    //                                 background-color: #f4f4f4;
-    //                                 font-size: 16px;
-    //                                 font-weight: 600;
-    //                                 &:not(.collapsed) {
-    //                                     color: #333;
-    //                                 }
-    //                                 &:focus {
-    //                                     box-shadow: none;
-    //                                 }
-    //                                 &::after {
-    //                                     background-image: url(images/minus.svg);
-    //                                 }
-    //                             }
-    //                         }
-    //                         .accordion-body {
-    //                             a {
-    //                                 color: #000;
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+    .labdoor-service {
+        padding: 40px 0px 40px 0px;
+        .labdoor-content {
+            display: flex;
+            justify-content: space-between;
+            .labdoor-content-left {
+                width: calc(50% - 20px);
+                h2 {
+                    color: #333;
+                    font-family: Oxygen;
+                    line-height: 50px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-align: center;
+                    font-size: 40px;
+                    margin: 15px 0 80px;
+                }
+                a {
+                    background-color: #b0cf4a;
+                    color: #fff;
+                    width: 212px;
+                    height: 50px;
+                    padding: 12px 6px;
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    &:hover {
+                        background-color: #165e60;
+                        color: #fff;
+                    }
+                    i {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 12px;
+                        margin-left: 21px;
+                    }
+                }
+            }
+            .labdoor-content-right {
+                width: calc(50% - 20px);
+                .accordion {
+                    .accordion-item {
+                        margin-bottom: 10px;
+                        border: 1px solid #d4d4d4;
+                        background-color: #f4f4f4;
+                        .accordion-header {
+                            .accordion-button.collapsed {
+                                background-color: #f4f4f4;
+                                font-size: 16px;
+                                font-weight: 600;
+                                &:not(.collapsed) {
+                                    color: #333;
+                                }
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                                &::after {
+                                    background-image: url("/images/front/add-outline.svg");
+                                }
+                            }
+                            .accordion-button {
+                                background-color: #f4f4f4;
+                                font-size: 16px;
+                                font-weight: 600;
+                                &:not(.collapsed) {
+                                    color: #333;
+                                }
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                                &::after {
+                                    background-image: url("/images/front/minus.svg");
+                                }
+                            }
+                        }
+                        .accordion-body {
+                            a {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .labdoor-test {
         background-color: #f4f4f4;
         padding: 25px 0 80px;
@@ -231,6 +228,121 @@
                         vertical-align: middle;
                         font-size: 12px;
                         margin-left: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .labdoor-partnership {
+        .man_intro_cont {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+            h1 {
+                font-size: 30px !important;
+            }
+            .breadcrumb {
+                display: none;
+            }
+        }
+        .labdoor-main {
+            padding: 25px 15px 40px 15px !important;
+            .labdoor {
+                .labdoor-title {
+                    width: 100% !important;
+                    padding: 30px 0 30px !important;
+                    h2 {
+                        font-size: 24px !important;
+                        line-height: 30px !important;
+                    }
+                }
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+        .labdoor-service {
+            padding: 40px 15px 40px 15px;
+            .labdoor-content {
+                flex-direction: column;
+                .labdoor-content-left {
+                    width: 100% !important;
+                    h2 {
+                        line-height: 30px !important;
+                        font-size: 24px !important;
+                        margin: 15px 0 40px !important;
+                    }
+                }
+                .labdoor-content-right {
+                    width: 100% !important;
+                    margin-top: 20px;
+                    .accordion {
+                        .accordion-item {
+                            .accordion-header {
+                                .accordion-button.collapsed {
+                                    font-size: 14px !important;
+                                }
+                                .accordion-button {
+                                    font-size: 14px !important;
+                                }
+                            }
+                            .accordion-body {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .labdoor-test {
+            background-color: #f4f4f4;
+            padding: 25px 15px 80px 15px;
+            .container {
+                .labdoor {
+                    .labdoor-img {
+                        margin-bottom: 20px !important;
+                    }
+                    .labdoor-title {
+                        width: 100% !important;
+                        padding: 30px 0 30px !important;
+                        h2 {
+                            line-height: 30px !important;
+                            font-size: 24px !important;
+                        }
+                    }
+                    p {
+                        margin-bottom: 10px !important;
+                        font-size: 12px !important;
+                    }
+                }
+            }
+        }
+        .labdoor-test-contact {
+            padding: 40px 15px 40px 15px;
+            .container {
+                .labdoor-test-inner {
+                    .labdoor-test-content {
+                        flex-direction: column;
+                        .labdoor-test-content-left {
+                            width: 100% !important;
+                            h2 {
+                                text-align: center !important;
+                                line-height: 30px !important;
+                                font-size: 24px !important;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        .labdoor-test-content-right {
+                            width: 100% !important;
+                            p {
+                                margin-bottom: 10px !important;
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                    a {
+                        margin-top: 30px !important;
                     }
                 }
             }

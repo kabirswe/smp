@@ -211,150 +211,150 @@
             padding: 40px;
         }
     }
-    .manufacturing-wrapper {
-        background-attachment: fixed;
-        background-image: url(https://smpnutra.com/wp-content/uploads/2019/09/shutterstock_1464351311.jpg);
-        background-position: bottom right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 100px 0;
-        position: relative;
-        .overlay {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ffffff;
-            opacity: 0.72;
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-            z-index: 1;
-        }
-        .manufacturing {
-            position: relative;
-            z-index: 10;
-            display: flex;
-            .content-block {
-                padding-right: 30px;
-                h2 {
-                    line-height: 50px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                p {
-                    line-height: 26px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                }
-                h3 {
-                    padding: 15px;
-                    line-height: 26px;
-                    font-weight: 600;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    color: #3c763d;
-                    background-color: #dff0d8;
-                    border-color: #cae6be;
-                }
-            }
-            .video-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .video {
-                }
-                a {
-                    width: 250px;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    &:last-child {
-                        width: 320px;
-                        margin-top: 40px;
-                    }
-                }
-            }
-        }
-    }
-    .tablet-manufacturing-wrapper {
-        background-attachment: fixed;
-        background-image: url(https://smpnutra.com/wp-content/uploads/2019/08/shutterstock_767639497.jpg);
-        background-position: bottom right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 100px 0;
-        position: relative;
-        .overlay {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ffffff;
-            opacity: 0.72;
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-            z-index: 1;
-        }
-        .manufacturing {
-            position: relative;
-            z-index: 10;
-            display: flex;
-            .content-block {
-                padding-right: 30px;
-                h2 {
-                    line-height: 50px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                p {
-                    line-height: 26px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                }
-                h3 {
-                    padding: 15px;
-                    line-height: 26px;
-                    font-weight: 600;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    color: #3c763d;
-                    background-color: #dff0d8;
-                    border-color: #cae6be;
-                }
-            }
-            .video-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .video {
-                }
-                a {
-                    width: 250px;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    &:last-child {
-                        width: 320px;
-                        margin-top: 40px;
-                    }
-                }
-            }
-        }
-    }
+    // .manufacturing-wrapper {
+    //     background-attachment: fixed;
+    //     background-image: url(https://smpnutra.com/wp-content/uploads/2019/09/shutterstock_1464351311.jpg);
+    //     background-position: bottom right;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     padding: 100px 0;
+    //     position: relative;
+    //     .overlay {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         background-color: #ffffff;
+    //         opacity: 0.72;
+    //         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    //         z-index: 1;
+    //     }
+    //     .manufacturing {
+    //         position: relative;
+    //         z-index: 10;
+    //         display: flex;
+    //         .content-block {
+    //             padding-right: 30px;
+    //             h2 {
+    //                 line-height: 50px;
+    //                 font-weight: 400;
+    //                 font-style: normal;
+    //                 color: #333;
+    //                 font-size: 40px;
+    //                 margin-bottom: 30px;
+    //             }
+    //             p {
+    //                 line-height: 26px;
+    //                 font-weight: 400;
+    //                 font-style: normal;
+    //                 color: #4b4b4b;
+    //                 font-size: 16px;
+    //                 margin-bottom: 20px;
+    //             }
+    //             h3 {
+    //                 padding: 15px;
+    //                 line-height: 26px;
+    //                 font-weight: 600;
+    //                 font-style: normal;
+    //                 color: #4b4b4b;
+    //                 font-size: 16px;
+    //                 color: #3c763d;
+    //                 background-color: #dff0d8;
+    //                 border-color: #cae6be;
+    //             }
+    //         }
+    //         .video-block {
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+    //             .video {
+    //             }
+    //             a {
+    //                 width: 250px;
+    //                 margin-top: 20px;
+    //                 margin-bottom: 20px;
+    //                 &:last-child {
+    //                     width: 320px;
+    //                     margin-top: 40px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // .tablet-manufacturing-wrapper {
+    //     background-attachment: fixed;
+    //     background-image: url(https://smpnutra.com/wp-content/uploads/2019/08/shutterstock_767639497.jpg);
+    //     background-position: bottom right;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     padding: 100px 0;
+    //     position: relative;
+    //     .overlay {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         background-color: #ffffff;
+    //         opacity: 0.72;
+    //         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    //         z-index: 1;
+    //     }
+    //     .manufacturing {
+    //         position: relative;
+    //         z-index: 10;
+    //         display: flex;
+    //         .content-block {
+    //             padding-right: 30px;
+    //             h2 {
+    //                 line-height: 50px;
+    //                 font-weight: 400;
+    //                 font-style: normal;
+    //                 color: #333;
+    //                 font-size: 40px;
+    //                 margin-bottom: 30px;
+    //             }
+    //             p {
+    //                 line-height: 26px;
+    //                 font-weight: 400;
+    //                 font-style: normal;
+    //                 color: #4b4b4b;
+    //                 font-size: 16px;
+    //                 margin-bottom: 20px;
+    //             }
+    //             h3 {
+    //                 padding: 15px;
+    //                 line-height: 26px;
+    //                 font-weight: 600;
+    //                 font-style: normal;
+    //                 color: #4b4b4b;
+    //                 font-size: 16px;
+    //                 color: #3c763d;
+    //                 background-color: #dff0d8;
+    //                 border-color: #cae6be;
+    //             }
+    //         }
+    //         .video-block {
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+    //             .video {
+    //             }
+    //             a {
+    //                 width: 250px;
+    //                 margin-top: 20px;
+    //                 margin-bottom: 20px;
+    //                 &:last-child {
+    //                     width: 320px;
+    //                     margin-top: 40px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .softgel-manufacturing-wrapper {
         background-attachment: fixed;
         background-image: url(https://smpnutra.com/wp-content/uploads/2019/12/shutterstock_125779040.jpg);
@@ -499,78 +499,78 @@
             }
         }
     }
-    .powder-manufacturing-wrapper {
-        background-attachment: fixed;
-        background-image: url(https://smpnutra.com/wp-content/uploads/2019/09/shutterstock_1288761148.jpg);
-        background-position: bottom right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 100px 0;
-        position: relative;
-        .overlay {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ffffff;
-            opacity: 0.72;
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-            z-index: 1;
-        }
-        .manufacturing {
-            position: relative;
-            z-index: 10;
-            display: flex;
-            .content-block {
-                padding-right: 30px;
-                h2 {
-                    line-height: 50px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                p {
-                    line-height: 26px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                }
-                h3 {
-                    padding: 15px;
-                    line-height: 26px;
-                    font-weight: 600;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    color: #3c763d;
-                    background-color: #dff0d8;
-                    border-color: #cae6be;
-                }
-            }
-            .video-block {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .video {
-                }
-                a {
-                    width: 250px;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    &:last-child {
-                        width: 320px;
-                        margin-top: 40px;
-                    }
-                }
-            }
-        }
-    }
+    // .powder-manufacturing-wrapper {
+    //     background-attachment: fixed;
+    //     background-image: url(https://smpnutra.com/wp-content/uploads/2019/09/shutterstock_1288761148.jpg);
+    //     background-position: bottom right;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     padding: 100px 0;
+    //     position: relative;
+    //     .overlay {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         background-color: #ffffff;
+    //         opacity: 0.72;
+    //         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    //         z-index: 1;
+    //     }
+    //     .manufacturing {
+    //         position: relative;
+    //         z-index: 10;
+    //         display: flex;
+    //         .content-block {
+    //             padding-right: 30px;
+    //             h2 {
+    //                 line-height: 50px;
+    //                 font-weight: 400;
+    //                 font-style: normal;
+    //                 color: #333;
+    //                 font-size: 40px;
+    //                 margin-bottom: 30px;
+    //             }
+    //             p {
+    //                 line-height: 26px;
+    //                 font-weight: 400;
+    //                 font-style: normal;
+    //                 color: #4b4b4b;
+    //                 font-size: 16px;
+    //                 margin-bottom: 20px;
+    //             }
+    //             h3 {
+    //                 padding: 15px;
+    //                 line-height: 26px;
+    //                 font-weight: 600;
+    //                 font-style: normal;
+    //                 color: #4b4b4b;
+    //                 font-size: 16px;
+    //                 color: #3c763d;
+    //                 background-color: #dff0d8;
+    //                 border-color: #cae6be;
+    //             }
+    //         }
+    //         .video-block {
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+    //             .video {
+    //             }
+    //             a {
+    //                 width: 250px;
+    //                 margin-top: 20px;
+    //                 margin-bottom: 20px;
+    //                 &:last-child {
+    //                     width: 320px;
+    //                     margin-top: 40px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .stock-wrapper {
         transition: background 0.3s, border 0.3s, border-radius 0.3s,
             box-shadow 0.3s;
@@ -737,6 +737,328 @@
                                 font-family: Oxygen;
                                 color: #333;
                                 font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .home-container {
+        .labels-wrapper {
+            margin-top: -70px;
+            .labels-block {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .home-container {
+        .softgel-manufacturing-wrapper {
+            .manufacturing {
+                .video-block {
+                    .video {
+                        iframe {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .gummy-manufacturing-wrapper {
+            .manufacturing {
+                .video-block {
+                    .video {
+                        iframe {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .home-container {
+        .video-container {
+            position: relative;
+            .video-content {
+                position: absolute;
+                top: 20%;
+                z-index: 10;
+                text-align: center;
+                h2 {
+                    font-size: 30px;
+                    line-height: 35px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    color: #ffffff;
+                    font-size: 14px;
+                    line-height: 24px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                a {
+                    margin: 0 auto;
+                    font-size: 12px;
+                }
+            }
+        }
+        .labels-wrapper {
+            margin-top: 50px;
+            .labels-block {
+                box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 15%);
+                flex-direction: column;
+                .item {
+                    padding: 40px 40px;
+                    border-right: none;
+                    text-align: center;
+                    h2 {
+                        margin-top: 20px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        line-height: 20px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .capabilities-wrapper {
+            margin-top: 110px;
+            padding: 0 15px;
+            .capabilities {
+                flex-direction: column;
+                text-align: center;
+                .content-block {
+                    width: 100%;
+                    padding-right: 0px;
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 25px;
+                    }
+                    h2 {
+                        line-height: 30px;
+                        font-size: 24px;
+                        margin-bottom: 15px;
+                    }
+                    a {
+                        margin: 0 auto;
+                        font-size: 12px;
+                    }
+                }
+                .slider {
+                    width: 100%;
+                    margin-top: 30px;
+                }
+            }
+        }
+        .network-wrapper {
+            margin-top: 70px;
+            margin-bottom: 30px;
+            padding: 0 15px;
+            .network {
+                h2 {
+                    line-height: 30px;
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 12px;
+                }
+                .image-block {
+                    margin-bottom: 50px;
+                    flex-wrap: wrap;
+                    &.second {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        img {
+                            width: 25%;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    img {
+                        height: 150px;
+                        max-width: 100% !important;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+        .request-quote {
+            padding: 60px 0px 60px 0px;
+            h2 {
+                line-height: 30px;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+            a {
+                font-size: 12px;
+                height: 40px;
+                i {
+                    font-size: 10px;
+                }
+            }
+            .call-us {
+                padding: 40px;
+            }
+        }
+        .softgel-manufacturing-wrapper {
+            padding: 100px 15px;
+            .manufacturing {
+                flex-direction: column;
+                .content-block {
+                    padding-right: 0px;
+                    h2 {
+                        line-height: 30px;
+                        font-size: 24px;
+                        margin-bottom: 30px;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    h3 {
+                        font-size: 14px;
+                    }
+                }
+                .video-block {
+                    margin-top: 20px;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .gummy-manufacturing-wrapper {
+            padding: 100px 15px;
+            .manufacturing {
+                flex-direction: column;
+                .content-block {
+                    padding-right: 0px;
+                    h2 {
+                        line-height: 30px;
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    h3 {
+                        font-size: 12px;
+                    }
+                }
+                .video-block {
+                    margin-top: 20px;
+                    a {
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .stock-wrapper {
+            padding: 60px 0px 60px 0px;
+            .stock-now {
+                flex-direction: column;
+                text-align: center;
+                .stock-left {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+                .stock-right {
+                    margin-top: 20px;
+                    a {
+                        font-size: 12px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        .pre-manufactured-wrapper {
+            padding: 100px 15px;
+            .pre-manufactured {
+                .top-block {
+                    flex-direction: column;
+                    .content-block {
+                        width: 100%;
+                        padding-right: 0px;
+                        text-align: center;
+                        h2 {
+                            line-height: 30px;
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                    .slider-block {
+                        width: 100%;
+                        margin-top: 20px;
+                        .slider {
+                            width: 100%;
+                            .swiper {
+                                width: 100%;
+                                height: 125px;
+                                .swiper-slide {
+                                    background-position: center;
+                                    background-size: cover;
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            width: 320px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .product-block {
+                    h2 {
+                        font-size: 24px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                    .product-wrapper {
+                        flex-wrap: wrap;
+                        .item {
+                            width: 100%;
+                            margin-right: 0px;
+                            margin-bottom: 60px;
+                            .products-thumbnail {
+                                img {
+                                    height: 180px;
+                                }
+                            }
+                            .products-description {
+                                p {
+                                    line-height: 25px;
+                                    font-size: 12px;
+                                }
                             }
                         }
                     }

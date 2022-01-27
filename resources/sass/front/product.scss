@@ -360,24 +360,76 @@
     .product-wrapper {
         .man_intro_cont {
             h1 {
-                font-size: 40px;
+                font-size: 24px;
             }
             .breadcrumb {
                 display: none;
             }
         }
         .product-content-section {
-            .product-content-inner {
-                .product-content {
-                    .man_navigation .next {
-                        right: 15% !important;
+            .container {
+                .product-content-inner {
+                    .product-content {
+                        padding: 0 15px;
+                        .product-content-top {
+                            text-align: center;
+                            h2 {
+                                font-size: 24px;
+                                line-height: 30px;
+                            }
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                        .shop_info {
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                        .man_navigation .next {
+                            right: 15% !important;
+                        }
+                        .man_navigation .prev {
+                            left: 16% !important;
+                        }
+                        .product-card {
+                            .single-item {
+                                width: calc(50% - 10px) !important;
+                                .product-descriptions {
+                                    h2 {
+                                        font-size: 12px !important;
+                                    }
+                                }
+                            }
+                        }
                     }
-                    .man_navigation .prev {
-                        left: 16% !important;
-                    }
-                    .product-card {
-                        .single-item {
-                            width: calc(50% - 10px) !important;
+                    .product-sidebar {
+                        .product-sidebar-top {
+                            h3 {
+                                font-size: 16px;
+                            }
+                        }
+                        .product_categories {
+                            .block {
+                                .item {
+                                    a {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .search-products {
+                                label {
+                                    font-size: 18px;
+                                }
+                                .form-control {
+                                    a {
+                                        font-size: 12px;
+                                    }
+                                }
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
                         }
                     }
                 }

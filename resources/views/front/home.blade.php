@@ -83,7 +83,7 @@
         <div class="container">
             <div class="network">
                 <h2>We Can Be Found On The Largest Networks</h2>
-                <p>Through our hard work and determination, Gummy Specialists Nutra has been covered by some of the largest networks. Gummy Specialists Nutra is dedicated to bringing the most information and quality supplements to our clients. We are thankful to have been recognized for our efforts! Some of the networks that have covered Gummy Specialists Nutra: </p>
+                <p>Through our hard work and determination, Gummy Specialists Nutra has been covered by some of the largest networks. Gummy Specialists Nutra is dedicated to bringing the most information and quality supplements to our clients. We are thankful to have been recognized for our efforts! Some of the networks that have covered Gummy Specialists</p>
                 <div class="image-block">
                     <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
                     <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
@@ -294,7 +294,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
+                                    <p>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</p>
                                 </a>
                             </div>
                         </div>
@@ -304,7 +304,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
+                                    <p>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</p>
                                 </a>
                             </div>
                         </div>
@@ -314,7 +314,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
+                                    <p>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</p>
                                 </a>
                             </div>
                         </div>
@@ -324,7 +324,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
+                                    <p>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</p>
                                 </a>
                             </div>
                         </div>
@@ -334,7 +334,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
+                                    <p>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</p>
                                 </a>
                             </div>
                         </div>
@@ -344,7 +344,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
+                                    <p>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</p>
                                 </a>
                             </div>
                         </div>
@@ -354,7 +354,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
+                                    <p>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</p>
                                 </a>
                             </div>
                         </div>
@@ -364,7 +364,7 @@
                             </div>
                             <div class="products-description">
                                 <a href="#">
-                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
+                                    <p>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</p>
                                 </a>
                             </div>
                         </div>

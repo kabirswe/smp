@@ -6,58 +6,66 @@
                     <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
                 </div>
                 <div class="navbar-block">
-                    <a href="{{ route('home') }}">Home</a>
-                    <div class="nav-dropdown">
-                        <button class="dropbtn">About Us
-                        <i class="ti ti-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="{{ route('supplement_manufacturing') }}">About Us</a>
-                            <!-- <a href="{{ route('meet_the_team') }}">Meet The Team</a>
-                            <a href="{{ route('awards_certifications') }}">Certifications</a> -->
-                            <a href="{{ route('labdoor_partnership') }}">Labdoor Partnership</a>
-                        </div>
+                    <div class="nav-mobile">
+                        <i class="ti ti-menu"></i>
                     </div>
-                    <a href="{{ route('blog') }}">Blog</a>
-                    <div class="nav-dropdown">
-                        <button class="dropbtn">Custom
-                        <i class="ti ti-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <!-- <a href="{{ route('capsule_manufacturing') }}">Capsule Manufacturing</a>
-                            <a href="{{ route('tablet_manufacturing') }}">Tablet Manufacturing</a>
-                            <a href="{{ route('powder_manufacturing') }}">Powder Manufacturing</a> -->
-                            <a href="{{ route('softgel_manufacturing') }}">Softgel Manufacturing</a>
-                            <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamin Manufacturing</a>
-                            <!-- <a href="{{ route('liquid_capsule') }}">Liquid Capsule Manufacturing</a> -->
+                    <div class="nav-desktop">
+                        <div class="nav-mobile-close">
+                            <i class="ti ti-close"></i>
                         </div>
-                    </div>
-                    <div class="nav-dropdown">
-                        <button class="dropbtn">Stock Products
-                        <i class="ti ti-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="{{ route('product_page') }}">Gummy</a>
-                            <a href="#">Softgel</a>
+                        <a href="{{ route('home') }}">Home</a>
+                        <div class="nav-dropdown">
+                            <button class="dropbtn">About Us
+                            <i class="ti ti-angle-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="{{ route('supplement_manufacturing') }}">About Us</a>
+                                <!-- <a href="{{ route('meet_the_team') }}">Meet The Team</a>
+                                <a href="{{ route('awards_certifications') }}">Certifications</a> -->
+                                <a href="{{ route('labdoor_partnership') }}">Labdoor Partnership</a>
+                            </div>
                         </div>
-                    </div>
-                    <a class="nav-link disabled" href="{{ route('home') }}">Design</a>
-                    <a class="nav-link disabled" href="{{ route('fulfillment') }} disabled">Fulfillment</a>
-                    <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
-                    <!-- <div class="nav-dropdown">
-                        <button class="dropbtn">FAQ
-                        <i class="ti ti-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="{{ route('faq') }}">2022 Nutraceutical Manufacturing Brochure</a>
+                        <a href="{{ route('blog') }}">Blog</a>
+                        <div class="nav-dropdown">
+                            <button class="dropbtn">Custom
+                            <i class="ti ti-angle-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <!-- <a href="{{ route('capsule_manufacturing') }}">Capsule Manufacturing</a>
+                                <a href="{{ route('tablet_manufacturing') }}">Tablet Manufacturing</a>
+                                <a href="{{ route('powder_manufacturing') }}">Powder Manufacturing</a> -->
+                                <a href="{{ route('softgel_manufacturing') }}">Softgel Manufacturing</a>
+                                <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamin Manufacturing</a>
+                                <!-- <a href="{{ route('liquid_capsule') }}">Liquid Capsule Manufacturing</a> -->
+                            </div>
                         </div>
-                    </div> -->
-                    <div class="nav-dropdown">
-                        <button class="dropbtn">Contact Us
-                        <i class="ti ti-angle-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="{{ route('who_to_contact') }}">Who To Contact</a>
+                        <div class="nav-dropdown">
+                            <button class="dropbtn">Stock Products
+                            <i class="ti ti-angle-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="{{ route('product_page') }}">Gummy</a>
+                                <a href="#">Softgel</a>
+                            </div>
+                        </div>
+                        <a class="nav-link disabled" href="{{ route('home') }}">Design</a>
+                        <a class="nav-link disabled" href="{{ route('fulfillment') }} disabled">Fulfillment</a>
+                        <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
+                        <!-- <div class="nav-dropdown">
+                            <button class="dropbtn">FAQ
+                            <i class="ti ti-angle-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="{{ route('faq') }}">2022 Nutraceutical Manufacturing Brochure</a>
+                            </div>
+                        </div> -->
+                        <div class="nav-dropdown">
+                            <button class="dropbtn">Contact Us
+                            <i class="ti ti-angle-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="{{ route('who_to_contact') }}">Who To Contact</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,3 +83,13 @@
         </div>
     </div>
 </div>
+@push('custom-scripts')
+<script>
+    $('.nav-mobile').click(function(){
+        $('.nav-desktop').css('left', 0);
+    });
+    $('.nav-mobile-close').click(function(){
+        $('.nav-desktop').css('left', '100%');
+    });
+</script>
+@endpush

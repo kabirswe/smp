@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
     <div class="capabilities-wrapper">
         <div class="container">
             <div class="capabilities">

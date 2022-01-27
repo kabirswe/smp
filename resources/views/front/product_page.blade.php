@@ -2,9 +2,7 @@
 @extends('front.layouts.app')
 
 @section('content')
-<main class="main-container">
-
-<div class="product-wrapper"> 
+<main class="product-wrapper">
     <div class="man_intro_cont">
         <div class="container">
             <h1>All Stock Private Label Supplements</h1>
@@ -16,7 +14,7 @@
             </ol>
             </nav>
         </div>		
-	</div>
+    </div>
     <div class="product-content-section">
         <div class="container">
             <div class="product-content-inner">
@@ -203,6 +201,5 @@
             </div>
         </div>
     </div>
-</div>
 </main>
 @endsection

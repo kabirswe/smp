@@ -8,6 +8,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\GetQuoteController;
 
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\ProductTypeController;
@@ -52,8 +54,13 @@ Route::get('/tablet-manufacturing', [PagesController::class, 'tablet_manufacturi
 Route::get('/powder-manufacturing', [PagesController::class, 'powder_manufacturing'])->name('powder_manufacturing');
 Route::get('/softgel-manufacturing', [PagesController::class, 'softgel_manufacturing'])->name('softgel_manufacturing');
 Route::get('/gummy-vitamin-manufacturing', [PagesController::class, 'gummy_vitamin_manufacturing'])->name('gummy_vitamin_manufacturing');
+
 Route::get('/request-quote', [PagesController::class, 'request_quote'])->name('request_quote');
+Route::post('/request-quote/store', [GetQuoteController::class, 'store'])->name('store.request_quote');
+
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::post('/contact/store', [ContactController::class, 'store'])->name('store.contact');
+
 Route::get('/liquid-capsule', [PagesController::class, 'liquid_capsule'])->name('liquid_capsule');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
