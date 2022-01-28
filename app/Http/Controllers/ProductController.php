@@ -3,13 +3,56 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\ProductType;
+use App\Models\ProductCategory;
+use App\Models\ProductProductCategory;
+use App\Models\ProductImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\File;
+use League\Flysystem\Filesystem;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManagerStatic as Image;
 use DataTables;
 
 class ProductController extends Controller
 {
+
+    // image upload in S3
+    protected function imageUpload($requestFile, $location_main)
+    {
+        if (!is_dir(public_path('upload'))) {
+            mkdir(public_path('upload'), 0777);
+        }
+        $main_image = $requestFile;
+        $extension = $main_image->getClientOriginalExtension();
+        $location = "/upload/product/$location_main/";
+        $ImgName = date('Ymdhis') . rand(10000, 99999) . '.' . $extension;
+        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md254x350.' . $extension;
+        $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=116x132.' . $extension;
+        // Instantiate SimpleImage class
+        $image = Image::make($main_image)->encode($extension);
+        $image_md = Image::make($main_image)->resize(254, 232, function ($aspect) {
+            $aspect->aspectRatio();
+        })->encode($extension);
+        $image_sm = Image::make($main_image)->resize(116, 132, function ($aspect) {
+            $aspect->aspectRatio();
+        })->encode($extension);
+        // Size:large
+        Storage::disk('local')->put($location . $ImgName, (string) $image);
+        // // Size:medium
+        Storage::disk('local')->put($location . $ImgName_md, (string) $image_md);
+        // // Size:small
+        Storage::disk('local')->put($location . $ImgName_sm, (string) $image_sm);
+
+        $filename['image'] = "/upload/product/$location_main/" . $ImgName;
+        $filename['image_md'] = "/upload/product/$location_main/" . $ImgName_md;
+        $filename['image_sm'] = "/upload/product/$location_main/" . $ImgName_sm;
+        return $filename;
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +80,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.product.create');
+        $types = ProductType::select('id', 'name')->get();
+        $categories = ProductCategory::select('id', 'name')->get();
+        return view('admin.product.create', compact('types', 'categories'));
     }
 
     /**
@@ -48,6 +93,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         $user = Auth::user();
         $data = $request->all();
         $validation = Validator::make($data, [
@@ -61,10 +107,49 @@ class ProductController extends Controller
             ]);
         }
 
+
         $data['created_by'] = $user->id;
         $data['updated_by'] = $user->id;
 
         $productData = Product::create($data);
+
+         // category data save
+         if (!empty($data['categories'])) {
+            foreach ($request->categories as $id) {
+                ProductProductCategory::create([
+                    'product_categorie_id' => $id,
+                    'product_id' => $productData->id
+                ]);
+            }
+        }
+        // cover image data save
+        if($data['coverimage'] != "") {
+            $filename = $this->imageUpload($data['coverimage'], 'coverimage');
+            ProductImage::create([
+                'product_id' => $productData->id,
+                'image' => $filename['image'],
+                'image_sm' => $filename['image_md'],
+                'image_md' => $filename['image_sm'],
+                'is_cover_image' => 1,
+                'created_by' =>  $user->id,
+                'updated_by' => $user->id
+            ]);
+        }
+        // thumbnail image data save
+        if (!empty($data['thumbnail_image'])) {
+            foreach ($request->thumbnail_image as $data) {
+                $filename = $this->imageUpload($data, 'image');
+                ProductImage::create([
+                    'product_id' => $productData->id,
+                    'image' => $filename['image'],
+                    'image_sm' => $filename['image_md'],
+                    'image_md' => $filename['image_sm'],
+                    'is_cover_image' => 0,
+                    'created_by' =>  $user->id,
+                    'updated_by' => $user->id
+                ]);
+            }
+        }
 
         return redirect()->route('product.index')->with([
             'success' => trans('Product create successfully')

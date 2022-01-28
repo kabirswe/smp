@@ -51,7 +51,7 @@
         </div>
     </section>
 </main>
-@endsection    
+@endsection
 
 @push('custom-scripts')
     <!-- Scripts -->

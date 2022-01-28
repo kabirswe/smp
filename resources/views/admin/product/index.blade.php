@@ -52,7 +52,7 @@
         </div>
     </section>
 </main>
-@endsection    
+@endsection
 
 @push('custom-scripts')
     <!-- Scripts -->
@@ -96,7 +96,7 @@
                     { data: 'name', name: 'name', orderable: true },
                     { data: 'quantity', name: 'quantity', orderable: true },
                     { data: 'description', name: 'description', orderable: true },
-                    { data: 'label', name: 'label', orderable: true },
+                    { data: 'type', name: 'type', orderable: true },
                     { data: 'category', name: 'category', orderable: true },
                     {
                         data: 'action-btn',
