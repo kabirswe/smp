@@ -73,6 +73,12 @@
                             <div class="swiper-slide">
                             <img src="{{ asset('wp-content/uploads/2019/07/laboratory2.jpg') }}" />
                             </div>
+                            <div class="swiper-slide">
+                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_416042059.jpg') }}" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_412795528.jpg') }}" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,26 +90,28 @@
             <div class="network">
                 <h2>We Can Be Found On The Largest Networks</h2>
                 <p>Through our hard work and determination, Gummy Specialists Nutra has been covered by some of the largest networks. Gummy Specialists Nutra is dedicated to bringing the most information and quality supplements to our clients. We are thankful to have been recognized for our efforts! Some of the networks that have covered Gummy Specialists</p>
-                <div class="image-block">
-                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_55_6295447750.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/CBS-Logo-1536x744.png') }}" alt="">
+                <div class="image-block second">
+                    <img src="{{ asset('images/front/fe12.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe13.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe14.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe15.png') }}" alt="">
                 </div>
                 <h2>Our Clients Can Be Found In The Biggest Retailers & On The Largest Networks</h2>
                 <p>Gummy Specialists Nutra proudly works with numerous amazing brands that are on some of the best marketplaces around, including Walmart, Target, The Vitamin Shoppe, GNC, and more!
                 Build your brand and bring your supplements to these large retailers with Gummy Specialists as your partner!</p>
                 <div class="image-block second">
-                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_55_6295447750.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/CBS-Logo-1536x744.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_55_6295447750.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/CBS-Logo-1536x744.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/Fox-news-logo-150x150.png') }}" alt="">
-                    <img src="{{ asset('wp-content/uploads/2021/01/imageedit_71_9654148642.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe16.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe17.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe18.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe19.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe20.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe21.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe22.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe23.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe24.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe25.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe26.png') }}" alt="">
+                    <img src="{{ asset('images/front/fe27.png') }}" alt="">
                 </div>
             </div>
         </div>

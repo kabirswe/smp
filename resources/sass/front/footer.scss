@@ -106,7 +106,7 @@ footer {
                     &:first-child {
                         margin-top: 0;
                     }
-                    h2 {
+                    h3 {
                         font-family: $poppins;
                         line-height: 26px;
                         font-weight: 700;
@@ -251,16 +251,19 @@ footer {
             }
         }
         .footer-main {
+            padding: 30px 0px 30px 0px;
             .block-item {
                 flex-direction: column;
                 .block {
                     text-align: center;
                     .item {
-                        h2 {
+                        h3 {
                             font-size: 16px;
+                            margin-bottom: 5px;
                         }
                         a {
                             font-size: 12px;
+                            line-height: 18px;
                         }
                     }
                 }

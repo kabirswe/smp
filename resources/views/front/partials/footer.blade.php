@@ -33,7 +33,7 @@
                 <div class="d-flex justify-content-between w-100 block-item">
                     <div class="block">
                         <div class="item">
-                            <h2>Company</h2>
+                            <h3>Company</h3>
                             <a href="{{ route('home') }}">Home</a>
                             <a href="{{ route('supplement_manufacturing') }}">About Us</a>
                             <a href="{{ route('blog') }}">Blog</a>
@@ -43,7 +43,7 @@
                             <a href="#">Careers</a>
                         </div>
                         <div class="item">
-                            <h2>Contact Us</h2>
+                            <h3>Contact Us</h3>
                             <a href="{{ route('faq') }}">Frequently Asked Questions</a>
                             <a href="{{ route('contact') }}">Contact Us</a>
                             <a href="{{ route('who_to_contact') }}">Order Process &amp; Who To Contact</a>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="block">
                         <div class="item">
-                            <h2>Custom Manufacturing</h2>
+                            <h3>Custom Manufacturing</h3>
                             <!-- <a href="{{ route('capsule_manufacturing') }}">Capsules</a>
                             <a href="{{ route('tablet_manufacturing') }}">Tablets</a>
                             <a href="{{ route('powder_manufacturing') }}">Powder</a> -->
@@ -63,14 +63,14 @@
                             <!-- <a href="#">Liquids</a> -->
                         </div>
                         <div class="item">
-                            <h2>Additional Services</h2>
+                            <h3>Additional Services</h3>
                             <a href="#">Storage & Order Fulfillment</a>
                             <a href="#">Label & Media Design</a>
                         </div>
                     </div>
                     <div class="block">
                         <div class="item">
-                            <h2>Specialty Manufacturing</h2>
+                            <h3>Specialty Manufacturing</h3>
                             <a href="#">Collagen</a>
                             <a href="#">Protein</a>
                             <a href="#">Vitamins</a>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="block">
                         <div class="item">
-                            <h2>Specialty Manufacturing</h2>
+                            <h3>Specialty Manufacturing</h3>
                             <a href="#">Private Labeling</a>
                             <a href="#">Prenatal</a>
                             <a href="#">CoQ10</a>
@@ -107,7 +107,7 @@
                             <a href="#">Post Workout Supplements</a>
                         </div>
                         <div class="item">
-                            <h2>In-Stock Inventory</h2>
+                            <h3>In-Stock Inventory</h3>
                             <a href="{{ route('faq') }}">Stock Products</a>
                             <a href="#">Packaging</a>
                         </div>
