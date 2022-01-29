@@ -44,8 +44,9 @@
                             <i class="ti ti-angle-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a href="{{ route('product_page') }}">Gummy</a>
-                                <a href="#">Softgel</a>
+                                @foreach(getProductTypes() as $type)
+                                <a href="{{ route('product_page') }}">{{ $type->name }}</a>
+                                @endforeach
                             </div>
                         </div>
                         <a class="nav-link disabled" href="{{ route('home') }}">Design</a>

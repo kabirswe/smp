@@ -2,14 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function home()
     {
+        $pre_manufactured_swiper = Product::with('images:is_cover_image,image,image_sm,image_md')
+        ->with('productCategory')
+        ->with('type:id,name')
+        ->orderBy('id')
+        ->limit(100)
+        ->get();
+        dd($pre_manufactured_swiper);
         return view('front.home');
     }
+
     public function supplement_manufacturing()
     {
         return view('front.supplement-manufacturing');

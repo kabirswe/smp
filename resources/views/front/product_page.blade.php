@@ -161,34 +161,9 @@
                     <div class="product_categories">
                         <div class="block">
                             <div class="item">
-                                <a href="">All Stock Private Label Supplements</a>
-                                <a href="/beauty">Beauty</a>
-                                <a href="/best-sellers">Best Sellers</a>
-                                <a href="/bone-broth">Bone</a>
-                                <a href="/capsules">Capsules</a>
-                                <a href="#">Collagen</a>
-                                <a href="#">Elderberry</a>
-                                <a href="#">Essential Vitamins</a>
-                                <a href="#">Fish Oil</a>
-                                <a href="#">Gummy Vitamins</a>
-                                <a href="#">Hair Skin & Nails</a>
-                                <a href="#">Herbal</a>
-                                <a href="#">Joint Health</a>
-                                <a href="#">Keto</a>
-                                <a href="#">Kids</a>
-                                <a href="#">Liquids</a>
-                                <a href="#">New Products</a>
-                                <a href="#">Non-GMO Verified</a>
-                                <a href="#">Pets</a>
-                                <a href="#">Powders</a>
-                                <a href="#">Sample Ready Products</a>
-                                <a href="#">Softgels</a>
-                                <a href="#">Sports Nutrition</a>
-                                <a href="#">Sugar-Free</a>
-                                <a href="#">Weight Management</a>
-                                <a href="#">Wellness</a>
-                                <a href="#">Packaging</a>
-                                <a href="#">Uncategorized</a>
+                                @foreach(getProductCategories() as $category)
+                                <a href="/beauty">{{ $category->name }}</a>
+                                @endforeach
                             </div>
                         </div>
                         <div class="search-products">

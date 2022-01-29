@@ -17,4 +17,9 @@ class ProductImage extends Model
         'created_by',
         'updated_by'
     ];
+
+    public function product()
+    {
+        return $this->belongsTo('App\Models\Product');
+    }
 }

@@ -1,17 +1,24 @@
 <?php
 
 use App\Models\UserActivity;
-// use App\Category;
+use App\Models\ProductCategory;
+use App\Models\ProductType;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 // use DB;
 
-// function getCategories()
-// {
-//     $categories = Category::where('is_active', 1)->select('id', 'name')->get();
-//     return $categories;
-// }
+function getProductCategories()
+{
+    $product_categories = ProductCategory::select('id', 'name')->get();
+    return $product_categories;
+}
+
+function getProductTypes()
+{
+    $product_types = ProductType::select('id', 'name')->get();
+    return $product_types;
+}
 
 // log_level ############
 // general = 一般的な
