@@ -273,16 +273,13 @@
                             <!-- Swiper -->
                             <div class="swiper preManufacturedSwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g1.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g3.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g4.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g1.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g3.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g4.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g1.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('images/front/home/g2.png') }}" alt=""></div>
+                                @foreach($pre_manufactured_swiper as $item)
+                                @foreach($item['images'] as $image)
+                                @if($image->is_cover_image)
+                                <div class="swiper-slide"><img src="{{ asset($image->image_sm) }}" alt="{{ $item->name }}"></div>
+                                @endif
+                                @endforeach
+                                @endforeach
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -296,86 +293,22 @@
                     <h2>Our New Private Label Stock Products</h2>
                     <p>We are always formulating new products, stay up to date with our latest products to get them before anyone else! </p>
                     <div class="product-wrapper">
+                        @foreach($pre_manufactured_swiper as $item)
                         <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g1.png') }}" alt="">
-                            </div>
+                          @foreach($item['images'] as $image)
+                          @if($image->is_cover_image)
+                          <div class="products-thumbnail">
+                              <img src="{{ asset($image->image_md) }}" alt="{{ $item->name }}">
+                          </div>
+                          @endif
+                          @endforeach
                             <div class="products-description">
                                 <a href="#">
-                                    <p>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</p>
+                                    <p>{{ $item->name }}</p>
                                 </a>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g2.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <p>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g3.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <p>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g4.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <p>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g1.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <p>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g2.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <p>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g3.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <p>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g4.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <p>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</p>
-                                </a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

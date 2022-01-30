@@ -10,14 +10,18 @@ class PagesController extends Controller
 {
     public function home()
     {
-        $pre_manufactured_swiper = Product::with('images:is_cover_image,image,image_sm,image_md')
-        ->with('productCategory')
-        ->with('type:id,name')
+        $pre_manufactured_swiper = Product::with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            // 'product_product_categories.product',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
         ->orderBy('id')
-        ->limit(100)
+        ->take(10)
         ->get();
-        dd($pre_manufactured_swiper);
-        return view('front.home');
+        // dd($pre_manufactured_swiper);
+        return view('front.home', compact('pre_manufactured_swiper'));
     }
 
     public function supplement_manufacturing()

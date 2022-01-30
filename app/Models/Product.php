@@ -21,12 +21,12 @@ class Product extends Model
     //Prdouct Iamges table  relation for product id
     public function images()
     {
-        return $this->hasMany('App\Models\ProductImage');
+        return $this->hasMany('App\Models\ProductImage', 'product_id');
     }
 
-    public function productCategory()
+    public function product_product_categories()
     {
-        return $this->hasMany('App\Models\ProductProductCategory');
+        return $this->hasMany('App\Models\ProductProductCategory', 'product_id');
     }
 
     public function type()

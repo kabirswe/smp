@@ -13,4 +13,9 @@ class ProductCategory extends Model
         'created_by',
         'updated_by'
     ];
+
+    public function product_product_categories()
+    {
+        return $this->hasMany('App\Models\ProductProductCategory', 'product_categorie_id');
+    }
 }
