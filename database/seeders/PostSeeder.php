@@ -45,6 +45,126 @@ class PostSeeder extends Seeder
                 'created_by' => '1',
                 'updated_by' => '1'
             ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
+            [
+                'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
+                'post_category_id' => 1,
+                'cover_image' => 'cover_image',
+                'cover_image_sm' => 'cover_image',
+                'cover_image_md' => 'cover_image',
+                'description' => 'More than ever, there is the importance of keeping the ingredients of your products',
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],
         ];
 
         foreach($datas as $data)

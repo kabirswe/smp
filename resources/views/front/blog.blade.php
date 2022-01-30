@@ -115,6 +115,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- @foreach($posts as $post)
+                                <a href="/beauty">{{$post->name}}</a>
+                            @endforeach -->
+                        {{ $posts->links() }}
                     </div>
                     <div class="blog-sidebar">
                         <div class="sidebar-top">

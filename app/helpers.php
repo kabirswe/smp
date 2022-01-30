@@ -19,6 +19,8 @@ function getPostCategories()
 {
     $post_categories = PostCategory::select('id', 'name')->get();
     return $post_categories;
+}
+
 function getProductCategories()
 {
     $product_categories = ProductCategory::select('id', 'name')->get();

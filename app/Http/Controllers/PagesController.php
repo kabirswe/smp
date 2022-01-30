@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Post;
 
 use Illuminate\Http\Request;
 
@@ -21,7 +22,7 @@ class PagesController extends Controller
         ->take(10)
         ->get();
         // dd($pre_manufactured_swiper);
-        return view('front.home', compact('pre_manufactured_swiper'));
+        return view('front.home', compact(' '));
     }
 
     public function supplement_manufacturing()
@@ -62,7 +63,8 @@ class PagesController extends Controller
     }
     public function blog()
     {
-        return view('front.blog');
+        $posts = Post::simplePaginate(5);
+        return view('front.blog',compact('posts'));
     }
     public function blog_details()
     {
