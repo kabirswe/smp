@@ -22,7 +22,7 @@ class PagesController extends Controller
         ->take(10)
         ->get();
         // dd($pre_manufactured_swiper);
-        return view('front.home', compact(' '));
+        return view('front.home', compact('pre_manufactured_swiper'));
     }
 
     public function supplement_manufacturing()

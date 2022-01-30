@@ -56,7 +56,7 @@
                             @endforeach
                             </div>
                             <div class="product-descriptions">
-                                <a href="{{}}">
+                                <a href="{{ route('product.details', $item->slug) }}">
                                     <h2>{{ $item->name }}</h2>
                                 </a>
                             </div>
