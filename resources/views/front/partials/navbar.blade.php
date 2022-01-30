@@ -45,7 +45,7 @@
                             </button>
                             <div class="dropdown-content">
                                 @foreach(getProductTypes() as $type)
-                                <a href="{{ route('product_page') }}">{{ $type->name }}</a>
+                                <a href="{{ route('product.type', $type->slug) }}">{{ $type->name }}</a>
                                 @endforeach
                             </div>
                         </div>

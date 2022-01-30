@@ -13,7 +13,7 @@
                 <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
             </ol>
             </nav>
-        </div>		
+        </div>
     </div>
     <div class="product-content-section">
         <div class="container">
@@ -43,113 +43,33 @@
                         </form>
                     </div>
                     <div class="product-card">
+                        @foreach($products as $item)
                         <div class="single-item">
                             <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g1.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
+                            @foreach($item['images'] as $image)
+                                @if($image->is_cover_image)
+                                <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
+                                @endif
+                                @if($loop->index == 1)
+                                <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                @endif
+                            @endforeach
                             </div>
-                            <div class="product-descriptions">                               
-                                <a href="#">
-                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
+                            <div class="product-descriptions">
+                                <a href="{{}}">
+                                    <h2>{{ $item->name }}</h2>
                                 </a>
                             </div>
                         </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g2.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <a href="#">
-                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g3.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g4.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <a href="#">
-                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
-                                </a>
-                            </div>
-                        </div>    
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g1.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">                               
-                                <a href="#">
-                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g2.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <a href="#">
-                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g3.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g4.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <a href="#">
-                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
-                                </a>
-                            </div>
-                        </div>    
-                        <div class="single-item">
-                            <div class="product-image">
-                                <img class="product-img" src="{{ asset('images/front/home/g4.png') }}" alt="product image">
-                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                            </div>
-                            <div class="product-descriptions">
-                                <a href="#">
-                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
-                                </a>
-                            </div>
-                        </div>                  
-                    </div>                    
+                        @endforeach
+                    </div>
                     <div class="man_navigation">
-                        <a class="prev page-numbers" href="#"><i class="ti ti-arrow-left"></i>Prev</a>
-                        <a class="page-numbers" href="#">1</a>
-                        <a class="page-numbers" href="#">2</a>
-                        <span aria-current="page" class="page-numbers current">3</span>
-                        <a class="page-numbers" href="#">4</a>
-                        <a class="next page-numbers" href="#">Next<i class="ti ti-arrow-right"></i></a>
+                        @if ($products->previousPageUrl())
+                        <a class="prev page-numbers" href="{{ $products->previousPageUrl(); }}"><i class="ti ti-arrow-left"></i>Prev</a>
+                        @endif
+                        @if ($products->nextPageUrl())
+                        <a class="next page-numbers" href="{{ $products->nextPageUrl(); }}">Next<i class="ti ti-arrow-right"></i></a>
+                        @endif
                     </div>
                 </div>
                 <div class="product-sidebar">
@@ -162,7 +82,7 @@
                         <div class="block">
                             <div class="item">
                                 @foreach(getProductCategories() as $category)
-                                <a href="/beauty">{{ $category->name }}</a>
+                                <a href="{{ route('product.category', $category->slug) }}">{{ $category->name }}</a>
                                 @endforeach
                             </div>
                         </div>
