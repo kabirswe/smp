@@ -42,23 +42,41 @@
                     @endif
                 </div> 
                 <div class="col-md-8">
-                    {!! Form::label('category', 'Category', ['class' => 'form-label']) !!}
-                    {!! Form::text('category', $post->category, ['class' => 'form-control']) !!}
-                    @if($errors->has('category'))
+                    {!! Form::label('post_category_id', 'Post Category ID', ['class' => 'form-label']) !!}
+                    {!! Form::text('post_category_id', $post->post_category_id, ['class' => 'form-control']) !!}
+                    @if($errors->has('post_category_id'))
                         <div class="error_msg">
-                            {{ $errors->first('category') }}
+                            {{ $errors->first('post_category_id') }}
                         </div>
                     @endif
                 </div> 
                 <div class="col-md-8">
-                    {!! Form::label('image', 'Image', ['class' => 'form-label']) !!}
-                    {!! Form::text('image', $post->image, ['class' => 'form-control']) !!}
-                    @if($errors->has('image'))
+                    {!! Form::label('cover_image', 'Cover Image', ['class' => 'form-label']) !!}
+                    {!! Form::text('cover_image', $post->cover_image, ['class' => 'form-control']) !!}
+                    @if($errors->has('cover_image'))
                         <div class="error_msg">
-                            {{ $errors->first('image') }}
+                            {{ $errors->first('cover_image') }}
                         </div>
                     @endif
                 </div> 
+                <div class="col-md-8">
+                    {!! Form::label('cover_image_sm', 'Cover Image SM', ['class' => 'form-label']) !!}
+                    {!! Form::text('cover_image_sm', $post->cover_image_sm, ['class' => 'form-control']) !!}
+                    @if($errors->has('cover_image_sm'))
+                        <div class="error_msg">
+                            {{ $errors->first('cover_image_sm') }}
+                        </div>
+                    @endif
+                </div>
+                <div class="col-md-8">
+                    {!! Form::label('cover_image_md', 'cover_image_md', ['class' => 'form-label']) !!}
+                    {!! Form::text('cover_image_md', $post->cover_image_md, ['class' => 'form-control']) !!}
+                    @if($errors->has('cover_image_md'))
+                        <div class="error_msg">
+                            {{ $errors->first('cover_image_md') }}
+                        </div>
+                    @endif
+                </div>
                 <div class="col-md-8">
                     {!! Form::label('description', 'Description', ['class' => 'form-label']) !!}
                     {!! Form::text('description', $post->description, ['class' => 'form-control']) !!}

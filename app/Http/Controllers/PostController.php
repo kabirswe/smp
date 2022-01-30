@@ -7,10 +7,47 @@ use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\ImageManagerStatic as Image;
 use DataTables;
 
 class PostController extends Controller
 {
+
+    // image upload in S3
+    protected function imageUpload($requestFile, $location_main)
+    {
+        if (!is_dir(public_path('upload'))) {
+            mkdir(public_path('upload'), 0777);
+        }
+        $main_image = $requestFile;
+        $extension = $main_image->getClientOriginalExtension();
+        $location = "/upload/$location_main/";
+        $ImgName = date('Ymdhis') . rand(10000, 99999) . '.' . $extension;
+        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md415x410.' . $extension;
+        $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=116x132.' . $extension;
+        // Instantiate SimpleImage class
+        $image = Image::make($main_image)->encode($extension);
+        $image_md = Image::make($main_image)->resize(415, 410, function ($aspect) {
+            $aspect->aspectRatio();
+        })->encode($extension);
+        $image_sm = Image::make($main_image)->resize(116, 132, function ($aspect) {
+            $aspect->aspectRatio();
+        })->encode($extension);
+        // Size:large
+        Storage::disk('local')->put($location . $ImgName, (string) $image);
+        // // Size:medium
+        Storage::disk('local')->put($location . $ImgName_md, (string) $image_md);
+        // // Size:small
+        Storage::disk('local')->put($location . $ImgName_sm, (string) $image_sm);
+
+        $filename['image'] = "/upload/$location_main/" . $ImgName;
+        $filename['image_md'] = "/upload/$location_main/" . $ImgName_md;
+        $filename['image_sm'] = "/upload/$location_main/" . $ImgName_sm;
+        return $filename;
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -50,6 +87,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         $user = Auth::user();
         $data = $request->all();
         $validation = Validator::make($data, [
@@ -65,9 +103,18 @@ class PostController extends Controller
 
         $data['created_by'] = $user->id;
         $data['updated_by'] = $user->id;
-
-        $postData = Post::create($data);
-
+         // cover image data save
+         if($data['cover_image'] != "") {
+            $filename = $this->imageUpload($data['cover_image'], 'post')
+            ;
+            
+            $data['cover_image'] = $filename['image'];
+            $data['cover_image_sm'] = $filename['image_md'];
+            $data['cover_image_md'] = $filename['image_sm'];         
+           
+        }
+        $postData = Post::create($data);      
+        
         return redirect()->route('post.index')->with([
             'success' => trans('Post create successfully')
         ]);
@@ -120,7 +167,7 @@ class PostController extends Controller
         $oldData = Post::find($id);
         $oldData['updated_by'] = $user->id;
 
-        $oldData->update($data);
+        $oldData->update($data);        
 
         return redirect()->route('post.index')->with([
             'success' => trans('Post updated successfully')

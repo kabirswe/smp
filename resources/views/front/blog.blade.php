@@ -141,7 +141,10 @@
                             <h3>categories</h3>
                             <div class="block">
                                 <div class="item">
-                                    <a href="#">All Stock Private Label Supplements</a>
+                                    @foreach(getPostCategories() as $category)
+                                        <a href="/beauty">{{$category->name}}</a>
+                                    @endforeach
+                                    <!-- <a href="#">Delivery & Dosage Technology</a>
                                     <a href="#">Beauty</a>
                                     <a href="#">Best Sellers</a>
                                     <a href="#">Bone</a>
@@ -168,7 +171,7 @@
                                     <a href="#">Weight Management</a>
                                     <a href="#">Wellness</a>
                                     <a href="#">Packaging</a>
-                                    <a href="#">Uncategorized</a>
+                                    <a href="#">Uncategorized</a> -->
                                 </div>
                             </div>
                         </div>

@@ -20,12 +20,12 @@
                     </ol>
                 </nav>
             </div>
-            <!-- <div class="btn-block">
+            <div class="btn-block">
                 <a class="btn" href="{{ route('post.create') }}">
                 <ion-icon name="add-outline"></ion-icon>
                     <span>Create Post</span>
                 </a>
-            </div> -->
+            </div>
         </div>
         @if ($message = Session::get('success'))
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -39,8 +39,10 @@
                     <tr>
                         <th>No</th>
                         <th>title</th>
-                        <th>category</th>
-                        <th>image</th>
+                        <th>post category id</th>
+                        <th>cover image</th>
+                        <th>cover image sm</th>
+                        <th>cover image md</th>                        
                         <th>description</th>
                         <th>Action</th>
                     </tr>
@@ -93,15 +95,17 @@
                 columns: [
                     { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: true },
                     { data: 'title', name: 'title', orderable: true },
-                    { data: 'category', name: 'category', orderable: true },
-                    { data: 'image', name: 'image', orderable: true },
+                    { data: 'post_category_id', name: 'post_category_id', orderable: true },
+                    { data: 'cover_image', name: 'cover_image', orderable: true },
+                    { data: 'cover_image_sm', name: 'cover_image_sm', orderable: true },
+                    { data: 'cover_image_md', name: 'cover_image_md', orderable: true },                   
                     { data: 'description', name: 'description', orderable: true },
                     {
                         data: 'action-btn',
                         orderable: false,
                         render: function (data) {
                             var btn = '';
-                            // btn += '<a href="' + listUrl + '/' + data + '/edit" class="btn btn-dt-edit">Edit</a>';
+                            btn += '<a href="' + listUrl + '/' + data + '/edit" class="btn btn-dt-edit">Edit</a>';
                             btn += '<a href="javascript:void(0)" id="deleteData" data-toggle="tooltip" data-id="' + data + '" data-original-title="Delete" class="btn btn-dt-delete">Delete</a>';
                             return btn;
                         }

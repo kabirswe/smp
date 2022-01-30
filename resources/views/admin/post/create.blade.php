@@ -38,28 +38,51 @@
                     @endif
                 </div>
                 <div class="col-md-8">
-                    {!! Form::label('category', 'Category', ['class' => 'form-label']) !!}       
-                    <select name="category" id="category" class="form-select" onchange="userFormatState('category')" required>
+                    {!! Form::label('post_category_id', 'Post Category ID', ['class' => 'form-label']) !!}       
+                    <select name="post_category_id" id="post_category_id" class="form-select" onchange="userFormatState('post_category_id')" required>
                         <option selected disabled value="">Choose...</option>
                         @foreach($product_categories as $product_category)
                             <option value="{{ $product_category->id }}">{{ $product_category->name }}</option>
                         @endforeach
                     </select>
-                    @if($errors->has('category'))
+                    @if($errors->has('post_category_id'))
                         <div class="error_msg">
-                            {{ $errors->first('category') }}
+                            {{ $errors->first('post_category_id') }}
                         </div>
                     @endif
                 </div>
-                <div class="col-md-8">
-                    {!! Form::label('image', 'Image', ['class' => 'form-label']) !!}
-                    {!! Form::text('image', null, ['class' => 'form-control']) !!}
-                    @if($errors->has('image'))
+                <div class="col-md-9">
+                    <!-- {!! Form::label('cover_image', 'Cover Image', ['class' => 'form-label']) !!}
+                    {!! Form::text('cover_image', null, ['class' => 'form-control']) !!}
+                    @if($errors->has('cover_image'))
                         <div class="error_msg">
-                            {{ $errors->first('image') }}
+                            {{ $errors->first('cover_image') }}
                         </div>
-                    @endif
-                </div>
+                    @endif -->
+                    <div class="data-container">
+                        <div class="data-block cover-image drop-container" data-id="0">
+                            <div class="field-text">Cover image <span class="required-span d-flex">*</span></div>
+                                <div class="upload-btn-block">
+                                    <div class="select-btn" id="drop-container" data-id="coverImage">
+                                        {!! Form::label('cover_image', 'Select files', ['class'=>'']) !!}
+                                        {!! Form::hidden('cover_image_data',"", ['id' => 'cover_image_data', 'class' => 'product-image']) !!}
+                                        {!! Form::file('cover_image', ['onchange' => 'imageUpload(this)', 'id' => 'cover_image','class' => 'drop-area-text']) !!}
+                                    </div>
+                                    <div class="delete-btn" id="cover_imageDelete" onclick="removeImage('cover_image')">Delete image</div>
+                                </div>
+                            <div class="image-name" id="cover_imageName">Not selected</div>
+                            <div class="product-image">
+                                <img id="cover_imagePreview" src="{{ asset('images/admin/default.jpg') }}" alt="">
+                                <span class="formate-error cover_imageerror">Select a jpg, jpeg, png type image file.</span>
+                            </div>
+                            @if($errors->has('cover_image'))
+                                <div class="error_msg">
+                                    {{ $errors->first('cover_image') }}
+                                </div>
+                            @endif
+                        </div>
+                    </div>                   
+                </div> 
                 <div class="col-md-8">
                     {!! Form::label('description', 'Description', ['class' => 'form-label']) !!}
                     {!! Form::textarea('description', null, ['placeholder' => 'Description', 'class' => 'form-control', 'id' => 'description', 'type' => 'textarea']) !!}
@@ -93,6 +116,47 @@
     $(document).ready( function () { 
         $('#category').select2();
     });
+</script>
+<script type="text/javascript">
+    // image upload and preview js
+    function imageUpload( e ) {
+            var imgPath = e.value;
+            var ext = imgPath.substring( imgPath.lastIndexOf( '.' ) + 1 ).toLowerCase();
+            if ( ext == "gif" || ext == "png" || ext == "jpg" || ext == "jpeg" ) {
+                readURL( e, e.id );
+                $( '.' + e.id + 'error' ).hide()
+                $( '.btn-submit' ).prop( "disabled", false );
+            } else {
+                $( '.' + e.id + 'error' ).html( 'Select a jpg, jpeg, png type image file.' ).show();
+                $( '.btn-submit' ).prop( "disabled", true );
+            }
+        }
+
+        var imageName;
+        function readURL( input, id ) {
+            if ( input.files && input.files[ 0 ] ) {
+                imageName = input.files[0].name;
+                var reader = new FileReader();
+                reader.readAsDataURL( input.files[ 0 ] );
+                reader.onload = function ( e ) {
+                    $( '#' + id + 'Preview' ).attr( 'src', e.target.result ).show();
+                    $( '#' + id + 'Delete' ).css( 'display', 'flex' );
+                    $( '#' + id + 'Name' ).html( input.files[ 0 ].name );
+                    $("#" + id + "_data").attr("value", imageName);
+                };
+            }
+        }
+
+        function removeImage( id, noPreview ) {
+            $( "#" + id ).val( null );
+            if ( noPreview ) {
+                $( '#' + id + 'Preview' ).attr( 'src', noImage ).hide();
+            } else {
+                $( '#' + id + 'Preview' ).attr( 'src', noImage );
+            }
+            $( '#' + id + 'Name' ).html( 'Not selected' );
+            $( '#' + id + 'Delete' ).css( 'display', 'none' );
+        }
 </script>
 @endpush
             

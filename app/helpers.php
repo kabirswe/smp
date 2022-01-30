@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\UserActivity;
+use App\Models\PostCategory;
 // use App\Category;
 use App\User;
 use Illuminate\Support\Facades\Auth;
@@ -12,6 +13,11 @@ use Carbon\Carbon;
 //     $categories = Category::where('is_active', 1)->select('id', 'name')->get();
 //     return $categories;
 // }
+function getPostCategories()
+{
+    $post_categories = PostCategory::select('id', 'name')->get();
+    return $post_categories;
+}
 
 // log_level ############
 // general = 一般的な
