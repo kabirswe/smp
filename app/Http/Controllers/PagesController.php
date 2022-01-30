@@ -1,15 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Product;
-<<<<<<< HEAD
 use App\Models\Post;
-
-=======
 use App\Models\ProductCategory;
 use App\Models\ProductType;
->>>>>>> 11d8d622c98f7f724156ae5d038956b82125a821
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
