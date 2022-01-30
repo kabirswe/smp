@@ -19,13 +19,18 @@ class Product extends Model
     ];
 
     //Prdouct Iamges table  relation for product id
-    public function productImages()
+    public function images()
     {
         return $this->hasMany('App\Models\ProductImage');
     }
 
-    public function productAllergyIndication()
+    public function productCategory()
     {
         return $this->hasMany('App\Models\ProductProductCategory');
+    }
+
+    public function type()
+    {
+        return $this->belongsTo('App\Models\ProductType', 'product_type_id');
     }
 }

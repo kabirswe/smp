@@ -3,6 +3,8 @@
 use App\Models\UserActivity;
 use App\Models\PostCategory;
 // use App\Category;
+use App\Models\ProductCategory;
+use App\Models\ProductType;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
@@ -17,6 +19,16 @@ function getPostCategories()
 {
     $post_categories = PostCategory::select('id', 'name')->get();
     return $post_categories;
+function getProductCategories()
+{
+    $product_categories = ProductCategory::select('id', 'name')->get();
+    return $product_categories;
+}
+
+function getProductTypes()
+{
+    $product_types = ProductType::select('id', 'name')->get();
+    return $product_types;
 }
 
 // log_level ############
