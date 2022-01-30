@@ -5,18 +5,34 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Product extends Model
 {
-    use SoftDeletes, HasFactory;
+    use SoftDeletes, HasFactory, Sluggable;
     protected $fillable = [
         'name',
+        'slug',
         'product_type_id',
         'quantity',
         'description',
         'created_by',
         'updated_by'
     ];
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => ['name', 'id']
+            ]
+        ];
+    }
 
     //Prdouct Iamges table  relation for product id
     public function images()

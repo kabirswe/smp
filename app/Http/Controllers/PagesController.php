@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+<<<<<<< HEAD
 use App\Models\Post;
 
+=======
+use App\Models\ProductCategory;
+use App\Models\ProductType;
+>>>>>>> 11d8d622c98f7f724156ae5d038956b82125a821
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -53,14 +58,54 @@ class PagesController extends Controller
     {
         return view('front.fulfillment');
     }
-    public function product_page()
+
+    public function product_type(Request $request, $slug)
     {
-        return view('front.product_page');
+        $type = ProductType::where('slug', $slug)->first('id');
+        $products = Product::where('product_type_id', $type->id)
+        ->with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
+        ->orderBy('id')
+        ->paginate(1);
+        return view('front.product_page', compact('products'));
     }
-    public function product_details()
+
+    public function product_category(Request $request, $slug)
     {
+        $category = ProductCategory::where('slug', $slug)->first('id');
+        dd($category);
+        $products = Product::whereHas('product_product_categories', function($q) {
+            $q->where('product_categorie_id', $category->id);
+        })
+        ->with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
+        ->orderBy('id')
+        ->paginate(1);
+        dd($products);
+        return view('front.product_page', compact('products'));
+    }
+
+    public function product_details(Request $request, $slug)
+    {
+        $products = Product::where('slug', $slug)
+        ->with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
+        ->first();
         return view('front.product-details');
     }
+
     public function blog()
     {
         $posts = Post::simplePaginate(5);
@@ -93,7 +138,7 @@ class PagesController extends Controller
     public function liquid_capsule()
     {
         return view('front.liquid-capsule');
-    } 
+    }
     public function request_quote()
     {
         return view('front.request-quote');
@@ -103,5 +148,5 @@ class PagesController extends Controller
         return view('front.contact');
     }
 
-  
+
 }

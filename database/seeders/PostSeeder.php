@@ -18,6 +18,7 @@ class PostSeeder extends Seeder
             [
                 'title' => 'SMP Nutra Donates 1,000 Vitamin D3 Bottles for COVID Relief!',
                 'post_category_id' => 1,
+                'slug' => '1',
                 'cover_image' => 'cover_image',
                 'cover_image_sm' => 'cover_image',
                 'cover_image_md' => 'cover_image',
@@ -28,6 +29,7 @@ class PostSeeder extends Seeder
             [
                 'title' => 'How to Get Started Dropshipping Bodybuilding Supplements',
                 'post_category_id' => 2,
+                'slug' => '2',
                 'cover_image' => 'cover_image',
                 'cover_image_sm' => 'cover_image',
                 'cover_image_md' => 'cover_image',
@@ -38,6 +40,7 @@ class PostSeeder extends Seeder
             [
                 'title' => 'New Nutrition Labels Best Practices & Rules in 2020',
                 'post_category_id' => 1,
+                'slug' => '3',
                 'cover_image' => 'cover_image',
                 'cover_image_sm' => 'cover_image',
                 'cover_image_md' => 'cover_image',

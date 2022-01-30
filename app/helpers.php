@@ -17,19 +17,19 @@ use Carbon\Carbon;
 // }
 function getPostCategories()
 {
-    $post_categories = PostCategory::select('id', 'name')->get();
+    $post_categories = PostCategory::select('name', 'slug')->get();
     return $post_categories;
 }
 
 function getProductCategories()
 {
-    $product_categories = ProductCategory::select('id', 'name')->get();
+    $product_categories = ProductCategory::select('name', 'slug')->get();
     return $product_categories;
 }
 
 function getProductTypes()
 {
-    $product_types = ProductType::select('id', 'name')->get();
+    $product_types = ProductType::select('name', 'slug')->get();
     return $product_types;
 }
 

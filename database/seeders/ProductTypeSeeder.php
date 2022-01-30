@@ -16,12 +16,14 @@ class ProductTypeSeeder extends Seeder
     {
         $datas = [
             [
-                'name' => 'Gummy', 
+                'name' => 'Gummy',
+                'slug' => 'gummy',
                 'created_by' => '1',
                 'updated_by' => '1'
             ],
             [
                 'name' => 'Softgel', 
+                'slug' => 'softgel', 
                 'created_by' => '1',
                 'updated_by' => '1'
             ],           
