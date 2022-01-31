@@ -5,12 +5,12 @@
 <main class="product-wrapper">
     <div class="man_intro_cont">
         <div class="container">
-            <h1>All Stock Private Label Supplements</h1>
+            <h1>{{ Route::is('product.type') ? $type->name : $category->name }} </h1>
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
                 <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
-                <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ Route::is('product.type') ? $type->name : $category->name }}</li>
             </ol>
             </nav>
         </div>
@@ -29,18 +29,7 @@
                     <div class="shop_info">
                         <div class="result-count">
                             <p>Showing 1–100 of 338 results</p>
-                        </div>
-                        <form class="woocommerce-ordering" method="#">
-                            <select name="orderby" class="orderby">
-                                    <option value="menu_order" selected="selected">Default sorting</option>
-                                    <option value="popularity">Sort by popularity</option>
-                                    <option value="rating">Sort by average rating</option>
-                                    <option value="date">Sort by latest</option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to low</option>
-                            </select>
-                            <input type="hidden" name="paged" value="1">
-                        </form>
+                        </div>                        
                     </div>
                     <div class="product-card">
                         @foreach($products as $item)
@@ -48,10 +37,14 @@
                             <div class="product-image">
                             @foreach($item['images'] as $image)
                                 @if($image->is_cover_image)
+                                <a href="{{ route('product.details', $item->slug) }}">
                                 <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
+                                </a>                                
                                 @endif
                                 @if($loop->index == 1)
-                                <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                <a href="{{ route('product.details', $item->slug) }}">
+                                    <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                </a>                                
                                 @endif
                             @endforeach
                             </div>
@@ -62,6 +55,9 @@
                             </div>
                         </div>
                         @endforeach
+                        @if (count($products) < 1)
+                           <h1>No Product Found!</h1> 
+                        @endif
                     </div>
                     <div class="man_navigation">
                         @if ($products->previousPageUrl())
@@ -74,8 +70,6 @@
                 </div>
                 <div class="product-sidebar">
                     <div class="product-sidebar-top">
-                        <h3>See Private Label Stock Products</h3>
-                        <h3>See Private Label Packaging</h3>
                         <h3>Private Label Products</h3>
                     </div>
                     <div class="product_categories">

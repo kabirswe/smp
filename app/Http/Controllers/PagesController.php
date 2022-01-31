@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Post;
+use App\Models\PostComment;
 use App\Models\ProductCategory;
 use App\Models\ProductType;
 use Illuminate\Http\Request;
@@ -56,7 +57,8 @@ class PagesController extends Controller
 
     public function product_type(Request $request, $slug)
     {
-        $type = ProductType::where('slug', $slug)->first('id');
+        $type = ProductType::where('slug', $slug)->first();
+        // dd($type);
         $products = Product::where('product_type_id', $type->id)
         ->with([
             'images:id,product_id,is_cover_image,image,image_sm,image_md',
@@ -66,15 +68,15 @@ class PagesController extends Controller
         ])
         ->orderBy('id')
         ->paginate(1);
-        return view('front.product_page', compact('products'));
+        return view('front.product_page', compact('products','type'));
     }
 
     public function product_category(Request $request, $slug)
     {
-        $category = ProductCategory::where('slug', $slug)->first('id');
-        dd($category);
-        $products = Product::whereHas('product_product_categories', function($q) {
-            $q->where('product_categorie_id', $category->id);
+        $category = ProductCategory::where('slug', $slug)->first();
+        $category_id = $category->id;
+        $products = Product::whereHas('product_product_categories.category', function($q) use($category_id) {
+            $q->where('product_categorie_id', $category_id);
         })
         ->with([
             'images:id,product_id,is_cover_image,image,image_sm,image_md',
@@ -83,14 +85,15 @@ class PagesController extends Controller
             'type:id,name'
         ])
         ->orderBy('id')
-        ->paginate(1);
-        dd($products);
-        return view('front.product_page', compact('products'));
+        // ->get();
+        ->paginate(10);
+        // dd($products->toArray());        
+        return view('front.product_page', compact('products','category' ));
     }
 
     public function product_details(Request $request, $slug)
     {
-        $products = Product::where('slug', $slug)
+        $product = Product::where('slug', $slug)
         ->with([
             'images:id,product_id,is_cover_image,image,image_sm,image_md',
             'product_product_categories',
@@ -98,17 +101,22 @@ class PagesController extends Controller
             'type:id,name'
         ])
         ->first();
-        return view('front.product-details');
+        // dd($product);
+        return view('front.product-details', compact('product'));
     }
 
     public function blog()
     {
-        $posts = Post::simplePaginate(5);
+        $posts = Post::paginate(10);
         return view('front.blog',compact('posts'));
     }
-    public function blog_details()
+    public function blog_details(Request $request, $slug)
     {
-        return view('front.blog-details');
+        $post = Post::where('slug', $slug)->first();
+        // dd($post->id);
+        $comments = PostComment::where('post_id', $post->id)->get();
+        // dd($comments);
+        return view('front.blog-details', compact('post','comments'));
     }
     public function capsule_manufacturing()
     {
@@ -141,6 +149,10 @@ class PagesController extends Controller
     public function contact()
     {
         return view('front.contact');
+    }
+    public function rating()
+    {
+        return view('front.rating');
     }
 
 

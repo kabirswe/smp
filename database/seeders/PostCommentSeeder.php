@@ -16,28 +16,25 @@ class PostCommentSeeder extends Seeder
     {
         $datas = [
             [
+                'post_id' => '1',
                 'name' => 'Asadul Islam',                
                 'email' => 'asaduzzamannur@gmail.com',
                 'website' => 'mdasadulislam.com',
                 'comment' => 'good product',
-                'created_by' => '1',
-                'updated_by' => '1'
             ],
             [
+                'post_id' => '1',
                 'name' => 'Jakir mia',                
                 'email' => 'jak@gmail.com',
                 'website' => 'jakir.com',
                 'comment' => 'good product',
-                'created_by' => '1',
-                'updated_by' => '1'
             ],
             [
+                'post_id' => '1',
                 'name' => 'Shifat',                
                 'email' => 'shifat@gmail.com',
                 'website' => 'shifat.com',
                 'comment' => 'Nice post',
-                'created_by' => '1',
-                'updated_by' => '1'
             ],            
         ];
 

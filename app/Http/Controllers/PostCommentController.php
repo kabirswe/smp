@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\PostComment;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Auth;
-use DataTables;
+// use Illuminate\Support\Facades\Auth;
+// use DataTables;
 
 class PostCommentController extends Controller
 {
@@ -17,17 +18,7 @@ class PostCommentController extends Controller
      */
     public function index(Request $request)
     {
-        if ($request->ajax()) {
-            $post_comments = PostComment::all();
-            return DataTables::of($post_comments)
-                ->addIndexColumn()
-                ->addColumn('action-btn', function($row) {
-                    return $row->id;
-                })
-                ->rawColumns(['action-btn'])
-                ->make(true);
-        }
-        return view('admin.post_comment.index');
+       
     }
 
     /**
@@ -37,7 +28,7 @@ class PostCommentController extends Controller
      */
     public function create()
     {
-        return view('admin.post_comment.create');
+        
     }
 
     /**
@@ -48,26 +39,31 @@ class PostCommentController extends Controller
      */
     public function store(Request $request)
     {
-        $user = Auth::user();
+        
         $data = $request->all();
+        
         $validation = Validator::make($data, [
-            'name' => 'required|max:200'
+            'post_id' => 'required',
+            'name' => 'required|max:50',
+            'email' => 'required|max:100',
+            'website' => 'required|max:50',
+            'comment' => 'required|max:2000',
         ],[
-            'name.unique' => trans('error.name')
+            'post_id' => trans('error.name'),
+            'name' => trans('error.name'),
+            'email' => trans('error.name'),
+            'website' => trans('error.name'),
+            'comment' => trans('error.name'),
         ]);
         if($validation->fails()){
             return redirect()->back()->withInput()->with([
                 'errors' => $validation->errors()
             ]);
         }
-
-        $data['created_by'] = $user->id;
-        $data['updated_by'] = $user->id;
-
-        $post_commentData = PostComment::create($data);
-
-        return redirect()->route('post_comment.index')->with([
-            'success' => trans('Post Comment create successfully')
+        $postcommentData = PostComment::create($data);
+        $post = Post::where('id', $request->post_id)->first('slug');        
+        return redirect()->route('blog.details', $post->slug)->with([
+            'success' => trans('Comment send successfully')
         ]);
     }
 
@@ -88,10 +84,9 @@ class PostCommentController extends Controller
      * @param  \App\Models\PostComment  $postComment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $request, $id)
+    public function edit(Request $request)
     {
-        $post_comment = PostComment::findOrFail($id);
-        return view('admin.post_comment.edit', compact('post_comment'));
+        
     }
 
     /**
@@ -101,28 +96,9 @@ class PostCommentController extends Controller
      * @param  \App\Models\PostComment  $postComment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        $user = Auth::user();
-        $data = $request->all();
-        $validation = Validator::make($data, [
-            'name' => 'required|max:100'
-        ],[
-            'name.unique' => trans('error.name')
-        ]);
-        if($validation->fails()){
-            return redirect()->back()->withInput()->with([
-                'errors' => $validation->errors()
-            ]);
-        }
-        $oldData = PostComment::find($id);
-        $oldData['updated_by'] = $user->id;
-
-        $oldData->update($data);
-
-        return redirect()->route('post_comment.index')->with([
-            'success' => trans('Post Comment updated successfully')
-        ]);
+        
     }
 
 
@@ -132,19 +108,8 @@ class PostCommentController extends Controller
      * @param  \App\Models\PostComment  $postComment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, $id)
+    public function destroy(Request $request)
     {
-        if ($request->ajax()) {
-            try {
-                $data = PostComment::find($id);
-                $data->delete();
-                return response()->json(['success' => 'place deleted']);
-            } catch (Exception $e) {
-                return response()->json([
-                    'status' => 500,
-                    'message' => $e->getMessage()
-                ]);
-            }
-        }
+       
     }
 }

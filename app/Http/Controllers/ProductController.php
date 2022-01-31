@@ -29,14 +29,14 @@ class ProductController extends Controller
         $extension = $main_image->getClientOriginalExtension();
         $location = "/upload/product/$location_main/";
         $ImgName = date('Ymdhis') . rand(10000, 99999) . '.' . $extension;
-        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md254x350.' . $extension;
-        $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=116x132.' . $extension;
+        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md800x800.' . $extension;
+        $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=660x520.' . $extension;
         // Instantiate SimpleImage class
         $image = Image::make($main_image)->encode($extension);
-        $image_md = Image::make($main_image)->resize(254, 232, function ($aspect) {
+        $image_md = Image::make($main_image)->resize(800, 800, function ($aspect) {
             $aspect->aspectRatio();
         })->encode($extension);
-        $image_sm = Image::make($main_image)->resize(116, 132, function ($aspect) {
+        $image_sm = Image::make($main_image)->resize(660, 520, function ($aspect) {
             $aspect->aspectRatio();
         })->encode($extension);
         // Size:large

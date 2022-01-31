@@ -6,7 +6,7 @@
 @section('content')
 <main class="blog-details-container">
         <div class="man_intro_cont">
-            <h1>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h1>
+            <h1>{{ $post->title }}</h1>
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
@@ -17,11 +17,10 @@
     <div class="mail-blog">
         <div class="container">
             <div class="blog-content-area">
-                <div class="blog-content">
+                <div class="blog-content">                
                     <div class="blog-item">
-                        <img src="{{ asset('images/front/shutterstock_507575749.jpg') }}" alt="">
-                        <h3>Will Cartwright co-founder of the contract supplement manufacturer Gummy Specialists donates 1,000 bottles of 60-day supply 5000IU Vitamin D3 w/ Organic Olive Oil softgels.</h3>
-                        <p>As a supplement manufacturer, we handle manufacturing hundreds of thousands of vitamin bottles per month.With the emergence of COVID, we have experienced a huge surge in demand for manufacturing vitamins & supplements.We decided we need to give back to our community who has been more negatively affected by the effects of COVID.</p>
+                        <img src="{{ asset($post->cover_image_md) }}" alt="">                      
+                        <p>{{ $post->description }}</p>
                     </div>
                     <div class="about-author">
                         <div class="author-box">
@@ -39,30 +38,39 @@
                             </div>
                         </div>
                     </div>
+                    <div class="comments-block">
+                        @foreach($comments as $comment)
+                        <h3>{{$comment->name}}</h3>
+                        <p>{{$comment->comment}}</p>
+                        @endforeach                        
+                    </div>
                     <div class="reply-form">
                         <div class="comment-reply">
                             <h3>Leave a Reply</h3>
                             <p>Your email address will not be published. Required fields are marked *</p>
                         </div>
-                        <form action="#">
-                            <textarea class="form-control textarea-height" placeholder="Comment"></textarea>
+                        <form action="{{ route('post_comment.store') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="post_id" value="{{ $post->id }}">
+                            <textarea class="form-control textarea-height" name="comment" placeholder="Comment" required></textarea>
                             <div class="custom-form">
                                 <div class="input-name">
-                                    <input type="text" class="form-control" placeholder="Name*" required></input>
+                                    <input type="text" name="name" class="form-control" placeholder="Name*" required></input>
                                 </div>
                                 <div class="input-email">
-                                    <input type="email"  class="form-control" placeholder="Email*" required></input>
+                                    <input type="email" name="email" class="form-control" placeholder="Email*" required></input>
                                 </div>
                                 <div class="input-web">
-                                    <input type="text"  class="form-control" placeholder="Website" required></input>
+                                    <input type="text" name="website"   class="form-control" placeholder="Website" required></input>
                                 </div>
                             </div>
                             <div class="custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="checkout-create-ac"></input>
+                                <input type="checkbox" name="radio_two" value="Save" class="custom-control-input" id="checkout-create-ac"></input>
                                 <label for="checkout-create-ac">Save my name, email, and website in this browser for the next time I comment.</label>
                             </div>
                             <div class="product-gallery-btn">
-                                <a href="#" class="btn">Post Comment</a>
+                                <!-- <a href="#" type="submit" class="btn">Post Comment</a> -->
+                                <button type="submit" class="btn btn-secondary btn-lg btn-block">Post Comment</button>
                             </div>
                         </form>
                     </div>

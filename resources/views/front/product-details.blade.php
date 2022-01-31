@@ -7,12 +7,12 @@
 <main class="main-container">
     <div class="product-details-wrapper">
         <div class="man_intro_cont">
-            <h1>All Stock Private Label Supplements</h1>
+            <h1>{{ $product['type']->name }}</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
                     <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
-                    <li class="breadcrumb-item active" aria-current="page">All Stock Private Label Supplements</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $product->name }}</li>
                 </ol>
             </nav>
         </div>
@@ -22,40 +22,31 @@
                     <div class="product-details-content">
                         <div class="product-details-inner">
                             <div class="product-gallery">
-                                <div class="pdp-image-gallery-block">
-                                    <!-- Gallery -->
-                                    <div class="gallery_pdp_container">
-                                        <div id="gallery_pdp">
-                                            <a href="#" data-image="{{ asset('images/front/home/g1.png') }}"
-                                            data-zoom-image="{{ asset('images/front/home/g1.png') }}">
-                                                <img id="" src="{{ asset('images/front/home/g1.png') }}" style=" width: 105px; height: 70px;" />
-                                            </a>
-                                            <a href="#" data-image="{{ asset('images/front/home/g2.png') }}"
-                                            data-zoom-image="{{ asset('images/front/home/g2.png') }}"> 
-                                                <img id="" src="{{ asset('images/front/home/g2.png') }}" style=" width: 105px; height: 70px;" />
-                                            </a>
-                                            <a href="#" data-image="{{ asset('images/front/home/g3.png') }}"
-                                            data-zoom-image="{{ asset('images/front/home/g3.png') }}"> 
-                                                <img id="" src="{{ asset('images/front/home/g3.png') }}" style=" width: 105px; height: 70px;" />
-                                            </a>
-                                            <a href="#" data-image="{{ asset('images/front/home/g4.png') }}"
-                                            data-zoom-image="{{ asset('images/front/home/g4.png') }}"> 
-                                                <img id="" src="{{ asset('images/front/home/g4.png') }}" style=" width: 105px; height: 70px;" />
-                                            </a>  
+                                <div class="image-gallery-block">
+                                    <div class="image-gallery-left">
+                                    @foreach($product['images'] as $image)
+                                    @if(!$image->is_cover_image)
+                                        <div class="image-block">
+                                            <img src="{{ asset($image->image_sm) }}" alt="">
                                         </div>
-                                        <!-- Up and down button for vertical carousel -->
-                                        <a href="#" id="ui-carousel-next" style="display: inline;"></a>
-                                        <a href="#" id="ui-carousel-prev" style="display: inline;"></a>
+                                    @endif
+                                    @endforeach  
+                                        
                                     </div>
-                                    <!-- Gallery -->
-
-                                    <!-- gallery Viewer -->
-                                    <div class="gallery-viewer">
-                                        <img id="zoom_10" src="{{ asset('images/front/home/g2.png') }}" data-zoom-image="{{ asset('images/front/home/g2.png') }}"  href="{{ asset('images/front/home/g2.png') }}" />
+                                    <div class="image-gallery-right">
+                                    @foreach($product['images'] as $image)
+                                    @if($image->is_cover_image)
+                                        <img src="{{ asset($image->image_md) }}" alt="">
+                                    @endif
+                                    @endforeach
                                     </div>
                                 </div>
                                 <div class="product-gallery-btn">
-                                    <a href="#" class="btn">Send Inquiry<i class="ti ti-arrow-right"></i></a>
+                                    <!-- <a href="#" class="btn">Order<i class="ti ti-arrow-right"></i></a> -->
+                                    
+                                   
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order</button>
+                                                                      
                                 </div>
                             </div>
                             <div class="product-text">
@@ -73,12 +64,15 @@
                                 </table>
                                 <div class="product_meta">
                                     <span class="posted_in">
-                                    <b>Categories</b>
-                                    <a href="" rel="tag">All Stock Private Label Supplements</a>,
+                                    <b>Categories: </b>
+                                    @foreach($product['product_product_categories'] as $item)
+                                    <a href="{{ route('product.category', $item['category']->slug) }}" rel="tag">{{ $item['category']->name }}</a>@if (!$loop->last), @endif
+                                    @endforeach
+                                    <!-- <a href="" rel="tag">All Stock Private Label Supplements</a>,
                                     <a href="/beauty" rel="tag">Beauty</a>,
                                     <a href="/gummy-vitamins" rel="tag">Gummy Vitamins</a>,
                                     <a href="/new-products" rel="tag">New Products</a>,
-                                    <a href="/wellness" rel="tag">Wellness</a></span>
+                                    <a href="/wellness" rel="tag">Wellness</a></span> -->
                                 </div>
                             </div>
                         </div>
@@ -123,48 +117,55 @@
                                 </div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                     <div class="reply">
-                                        <div class="noreviews">
-                                            <p>There are no reviews yet.</p>
-                                        </div>
-                                        <div class="reply-title-wrapper">
-                                            <h3>Be the first to review “3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan”</h3>
-                                            <p>Your email address will not be published. Required fields are marked *</p>
-                                        </div>
-                                        <div class="rating-form">
-                                            <label for="rating" class="text-dark">Your rating * </label>
-                                            <div class="ratings">
-                                                <div class="d-flex justify-content-cernte">
-                                                    <a href="#"><i class="ti ti-star"></i></a>
-                                                    <a href="#"><i class="ti ti-star"></i></a>
-                                                    <a href="#"><i class="ti ti-star"></i></a>
-                                                    <a href="#"><i class="ti ti-star"></i></a>
-                                                    <a href="#"><i class="ti ti-star"></i></a>
+                                        <form action="{{ route('rating.store') }}" method="POST">
+                                            @csrf
+                                            <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id"> 
+                                            <div class="noreviews">
+                                                <p>There are no reviews yet.</p>
+                                            </div>
+                                            <div class="reply-title-wrapper">
+                                                <h3>Be the first to review “3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan”</h3>
+                                                <p>Your email address will not be published. Required fields are marked *</p>
+                                            </div>
+                                            <div class="rating-form">
+                                                <label for="rating" class="text-dark">Your rating * </label>
+                                                <div class="ratings">
+                                                    <div class="d-flex justify-content-cernte">
+                                                        <a href="#"><i class="ti ti-star"></i></a>
+                                                        <a href="#"><i class="ti ti-star"></i></a>
+                                                        <a href="#"><i class="ti ti-star"></i></a>
+                                                        <a href="#"><i class="ti ti-star"></i></a>
+                                                        <a href="#"><i class="ti ti-star"></i></a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="reply-form">
-                                            <form action="#">
-                                            <label for="rating" class="text-dark">Your review * </label>
-                                                <textarea class="form-control textarea-height"></textarea>
+                                            <div class="input-review">
+                                                <label for="review" class="text-dark">review * </label>
+                                                <input type="text"  class="form-control" name="review" id="review" required></input>
+                                            </div>
+                                            <div class="reply-form">
+                                                <label for="text_box" class="text-dark">Your review * </label>
+                                                <textarea class="form-control textarea-height" name="text_box" id="text_box"></textarea>
                                                 <div class="custom-form">
                                                     <div class="input-left">
-                                                        <label for="rating" class="text-dark">Name * </label>
-                                                        <input type="text"  class="form-control" required></input>
+                                                        <label for="name" class="text-dark">Name * </label>
+                                                        <input type="text"  class="form-control" name="name" id="name" required></input>
                                                     </div>
                                                     <div class="input-right">
-                                                    <label for="rating" class="text-dark">Email * </label>
-                                                        <input type="email"  class="form-control" required></input>
+                                                        <label for="email" class="text-dark">Email * </label>
+                                                        <input type="email"  class="form-control" name="email" id="email" required></input>
                                                     </div>
                                                 </div>
                                                 <div class="custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="checkout-create-ac"></input>
+                                                    <input type="checkbox" class="custom-control-input" name="checkbox_box" id="checkout-create-ac"></input>
                                                     <label for="checkout-create-ac">Save my name, email, and website in this browser for the next time I comment.</label>
                                                 </div>
                                                 <div class="product-gallery-btn">
-                                                    <a href="#" class="btn">Submit</a>
+                                                    <!-- <a href="#" class="btn">Submit</a> -->
+                                                    <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
                                                 </div>
-                                            </form>
-                                        </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -172,15 +173,13 @@
                     </div>
                     <div class="product-sidebar">
                         <div class="product-sidebar-top">
-                            <h3>See Private Label Stock Products</h3>
-                            <h3>See Private Label Packaging</h3>
                             <h3>Private Label Products</h3>
                         </div>
                         <div class="product_categories">
                             <div class="block">
                                 <div class="item">
                                 @foreach(getProductCategories() as $category)
-                                <a href="/beauty">{{ $category->name }}</a>
+                                <a href="{{ route('product.category', $category->slug) }}">{{ $category->name }}</a>
                                 @endforeach
                                 </div>
                             </div>
@@ -196,131 +195,54 @@
         </div>
     </div>
 </main>
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                            <div class="mb-3">
+                                                <label for="product-name" class="col-form-label">Product Name</label>
+                                                <input type="text" class="form-control" value="{{$product->name}}" name="product_name" id="product-name">
+                                            </div>
+                                                <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">  
+                                            <div class="mb-3">
+                                                <label for="quantity" class="col-form-label">Quantity</label>
+                                                <input type="text" class="form-control" placeholder="quantity" name="quantity" id="quantity">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="name" class="col-form-label">Name</label>
+                                                <input type="text" class="form-control" placeholder="name" name="name" id="name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="col-form-label">Email</label>
+                                                <input type="email" class="form-control" placeholder="email" name="email" id="email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="col-form-label">Phone</label>
+                                                <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="comment" class="col-form-label">Comment:</label>
+                                                <textarea class="form-control" placeholder="comment" name="comment" id="Comment"></textarea>
+                                            </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-primary">Order Confirm</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
 @endsection
 
 @push('custom-scripts')
-<script src="https://icodefy.com/Tools/iZoom/js/Vendor/jquery/jquery-ui.min.js" defer></script>
-<script src="https://icodefy.com/Tools/iZoom/js/Vendor/ui-carousel/ui-carousel.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- elevatezoom -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/2.2.3/jquery.elevatezoom.min.js" integrity="sha512-UH428GPLVbCa8xDVooDWXytY8WASfzVv3kxCvTAFkxD2vPjouf1I3+RJ2QcSckESsb7sI+gv3yhsgw9ZhM7sDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/2.2.3/jquery.elevatezoom.js" integrity="sha512-EjW7LChk2bIML+/kvj1NDrPSKHqfQ+zxJGBUKcopijd85cGwAX8ojz+781Rc0e7huwyI3j5Bn6rkctL3Gy61qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 <script>
 
-// JavaScript Document
-function isDevice() {
-    return ((/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())))
-}
-
-function initZoom(width, height) {
-    $.removeData('#zoom_10', 'elevateZoom');
-    $('.zoomContainer').remove();
-    $('.zoomWindowContainer').remove();
-    $("#zoom_10").elevateZoom({
-        responsive: true,
-        tint: true,
-        tintColour: '#E84C3C',
-        tintOpacity: 0.5,
-        easing: true,
-        borderSize: 0,
-        lensSize: 100,
-        constrainType: "height",
-        loadingIcon: "https://icodefy.com/Tools/iZoom/images/loading.GIF",
-        containLensZoom: false,
-        zoomWindowPosition: 1,
-        zoomWindowOffetx: 20,
-        zoomWindowWidth: width,
-        zoomWindowHeight: height,
-        gallery: 'gallery_pdp',
-        galleryActiveClass: "active",
-        zoomWindowFadeIn: 500,
-        zoomWindowFadeOut: 500,
-        lensFadeIn: 500,
-        lensFadeOut: 500,
-        cursor: "https://icodefy.com/Tools/iZoom/images/zoom-out.png",
-    });
-}
-
-$(document).ready(function() {
-    /* init vertical carousel if thumb image length greater that 4 */
-    if ($("#gallery_pdp a").length > 4) {
-        $("#gallery_pdp a").css("margin", "0");
-        $("#gallery_pdp").rcarousel({
-            orientation: "vertical",
-            visible: 4,
-            width: 105,
-            height: 70,
-            margin: 5,
-            step: 1,
-            speed: 500,
-        });
-        $("#ui-carousel-prev").show();
-        $("#ui-carousel-next").show();
-    }
-    /* Init Product zoom */
-    initZoom(500, 475);
-
-    $("#ui-carousel-prev").click(function() {
-        initZoom(500, 475);
-    });
-
-    $("#ui-carousel-next").click(function() {
-        initZoom(500, 475);
-    });
-
-    // $(".zoomContainer").width($("#zoom_10").width());
-
-    // $("body").delegate(".fancybox-inner .mega_enl", "click", function() {
-    //     $(this).html("");
-    //     $(this).hide();
-    // });
-			// $('#gallery_pdp img').click((e) => {
-			// 	console.log(e)
-			// })
-
-});
-
-$(window).resize(function() {
-    var docWidth = $(document).width();
-    if (docWidth > 769) {
-        initZoom(500, 475);
-    } else {
-        $.removeData('#zoom_10', 'elevateZoom');
-        $('.zoomContainer').remove();
-        $('.zoomWindowContainer').remove();
-        $("#zoom_10").elevateZoom({
-            responsive: true,
-            tint: false,
-            tintColour: '#3c3c3c',
-            tintOpacity: 0.5,
-            easing: true,
-            borderSize: 0,
-            loadingIcon: "https://icodefy.com/Tools/iZoom/images/loading.GIF",
-            zoomWindowPosition: "productInfoContainer",
-            zoomWindowWidth: 330,
-            gallery: 'gallery_pdp',
-            galleryActiveClass: "active",
-            zoomWindowFadeIn: 500,
-            zoomWindowFadeOut: 500,
-            lensFadeIn: 500,
-            lensFadeOut: 500,
-            cursor: "https://icodefy.com/Tools/iZoom/images/zoom-out.png",
-        });
-
-    }
-})
-
-$(document).ready(function() {
- $("#zoom_10").fancybox();
-});
-
-
 </script>
-
 
 @endpush

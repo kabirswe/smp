@@ -20,11 +20,7 @@ class CreatePostCommentsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('website');
-            $table->text('comment');
-            $table->unsignedBigInteger('created_by');
-            $table->foreign('created_by')->references('id')->on('users');
-            $table->unsignedBigInteger('updated_by');
-            $table->foreign('updated_by')->references('id')->on('users');
+            $table->text('comment');            
             $table->timestamps();
         });
     }

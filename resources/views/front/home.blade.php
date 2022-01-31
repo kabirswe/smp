@@ -298,12 +298,14 @@
                           @foreach($item['images'] as $image)
                           @if($image->is_cover_image)
                           <div class="products-thumbnail">
+                              <a href="{{ route('product.details', $item->slug) }}">
                               <img src="{{ asset($image->image_md) }}" alt="{{ $item->name }}">
+                              </a>
                           </div>
                           @endif
                           @endforeach
                             <div class="products-description">
-                                <a href="#">
+                                <a href="{{ route('product.details', $item->slug) }}">
                                     <p>{{ $item->name }}</p>
                                 </a>
                             </div>

@@ -18,6 +18,7 @@ use App\Http\Controllers\ProductImageController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostCommentController;
+use App\Http\Controllers\RatingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,7 +50,7 @@ Route::get('/product-type/{slug}', [PagesController::class, 'product_type'])->na
 Route::get('/product-category/{slug}', [PagesController::class, 'product_category'])->name('product.category');
 Route::get('/product-details/{slug}', [PagesController::class, 'product_details'])->name('product.details');
 Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
-Route::get('/blog_details', [PagesController::class, 'blog_details'])->name('blog_details');
+Route::get('/blog-details/{slug}', [PagesController::class, 'blog_details'])->name('blog.details');
 Route::get('/capsule-manufacturing', [PagesController::class, 'capsule_manufacturing'])->name('capsule_manufacturing');
 Route::get('/tablet-manufacturing', [PagesController::class, 'tablet_manufacturing'])->name('tablet_manufacturing');
 Route::get('/powder-manufacturing', [PagesController::class, 'powder_manufacturing'])->name('powder_manufacturing');
@@ -61,6 +62,9 @@ Route::post('/request-quote/store', [GetQuoteController::class, 'store'])->name(
 
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('store.contact');
+
+// Route::get('/rating', [PagesController::class, 'rating'])->name('rating');
+// Route::post('/rating/store', [ContactController::class, 'store'])->name('store.rating');
 
 Route::get('/liquid-capsule', [PagesController::class, 'liquid_capsule'])->name('liquid_capsule');
 
@@ -90,6 +94,7 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::resource('post_category', PostCategoryController::class);
     Route::resource('post', PostController::class);
     Route::resource('post_comment', PostCommentController::class);
+    Route::resource('rating', RatingController::class);
 
 
 });
