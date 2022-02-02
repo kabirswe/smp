@@ -39,13 +39,11 @@ class RatingController extends Controller
     {
         // dd($request->all());
         $data = $request->all();
-        $validation = Validator::make($data, [
-            'review' => 'required|max:100',
+        $validation = Validator::make($data, [            
             'text_box' => 'required|max:200',
             'name' => 'required|max:50',
             'email' => 'required|max:50',
         ],[
-            'review' => trans('error.name'),
             'text_box' => trans('error.name'),
             'name' => trans('error.name'),
             'email' => trans('error.name'),

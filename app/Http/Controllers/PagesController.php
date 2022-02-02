@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Post;
 use App\Models\PostComment;
+use App\Models\Rating;
+use App\Models\Order;
 use App\Models\ProductCategory;
 use App\Models\ProductType;
 use App\Models\Rating;
@@ -163,10 +165,10 @@ class PagesController extends Controller
     {
         return view('front.contact');
     }
-    public function rating()
-    {
-        return view('front.rating');
-    }
+    // public function rating()
+    // {
+    //     return view('front.rating');
+    // }
 
 
 }

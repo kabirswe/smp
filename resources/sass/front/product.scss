@@ -83,17 +83,20 @@
                                     align-items: center;
                                     margin: 0 auto;
                                 }
-                                .product-img-hover {
+                                .product-images-hover {
                                     position: absolute;
                                     left: 0;
                                     top: 0;
                                     opacity: 0;
                                     width: 100%;
+                                    object-fit: center;
                                     height: 100%;
                                     z-index: 1;
                                     transition: 0.3s;
                                     &:hover {
                                         opacity: 1;
+                                    }
+                                    .product-img-hover {
                                     }
                                 }
                             }
@@ -111,7 +114,7 @@
                                     font-size: 16px;
                                 }
                             }
-                            &:hover .product-img-hover,
+                            &:hover .product-images-hover,
                             &:hover .product-descriptions {
                                 opacity: 1;
                                 background-color: #fff;

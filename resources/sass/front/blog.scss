@@ -122,6 +122,85 @@
                             }
                         }
                     }
+                    /*Navigation*/
+                    .man_navigation {
+                        width: 100%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        margin-top: 40px;
+                        clear: both;
+                    }
+                    .man_blog_archive:after {
+                        display: block;
+                        content: "";
+                        clear: both;
+                    }
+                    .man_default_page .man_navigation .current {
+                        color: #566dfb;
+                    }
+
+                    .man_navigation i {
+                        font-size: 12px;
+                        font-weight: bold;
+                        transform: translateY(-2px);
+                        display: inline-block;
+                    }
+                    .man_navigation .next {
+                        position: absolute;
+                        right: 33%;
+                    }
+                    .col-md-9.man_main_sidebar .man_navigation .next {
+                        right: 25px;
+                    }
+                    .man_navigation .prev {
+                        position: absolute;
+                        left: 8%;
+                    }
+                    .man_navigation .next i {
+                        margin-left: 10px;
+                    }
+                    .man_navigation .prev i {
+                        margin-right: 10px;
+                    }
+
+                    .man_navigation a,
+                    .man_navigation span {
+                        display: inline-block;
+                        padding: 5px;
+                        position: relative;
+                        color: #000;
+                    }
+
+                    .man_navigation span:after {
+                        display: block;
+                        content: "";
+                        width: 21px;
+                        height: 2px;
+                        background: #333;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .page-links a {
+                        display: inline-block;
+                        padding: 8px 15px;
+                        background: #e7e7f0;
+                        margin: 0 2px;
+                        border-radius: 10px;
+                        line-height: 1.2;
+                        color: #61ce70;
+                    }
+                    .page-links a:hover {
+                        background: #566dfb;
+                        color: #fff;
+                    }
+                    .page-links {
+                        font-weight: bold;
+                        margin: 30px 0 !important;
+                    }
                 }
                 .blog-sidebar {
                     background-color: #f0f0f0;
@@ -142,52 +221,41 @@
                             margin-bottom: 20px;
                         }
                         a {
-                            background-color: #b0cf4a;
-                            color: $white;
                             font-size: 18px;
                             line-height: 25px;
+                            border-radius: 5px;
                             height: 70px;
                             width: 190px;
-                            padding: 15px 6px;
-                            border-radius: 10px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                            &:hover {
-                                background-color: #165e60;
-                                color: $white;
-                            }
                         }
                     }
-                    .about-author {
-                        .h3 {
-                            font-size: 20px;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            line-height: 28px;
-                        }
-                        .author-box {
-                            display: flex;
-                            margin: 30px 0 25px;
-                            h3 {
-                                font-size: 28px;
-                                font-family: Oxygen;
-                                font-weight: 400;
-                                margin-left: 20px;
-                            }
-                        }
-                        .comment-link {
-                            font-size: 15px;
-                            font-weight: 400;
-                            margin-bottom: 60px;
-                            a {
-                                color: #271700;
-                                display: inline-block;
-                                margin: 10px 0;
-                            }
-                        }
-                    }
+                    // .about-author {
+                    //     .h3 {
+                    //         font-size: 20px;
+                    //         font-weight: 700;
+                    //         text-transform: uppercase;
+                    //         line-height: 28px;
+                    //     }
+                    //     .author-box {
+                    //         display: flex;
+                    //         margin: 30px 0 25px;
+                    //         h3 {
+                    //             font-size: 28px;
+                    //             font-family: Oxygen;
+                    //             font-weight: 400;
+                    //             margin-left: 20px;
+                    //         }
+                    //     }
+                    //     .comment-link {
+                    //         font-size: 15px;
+                    //         font-weight: 400;
+                    //         margin-bottom: 60px;
+                    //         a {
+                    //             color: #271700;
+                    //             display: inline-block;
+                    //             margin: 10px 0;
+                    //         }
+                    //     }
+                    // }
                     .product_categories {
                         h3 {
                             text-transform: uppercase;

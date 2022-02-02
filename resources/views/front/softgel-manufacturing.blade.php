@@ -36,23 +36,24 @@
                 <div class="labels-block">
                     <div class="item">
                         <i class="ti ti-layout-media-left-alt"></i>
-                        <h2>Fill Material Prep</h2>
-                        <p>Preparing the oil & ingredients that will be filled inside the softgel. This requires equipment such as processing tanks, sieves & mills, vacuum homogenizers</p>
+                        <h2>Preparation of Fill Materials</h2>
+                        <p>Preparing the oil and ingredients to go into the softgel. This involves the use of processing tanks, sieves 
+and mills, and vacuum homogenizers, among other things.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-shopping-cart"></i>
                         <h2>Encapsulation</h2>
-                        <p>The process of putting the ingredients and oil into a thin layer of gelatin and wrapping the fill material to create a softgel.</p>
+                        <p>To make a softgel, place the ingredients and oil in a thin layer of gelatin and wrap the fill material over it.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-package"></i>
                         <h2>Drying</h2>
-                        <p>Removing excess moisture from the shell, allowing it to shrink, making the softgel more firm and durable.</p>
+                        <p>Releasing extra moisture from the shell and letting it shrink, resulting in a firmer and more lasting softgel.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-agenda"></i>
-                        <h2>Cleaning, Inspection & Sorting</h2>
-                        <p>We ensure all softgels are free of moisture issues & defects by inspecting the final product thoroughly</p>
+                        <h2>Cleaning, Examining, and Sorting</h2>
+                        <p>By rigorously evaluating the final product, we verify that all softgels are clear of moisture issues and errors.</p>
                     </div>
                 </div>
                 <div class="labels-block-image">
@@ -83,14 +84,14 @@
         <div class="container">
             <div class="capabilities">
                 <div class="content-block">
-                    <p>Our Capabilities</p>
+                    <!-- <p>Our Capabilities</p> -->
                     <h2>Softgel Manufacturing</h2>
-                    <p>We have capabilities to manufacture any nutraceutical softgel formula. From sourcing each ingredient in your formula, to post filling inspection; we do it all at the best prices and the fastest lead times. We have the experience to help you formulate a new product for your target audience, or discuss with you how to properly scale your manufacturing. As your partner, it is our job for long-term softgel manufacturing success.</p>
+                    <p>We are capable of producing any nutraceutical softgel formula. We handle everything from collecting each ingredient in your formula through post-filling inspection at the most competitive costs and with the shortest turnaround times. We have the skills to assist you in developing a new product for your customer base or discussing how to grow your manufacturing effectively. It is our responsibility as your partner to ensure long-term gummy vitamin manufacturing success.</p>
                     <a href="#" class="btn common-btn">Get A Softgel Manufacturing Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -100,7 +101,7 @@
         <div class="container">
             <div class="network">
                 <h2>Custom Softgel Manufacturing</h2>
-                <p>We specialize in manufacturing nutraceutical formula softgels. Softgels are some of the most popular forms of delivery method for vitamins & supplements.</p>
+                <p>Softgels containing nutritional formulas are our specialty. Softgels are one of the most common type of vitamin and supplement formulations.</p>
             </div>
         </div>
     </div>
@@ -109,13 +110,13 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Manufacturing Process of Softgels</h2>
-                    <p>Softgel encapsulation is a common practice, as it is very versatile. The process of producing a softgel capsule is comprised of four main stages:</p>
+                    <h2>Softgels Manufacturing Process</h2>
+                    <p>Because of its flexibility, softgel encapsulation is a frequently used method. There are four key steps in the production of a softgel capsule:</p>
                     <ol>
-                        <li>Preparing gelatin</li>
-                        <li>Preparing the fill</li>
-                        <li>Begin encapsulating the fill</li>
-                        <li>Finishing touches on filled softgels</li>
+                        <li>Getting gelatin ready</li>
+                        <li>Getting the fill ready</li>
+                        <li>Start encapsulating the filling.</li>
+                        <li>Putting the finishing touches on the filled softgels</li>
                     </ol>
                 </div>
                 <div class="image-block">
@@ -134,8 +135,8 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Preparing the Gelatin</h2>
-                    <h4>Preparing the gelatin capsule is the very first step in the process. To note, this process is not identical to the process of making veggie softgels. But to begin with gelatin softgels, you must get the ingredients for it together. The four main components are:</h4>
+                    <h2>Getting Gelatin Ready</h2>
+                    <h4>The first stage in the process is to prepare the gelatin capsule. It's important to remember that this procedure isn't the same as manufacturing vegan softgels. However, before you can make gelatin softgels, you must first gather the necessary ingredients. The following are the four major components:</h4>
                     <ol>
                         <li>Gelatin</li>
                         <li>Plasticizer</li>
@@ -145,7 +146,7 @@
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                       <p>To begin, a machine will melt a large quantity of gelatin with the other three components. Not only will it melt all the ingredients, but it will allow for the appropriate mixing of all components. The four components are mixed until the blend is going to make a softgel shell that is durable and effective for the intended use. The addition of coloring agents and other additives will make every blend unique for creating the perfect softgel shell. Following the completed mixture of all ingredients, the mixture needs to stay warm, so it maintains the consistency of a liquid. </p>
+                       <p>Firstly, a machine will melt a huge amount of gelatin with the other three ingredients in a machine. It will not only melt all of the ingredients, but it will also ensure that all of the components are well blended. The four ingredients are combined until they form a softgel shell that is both durable and appropriate for the specific use. Every mix will be unique due to the use of coloring agents and other chemicals for generating the right softgel shell. After all of the components have been well blended, the mixture must be kept heated to retain its liquid consistency.</p>
                     </div>
                 </div>
             </div>
@@ -156,12 +157,12 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Encapsulating Your Formula Inside A Softgel</h2>
-                    <h4>Specifically, with softgels, the process of encapsulating the formula happens simultaneously as the shell is added to a machine along with the blend. This process all takes place in a room that is temperature-controlled and with a humidity of around 20%. Having optimal conditions for softgel manufacturing is key to producing a high-quality end product.</h4>                                                      
+                    <h2>Using Softgels to Encapsulate Your Formula</h2>
+                    <h4>In the case of softgels, the process of encapsulating the formula occurs simultaneously with the addition of the shell to a machine alongside the mix. This entire procedure is conducted in a temperaturecontrolled chamber with a humidity level of roughly 20%. It is critical to have appropriate softgel production conditions in order to produce a high-quality end product.</h4>                                                      
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <p>The process of creating a finished softgel starts with the blend of gelatin, which is prepared previously. The gelatin blend will be poured onto two drums, which are extremely cold. The drums roll continually, causing the gelatin blend to both solidify and roll off as a solid sheet, but it will be split in half. With both halves now ready, they will be put through a process that will cut each half to the appropriate size and shape. The two matching halves will be met together, but first, your custom blend will be inserted into a heated wedge. This heated wedge will be encased by both halves of the softgel. Once the wedge is in place, and the softgel is nearly closed, the wedge will inject the custom formula into the softgel. This being the final step of the process, the wedge is removed, and the softgel is quickly sealed or coated as directed and will be set aside to cool and settle. </p>
+                        <p>The method of making a complete softgel begins with a gelatin blend that has been produced beforehand. The gelatin mixture will be placed into two extremely cold drums. The gelatin mixture dries and rolls off as a solid sheet as the drums continue to roll, however it will be divided in two. Now that both sides are finished, they will go through a procedure that will cut them to the proper size and form. Your customized mix will be put into a heated wedge before the two parts are joined together. Both parts of the softgel will encase this hot wedge. The wedge will inject the unique formula into the softgel once it is in position as well as the softgel is nearly closed. The wedge is removed at this point in the process, and the softgel is immediately sealed or coated as specified before being placed away to cool and set.</p>
                     </div>                 
                 </div>
             </div>
@@ -172,8 +173,9 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Drying & Finishing Process</h2>
-                    <h4>The softgels will  be put into a cool drum, which will rotate fast to help the gelatin congeal. The finished softgel will undergo further drying, which is a process that is comprised of a couple of steps:</h4>
+                    <h2>Process of Drying and Finishing</h2>
+                    <h4>The softgels will be placed in a refrigerated drum that rotates quickly in order to assist the gelatin solidify. 
+The resulting softgel will be dried out further, which is a two-step process:</h4>
                     <ol>
                         <li>Tumble drying</li>
                         <li> Drying tunnel</li>
@@ -181,8 +183,8 @@
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                       <p>A tumble dryer is a machine that will dry the softgels for no more than 45 minutes. The outcome from this step is going to be the removal of nearly 25% of water within the softgel capsules.</p>
-                       <p>After being in the tumbler machine, the softgels are introduced to the drying tunnel. This is an environment where the softgels are laid on racks, and subject to swift flow of air continually flows for up to 48 hours. This is the final drying step for the softgel capsules before inspection. </p>
+                       <p>A tumble dryer is an equipment that takes no longer than 45 minutes to dry the softgels. The extraction of almost 25% of the water within the softgel capsules will be the result of this stage.</p>
+                       <p>The softgels are brought to the drying tunnel after being tumbled in the tumbler machine. This is a system in which softgels are put out on racks and subjected to a continuous flow of air for up to 48 hours. This is the softgel capsules' final drying stage before inspection.</p>
                     </div>
                 </div>
             </div>
@@ -193,14 +195,15 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Gummy Specialists Wants To Be Your Softgel Manufacturer</h2>
+                    <h2>Gummy Specialists Wants to be Your Go-To Softgel Manufacturer</h2>
                     <a href="#" class="btn common-btn">Get A Softgel Manufacturing Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <h4>If you have a great formula that you want encapsulated within a softgel, work with us and we can get your softgels.</h4>
-                       <p>Hypromellose, officially known as Hydroxypropyl Methylcellulose (HPMC), only contains HPMC and purified water. This option includes no preservatives, animal by-products and is GMO-free, gelatin-free, gluten-free, starch-free and BSE free.</p>
-                       <p>The other veggie capsule shell option is Pullulan. Pullulan is a water-soluble polysaccharide produced by the fermentation of starch/sugar by the fungus Aerobasidum pullulans. It is 100% natural, starch-free, gluten-free, preservative-free, and GMO-free. Unlike HPMC, Pullulan is 100% natural because it is not produced by any chemical modification</p>
+                        <h4>If you have a unique formula that you'd want to encapsulate in a softgel, get in touch with us and we'll 
+have your softgels manufactured.</h4>
+                       <p>We collaborate with some of the leading softgel capsule contract manufacturers. We simplify the procedure for you here, and we'll manage all of the correspondence so you can obtain your softgel capsules for your formula. Softgels are often used to provide fish oil, but they can also include a variety of additional supplements.</p>
+                       <p>The softgel production process might be complicated, but it can be made simple with the correct tools. We are confident in our ability to meet all of your softgel production requirements, and we believe we would be the greatest partner for you and your formulas. Furthermore, because we are based in the United States, when you deal with us, your bottles will have a superb marketing point.</p>
                     </div>
                 </div>
             </div>
@@ -212,8 +215,8 @@
             <div class="pre-manufactured">
                 <div class="top-block">
                     <div class="content-block">
-                        <h2>Check Out Our Stock Private Label Softgel Products</h2>
-                        <p>Make sure to check out our stock private label softgel products. There, you can see what we believe is some of the best formulas that are on a level of their own. They possibly offer a wide variety of vitamins and nutrients that may be very beneficial. We also offer other stock products and they are just as important as our collagen products, they can be viewed here.</p>
+                        <h2>Take a Look at Our Private Label Softgel Products in Stock</h2>
+                        <p>Have a look at our private label softgels in stock. There, you'll find what we consider are some of the greatest formulas, each on its own level. These formulas include a wide range of vitamins and elements that are useful. Here you'll find other stock items that are just as important as our collagen supplements.</p>
                         <a href="#" class="btn common-btn">See Our Private Label Softgel Products Here<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <div class="slider-block">

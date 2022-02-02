@@ -34,7 +34,7 @@ img {
     max-width: 100%;
 }
 .common-btn {
-    background-color: #61ce70;
+    background-color: #1f7463;
     color: $white;
     width: 212px;
     height: 40px;
@@ -45,7 +45,8 @@ img {
     align-items: center;
     text-align: center;
     &:hover {
-        background-color: #165e60;
+        // background-color: #165e60;
+        background-color: #fc1b15;
         color: $white;
     }
     i {

@@ -66,11 +66,6 @@
                                     @foreach($product['product_product_categories'] as $item)
                                     <a href="{{ route('product.category', $item['category']->slug) }}" rel="tag">{{ $item['category']->name }}</a>@if (!$loop->last), @endif
                                     @endforeach
-                                    <!-- <a href="" rel="tag">All Stock Private Label Supplements</a>,
-                                    <a href="/beauty" rel="tag">Beauty</a>,
-                                    <a href="/gummy-vitamins" rel="tag">Gummy Vitamins</a>,
-                                    <a href="/new-products" rel="tag">New Products</a>,
-                                    <a href="/wellness" rel="tag">Wellness</a></span> -->
                                 </div>
                             </div>
                         </div>
@@ -147,7 +142,8 @@
                                             @csrf
                                             <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">
                                             <div class="reply-title-wrapper">
-                                                <h3>Be the first to review “3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan”</h3>
+                                                <h3>{{ $product->name }}</h3>
+                                                <h2>Add a review</h2>
                                                 <p>Your email address will not be published. Required fields are marked *</p>
                                             </div>
                                             <div class="rating-form">
@@ -186,7 +182,7 @@
                                                 </div>
                                                 <div class="product-gallery-btn">
                                                     <!-- <a href="#" class="btn">Submit</a> -->
-                                                    <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                                                    <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
                                                 </div>
                                             </div>
                                         </form>

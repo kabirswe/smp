@@ -19,6 +19,7 @@ use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostCommentController;
 use App\Http\Controllers\RatingController;
+use App\Http\Controllers\OrderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,9 +64,6 @@ Route::post('/request-quote/store', [GetQuoteController::class, 'store'])->name(
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('store.contact');
 
-// Route::get('/rating', [PagesController::class, 'rating'])->name('rating');
-// Route::post('/rating/store', [ContactController::class, 'store'])->name('store.rating');
-
 Route::get('/liquid-capsule', [PagesController::class, 'liquid_capsule'])->name('liquid_capsule');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -93,7 +91,6 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::resource('product_image', ProductImageController::class);
     Route::resource('post_category', PostCategoryController::class);
     Route::resource('post', PostController::class);
-
 
 });
 Route::resource('post_comment', PostCommentController::class);

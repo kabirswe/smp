@@ -17,7 +17,8 @@
         <div class="container">
                 <div class="video-content">
                 <h2>Your Partner In<br /> Manufacturing Amazing<br /> Nutraceuticals</h2>
-                <p>GS stands for Gummy Specialists. Our team is dedicated to be your partner in most efficiently manufacturing your growing vitamin business to scale.</p>
+                <p>GS stands for Gummy Specialists. Our team is committed to assisting you in scaling up your vitamin 
+manufacturing business in the most efficient way possible.</p>
                 <a href="#" class="btn common-btn">About Our Facilities<i class="ti ti-arrow-right"></i></a>
             </div>
         </div>
@@ -28,22 +29,22 @@
                 <div class="item">
                     <i class="ti ti-layout-media-left-alt"></i>
                     <h2>Custom Manufacturing</h2>
-                    <p>Manufacturing custom vitamins can be a work-intense job. From formulation to sourcing to encapsulation; we can take care of everything for you at the highest quality achievable.</p>
+                    <p>Looking for a manufacturer because custom manufacturing is intense for you? Well, we are here to take care of everything for you from formulation to encapsulation. Our team of experienced professionals work around the clock to make sure the highest quality is achieved.</p>
                 </div>
                 <div class="item">
                     <i class="ti ti-shopping-cart"></i>
-                    <h2>Stock Private Label</h2>
+                    <h2>Private Label Products</h2>
                     <p>Manufacturing custom vitamins can be a work-intense job. From formulation to sourcing to encapsulation; we can take care of everything for you at the highest quality achievable.</p>
                 </div>
                 <div class="item">
                     <i class="ti ti-package"></i>
-                    <h2>Impressive Packaging</h2>
-                    <p>Manufacturing custom vitamins can be a work-intense job. From formulation to sourcing to encapsulation; we can take care of everything for you at the highest quality achievable.</p>
+                    <h2>Stunning Packaging</h2>
+                    <p>Packaging plays an important role in the entire supply chain – from the product to the consumer.At Gummy Specialist, we are well known for our premium-quality packaging. Our product packaging whether it be bottles, labels, lids, boxes, etc. are also designed with the customer in mind, using unique designs to give the customer that little extra to draw them into purchasing a Gummy Specialists product.</p>
                 </div>
                 <div class="item">
                     <i class="ti ti-agenda"></i>
-                    <h2>Fulfillment & Customer Service</h2>
-                    <p>Manufacturing custom vitamins can be a work-intense job. From formulation to sourcing to encapsulation; we can take care of everything for you at the highest quality achievable.</p>
+                    <h2>Order Fulfillment & Customer Servic</h2>
+                    <p>Our team of experienced professionals ensures a smooth operation for your product so you can have time to grow your business. The Gummy Specialist team is always available to provide the best in customer support. We strive to fulfill the needs of every customer. Please email us directly.</p>
                 </div>
             </div>
         </div>
@@ -51,10 +52,11 @@
     <div class="capabilities-wrapper">
         <div class="container">
             <div class="capabilities">
-                <div class="content-block">
-                    <p>About Us</p>
+                <div class="content-block">                    
                     <h2>Our Capabilities</h2>
-                    <p>GS stands for “Gummy Specialists”. This is important to us because we look at every single business we manufacture for as Partners. This means we are dedicated towards your long-term success from the very beginning. We ensure your product formula will be market-competitive, packaging stands out from the pack and your product is safely stored & orders shipped out quickly. We only profit from returning customers who are successfully selling. It’s our job to do everything possible to help you achieve that.</p>
+                    <p>We're the gummy specialists!</p>
+                    <p>Gummy Specialist is an industry leader in providing innovative and high-quality private label gummies. We have never compromised with quality since the day we opened our doors for business. We have been able to create innovative and high-quality gummies for our customers, which has given us the opportunity to grow into one of the most successful companies in this industry.</p>
+                    <p>We have a team of certified R&D professionals, who are committed to coming up with new recipes and flavors for you to enjoy!</p>
                     <a href="#" class="btn common-btn">Learn More About Our Facilities<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="slider">
@@ -88,17 +90,18 @@
     <div class="network-wrapper">
         <div class="container">
             <div class="network">
-                <h2>We Can Be Found On The Largest Networks</h2>
-                <p>Through our hard work and determination, Gummy Specialists Nutra has been covered by some of the largest networks. Gummy Specialists Nutra is dedicated to bringing the most information and quality supplements to our clients. We are thankful to have been recognized for our efforts! Some of the networks that have covered Gummy Specialists</p>
+                <h2>Our Manufacturer’s Products Can Be Found On The Largest Networks</h2>
+                <p>Gummy Specialists has been covered by some of the top networks as a result of our hard work and commitment. Gummy Specialists is committed to providing our clients with the most up-to-date information and high-quality supplements. We are grateful for the acknowledgement of our work!</p>
+                <p>Gummy Specialists has been featured on the following networks:</p>
                 <div class="image-block second">
                     <img src="{{ asset('images/front/fe12.png') }}" alt="">
                     <img src="{{ asset('images/front/fe13.png') }}" alt="">
                     <img src="{{ asset('images/front/fe14.png') }}" alt="">
                     <img src="{{ asset('images/front/fe15.png') }}" alt="">
                 </div>
-                <h2>Our Clients Can Be Found In The Biggest Retailers & On The Largest Networks</h2>
-                <p>Gummy Specialists Nutra proudly works with numerous amazing brands that are on some of the best marketplaces around, including Walmart, Target, The Vitamin Shoppe, GNC, and more!
-                Build your brand and bring your supplements to these large retailers with Gummy Specialists as your partner!</p>
+                <h2>Gummy Specialists Products Can Be Found In The Biggest Retailers & On The Largest Networks</h2>
+                <p>Gummy Specialists is delighted to partner with a variety of excellent brands that are available on some of the best marketplaces in the world, including Walmart, Target, The Vitamin Shoppe, GNC, and others!</p>
+                <p>With Gummy Specialists as your partner, you can build your brand and offer your supplements to these huge merchants!</p>
                 <div class="image-block second">
                     <img src="{{ asset('images/front/fe16.png') }}" alt="">
                     <img src="{{ asset('images/front/fe17.png') }}" alt="">
@@ -120,10 +123,10 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-center flex-column w-100">
-                    <h2>Request A Price Quote</h2>
-                    <p>Fill out our “request a quote” form so we we can give you a custom price quote to get started with manufacturing your neutraceutical supplements.</p>
+                    <h2>Request A Custom Quote</h2>
+                    <p>Fill out our "get a custom quote" form and we'll send you a custom price quote so you can start making your nutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <p class="call-us">Or call us at <strong>1-833-MYGUMMY</strong></p>
                 </div>
@@ -176,13 +179,36 @@
             </div>
         </div>
     </div> -->
+    <div class="gummy-manufacturing-wrapper">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="manufacturing">
+                <div class="content-block">
+                    <h2>Gummy Vitamin Manufacturing</h2>
+                    <p>Stick to gummy vitamins which are created with natural sweeteners. You can choose the size and can even get them personalized based on your target audience when you purchase gummy vitamins from us. It is incredibly simple, and our experienced staffs are here to help you. With the gummies we offer, you can get the right kind for your preferences and also at the best price and the fastest lead time. As your partner, we are always ready to deliver the products to you as soon as possible.</p>
+                    <h3>Ingredient Blending</h3>
+                    <h3>Mixing & Cooling</h3>
+                    <h3>Molding</h3>
+                    <h3>Cooling & Unmolding</h3>
+                    <h3>Bottle/Bag Filling</h3>
+                </div>
+                <div class="video-block">
+                    <div class="video">                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="#" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="softgel-manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Softgel Manufacturing</h2>
-                    <p>Softgels are able to have its shape, color, and size customized to however you please. Softgels offer encapsulation of liquids, instead of powder which can lead to increased absorbability.</p>
+                    <p>Nutraceutical Softgels are our specialty. We use industry-leading technologies to formulate softgels for your target audience. Our premium quality softgels have many desirable properties and several advantages. Our experienced staffs are here to provide you with the most elegant, effective & efficient way to achieve your branding goals. Our softgels are available in a range of delicious flavors, textures, and sizes, making them an attractive, convenient way to deliver your supplement to your target audience. We strive to be the best as your partner.</p>
                     <h3>Fill Material Prep</h3>
                     <h3>Gelatin Filling & Encapsulation</h3>
                     <h3>Tumble Drying</h3>
@@ -191,37 +217,14 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="#" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
                     <a href="#" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="gummy-manufacturing-wrapper">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="manufacturing">
-                <div class="content-block">
-                    <h2>Gummy Vitamin Manufacturing</h2>
-                    <p>We are able to help you get your gummy vitamins manufactured the fastest, and with no stress. Gummy vitamins are able to have its shape, color, and size customized to however you please. Gummies are loved by children, and adults alike. It is truly great as it is typically very tasty.</h3>
-                    <h3>Ingredient Blending</h3>
-                    <h3>Mixing & Cooling</h3>
-                    <h3>Molding</h3>
-                    <h3>Cooling & Unmolding</h3>
-                    <h3>Bottle/Bag Filling</h3>
-                </div>
-                <div class="video-block">
-                    <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="#" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="#" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>    
     <!-- <div class="powder-manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -249,11 +252,11 @@
         <div class="container">
             <div class="stock-now">
                 <div class="stock-left">
-                    <h3>See Our Incredible Private Label Supplements In-Stock Now!</h3>
+                    <h3>Check out our amazing Private Label Supplements that are currently in stock!</h3>
                 </div>
                 <div class="stock-right">
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn">See All Current Stock Products<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn common-btn">See All Current Stock Products<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -266,7 +269,7 @@
                 <div class="top-block">
                     <div class="content-block">
                         <h2>Pre-Manufactured In-Stock Private Label Formulas Available</h2>
-                        <p>We have many in-stock already manufactured supplement products in our warehouse, ready for you label to be put on. We have real-time catalog on our website updated everyday! Check to see our inventory of private label supplements. We also offer samples of every stock supplement for you to try before investing the product into your brand.</p>
+                        <p>We have a large number of already manufactured supplement products in stock in our warehouse, ready for you to label. On our website, we have a genuine catalog that is updated nearly every day! Check out our private label supplement range. We also provide free samples of each stock supplement so you can check it out before investing in it for your business.</p>
                     </div>
                     <div class="slider-block">
                         <div class="slider">
@@ -291,7 +294,7 @@
                 </div>
                 <div class="product-block">
                     <h2>Our New Private Label Stock Products</h2>
-                    <p>We are always formulating new products, stay up to date with our latest products to get them before anyone else! </p>
+                    <p>We're constantly adding new products, so stay up to speed on our most recent releases to obtain them before the others!</p>
                     <div class="product-wrapper">
                         @foreach($pre_manufactured_swiper as $item)
                         <div class="item">

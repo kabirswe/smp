@@ -22,7 +22,7 @@
                         <img src="{{ asset($post->cover_image_md) }}" alt="">                      
                         <p>{{ $post->description }}</p>
                     </div>
-                    <div class="about-author">
+                    <!-- <div class="about-author">
                         <div class="author-box">
                             <div class="author-img">
                                 <img src="{{ asset('images/front/authr-image.png') }}" alt="">
@@ -37,10 +37,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="comments-block">
                         @foreach($comments as $comment)
                         <h3>{{$comment->name}}</h3>
+                        <span>{{$comment->created_at}}</span>
                         <p>{{$comment->comment}}</p>
                         @endforeach                        
                     </div>
@@ -70,7 +71,7 @@
                             </div>
                             <div class="product-gallery-btn">
                                 <!-- <a href="#" type="submit" class="btn">Post Comment</a> -->
-                                <button type="submit" class="btn btn-secondary btn-lg btn-block">Post Comment</button>
+                                <button type="submit" class="btn common-btn btn-lg btn-block">Post Comment</button>
                             </div>
                         </form>
                     </div>
@@ -80,9 +81,9 @@
                         <img src="{{ asset('images/front/1581626444.png') }}" alt="">
                         <h5>Learn How To Generate The Best Source Of Customers For Supplement Brands!</h5>
                         <p>We put together case studies of very successful supplement brands in relation to organic search traffic. We also included a step-by-step guide so you can start building this incredible source of web traffic today!</p>
-                        <a class="btn">Download Slideshow</a>
+                        <a class="btn common-btn">Download Slideshow</a>
                     </div>
-                    <div class="about-author">
+                    <!-- <div class="about-author">
                         <h3>ABOUT AUTHOR</h3>
                         <div class="author-box">
                             <img src="{{ asset('images/front/authr-image.png') }}" alt="">
@@ -95,7 +96,7 @@
                             <a href="#">Work Together With Me On Your Nutra Marketing</a>
                             <a href="#">View app posts</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="product_categories">
                         <h3>categories</h3>
                         <div class="block">
@@ -118,7 +119,6 @@
                                 <a href="#">Liquids</a>
                                 <a href="#">New Products</a>
                                 <a href="#">Non-GMO Verified</a>
-                                <a href="#">Pets</a>
                                 <a href="#">Powders</a>
                                 <a href="#">Sample Ready Products</a>
                                 <a href="#">Softgels</a>
