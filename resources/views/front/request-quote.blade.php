@@ -149,7 +149,7 @@
                             <label for="notes">Other Notes</label>
                             <textarea class="form-control" name="text_box" value="Other Notes" id="notes" rows="8"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                        <button type="submit" class="btn common-btn btn-lg btn-block">Submit</button>
                     </div>
                 </form>
             </div>

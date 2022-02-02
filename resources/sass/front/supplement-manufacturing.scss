@@ -252,33 +252,29 @@
                 .video {
                     display: flex;
                     justify-content: space-between;
+                    text-align: center;
                     flex-wrap: wrap;
                     .iteam {
                         width: calc(50% - 20px);
-
+                        margin-bottom: 30px;
                         h4 {
                             font-size: 16px;
                             font-weight: 700;
                             line-height: 26px;
                             color: #4b4b4b;
-                            margin-top: 30px;
-                            &:last-child {
-                                margin-top: 0;
-                            }
                         }
                         h1 {
-                            font-size: 40px;
+                            font-size: 30px;
                             font-weight: 600;
-                            line-height: 69px;
+                            line-height: 40px;
                             color: #222222;
-                            margin-top: 25px;
+                            margin-top: 10px;
                         }
                         p {
                             font-size: 19px;
                             font-weight: 400;
-                            line-height: 48px;
+                            line-height: 25px;
                             color: #222222;
-                            margin-top: 20px;
                         }
                     }
                 }
@@ -428,62 +424,6 @@
             .image-block {
                 width: calc(50% - 10px);
                 .images-right {
-                }
-            }
-        }
-    }
-    .raw-materials-wrapper {
-        padding: 50px 0 100px;
-        background-color: #f4f4f4;
-        .manufacturing {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .content-block {
-                width: calc(50% - 10px);
-                h2 {
-                    font-family: Oxygen;
-                    line-height: 50px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 40px;
-                    margin-bottom: 30px;
-                }
-                h4 {
-                    font-family: Poppins;
-                    line-height: 28px;
-                    font-weight: 700;
-                    font-style: normal;
-                    color: #333;
-                    font-size: 20px;
-                    margin-bottom: 30px;
-                }
-                p {
-                    line-height: 26px;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #4b4b4b;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                }
-                a {
-                    margin-top: 40px;
-                    width: 300px;
-                }
-            }
-            .image-block {
-                width: calc(50% - 10px);
-                .images-right {
-                    h3 {
-                        color: #3c763d;
-                        background-color: #dff0d8;
-                        border-color: #cae6be;
-                        padding: 15px;
-                        text-align: left;
-                        font-size: 16px;
-                        font-weight: 700;
-                    }
                 }
             }
         }
