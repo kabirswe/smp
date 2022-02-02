@@ -18,8 +18,8 @@
         <div class="mail-blog">
             <div class="container">
                 <div class="blog-content-area">
-                    <div class="blog-content">                       
-                            @foreach($posts as $post)                            
+                    <div class="blog-content">
+                            @foreach($posts as $post)
                                 <div class="blog-item">
                                 <div class="blog-image">
                                     <img src="{{ asset($post->cover_image_md) }}" alt="">
@@ -128,7 +128,7 @@
                             @endif
                     </div>
                     </div>
-                    
+
                     <div class="blog-sidebar">
                         <div class="sidebar-top">
                             <img src="{{ asset('images/front/1581626444.png') }}" alt="">
@@ -155,36 +155,8 @@
                             <div class="block">
                                 <div class="item">
                                     @foreach(getPostCategories() as $category)
-                                        <a href="/beauty">{{$category->name}}</a>
+                                        <a href="/beauty">{{ $category->name }}</a>
                                     @endforeach
-                                    <!-- <a href="#">Delivery & Dosage Technology</a>
-                                    <a href="#">Beauty</a>
-                                    <a href="#">Best Sellers</a>
-                                    <a href="#">Bone</a>
-                                    <a href="#">Capsules</a>
-                                    <a href="#">Collagen</a>
-                                    <a href="#">Elderberry</a>
-                                    <a href="#">Essential Vitamins</a>
-                                    <a href="#">Fish Oil</a>
-                                    <a href="#">Gummy Vitamins</a>
-                                    <a href="#">Hair Skin & Nails</a>
-                                    <a href="#">Herbal</a>
-                                    <a href="#">Joint Health</a>
-                                    <a href="#">Keto</a>
-                                    <a href="#">Kids</a>
-                                    <a href="#">Liquids</a>
-                                    <a href="#">New Products</a>
-                                    <a href="#">Non-GMO Verified</a>
-                                    <a href="#">Pets</a>
-                                    <a href="#">Powders</a>
-                                    <a href="#">Sample Ready Products</a>
-                                    <a href="#">Softgels</a>
-                                    <a href="#">Sports Nutrition</a>
-                                    <a href="#">Sugar-Free</a>
-                                    <a href="#">Weight Management</a>
-                                    <a href="#">Wellness</a>
-                                    <a href="#">Packaging</a>
-                                    <a href="#">Uncategorized</a> -->
                                 </div>
                             </div>
                         </div>

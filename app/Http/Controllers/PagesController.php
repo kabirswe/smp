@@ -6,6 +6,7 @@ use App\Models\Post;
 use App\Models\PostComment;
 use App\Models\ProductCategory;
 use App\Models\ProductType;
+use App\Models\Rating;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -87,7 +88,7 @@ class PagesController extends Controller
         ->orderBy('id')
         // ->get();
         ->paginate(10);
-        // dd($products->toArray());        
+        // dd($products->toArray());
         return view('front.product_page', compact('products','category' ));
     }
 
@@ -101,8 +102,20 @@ class PagesController extends Controller
             'type:id,name'
         ])
         ->first();
-        // dd($product);
-        return view('front.product-details', compact('product'));
+        $related_products = Product::where('product_type_id', $product->product_type_id)
+        ->whereNotIn('id', [$product->id])
+        ->with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
+        ->orderBy('id')
+        ->take(3)
+        ->get();
+        // dd($related_products);
+        $ratings = Rating::where('product_id', $product->id)->get();
+        return view('front.product-details', compact('product', 'related_products', 'ratings'));
     }
 
     public function blog()

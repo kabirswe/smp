@@ -93,8 +93,8 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::resource('product_image', ProductImageController::class);
     Route::resource('post_category', PostCategoryController::class);
     Route::resource('post', PostController::class);
-    Route::resource('post_comment', PostCommentController::class);
-    Route::resource('rating', RatingController::class);
 
 
 });
+Route::resource('post_comment', PostCommentController::class);
+Route::resource('rating', RatingController::class);

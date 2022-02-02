@@ -29,7 +29,7 @@
                     <div class="shop_info">
                         <div class="result-count">
                             <p>Showing 1–100 of 338 results</p>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="product-card">
                         @foreach($products as $item)
@@ -38,13 +38,13 @@
                             @foreach($item['images'] as $image)
                                 @if($image->is_cover_image)
                                 <a href="{{ route('product.details', $item->slug) }}">
-                                <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
-                                </a>                                
+                                    <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
+                                </a>
                                 @endif
                                 @if($loop->index == 1)
                                 <a href="{{ route('product.details', $item->slug) }}">
                                     <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
-                                </a>                                
+                                </a>
                                 @endif
                             @endforeach
                             </div>
@@ -56,7 +56,7 @@
                         </div>
                         @endforeach
                         @if (count($products) < 1)
-                           <h1>No Product Found!</h1> 
+                           <h1>No Product Found!</h1>
                         @endif
                     </div>
                     <div class="man_navigation">

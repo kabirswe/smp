@@ -25,28 +25,26 @@
                                 <div class="image-gallery-block">
                                     <div class="image-gallery-left">
                                     @foreach($product['images'] as $image)
-                                    @if(!$image->is_cover_image)
-                                        <div class="image-block">
-                                            <img src="{{ asset($image->image_sm) }}" alt="">
-                                        </div>
-                                    @endif
-                                    @endforeach  
-                                        
+                                        @if(!$image->is_cover_image)
+                                            <div class="image-block">
+                                                <img src="{{ asset($image->image_sm) }}" alt="">
+                                            </div>
+                                        @endif
+                                    @endforeach
+
                                     </div>
                                     <div class="image-gallery-right">
                                     @foreach($product['images'] as $image)
-                                    @if($image->is_cover_image)
-                                        <img src="{{ asset($image->image_md) }}" alt="">
-                                    @endif
+                                        @if($image->is_cover_image)
+                                            <img src="{{ asset($image->image_md) }}" alt="">
+                                        @endif
                                     @endforeach
                                     </div>
                                 </div>
                                 <div class="product-gallery-btn">
                                     <!-- <a href="#" class="btn">Order<i class="ti ti-arrow-right"></i></a> -->
-                                    
-                                   
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order</button>
-                                                                      
+
                                 </div>
                             </div>
                             <div class="product-text">
@@ -80,22 +78,39 @@
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Related Products</button>
-                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Reviews (0)</button>
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Reviews ({{ count($ratings) }})</button>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                     <div class="product-card">
+                                        @foreach($related_products as $item)
                                         <div class="single-item">
                                             <div class="product-image">
-                                                <img class="product-img" src="{{ asset('images/front/fe63.png') }}" alt="product image">
-                                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
+                                            @foreach($item['images'] as $image)
+                                                @if($image->is_cover_image)
+                                                <a href="{{ route('product.details', $item->slug) }}">
+                                                    <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
+                                                </a>
+                                                @endif
+                                                @if($loop->index == 1)
+                                                <a href="{{ route('product.details', $item->slug) }}">
+                                                    <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                                </a>
+                                                @endif
+                                            @endforeach
                                             </div>
                                             <div class="product-descriptions">
-                                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
+                                                <a href="{{ route('product.details', $item->slug) }}">
+                                                    <p>{{ $item->name }}</p>
+                                                </a>
                                             </div>
                                         </div>
-                                        <div class="single-item">
+                                        @endforeach
+                                        @if (count($related_products) < 1)
+                                            <h2>No Product Found!</h2>
+                                        @endif
+                                        <!-- <div class="single-item">
                                             <div class="product-image">
                                                 <img class="product-img" src="{{ asset('images/front/fe64.png') }}" alt="product image">
                                                 <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
@@ -112,17 +127,25 @@
                                             <div class="product-descriptions">
                                                 <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                     <div class="reply">
+                                        @foreach($ratings as $item)
+                                        <div class="comments-block">
+                                            <h3>{{ $item->name }} <span>({{ $item->review }}/5) </span></h3>
+                                            <p>{{ $item->text_box }}</p>
+                                        </div>
+                                        @endforeach
+                                        @if (count($ratings) < 1)
+                                        <div class="noreviews">
+                                            <p>There are no reviews yet.</p>
+                                        </div>
+                                        @endif
                                         <form action="{{ route('rating.store') }}" method="POST">
                                             @csrf
-                                            <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id"> 
-                                            <div class="noreviews">
-                                                <p>There are no reviews yet.</p>
-                                            </div>
+                                            <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">
                                             <div class="reply-title-wrapper">
                                                 <h3>Be the first to review “3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan”</h3>
                                                 <p>Your email address will not be published. Required fields are marked *</p>
@@ -130,18 +153,19 @@
                                             <div class="rating-form">
                                                 <label for="rating" class="text-dark">Your rating * </label>
                                                 <div class="ratings">
-                                                    <div class="d-flex justify-content-cernte">
-                                                        <a href="#"><i class="ti ti-star"></i></a>
-                                                        <a href="#"><i class="ti ti-star"></i></a>
-                                                        <a href="#"><i class="ti ti-star"></i></a>
-                                                        <a href="#"><i class="ti ti-star"></i></a>
-                                                        <a href="#"><i class="ti ti-star"></i></a>
+                                                    <div class="rate">
+                                                        <input type="radio" id="star5" name="review" value="5" />
+                                                        <label for="star5" title="5 stars"></label>
+                                                        <input type="radio" id="star4" name="review" value="4" />
+                                                        <label for="star4" title="4 stars"></label>
+                                                        <input type="radio" id="star3" name="review" value="3" />
+                                                        <label for="star3" title="3 stars"></label>
+                                                        <input type="radio" id="star2" name="review" value="2" />
+                                                        <label for="star2" title="2 stars"></label>
+                                                        <input type="radio" id="star1" name="review" value="1" />
+                                                        <label for="star1" title="1 star"></label>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="input-review">
-                                                <label for="review" class="text-dark">review * </label>
-                                                <input type="text"  class="form-control" name="review" id="review" required></input>
                                             </div>
                                             <div class="reply-form">
                                                 <label for="text_box" class="text-dark">Your review * </label>
@@ -196,48 +220,48 @@
     </div>
 </main>
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                            <div class="mb-3">
-                                                <label for="product-name" class="col-form-label">Product Name</label>
-                                                <input type="text" class="form-control" value="{{$product->name}}" name="product_name" id="product-name">
-                                            </div>
-                                                <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">  
-                                            <div class="mb-3">
-                                                <label for="quantity" class="col-form-label">Quantity</label>
-                                                <input type="text" class="form-control" placeholder="quantity" name="quantity" id="quantity">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="name" class="col-form-label">Name</label>
-                                                <input type="text" class="form-control" placeholder="name" name="name" id="name">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="email" class="col-form-label">Email</label>
-                                                <input type="email" class="form-control" placeholder="email" name="email" id="email">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="phone" class="col-form-label">Phone</label>
-                                                <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="comment" class="col-form-label">Comment:</label>
-                                                <textarea class="form-control" placeholder="comment" name="comment" id="Comment"></textarea>
-                                            </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-primary">Order Confirm</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="product-name" class="col-form-label">Product Name</label>
+                <input type="text" class="form-control" value="{{$product->name}}" name="product_name" id="product-name">
+            </div>
+                <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">
+            <div class="mb-3">
+                <label for="quantity" class="col-form-label">Quantity</label>
+                <input type="text" class="form-control" placeholder="quantity" name="quantity" id="quantity">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="col-form-label">Name</label>
+                <input type="text" class="form-control" placeholder="name" name="name" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" class="form-control" placeholder="email" name="email" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone</label>
+                <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="col-form-label">Comment:</label>
+                <textarea class="form-control" placeholder="comment" name="comment" id="Comment"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Order Confirm</button>
+        </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('custom-scripts')
