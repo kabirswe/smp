@@ -9,10 +9,11 @@
 <main class="supplement-manufacturing-container">
     <div class="video-container">
         <span class="overlay"></span>
-        <video width="100%" autoplay muted loop id="myVideo">
+        <!-- <video width="100%" autoplay muted loop id="myVideo">
             <source src="{{ asset('images/front/home/videoplayback.mp4') }}" type="video/mp4">
             Your browser does not support HTML5 video.
-        </video>
+        </video> -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FYTzoVkQdyk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container">
             <div class="video-content">
@@ -26,9 +27,9 @@
                 <div class="labels-block">
                     <div class="item">                        
                         <h2>Supplement Manufacturer</h2>
-                        <h3>The Manufacturing Facility</h3>
-                        <h4>We will manufacture your supplements in a combined total of 277,000 sqft GMP Registered and FDA-registered facility.</h4>
-                        <p>Using the most modern machinery for nutraceutical manufacturing our facilities can produce even the largest orders quickly and efficiently. Our facilities feature state of the art industrial HVAC systems keeping air filtered, clean, humidity and temperature controlled. We also operate three laboratories whose sole job is for cGMP-mandated raw material testing, label analysis and final product quality assurance. What makes us really different is also our client relationship & services. When working with SMP expect to be treated as a partner. Your long term success is our long term success.</p>
+                        <!-- <h3>The Manufacturing Facility</h3>
+                        <h4>We will manufacture your supplements in a combined total of 277,000 sqft GMP Registered and FDA-registered facility.</h4> -->
+                        <p>Our facilities, which use the most up-to-date technologies for nutraceutical manufacture, can handle even the largest orders fast and efficiently. Our premises contain industrial licensing HVAC systems to keep the air purified, clean, and controlled in terms of temperature and moisture. We also have three laboratories dedicated to cGMP-compliant raw material testing, label analysis, and final product quality assurance. Our customer relationships and services are also something that sets us apart. Our long-term success is determined by your long-term success.</p>
                     </div>                    
                 </div>
                 <div class="labels-block-image">
@@ -80,28 +81,28 @@
             <div class="labels-block-wrapper">
                 <div class="key-service-title">
                     <h2>Key Service Benefits</h2>
-                    <h3>What you can expect when working with Gummy Specialists</h3>
+                    <h3>Working with Gummy Specialists: What to Expect</h3>
                 </div>
                 <div class="labels-block">
                     <div class="item">
                         <i class="ti ti-layout-media-left-alt"></i>
                         <h2>Manufacturing Minimums</h2>
-                        <p>Our stock products have a minimum of only 1,000 bottles. For custom manufacturing MOQs are between 1,500 and 2,000 bottles.</p>
+                        <p>The minimum order quantity (MOQ) for our stock products is 1500-2000 bottles. MOQs range from 2500-5000 bottles for custom manufacture.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-shopping-cart"></i>
                         <h2>Experience</h2>
-                        <p>Our employees have a combined total of over 100 years experience manufacturing dietary supplements. All in popular forms such as capsules, tablets, softgels, powders and gummies.</p>
+                        <p>Our workers have a combined expertise of more than a century in the dietary supplement industry.Softgels and gummies are commonly used types of supplementation. </p>
                     </div>
                     <div class="item">
                         <i class="ti ti-package"></i>
-                        <h2>Turnkey Service</h2>
-                        <p>We are unique to many other manufacturers because we have the ability to perform all tasks needed to product your product. Such as manufacturing, compliance, graphic design & fulfillment</p>
+                        <h2>Fully integrated Service </h2>
+                        <p>We are unlike most other manufacturers in that we can complete all of the duties required to manufacture your product. Manufacturing, compliance, graphic design, and fulfillment are just a few examples.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-agenda"></i>
                         <h2>Testing</h2>
-                        <p>Third party testing for GMP, gluten free, identity, potency, microbials, heavy metals and other allergen testing services available.</p>
+                        <p>GMP, gluten-free, identity, potency, microbials, heavy metals, and other allergy testing services are available via third parties.</p>
                     </div>
                 </div>               
             </div>
@@ -112,29 +113,34 @@
             <div class="capabilities">
                 <div class="content-block">
                     <h2>Equipment Capabilities</h2>
-                    <h4>Our labs only use the most modern equipment to ensure your product is manufactured at the highest quality possible.</h4>
-                    <p>We ensure your supplements are produced with the highest quality equipment available to supplement manufacturers at this time. Good equipment only runs as good as the ingredients you put in. That is why we ensure to use only the highest quality raw materials to run in our modern nutraceutical manufacturing equipment. Our raw material warehouse stores over $20,000,000 of various large quantities of raw nutraceutical material for use in everyday manufacturing. Accurate price quotes can be given to clients in 24-48 hours because we already know all the raw material prices. Our turnaround times are also industry best. Depending on your order we can guarantee 4-week turnaround because most ingredients are already stored and ready in our warehouse. </p>
+                    <h4>Our laboratories only use the most up-to-date technology to guarantee that your product is made to the greatest possible standard.</h4>
+                    <p>We ensure your supplements are made using the highest-quality equipment currently accessible to supplement manufacturers. The quality of your equipment is only as great as the ingredients you use. That's why we make sure to employ only the best raw ingredients in our modern nutraceutical manufacturing equipment. Our raw material storage has approximately $20 million in diverse big amounts of raw nutraceutical material for use in daily production. Because we already know all of the raw material pricing, we can provide accurate price quotations to clients in 24-48 hours. Our turnaround times are also among the best in the business. Because most products are already stocked and available in our warehouse, we can guarantee a 4-week turnaround depending on your purchase.</p>
                 </div>
                 <div class="video-block">
                     <div class="video">
                         <div class="iteam">
                             <h4>Tablet Compression</h4>
-                            <h1>47mil</h1>
+                            <h1>47Mil>32Mil</h1>
                             <p>million tablets per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Capsules</h4>
-                            <h1>32mil</h1>
+                            <h1>32Mil>50Mil</h1>
                             <p>encapsulations per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Powder Blending</h4>
-                            <h1>180k</h1>
+                            <h1>180Mil>150Mil</h1>
                             <p>kilos per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Gummy Vitamins</h4>
-                            <h1>12mil</h1>
+                            <h1>12Mil>20Mil</h1>
+                            <p>gummies per day</p>
+                        </div>
+                        <div class="iteam">
+                            <h4>Gummy Vitamins</h4>
+                            <h1>470Mil>300Mil</h1>
                             <p>gummies per day</p>
                         </div>
                     </div>
@@ -149,7 +155,7 @@
                 <div class="content-block">
                     <h2>Operating Capacity – Fast Turnaround Time</h2>
                     <h4>Supplement manufacturing operating methods to maximize efficiency.</h4>
-                    <p>Maximizing operation output is a top priority for SMP Nutra. Our nutraceutical manufacturing team is trained to get product runs done as efficiently and quickly as possible. This streamlined process minimizes wastage of both raw materials and employee time completing your order. Our laboratory is set up to to make sure all components are safe and compliant. The production operation department is dedicated to streamlining all steps to creating a finished nutraceutical product.</p>
+                    <p>Gummy Specialists's major priority is to maximize operating output. Our nutraceutical manufacturing team has been trained to complete product runs as promptly as feasible. This optimized process reduces both raw material waste and employee time spent processing your order. Our lab is set up to ensure that all of the components are safe and compliant. The manufacturing operations department is focused on simplifying all procedures involved in producing a complete nutraceutical product.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -171,8 +177,8 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>In-House Laboratories</h2>
-                    <h4>Nutraceutical manufacturing requires extensive quality control and quality assurance.</h4>
-                    <p>In order to manufacture your product up to FDA regulations and Good Manufacturing Practices, there must be a laboratory in place to conduct in-depth quality control and quality assurance of your product. Testing to ensure your raw materials are what they claim to be is just the beginning of quality control and quality assurance. We ensure your product is made of the highest quality with in-house laboratories.</p>
+                    <h4>Nutraceutical manufacturing requires a high level of quality control and assurance.</h4>
+                    <p>A laboratory must be in place to undertake in-depth quality control and quality assurance of your product in order to produce it according to FDA laws and Good Manufacturing Practices. Quality control and quality assurance begin with testing to guarantee your raw materials are what they claim to be. With in-house laboratories, we assure that your product is of the utmost quality.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -194,8 +200,8 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Unrivaled Client Service</h2>
-                    <h4>Expect to be treated like a partner in our company when it comes to manufacturing your product.</h4>
-                    <p>Choosing to work with SMP Nutra you become more than just a client, we consider you a partner in long term success. You will be connected with a success development manager who can help guide you to add value to your brand through the products you make. </p>
+                    <h4>When it comes to manufacturing your product, you can expect to be treated as a partner in our company.</h4>
+                    <p>When you choose to work with Gummy Specialists, you become more than a client; you become a partner in our long-term success. You'll be assigned a success development manager who can assist you in enhancing the value of your brand through the products you create.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -205,7 +211,7 @@
             </div>
         </div>
     </div> 
-    <div class="raw-materials-wrapper">
+    <!-- <div class="raw-materials-wrapper">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
@@ -229,15 +235,15 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>  -->
     <div class="clean-label-wrapper">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Clean Label Manufacturing</h2>
-                    <h4>Offering unique clean label manufacturing options</h4>
-                    <p>We are constantly pushing to be better and more unique to the competition. Because in the end the quality of your product will effect your success. And your success is our success. That is why we offer clean label manufacturing to avoid using synthetic excipient ingredients in your formula that must be used in manufacturing.</p>
+                    <h4>Providing clean label production alternatives that aren't available anywhere else.</h4>
+                    <p>We are continually striving to improve and differentiate ourselves from the competitors. Because, in the end, your product's quality will determine your success. And your accomplishment is a winwin situation for both of us. That's why we provide clean label production, which eliminates the need for synthetic excipient ingredients in your formula.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -260,32 +266,9 @@
                     <h2>Request A Price<br/>Quote</h2>
                     <p>Fill out our “request a quote” form so we we can give you a custom price quote to get started with manufacturing your neutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <p class="call-us">Or call us at <strong>1-833-MYGUMMY</strong></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="softgel-manufacturing-wrapper">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="manufacturing">
-                <div class="content-block">
-                    <h2>Softgel Manufacturing</h2>
-                    <p>Softgels are able to have its shape, color, and size customized to however you please. Softgels offer encapsulation of liquids, instead of powder which can lead to increased absorbability.</p>
-                    <h3>Fill Material Prep</h3>
-                    <h3>Gelatin Filling & Encapsulation</h3>
-                    <h3>Tumble Drying</h3>
-                    <h3>Drying Tunnel</h3>
-                    <h3>Cleaning & Final Inspection</h3>
-                </div>
-                <div class="video-block">
-                    <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="#" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="#" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -305,7 +288,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="#" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
                     <a href="#" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -313,6 +296,29 @@
             </div>
         </div>
     </div> 
+    <div class="softgel-manufacturing-wrapper">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="manufacturing">
+                <div class="content-block">
+                    <h2>Softgel Manufacturing</h2>
+                    <p>Softgels are able to have its shape, color, and size customized to however you please. Softgels offer encapsulation of liquids, instead of powder which can lead to increased absorbability.</p>
+                    <h3>Fill Material Prep</h3>
+                    <h3>Gelatin Filling & Encapsulation</h3>
+                    <h3>Tumble Drying</h3>
+                    <h3>Drying Tunnel</h3>
+                    <h3>Cleaning & Final Inspection</h3>
+                </div>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="#" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="#" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>    
     <div class="stock-wrapper">
         <div class="container">
             <div class="stock-now">
@@ -321,7 +327,7 @@
                 </div>
                 <div class="stock-right">
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn">See Current Stock Products<i class="ti ti-arrow-right"></i></a>
+                        <a href="#" class="btn common-btn">See Current Stock Products<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

@@ -247,9 +247,21 @@
                         }
                         .reply {
                             margin-top: 70px;
-                            .noreviews {
+                            .rating-block {
+                                border: 1px solid #e4e1e3;
+                                padding: 20px 15px;
+                                margin-bottom: 30px;
+                                h3 {
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    text-transform: capitalize;
+                                    margin-bottom: 5px;
+                                }
                                 p {
-                                    margin-bottom: 40px;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    margin: 10px 0 20px;
+                                    color: #000;
                                 }
                             }
                             .reply-title-wrapper {
@@ -259,6 +271,14 @@
                                     font-family: Oxygen;
                                     line-height: 32px;
                                     margin-bottom: 9px;
+                                }
+                                h2 {
+                                    font-family: Oxygen;
+                                    line-height: 32px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    color: #333;
+                                    font-size: 24px;
                                 }
                             }
 

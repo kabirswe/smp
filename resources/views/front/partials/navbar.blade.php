@@ -14,17 +14,18 @@
                             <i class="ti ti-close"></i>
                         </div>
                         <a href="{{ route('home') }}">Home</a>
-                        <div class="nav-dropdown">
+                        <a href="{{ route('supplement_manufacturing') }}">About Us</a>
+                        <!-- <div class="nav-dropdown">
                             <button class="dropbtn">About Us
                             <i class="ti ti-angle-down"></i>
                             </button>
                             <div class="dropdown-content">
                                 <a href="{{ route('supplement_manufacturing') }}">About Us</a>
-                                <!-- <a href="{{ route('meet_the_team') }}">Meet The Team</a>
-                                <a href="{{ route('awards_certifications') }}">Certifications</a> -->
+                                <a href="{{ route('meet_the_team') }}">Meet The Team</a>
+                                <a href="{{ route('awards_certifications') }}">Certifications</a>
                                 <a href="{{ route('labdoor_partnership') }}">Labdoor Partnership</a>
                             </div>
-                        </div>
+                        </div> -->
                         <a href="{{ route('blog') }}">Blog</a>
                         <div class="nav-dropdown">
                             <button class="dropbtn">Custom
@@ -34,8 +35,8 @@
                                 <!-- <a href="{{ route('capsule_manufacturing') }}">Capsule Manufacturing</a>
                                 <a href="{{ route('tablet_manufacturing') }}">Tablet Manufacturing</a>
                                 <a href="{{ route('powder_manufacturing') }}">Powder Manufacturing</a> -->
-                                <a href="{{ route('softgel_manufacturing') }}">Softgel Manufacturing</a>
                                 <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamin Manufacturing</a>
+                                <a href="{{ route('softgel_manufacturing') }}">Softgel Manufacturing</a>
                                 <!-- <a href="{{ route('liquid_capsule') }}">Liquid Capsule Manufacturing</a> -->
                             </div>
                         </div>
@@ -49,8 +50,8 @@
                                 @endforeach
                             </div>
                         </div>
-                        <a class="nav-link disabled" href="{{ route('home') }}">Design</a>
-                        <a class="nav-link disabled" href="{{ route('fulfillment') }} disabled">Fulfillment</a>
+                        <a class="nav-link" href="{{ route('home') }}">Design</a>
+                        <a class="nav-link" href="{{ route('fulfillment') }} ">Fulfillment</a>
                         <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
                         <!-- <div class="nav-dropdown">
                             <button class="dropbtn">FAQ

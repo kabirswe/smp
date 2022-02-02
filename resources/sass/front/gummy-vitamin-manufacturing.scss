@@ -82,7 +82,7 @@
                     padding: 100px 60px;
                     border-right: 1px solid #ededed;
                     &:hover {
-                        background-color: #906feb;
+                        background-color: #fc1b15;
                         i,
                         h2,
                         p {
@@ -94,7 +94,7 @@
                     }
                     i {
                         font-size: 72px;
-                        color: #b0cf4a;
+                        color: #1f7463;
                     }
                     h2 {
                         margin-top: 40px;
@@ -134,7 +134,7 @@
                         }
                     }
                     &:hover {
-                        background-color: #906feb;
+                        background-color: #fc1b15;
                     }
                 }
                 .block-image-right {
@@ -154,7 +154,7 @@
                         }
                     }
                     &:hover {
-                        background-color: #906feb;
+                        background-color: #fc1b15;
                     }
                 }
             }
@@ -677,9 +677,12 @@
                     }
                 }
                 &:hover {
-                    background-color: #6ec1e4;
+                    background-color: #fc1b15;
                 }
                 &:hover p {
+                    color: #fff;
+                }
+                &:hover h3 {
                     color: #fff;
                 }
             }

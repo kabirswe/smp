@@ -130,14 +130,14 @@
 				<div class="container">
 					<div class="capabilities">
 						<div class="content-block">
-							<p>Our Capabilities</p>
+							<!-- <p>Our Capabilities</p> -->
 							<h2>Custom Gummy Vitamin Manufacturing</h2>
 							<p>We have capabilities to manufacture any gummy vitamin formula. From sourcing each ingredient in your formula, to post filling inspection; we do it all at the best prices and the fastest lead times. We have the experience to help you formulate a new product for your target audience, or discuss with you how to properly scale your manufacturing. As your partner, it is our job for long-term gummy vitamin manufacturing success</p>
 							<a href="#" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
 						</div>
 						<div class="video-block">
 							<div class="video">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>

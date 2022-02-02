@@ -45,8 +45,7 @@
                                     <!-- <a href="#" class="btn">Order<i class="ti ti-arrow-right"></i></a> -->
                                     
                                    
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order</button>
-                                                                      
+                                    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Order</button>                              
                                 </div>
                             </div>
                             <div class="product-text">
@@ -67,12 +66,7 @@
                                     <b>Categories: </b>
                                     @foreach($product['product_product_categories'] as $item)
                                     <a href="{{ route('product.category', $item['category']->slug) }}" rel="tag">{{ $item['category']->name }}</a>@if (!$loop->last), @endif
-                                    @endforeach
-                                    <!-- <a href="" rel="tag">All Stock Private Label Supplements</a>,
-                                    <a href="/beauty" rel="tag">Beauty</a>,
-                                    <a href="/gummy-vitamins" rel="tag">Gummy Vitamins</a>,
-                                    <a href="/new-products" rel="tag">New Products</a>,
-                                    <a href="/wellness" rel="tag">Wellness</a></span> -->
+                                    @endforeach                                    
                                 </div>
                             </div>
                         </div>
@@ -117,14 +111,21 @@
                                 </div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                     <div class="reply">
+                                        <div class="rating-block">
+                                            @foreach($product_ratings as $product_rating)
+                                                <h3>{{$product_rating->name}}</h3>
+                                                <p>{{$product_rating->text_box}}</p>
+                                            @endforeach
+                                        </div>
                                         <form action="{{ route('rating.store') }}" method="POST">
                                             @csrf
                                             <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id"> 
-                                            <div class="noreviews">
+                                            <!-- <div class="noreviews">
                                                 <p>There are no reviews yet.</p>
-                                            </div>
+                                            </div> -->
                                             <div class="reply-title-wrapper">
-                                                <h3>Be the first to review “3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan”</h3>
+                                                <h3>{{ $product->name }}</h3>
+                                                <h2>Add a review</h2>
                                                 <p>Your email address will not be published. Required fields are marked *</p>
                                             </div>
                                             <div class="rating-form">
@@ -139,10 +140,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="input-review">
-                                                <label for="review" class="text-dark">review * </label>
-                                                <input type="text"  class="form-control" name="review" id="review" required></input>
-                                            </div>
+                                            
                                             <div class="reply-form">
                                                 <label for="text_box" class="text-dark">Your review * </label>
                                                 <textarea class="form-control textarea-height" name="text_box" id="text_box"></textarea>
@@ -162,7 +160,7 @@
                                                 </div>
                                                 <div class="product-gallery-btn">
                                                     <!-- <a href="#" class="btn">Submit</a> -->
-                                                    <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                                                    <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -196,48 +194,51 @@
     </div>
 </main>
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                            <div class="mb-3">
-                                                <label for="product-name" class="col-form-label">Product Name</label>
-                                                <input type="text" class="form-control" value="{{$product->name}}" name="product_name" id="product-name">
-                                            </div>
-                                                <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">  
-                                            <div class="mb-3">
-                                                <label for="quantity" class="col-form-label">Quantity</label>
-                                                <input type="text" class="form-control" placeholder="quantity" name="quantity" id="quantity">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="name" class="col-form-label">Name</label>
-                                                <input type="text" class="form-control" placeholder="name" name="name" id="name">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="email" class="col-form-label">Email</label>
-                                                <input type="email" class="form-control" placeholder="email" name="email" id="email">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="phone" class="col-form-label">Phone</label>
-                                                <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="comment" class="col-form-label">Comment:</label>
-                                                <textarea class="form-control" placeholder="comment" name="comment" id="Comment"></textarea>
-                                            </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-primary">Order Confirm</button>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ route('order.store') }}" method="POST">
+                @csrf
+                    <div class="row">  
+                        <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id"> 
+                        <div class="mb-3 col-md-9">
+                            <label for="product-name" class="col-form-label">Product Name</label>
+                            <input type="text" class="form-control" value="{{$product->name}}" name="product_name" id="product-name">
+                        </div>                    
+                        <div class=" mb-3 col-md-3">
+                            <label for="quantity" class="col-form-label">Quantity</label>
+                            <input type="text" class="form-control" placeholder="quantity" name="quantity" id="quantity">
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="name" class="col-form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="name" name="name" id="name">
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="email" name="email" id="email">
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="phone" class="col-form-label">Phone</label>
+                            <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="col-form-label">Comment:</label>
+                            <textarea class="form-control" placeholder="comment" name="comment" id="Comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-success btn-lg">Order Confirm</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('custom-scripts')

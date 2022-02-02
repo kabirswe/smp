@@ -42,8 +42,9 @@
                                 </a>                                
                                 @endif
                                 @if($loop->index == 1)
-                                <a href="{{ route('product.details', $item->slug) }}">
+                                <a href="{{ route('product.details', $item->slug) }}"><div class="product-images-hover">
                                     <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                </div>                                    
                                 </a>                                
                                 @endif
                             @endforeach

@@ -37,22 +37,22 @@
                     <div class="item">
                         <i class="ti ti-layout-media-left-alt"></i>
                         <h2>Mixing & Cooking</h2>
-                        <p>Ingredients are sourced and mixed to create a blend. Once ingredients are blended, the resulting liquid is cooked until it thickens into a “slurry.”</p>
+                        <p>To make a mixture, ingredients are collected and blended together. After mixing the ingredients, the liquid is heated until it thickens into a "slurry."</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-shopping-cart"></i>
                         <h2>Molding</h2>
-                        <p>Before the slurry is poured, the molds are prepared to be resistant to sticking. The slurry is poured into the mold created a shape of your choice</p>
+                        <p>The molds are prepped to be non-sticky before the liquid is poured. The liquid is poured into the mold to form the desired shape.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-package"></i>
                         <h2>Cooling & Unmolding</h2>
-                        <p>After gummy vitamins are poured into the mold, it’s cooled to 65 degrees and set aside to sit for 26 hours to form and cool. After the gummies are removed and placed in a large drum tumbler to dry.</p>
+                        <p>After pouring the gummy vitamins into the mold, chill it to 65 degrees and leave it to form and cool for 26 hours. After that, the gummies are removed and dried in a huge drum tumbler.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-agenda"></i>
-                        <h2>Bottle/Bag Filling</h2>
-                        <p>Once all your vitamin gummies are produced, they are filled in your bottle or bag of choice. We offer amazing packaging options to put your gummy vitamins in.</p>
+                        <h2>Filling Bottles/Bags</h2>
+                        <p>Once we've made all of your vitamin gummies, we place them in the bottle or bag of your preference. We provide a variety of packaging options for your gummy vitamins.</p>
                     </div>
                 </div>
                 <div class="labels-block-image">
@@ -83,14 +83,14 @@
         <div class="container">
             <div class="capabilities">
                 <div class="content-block">
-                    <p>Our Capabilities</p>
+                    <!-- <p>Our Capabilities</p> -->
                     <h2>Custom Gummy Vitamin Manufacturing</h2>
-                    <p>We have capabilities to manufacture any gummy vitamin formula. From sourcing each ingredient in your formula, to post filling inspection; we do it all at the best prices and the fastest lead times. We have the experience to help you formulate a new product for your target audience, or discuss with you how to properly scale your manufacturing. As your partner, it is our job for long-term gummy vitamin manufacturing success.</p>
+                    <p>We are capable of producing any gummy vitamin formula. We handle everything from collecting each ingredient in your formula through post-filling inspection at the most competitive costs and with the shortest turnaround times. We have the skills to assist you in developing a new product for your customer base or discussing how to grow your manufacturing effectively. It is our responsibility as your partner to ensure long-term gummy vitamin manufacturing success.</p>
                     <a href="#" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -101,9 +101,9 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Gummy Vitamin Manufacturing Process</h2>
-                    <h4>When producing gummy vitamins, it is obvious how much more arduous the process can be as opposed to other traditional vitamin manufacturing.</h4>
-                    <p>As capsules are produced, plenty of work behind the scenes must be done before the capsule is ready to be bottled. The powder within capsules can be prepared in two ways: </p>                  
+                    <h2>The Production of Gummy Vitamins</h2>
+                    <h4>When it comes to making gummy vitamins, it's clear to see how much more complicated the procedure may be compared to other types of vitamin production.</h4>
+                    <p>Gummy vitamins should be chewy, pleasant, and yet contain all of the necessary nutrients. These components can be difficult to regulate, but once the process is finished, the result can be replicated over and over again.</p>           
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -118,9 +118,9 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Blending Your Gummy Formula</h2>
-                    <h4>The process for manufacturing a gummy vitamin will start with the blending and mixing of all ingredients.</h4>
-                    <p>Not only the ingredients with the nutritional power they may have, but also with additives such as coloring and flavoring agents. This blend will be mixed thoroughly, followed by the process of being cooked. The blend will be cooked until it is thick enough, creating what is known as a “slurry.” </p>
+                    <h2>Putting Your Gummy Formula Together</h2>
+                    <h4>The first step in making a gummy vitamin is to blend and mix all of the components together.</h4>
+                    <p>Not just with the nutritional value of the ingredients, but also with additions like coloring and flavoring agents. This mixture will be carefully blended before going through the cooking procedure. The mixture will be heated until it reaches the desired thickness, forming a "slurry."</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -136,8 +136,8 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Pouring Slurry Into Mold & Cooling</h2>
-                    <h4>The slurry will then be poured into a mold. The mold can be of any shape, but most commonly is a bear.</h4>
-                    <p>Corn starch is applied to the molds prior to pouring the slurry to prevent the slurry from sticking. Now with the slurry in the mold, the molds are brought to a temperature of 65 degrees and sitting for roughly 24 hours. </p>
+                    <h4>After that, the slurry will be put into a mold. The mold can be of any shape, although bears are the most frequent.</h4>
+                    <p>To prevent the slurry from adhering to the molds, corn starch is used before pouring the slurry. Now that the slurry is in the molds, they are cooled to 65 degrees and left to set for around 24 hours.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -153,8 +153,8 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Mix In Tumbler With Wax Or Oil</h2>
-                    <h4>At this point, the slurry has formed into a solid. The gummies are removed from the molds and placed into a drum tumbler.</h4>
-                    <p>Also added to the tumbler is a food-grade oil or wax that will help the gummies stay soft and fresh. The gummies are now ready to be packaged and shipped. While the process of manufacturing a gummy vitamin is different, it does not make it any easier. With us as your partner, we are qualified to help you manufacture your gummy vitamins as a high-quality product.</p>
+                    <h4>The slurry has hardened to a solid state at this time. The gummies are taken out of the molds and placed in a drum tumbler to cool.</h4>
+                    <p>A food-grade oil or wax is also used to keep the gummies soft and fresh in the tumbler. The gummies are now packed and ready to ship. While the process of making a gummy vitamin is special, it does not make it any less difficult. We are competent to assist you in producing a high-quality gummy vitamin product when you choose us as your partner.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -170,8 +170,8 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Bottling & Labeling Gummy Vitamins</h2>
-                    <h4>Once the gummy vitamins are in their final form, we distribute them inside their packaging accordingly.</h4>
-                    <p>Depending on your product you will have a unique number of gummies inside each bottle / bag. We finish the gummy vitamin manufacturing process by distributing the gummies inside the packing, applying label, and final sealing.</p>
+                    <h4>We distribute the gummy vitamins into their container once they've reached their final state.</h4>
+                    <p>Each bottle / bag will have a different quantity of gummies, depending on your product. We complete the gummy vitamin production process by placing the gummies inside the packaging, putting the label, and sealing the package.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -186,9 +186,9 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Healthy Gummy Vitamin Options</h2>
-                    <p>Gummy vitamins can also be made to be halal, kosher, vegan or vegetarian friendly along with sugar and allergen free. It is dependent on what kind of gelatin the gummy is made with.</p>
-                    <p>A common way the vegan gelatin is made is with pectin. Pectin has a plant-based origin and is often used in jellies and jams. Even with the pectin, the gummy vitamins will come out colorful and tasty like the rest.</p>
+                    <h2>Vitamins In The Form Of Gummies</h2>
+                    <p>Gummy vitamins can also be made halal, kosher, vegan, or vegetarian, as well as sugar- and allergen-free. It depends on the type of gelatin used to make the gummy.</p>
+                    <p>Pectin is a frequent ingredient in vegan gelatin. Pectin comes from plants and is commonly used in jellies and jams. Even with the pectin, the gummy vitamins will turn out colorful and delicious.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -208,8 +208,8 @@
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Gummy Specialists Wants To Be Your Gummy Vitamin Manufacturer</h2>                   
-                    <p>When choosing the best gummy vitamin manufacturer, it can be tough to get a hold of them then keep healthy communication.  Being one of the gummy manufacturers in the USA, we pose as a marketing tool if you work with us. You can boast the fact that it is made in the USA as a solid marketing point on your label. Not only that, but we can supply bulk gummy vitamins and consistently do this. While we work as a contract manufacturer, we can make the process of producing your private label gummy vitamin as streamlined as possible with the most communication and quality results. </p>
+                    <h2>Gummy Specialists Wants To Be Your Go-To Gummy Vitamin Manufacturer</h2>                   
+                    <p>It might be difficult to get in touch with the top gummy vitamin manufacturer and maintain healthy communication. If you cooperate with us, we can function as a marketing tool because we are one of the leading gummy makers in the United States. The fact that it is created in the United States might be used as a powerful marketing factor on your label. Not only that, but we can constantly provide bulk gummy vitamins. We can make the process of making your private label gummy vitamin as efficient as possible with the greatest communication and excellent outcomes since we work as a contract manufacturer.</p>
                     <a href="#" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="image-block">
@@ -227,14 +227,14 @@
                 <div class="top-block">
                     <div class="content-block">
                         <img src="{{ asset('images/front/Gummy-Vitamin-Search-Trend.jpg') }}" alt="">                        
-                        <h3>Gummy Vitamins Ever-growing Popularity</h3>
-                        <p>With every year, it has become a trend to see that gummy vitamins are continually searched for more and more. This continual growth really helps show how much people are now looking for gummy vitamins compared to the other forms of encapsulation.</p>
-                        <p>The growth in searches can be for multiple reasons such as more kids taking supplements, more adults wanting something enjoyable, or a new desire for taste. Gummy Specialists has become risen to the top of the supplement manufacturing industry and has solidified it’s position there by having the highest quality gummies on the market.</p>
+                        <h3>Gummy Vitamins' Rising Popularity</h3>
+                        <p>It has become a trend to see gummy vitamins being searched for more and more with each passing year.This steady increase indicates how popular gummy vitamins have become in comparison to other kinds of encapsulation.</p>
+                        <p>The increase in searches might be due to a variety of factors, including more children using supplements, more people looking for something delightful, or a new taste preference. Gummy Specialists has climbed to the top of the supplement manufacturing sector, establishing its place by producing the highest-quality gummies available.</p>
                     </div>
                 </div>
                 <div class="product-block">
-                    <h2>Our New Private Label Stock Products</h2>
-                    <p>We are always formulating new products, stay up to date with our latest products to get them before anyone else! </p>
+                    <h2>Gummy Vitamin Stock Formulas with Our Own Label</h2>
+                    <p>Taste, color, shape, and size are all features of a superb gummy vitamin supplement. We thoroughly considered these criteria and have developed a set of some of the greatest formulas we have to offer you today:</p>
                     <div class="product-wrapper">
                         <div class="item">
                             <div class="products-thumbnail">
