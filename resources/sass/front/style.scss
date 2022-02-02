@@ -78,4 +78,11 @@ img {
     a {
         font-size: 12px !important;
     }
+    .man_intro_cont {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        .breadcrumb {
+            display: none !important;
+        }
+    }
 }

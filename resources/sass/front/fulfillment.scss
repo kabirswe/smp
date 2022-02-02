@@ -64,14 +64,15 @@
             }
             .fulfillment-content {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 margin-top: 65px;
                 flex-wrap: wrap;
                 .single-item {
-                    width: calc(33.33% - 10px);
+                    width: 31%;
+                    margin-right: 20px;
                     margin-bottom: 60px;
                     h1 {
-                        font-size: 40px;
+                        font-size: 35px;
                         font-family: "Oxygen", sans-serif;
                         font-weight: 700;
                         margin-bottom: 34px;
@@ -124,6 +125,35 @@
                     .shipping-item {
                         width: calc(33.33% - 10px);
                     }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .fulfillment {
+        .fulfillment-main {
+            .fulfillment-media-content {
+                .fulfillment-media {
+                    iframe {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .fulfillment {
+        .fulfillment-main {
+            .fulfillment-media-content {
+                flex-direction: column;
+                .fulfillment-media {
+                    width: 100% !important;
+                }
+                .fulfillment-text {
+                    width: 100% !important;
+                    margin-top: 20px !important;
                 }
             }
         }

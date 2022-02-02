@@ -210,32 +210,7 @@
                 </div>
             </div>
         </div>
-    </div> 
-    <!-- <div class="raw-materials-wrapper">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="manufacturing">
-                <div class="content-block">
-                    <h2>Raw Materials – Best Prices</h2>
-                    <h4>Supplement Manufacturing Partners offers over 8,000 raw material choices.</h4>
-                    <p>At SMP Nutra we search the entire nutraceutical industry finding the best quality raw materials around the world. We attend the biggest international supplier expos and have a large network of incredible raw material suppliers.</p>
-                    <h4>Are you a raw material supplier? Inquire about being a raw material supplier for SMP nutra using the form below:</h4>
-                    <a href="#" class="btn common-btn">Vendor/Supplier Inquiry<i class="ti ti-arrow-right"></i></a>  
-                </div>
-                <div class="image-block">
-                    <div class="images-right">
-                        <h3>Vitamins</h3>
-                        <h3>Minerals</h3>
-                        <h3>Herbs</h3>
-                        <h3>Antioxidants</h3>
-                        <h3>Fibers</h3>
-                        <h3>Extracts</h3>
-                        <h3>Amino Acids</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>  -->
+    </div>    
     <div class="clean-label-wrapper">
         <div class="overlay"></div>
         <div class="container">

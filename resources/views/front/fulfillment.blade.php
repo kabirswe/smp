@@ -16,11 +16,10 @@
         <div class="container">
             <div class="fulfillment-media-content">
                 <div class="fulfillment-media">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G1nZNpPBz1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="fulfillment-text">
-                    <h1>All of Your Products Can Be Stored and Shipped Through 
-Us.</h1>
+                    <h1>All of Your Products Can Be Stored and Shipped Through Us.</h1>
                     <p>You'll need a reputable, dependable facility to store and ship your private label supplement when it sells out. We have a vast, top of the line warehouse ready to receive your products. It is where we not only choose and pack your orders, but also ship them. We provide modern software to monitor inventory correctly and give you with valuable information that may help you in a variety of ways.</p>
                     <p>We can handle any size order and might be the ideal place for your vitamin order fulfillment. We've known that for years and have all the resources to fulfill and store your private label supplements, according to our experience working with clients that purchase in bulk. Please contact us if you have any queries regarding our fulfillment services.</p>
                 </div>
@@ -47,10 +46,10 @@ Us.</h1>
                     <h1>ENVIRONMENT WITH TEMPERATURE CONTROL</h1>
                     <p>We can safely store any sort of private label supplement in our temperature-controlled warehouse, assuring the best possible care for your supplements. It is not only temperature controlled, but it is also hygienic and meets or surpasses all laws, making it an ideal facility for vitamin and supplement fulfillmen</p>
                 </div>
-                <div class="single-item">
+                <!-- <div class="single-item">
                     <h1>ADVANCED 3PL SOFTWARE</h1>
                     <p>With our 3PL software, we enter your entire product list into the system to monitor and track your vitamin supplement. Our scanning equipment will automatically update your product inventory, allowing for us to know when we have to replenish your.</p>
-                </div>
+                </div> -->
                 <div class="single-item">
                     <h1>CONNECTION TO E-COMMERCE</h1>
                     <p>Our inventory is connected with some of the largest e-commerce shopping carts such as Magento and Shopify. With that connection, a shipping tracking number will be included. Also, this connection is what helps track the inventory of your products.</p>
@@ -95,10 +94,10 @@ Us.</h1>
                     <div class="pricing-content">
                         <p>Glass Bottles, Jars, and Tinctures will require special handling and packaging materials to ensure products arrive intact.<p>
                     </div>
-                    <div class="pricing-content">
+                    <!-- <div class="pricing-content">
                         <h5>ADDITIONAL CHARGES</h5>
                         <p>An additional $2.50 per case will be added for Amazon orders, plus any shipping costs if not included with the FBA label..<p>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="storage">
@@ -119,10 +118,10 @@ Us.</h1>
                         <h3>DEPOSIT</h3>
                         <p>$2,500 Deposit due upon Fulfillment Acceptance ($1,500 non-refundable initial setup fee, $500 shipping security, $500 fulfillment security. Both security deposits are refundable as long as all outstanding invoices are paid in full.) If your bill is higher than the security per month, you will have to add to the deposit.<p>
                     </div>
-                    <div class="storage-content">
+                    <!-- <div class="storage-content">
                         <h3>ADDITIONAL CHARGES</h3>
                         <p><strong>Catalog Management Fee</strong>– $150.00 per hour after the initial implementation process (sku/fulfillment adjustments or modifications, etc.).<p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="shipping-carriers">

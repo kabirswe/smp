@@ -30,6 +30,14 @@
                         <div class="result-count">
                             <p>Showing {{ $products->firstItem() }}–{{ $products->lastItem() }} of {{ $products->total() }} results</p>
                         </div>
+                        <div class="sort-by-product">
+                            <form class="woocommerce-ordering" method="get" data-hs-cf-bound="true">
+                                <select name="orderby" class="orderby">
+                                    <option value="menu_order" selected="selected">Sort by trending</option>
+                                    <option value="date">Sort by latest</option>
+                                </select>
+                            </form>
+                        </div>
                     </div>
                     <div class="product-card">
                         @foreach($products as $item)
@@ -83,7 +91,7 @@
                         <div class="search-products">
                             <label>Search for:</label>
                             <input type="search" value=""   class="form-control" placeholder="Search for products">
-                            <a class="btn">Search</a>
+                            <a class="btn common-btn">Search</a>
                         </div>
                     </div>
                 </div>
