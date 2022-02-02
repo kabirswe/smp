@@ -17,7 +17,7 @@ use Carbon\Carbon;
 // }
 function getPostCategories()
 {
-    $post_categories = PostCategory::select('name', 'slug')->get();
+    $post_categories = PostCategory::select('id', 'name', 'slug')->get();
     return $post_categories;
 }
 

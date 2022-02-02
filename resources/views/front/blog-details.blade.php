@@ -10,16 +10,16 @@
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
-                <li class="breadcrumb-item active" aria-current="page">Donates 1,000 Vitamin D3 Bottles for COVID Relief!</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ $post->title }}</li>
             </ol>
             </nav>
         </div>
     <div class="mail-blog">
         <div class="container">
             <div class="blog-content-area">
-                <div class="blog-content">                
+                <div class="blog-content">
                     <div class="blog-item">
-                        <img src="{{ asset($post->cover_image_md) }}" alt="">                      
+                        <img src="{{ asset($post->cover_image_md) }}" alt="">
                         <p>{{ $post->description }}</p>
                     </div>
                     <!-- <div class="about-author">
@@ -43,26 +43,26 @@
                         <h3>{{$comment->name}}</h3>
                         <span>{{$comment->created_at}}</span>
                         <p>{{$comment->comment}}</p>
-                        @endforeach                        
+                        @endforeach
                     </div>
                     <div class="reply-form">
                         <div class="comment-reply">
                             <h3>Leave a Reply</h3>
                             <p>Your email address will not be published. Required fields are marked *</p>
                         </div>
-                        <form action="{{ route('post_comment.store') }}" method="POST">
+                        <form onsubmit="return saveInfo()" action="{{ route('post_comment.store') }}" method="POST">
                             @csrf
                             <input type="hidden" name="post_id" value="{{ $post->id }}">
                             <textarea class="form-control textarea-height" name="comment" placeholder="Comment" required></textarea>
                             <div class="custom-form">
                                 <div class="input-name">
-                                    <input type="text" name="name" class="form-control" placeholder="Name*" required></input>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name*" required></input>
                                 </div>
                                 <div class="input-email">
-                                    <input type="email" name="email" class="form-control" placeholder="Email*" required></input>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email*" required></input>
                                 </div>
                                 <div class="input-web">
-                                    <input type="text" name="website"   class="form-control" placeholder="Website" required></input>
+                                    <input type="text" id="website" name="website"   class="form-control" placeholder="Website" required></input>
                                 </div>
                             </div>
                             <div class="custom-checkbox">
@@ -101,33 +101,9 @@
                         <h3>categories</h3>
                         <div class="block">
                             <div class="item">
-                                <a href="#">All Stock Private Label Supplements</a>
-                                <a href="#">Beauty</a>
-                                <a href="#">Best Sellers</a>
-                                <a href="#">Bone</a>
-                                <a href="#">Capsules</a>
-                                <a href="#">Collagen</a>
-                                <a href="#">Elderberry</a>
-                                <a href="#">Essential Vitamins</a>
-                                <a href="#">Fish Oil</a>
-                                <a href="#">Gummy Vitamins</a>
-                                <a href="#">Hair Skin & Nails</a>
-                                <a href="#">Herbal</a>
-                                <a href="#">Joint Health</a>
-                                <a href="#">Keto</a>
-                                <a href="#">Kids</a>
-                                <a href="#">Liquids</a>
-                                <a href="#">New Products</a>
-                                <a href="#">Non-GMO Verified</a>
-                                <a href="#">Powders</a>
-                                <a href="#">Sample Ready Products</a>
-                                <a href="#">Softgels</a>
-                                <a href="#">Sports Nutrition</a>
-                                <a href="#">Sugar-Free</a>
-                                <a href="#">Weight Management</a>
-                                <a href="#">Wellness</a>
-                                <a href="#">Packaging</a>
-                                <a href="#">Uncategorized</a>
+                                @foreach(getPostCategories() as $category)
+                                    <a href="{{ route('blog') }}?category={{ $category->id }}">{{ $category->name }}</a>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -135,11 +111,9 @@
                         <h3>recent posts</h3>
                         <div class="block">
                             <div class="item">
-                                <a href="#">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
-                                <a href="#">New Nutrition Labels Best Practices & Rules in 2020</a>
-                                <a href="#">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
-                                <a href="#">New Nutrition Labels Best Practices & Rules in 2020</a>
-                                <a href="#">Capsules</a>
+                                @foreach($latest_posts as $item)
+                                    <a href="{{ route('blog.details', $item->slug) }}">{{ $item->title }}</a>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -147,11 +121,11 @@
                         <h3>archives</h3>
                         <div class="block">
                             <div class="item">
-                                <a href="#">October 2020</a>
-                                <a href="#">September 2020</a>
-                                <a href="#">August 2020</a>
-                                <a href="#">August 2020</a>
-                                <a href="#">August 2020</a>
+                                <a href="{{ route('blog') }}?month={{ date('m', strtotime('-1 month')) }}">{{ date('F Y', strtotime("-1 month")) }}</a>
+                                <a href="{{ route('blog') }}?month={{ date('m', strtotime('-2 month')) }}">{{ date('F Y', strtotime("-2 month")) }}</a>
+                                <a href="{{ route('blog') }}?month={{ date('m', strtotime('-3 month')) }}">{{ date('F Y', strtotime("-3 month")) }}</a>
+                                <a href="{{ route('blog') }}?month={{ date('m', strtotime('-4 month')) }}">{{ date('F Y', strtotime("-4 month")) }}</a>
+                                <a href="{{ route('blog') }}?month={{ date('m', strtotime('-5 month')) }}">{{ date('F Y', strtotime("-5 month")) }}</a>
                             </div>
                         </div>
                     </div>
@@ -180,3 +154,30 @@
     </div>
 </main>
 @endsection
+
+@push('custom-scripts')
+    <!-- Scripts -->
+    <script type="text/javascript">
+        function saveInfo() {
+            if (document.getElementById('checkout-create-ac').checked) {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var website = document.getElementById('website').value;
+                localStorage.setItem("name", name);
+                localStorage.setItem("email", email);
+                localStorage.setItem("website", website);
+            }
+        }
+        window.onload = function() {
+            if (localStorage.getItem("name")) {
+                document.getElementById('name').value = localStorage.getItem("name");
+            }
+            if (localStorage.getItem("email")) {
+                document.getElementById('email').value = localStorage.getItem("email");
+            }
+            if (localStorage.getItem("website")) {
+                document.getElementById('website').value = localStorage.getItem("website");
+            }
+        };
+    </script>
+@endpush

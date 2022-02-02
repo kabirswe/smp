@@ -5,6 +5,7 @@ use App\Models\Product;
 use App\Models\Post;
 use App\Models\PostComment;
 use App\Models\Order;
+use App\Models\PostCategory;
 use App\Models\ProductCategory;
 use App\Models\ProductType;
 use App\Models\Rating;
@@ -60,6 +61,7 @@ class PagesController extends Controller
     public function product_type(Request $request, $slug)
     {
         $type = ProductType::where('slug', $slug)->first();
+        $product_all = Product::select('id')->count();
         // dd($type);
         $products = Product::where('product_type_id', $type->id)
         ->with([
@@ -69,7 +71,7 @@ class PagesController extends Controller
             'type:id,name'
         ])
         ->orderBy('id')
-        ->paginate(1);
+        ->paginate(10);
         return view('front.product_page', compact('products','type'));
     }
 
@@ -119,18 +121,29 @@ class PagesController extends Controller
         return view('front.product-details', compact('product', 'related_products', 'ratings'));
     }
 
-    public function blog()
+    public function blog(Request $request)
     {
-        $posts = Post::paginate(10);
-        return view('front.blog',compact('posts'));
+        $category = $request->query('category');
+        $month = $request->query('month');
+
+        if (isset($category)) {
+            $posts = Post::where('slug', $category)->paginate(10);
+        } elseif (isset($month)) {
+            $posts = Post::whereMonth('created_at', $month)->paginate(10);
+        } else {
+            $posts = Post::paginate(10);
+        }
+        $latest_posts = Post::select('id', 'slug', 'title')->orderBy('id', 'desc')->take(5)->get();
+        return view('front.blog', compact('posts', 'latest_posts'));
     }
     public function blog_details(Request $request, $slug)
     {
         $post = Post::where('slug', $slug)->first();
         // dd($post->id);
         $comments = PostComment::where('post_id', $post->id)->get();
+        $latest_posts = Post::select('id', 'slug', 'title')->orderBy('id', 'desc')->take(5)->get();
         // dd($comments);
-        return view('front.blog-details', compact('post','comments'));
+        return view('front.blog-details', compact('post', 'comments', 'latest_posts'));
     }
     public function capsule_manufacturing()
     {

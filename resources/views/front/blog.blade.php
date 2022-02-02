@@ -37,6 +37,9 @@
                                 </div>
                             </div>
                             @endforeach
+                            @if (count($posts) < 1)
+                                <h3>No Post Found!</h3>
+                            @endif
                         <div class="man_navigation">
                             @if ($posts->previousPageUrl())
                             <a class="prev page-numbers" href="{{ $posts->previousPageUrl(); }}"><i class="ti ti-arrow-left"></i>Prev</a>
@@ -73,7 +76,7 @@
                             <div class="block">
                                 <div class="item">
                                     @foreach(getPostCategories() as $category)
-                                        <a href="/beauty">{{ $category->name }}</a>
+                                        <a href="{{ route('blog') }}?category={{ $category->id }}">{{ $category->name }}</a>
                                     @endforeach
                                 </div>
                             </div>
@@ -82,11 +85,9 @@
                             <h3>recent posts</h3>
                             <div class="block">
                                 <div class="item">
-                                    <a href="#">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
-                                    <a href="#">Gummy Specialists Nutrition Labels Best Practices & Rules in 2020</a>
-                                    <a href="#">Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</a>
-                                    <a href="#">New Nutrition Labels Best Practices & Rules in 2020</a>
-                                    <a href="#">Capsules</a>
+                                @foreach($latest_posts as $item)
+                                    <a href="{{ route('blog.details', $item->slug) }}">{{ $item->title }}</a>
+                                @endforeach
                                 </div>
                             </div>
                         </div>
@@ -94,11 +95,11 @@
                             <h3>archives</h3>
                             <div class="block">
                                 <div class="item">
-                                    <a href="#">October 2020</a>
-                                    <a href="#">September 2020</a>
-                                    <a href="#">August 2020</a>
-                                    <a href="#">August 2020</a>
-                                    <a href="#">August 2020</a>
+                                    <a href="{{ route('blog') }}?month={{ date('m', strtotime('-1 month')) }}">{{ date('F Y', strtotime("-1 month")) }}</a>
+                                    <a href="{{ route('blog') }}?month={{ date('m', strtotime('-2 month')) }}">{{ date('F Y', strtotime("-2 month")) }}</a>
+                                    <a href="{{ route('blog') }}?month={{ date('m', strtotime('-3 month')) }}">{{ date('F Y', strtotime("-3 month")) }}</a>
+                                    <a href="{{ route('blog') }}?month={{ date('m', strtotime('-4 month')) }}">{{ date('F Y', strtotime("-4 month")) }}</a>
+                                    <a href="{{ route('blog') }}?month={{ date('m', strtotime('-5 month')) }}">{{ date('F Y', strtotime("-5 month")) }}</a>
                                 </div>
                             </div>
                         </div>

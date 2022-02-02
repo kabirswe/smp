@@ -24,14 +24,13 @@
                             <div class="product-gallery">
                                 <div class="image-gallery-block">
                                     <div class="image-gallery-left">
-                                    @foreach($product['images'] as $image)
-                                        @if(!$image->is_cover_image)
-                                            <div class="image-block">
-                                                <img src="{{ asset($image->image_sm) }}" alt="">
-                                            </div>
-                                        @endif
-                                    @endforeach
-
+                                        @foreach($product['images'] as $image)
+                                            @if(!$image->is_cover_image)
+                                                <div class="image-block">
+                                                    <img src="{{ asset($image->image_sm) }}" alt="">
+                                                </div>
+                                            @endif
+                                        @endforeach
                                     </div>
                                     <div class="image-gallery-right">
                                     @foreach($product['images'] as $image)
@@ -138,7 +137,7 @@
                                             <p>There are no reviews yet.</p>
                                         </div>
                                         @endif
-                                        <form action="{{ route('rating.store') }}" method="POST">
+                                        <form onsubmit="return saveInfo()" action="{{ route('rating.store') }}" method="POST">
                                             @csrf
                                             <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">
                                             <div class="reply-title-wrapper">
@@ -169,11 +168,11 @@
                                                 <div class="custom-form">
                                                     <div class="input-left">
                                                         <label for="name" class="text-dark">Name * </label>
-                                                        <input type="text"  class="form-control" name="name" id="name" required></input>
+                                                        <input type="text" id="name"  class="form-control" name="name" id="name" required></input>
                                                     </div>
                                                     <div class="input-right">
                                                         <label for="email" class="text-dark">Email * </label>
-                                                        <input type="email"  class="form-control" name="email" id="email" required></input>
+                                                        <input type="email" id="email"  class="form-control" name="email" id="email" required></input>
                                                     </div>
                                                 </div>
                                                 <div class="custom-checkbox">
@@ -261,8 +260,23 @@
 @endsection
 
 @push('custom-scripts')
-<script>
-
-</script>
-
+    <!-- Scripts -->
+    <script type="text/javascript">
+        function saveInfo() {
+            if (document.getElementById('checkout-create-ac').checked) {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                localStorage.setItem("name", name);
+                localStorage.setItem("email", email);
+            }
+        }
+        window.onload = function() {
+            if (localStorage.getItem("name")) {
+                document.getElementById('name').value = localStorage.getItem("name");
+            }
+            if (localStorage.getItem("email")) {
+                document.getElementById('email').value = localStorage.getItem("email");
+            }
+        };
+    </script>
 @endpush

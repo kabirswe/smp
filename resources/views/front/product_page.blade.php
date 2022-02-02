@@ -28,25 +28,25 @@
                     </div>
                     <div class="shop_info">
                         <div class="result-count">
-                            <p>Showing 1–100 of 338 results</p>
+                            <p>Showing {{ $products->firstItem() }}–{{ $products->lastItem() }} of {{ $products->total() }} results</p>
                         </div>
                     </div>
                     <div class="product-card">
                         @foreach($products as $item)
                         <div class="single-item">
                             <div class="product-image">
-                            @foreach($item['images'] as $image)
+                                @foreach($item['images'] as $image)
                                 @if($image->is_cover_image)
                                 <a href="{{ route('product.details', $item->slug) }}">
                                     <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
                                 </a>
                                 @endif
                                 @if($loop->index == 1)
-                                <a href="{{ route('product.details', $item->slug) }}"><div class="product-images-hover">
+                                <a href="{{ route('product.details', $item->slug) }}">
                                     <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
                                 </a>
                                 @endif
-                            @endforeach
+                                @endforeach
                             </div>
                             <div class="product-descriptions">
                                 <a href="{{ route('product.details', $item->slug) }}">
