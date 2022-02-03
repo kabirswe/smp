@@ -40,6 +40,7 @@ Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.uplo
 // });
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
+Route::get('/search', [PagesController::class, 'search'])->name('search');
 Route::get('/supplement-manufacturing', [PagesController::class, 'supplement_manufacturing'])->name('supplement_manufacturing');
 Route::get('/meet-the-team', [PagesController::class, 'meet_the_team'])->name('meet_the_team');
 Route::get('/awards-certifications', [PagesController::class, 'awards_certifications'])->name('awards_certifications');

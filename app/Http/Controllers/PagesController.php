@@ -29,6 +29,19 @@ class PagesController extends Controller
         return view('front.home', compact('pre_manufactured_swiper'));
     }
 
+    public function search(Request $request){
+
+        $search = $request->query('search');
+
+        $results = Product::query()
+                    ->where('name', 'LIKE', "%{$search}%")
+                    ->select('name', 'slug')
+                    // ->orWhere('body', 'LIKE', "%{$search}%")
+                    ->get();
+        // return view('search', compact('results'));
+        return response()->json($results);
+    }
+
     public function supplement_manufacturing()
     {
         return view('front.supplement-manufacturing');

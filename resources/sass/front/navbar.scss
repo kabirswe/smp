@@ -152,6 +152,7 @@
             align-items: center;
             .search {
                 display: flex;
+                position: relative;
                 input {
                     font-style: italic;
                     font-size: 14px;
@@ -166,7 +167,7 @@
                     background-color: transparent;
                 }
                 i {
-                    background: #1f7463;
+                    background: #35b11b;
                     height: 40px;
                     width: 30px;
                     display: flex;
@@ -174,9 +175,46 @@
                     justify-content: center;
                     align-items: center;
                 }
+                .result-block {
+                    display: flex;
+                    width: 200px;
+                    flex-direction: column;
+                    overflow: auto;
+                    position: absolute;
+                    top: 44px;
+                    right: -5px;
+                    background-color: #f4f4f4;
+                    max-height: 200px;
+                    box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+                    border: 1px solid #d6d6d6;
+                    border-radius: 3px;
+                    span {
+                        padding: 4px 0;
+                        a {
+                            font-size: 14px;
+                            color: #0c0c0c;
+                            @include word_break(1);
+                            background-color: transparent;
+                            padding: 0;
+                            margin-left: 6px;
+                            text-align: left;
+                            height: 20px;
+                            width: 100%;
+                        }
+                        &:hover {
+                            background-color: #35b11b;
+                            a {
+                                color: #fff;
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
             }
             a {
-                background-color: #1f7463;
+                background-color: #35b11b;
                 color: $white;
                 width: 150px;
                 height: 40px;
