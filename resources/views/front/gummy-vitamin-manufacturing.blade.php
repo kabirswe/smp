@@ -83,10 +83,9 @@
         <div class="container">
             <div class="capabilities">
                 <div class="content-block">
-                    <!-- <p>Our Capabilities</p> -->
                     <h2>Custom Gummy Vitamin Manufacturing</h2>
                     <p>We are capable of producing any gummy vitamin formula. We handle everything from collecting each ingredient in your formula through post-filling inspection at the most competitive costs and with the shortest turnaround times. We have the skills to assist you in developing a new product for your customer base or discussing how to grow your manufacturing effectively. It is our responsibility as your partner to ensure long-term gummy vitamin manufacturing success.</p>
-                    <a href="#" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
+                    <a href="{{ route('request_quote') }}" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="video-block">
                     <div class="video">
@@ -210,7 +209,7 @@
                 <div class="content-block">
                     <h2>Gummy Specialists Wants To Be Your Go-To Gummy Vitamin Manufacturer</h2>                   
                     <p>It might be difficult to get in touch with the top gummy vitamin manufacturer and maintain healthy communication. If you cooperate with us, we can function as a marketing tool because we are one of the leading gummy makers in the United States. The fact that it is created in the United States might be used as a powerful marketing factor on your label. Not only that, but we can constantly provide bulk gummy vitamins. We can make the process of making your private label gummy vitamin as efficient as possible with the greatest communication and excellent outcomes since we work as a contract manufacturer.</p>
-                    <a href="#" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
+                    <a href="{{ route('request_quote') }}" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -236,86 +235,27 @@
                     <h2>Gummy Vitamin Stock Formulas with Our Own Label</h2>
                     <p>Taste, color, shape, and size are all features of a superb gummy vitamin supplement. We thoroughly considered these criteria and have developed a set of some of the greatest formulas we have to offer you today:</p>
                     <div class="product-wrapper">
+                        <!-- @foreach($pre_manufactured_swiper as $item) -->
                         <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g1.png') }}" alt="">
-                            </div>
+                          @foreach($item['images'] as $image)
+                          @if($image->is_cover_image)
+                          <div class="products-thumbnail">
+                              <a href="{{ route('product.details', $item->slug) }}">
+                              <img src="{{ asset($image->image_md) }}" alt="{{ $item->name }}">
+                              </a>
+                          </div>
+                          @endif
+                          @endforeach
                             <div class="products-description">
-                                <a href="#">
-                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
+                                <a href="{{ route('product.details', $item->slug) }}">
+                                    <p>{{ $item->name }}</p>
                                 </a>
+                                <div class="order-btn">
+                                    <a href="{{ route('product.details', $item->slug) }}?order=true" class="btn common-btn">Order</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g2.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g3.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g4.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g1.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g2.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>4 In 1 Stress Relief Gummy – L-Theanine – Magnesium Citrate – Chamomile – Lemon Balm – Organic Tapioca Base – Allergen Free – Gluten Free – Non-GMO – Vegan Friendly</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g3.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>5 In 1 Sugar Free Saffron 88.5mg** Gummy W/ D2, GABA, Passion Flower, St, John’s Wort – Natural Mixed Berry Flavor & Color – Non-GMO – Gluten Free – Vegan Friendly(Product Availability May Vary)</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products-thumbnail">
-                                <img src="{{ asset('images/front/home/g4.png') }}" alt="">
-                            </div>
-                            <div class="products-description">
-                                <a href="#">
-                                    <h2>6 In 1 Winter Shield Sugar-Free Gummy – Vitamin C + D, Zinc, Elderberry, Echinacea, Propolis – Orange Flavor – Vegetarian Friendly – Non-GMO – Gluten-Free</h2>
-                                </a>
-                            </div>
-                        </div>
+                        <!-- @endforeach -->
                     </div>
                 </div>
             </div>

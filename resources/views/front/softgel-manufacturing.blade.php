@@ -37,8 +37,7 @@
                     <div class="item">
                         <i class="ti ti-layout-media-left-alt"></i>
                         <h2>Preparation of Fill Materials</h2>
-                        <p>Preparing the oil and ingredients to go into the softgel. This involves the use of processing tanks, sieves 
-and mills, and vacuum homogenizers, among other things.</p>
+                        <p>Preparing the oil and ingredients to go into the softgel. This involves the use of processing tanks, sieves and mills, and vacuum homogenizers, among other things.</p>
                     </div>
                     <div class="item">
                         <i class="ti ti-shopping-cart"></i>
@@ -87,7 +86,7 @@ and mills, and vacuum homogenizers, among other things.</p>
                     <!-- <p>Our Capabilities</p> -->
                     <h2>Softgel Manufacturing</h2>
                     <p>We are capable of producing any nutraceutical softgel formula. We handle everything from collecting each ingredient in your formula through post-filling inspection at the most competitive costs and with the shortest turnaround times. We have the skills to assist you in developing a new product for your customer base or discussing how to grow your manufacturing effectively. It is our responsibility as your partner to ensure long-term gummy vitamin manufacturing success.</p>
-                    <a href="#" class="btn common-btn">Get A Softgel Manufacturing Quote<i class="ti ti-arrow-right"></i></a>
+                    <a href="{{ route('request_quote') }}" class="btn common-btn">Get A Softgel Manufacturing Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="video-block">
                     <div class="video">
@@ -174,8 +173,7 @@ and mills, and vacuum homogenizers, among other things.</p>
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Process of Drying and Finishing</h2>
-                    <h4>The softgels will be placed in a refrigerated drum that rotates quickly in order to assist the gelatin solidify. 
-The resulting softgel will be dried out further, which is a two-step process:</h4>
+                    <h4>The softgels will be placed in a refrigerated drum that rotates quickly in order to assist the gelatin solidify.The resulting softgel will be dried out further, which is a two-step process:</h4>
                     <ol>
                         <li>Tumble drying</li>
                         <li> Drying tunnel</li>
@@ -196,12 +194,11 @@ The resulting softgel will be dried out further, which is a two-step process:</h
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Gummy Specialists Wants to be Your Go-To Softgel Manufacturer</h2>
-                    <a href="#" class="btn common-btn">Get A Softgel Manufacturing Quote<i class="ti ti-arrow-right"></i></a>
+                    <a href="{{ route('request_quote') }}" class="btn common-btn">Get A Softgel Manufacturing Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <h4>If you have a unique formula that you'd want to encapsulate in a softgel, get in touch with us and we'll 
-have your softgels manufactured.</h4>
+                        <h4>If you have a unique formula that you'd want to encapsulate in a softgel, get in touch with us and we'll have your softgels manufactured.</h4>
                        <p>We collaborate with some of the leading softgel capsule contract manufacturers. We simplify the procedure for you here, and we'll manage all of the correspondence so you can obtain your softgel capsules for your formula. Softgels are often used to provide fish oil, but they can also include a variety of additional supplements.</p>
                        <p>The softgel production process might be complicated, but it can be made simple with the correct tools. We are confident in our ability to meet all of your softgel production requirements, and we believe we would be the greatest partner for you and your formulas. Furthermore, because we are based in the United States, when you deal with us, your bottles will have a superb marketing point.</p>
                     </div>
@@ -217,7 +214,7 @@ have your softgels manufactured.</h4>
                     <div class="content-block">
                         <h2>Take a Look at Our Private Label Softgel Products in Stock</h2>
                         <p>Have a look at our private label softgels in stock. There, you'll find what we consider are some of the greatest formulas, each on its own level. These formulas include a wide range of vitamins and elements that are useful. Here you'll find other stock items that are just as important as our collagen supplements.</p>
-                        <a href="#" class="btn common-btn">See Our Private Label Softgel Products Here<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('product.type', 'softgel') }}" class="btn common-btn">See Our Private Label Softgel Products Here<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <div class="slider-block">
                         <div class="slider">

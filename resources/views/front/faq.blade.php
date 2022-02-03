@@ -133,7 +133,7 @@
 							<!-- <p>Our Capabilities</p> -->
 							<h2>Custom Gummy Vitamin Manufacturing</h2>
 							<p>We have capabilities to manufacture any gummy vitamin formula. From sourcing each ingredient in your formula, to post filling inspection; we do it all at the best prices and the fastest lead times. We have the experience to help you formulate a new product for your target audience, or discuss with you how to properly scale your manufacturing. As your partner, it is our job for long-term gummy vitamin manufacturing success</p>
-							<a href="#" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
+							<a href="{{ route('gummy_vitamin_manufacturing') }}" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
 						</div>
 						<div class="video-block">
 							<div class="video">

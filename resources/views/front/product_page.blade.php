@@ -59,7 +59,7 @@
                             </div>
                             <div class="product-descriptions">
                                 <a href="{{ route('product.details', $item->slug) }}">
-                                    <h2>{{ $item->name }}</h2>
+                                    <p>{{ $item->name }}</p>
                                 </a>
                                 <div class="order-btn">
                                     <a href="{{ route('product.details', $item->slug) }}" class="btn common-btn">Order</a>
