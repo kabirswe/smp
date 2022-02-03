@@ -3,7 +3,7 @@
         <div class="row">
             <div class="d-flex justify-content-between w-100">
                 <div class="logo">
-                    <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
+                    <a href="{{ route('home') }}"><img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt=""></a>
                 </div>
                 <div class="navbar-block">
                     <div class="nav-mobile">
@@ -50,7 +50,7 @@
                                 @endforeach
                             </div>
                         </div>
-                        <a class="nav-link" href="{{ route('home') }}">Design</a>
+                        <a class="nav-link" href="{{ route('design') }}">Design</a>
                         <a class="nav-link" href="{{ route('fulfillment') }} ">Fulfillment</a>
                         <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
                         <!-- <div class="nav-dropdown">

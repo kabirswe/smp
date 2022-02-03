@@ -177,10 +177,10 @@ class PagesController extends Controller
     {
         return view('front.contact');
     }
-    // public function rating()
-    // {
-    //     return view('front.rating');
-    // }
+    public function design()
+    {
+        return view('front.design');
+    }
 
 
 }

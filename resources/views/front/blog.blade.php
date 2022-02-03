@@ -32,7 +32,7 @@
                                     <div class="news_item_date">
                                         <span class="read-more"><a href="{{route('blog.details', $post->slug) }}"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                         <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">{{ $post->created_at }}</time></span><br>
-                                        <span class="comments-link"><a href="#"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
+                                        <span class="comments-link"><a href="{{route('blog.details', $post->slug) }}"><i class="ti ti-comment-alt"></i>Leave a Comment</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -51,12 +51,12 @@
                     </div>
 
                     <div class="blog-sidebar">
-                        <div class="sidebar-top">
+                        <!-- <div class="sidebar-top">
                             <img src="{{ asset('images/front/1581626444.png') }}" alt="">
                             <h5>Learn How To Generate The Best Source Of Customers For Supplement Brands!</h5>
                             <p>We put together case studies of very successful supplement brands in relation to organic search traffic. We also included a step-by-step guide so you can start building this incredible source of web traffic today!</p>
                             <a class="btn common-btn">Download Slideshow</a>
-                        </div>
+                        </div> -->
                         <!-- <div class="about-author">
                             <h3>ABOUT AUTHOR</h3>
                             <div class="author-box">

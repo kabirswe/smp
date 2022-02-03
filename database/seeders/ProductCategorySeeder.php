@@ -112,12 +112,6 @@ class ProductCategorySeeder extends Seeder
                 'updated_by' => '1'
             ],        
             [
-                'name' => 'Pets', 
-                'slug' => 'pets', 
-                'created_by' => '1',
-                'updated_by' => '1'
-            ],        
-            [
                 'name' => 'Sample Ready Products', 
                 'slug' => 'sample-ready-products', 
                 'created_by' => '1',

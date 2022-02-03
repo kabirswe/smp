@@ -25,11 +25,11 @@
                                 <div class="image-gallery-block">
                                     <div class="image-gallery-left">
                                         @foreach($product['images'] as $image)
-                                            @if(!$image->is_cover_image)
+                                            <!-- @if(!$image->is_cover_image) -->
                                                 <div class="image-block">
                                                     <img src="{{ asset($image->image_sm) }}" alt="">
                                                 </div>
-                                            @endif
+                                            <!-- @endif -->
                                         @endforeach
                                     </div>
                                     <div class="image-gallery-right">
@@ -89,7 +89,8 @@
                                                 @endif
                                                 @if($loop->index == 1)
                                                 <a href="{{ route('product.details', $item->slug) }}">
-                                                    <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                                <div class="overlay-image"></div>
+                                                    <img class="product-images-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
                                                 </a>
                                                 @endif
                                             @endforeach
@@ -205,7 +206,7 @@
                             <div class="search-products">
                                 <label>Search for:</label>
                                 <input type="search" value=""   class="form-control" placeholder="Search for products">
-                                <a class="btn">Search</a>
+                                <a class="btn common-btn">Search</a>
                             </div>
                         </div>
                     </div>
@@ -261,7 +262,7 @@
 
 @push('custom-scripts')
     <!-- Scripts -->
-    <script type="text/javascript">
+    <script type="text/javascript">        
         function saveInfo() {
             if (document.getElementById('checkout-create-ac').checked) {
                 var name = document.getElementById('name').value;
@@ -271,6 +272,12 @@
             }
         }
         window.onload = function() {
+            var url = new URL(window.location.href);
+            var modal_param = url.searchParams.get("order");
+            if (modal_param === "true") {
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+                myModal.show();
+            }
             if (localStorage.getItem("name")) {
                 document.getElementById('name').value = localStorage.getItem("name");
             }

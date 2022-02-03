@@ -51,7 +51,8 @@
                                 @endif
                                 @if($loop->index == 1)
                                 <a href="{{ route('product.details', $item->slug) }}">
-                                    <img class="product-img-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                    <div class="overlay-image"></div>
+                                    <img class="product-images-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
                                 </a>
                                 @endif
                                 @endforeach
@@ -60,7 +61,11 @@
                                 <a href="{{ route('product.details', $item->slug) }}">
                                     <h2>{{ $item->name }}</h2>
                                 </a>
+                                <div class="order-btn">
+                                    <a href="{{ route('product.details', $item->slug) }}" class="btn common-btn">Order</a>
+                                </div>
                             </div>
+                           
                         </div>
                         @endforeach
                         @if (count($products) < 1)

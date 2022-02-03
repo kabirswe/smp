@@ -102,20 +102,29 @@
                                     align-items: center;
                                     margin: 0 auto;
                                 }
-                                .product-images-hover {
+                                .overlay-image {
                                     position: absolute;
                                     left: 0;
                                     top: 0;
                                     opacity: 0;
-                                    width: 100%;
-                                    object-fit: center;
                                     height: 100%;
+                                    width: 100%;
                                     z-index: 1;
                                     transition: 0.3s;
                                     &:hover {
                                         opacity: 1;
                                     }
-                                    .product-img-hover {
+                                }
+                                .product-images-hover {
+                                    position: absolute;
+                                    left: 28px;
+                                    top: 0;
+                                    opacity: 0;
+                                    z-index: 1;
+                                    transition: 0.3s;
+                                    height: 300px;
+                                    &:hover {
+                                        opacity: 1;
                                     }
                                 }
                             }
@@ -132,8 +141,16 @@
                                     color: #333;
                                     font-size: 16px;
                                 }
+                                .order-btn {
+                                    margin-top: 15px;
+                                    a {
+                                        border-radius: 5px;
+                                        margin: 0 auto;
+                                    }
+                                }
                             }
                             &:hover .product-images-hover,
+                            &:hover .overlay-image,
                             &:hover .product-descriptions {
                                 opacity: 1;
                                 background-color: #fff;

@@ -6,7 +6,7 @@
                     <h2>Request A Manufacturing Price<br/>Quote</h2>
                     <p>Fill out our "get a custom quote" form and we'll send you a custom price quote so you can start making your nutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('request_quote') }}" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <p class="call-us">Or call us at <strong>1-833-MYGUMMY</strong></p>
                 </div>
@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-between align-items-center w-100 footer-block">
-                    <img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt="">
+                    <a href="{{ route('home') }}"><img src="{{ asset('images/front/Gummy-Specialists-Logo.png') }}" alt=""></a>
                     <div class="d-flex justify-content-end align-items-center footer-item">
                         <a href="tel:1-833-MYGUMMY" class="btn common-btn">Call Us: 1-833-MYGUMMY<i class="ti ti-arrow-right"></i></a>
                         <a href="{{ route('contact') }}" class="btn common-btn">Contact Us<i class="ti ti-arrow-right"></i></a>

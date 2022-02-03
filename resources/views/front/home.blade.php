@@ -11,15 +11,14 @@
         <span class="overlay"></span>
         <video width="100%" autoplay muted loop id="myVideo">
             <source src="{{ asset('images/front/home/videoplayback.mp4') }}" type="video/mp4">
-            Your browser does not support HTML5 video.
+                Your browser does not support HTML5 video.
         </video>
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container">
                 <div class="video-content">
                 <h2>Your Partner In<br /> Manufacturing Amazing<br /> Nutraceuticals</h2>
-                <p>GS stands for Gummy Specialists. Our team is committed to assisting you in scaling up your vitamin 
-manufacturing business in the most efficient way possible.</p>
-                <a href="#" class="btn common-btn">About Our Facilities<i class="ti ti-arrow-right"></i></a>
+                <p>GS stands for Gummy Specialists. Our team is committed to assisting you in scaling up your vitamin manufacturing business in the most efficient way possible.</p>
+                <a href="{{ route('supplement_manufacturing') }}" class="btn common-btn">About Our Facilities<i class="ti ti-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -57,7 +56,7 @@ manufacturing business in the most efficient way possible.</p>
                     <p>We're the gummy specialists!</p>
                     <p>Gummy Specialist is an industry leader in providing innovative and high-quality private label gummies. We have never compromised with quality since the day we opened our doors for business. We have been able to create innovative and high-quality gummies for our customers, which has given us the opportunity to grow into one of the most successful companies in this industry.</p>
                     <p>We have a team of certified R&D professionals, who are committed to coming up with new recipes and flavors for you to enjoy!</p>
-                    <a href="#" class="btn common-btn">Learn More About Our Facilities<i class="ti ti-arrow-right"></i></a>
+                    <a href="{{ route('supplement_manufacturing') }}" class="btn common-btn">Learn More About Our Facilities<i class="ti ti-arrow-right"></i></a>
                 </div>
                 <div class="slider">
                     <!-- Swiper -->
@@ -126,7 +125,7 @@ manufacturing business in the most efficient way possible.</p>
                     <h2>Request A Custom Quote</h2>
                     <p>Fill out our "get a custom quote" form and we'll send you a custom price quote so you can start making your nutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('request_quote') }}" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <p class="call-us">Or call us at <strong>1-833-MYGUMMY</strong></p>
                 </div>
@@ -197,7 +196,7 @@ manufacturing business in the most efficient way possible.</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="#" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="#" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
+                    <a href="{{ route('gummy_vitamin_manufacturing') }}" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -219,8 +218,12 @@ manufacturing business in the most efficient way possible.</p>
                     <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <a href="#" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="#" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
+                    <!-- @foreach(getProductTypes() as $type)
+                                <a href="{{ route('product.type', $type->slug) }}">{{ $type->name }}</a>
+                                @endforeach -->
+
+                    <a href="{{ route('product.type', $type->slug) }}" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
+                    <a href="{{ route('softgel_manufacturing') }}" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -311,6 +314,9 @@ manufacturing business in the most efficient way possible.</p>
                                 <a href="{{ route('product.details', $item->slug) }}">
                                     <p>{{ $item->name }}</p>
                                 </a>
+                                <div class="order-btn">
+                                    <a href="{{ route('product.details', $item->slug) }}?order=true" class="btn common-btn">Order</a>
+                                </div>
                             </div>
                         </div>
                         @endforeach
@@ -350,4 +356,39 @@ manufacturing business in the most efficient way possible.</p>
         },
       });
     </script>
+    <!-- <script>
+        $(document).ready(function() {
+            var showChar = 100;
+            var ellipsestext = "...";
+            var moretext = "more";
+            var lesstext = "less";
+            $('.more').each(function() {
+                var content = $(this).html();
+
+                if(content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar-1, content.length - showChar);
+
+                    var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            // $(".morelink").click(function(){
+            //     if($(this).hasClass("less")) {
+            //         $(this).removeClass("less");
+            //         $(this).html(moretext);
+            //     } else {
+            //         $(this).addClass("less");
+            //         $(this).html(lesstext);
+            //     }
+            //     $(this).parent().prev().toggle();
+            //     $(this).prev().toggle();
+            //     return false;
+            // });
+        });
+    </script> -->
 @endpush

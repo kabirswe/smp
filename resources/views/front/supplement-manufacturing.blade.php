@@ -241,7 +241,7 @@
                     <h2>Request A Price<br/>Quote</h2>
                     <p>Fill out our “request a quote” form so we we can give you a custom price quote to get started with manufacturing your neutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('request_quote') }}" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <p class="call-us">Or call us at <strong>1-833-MYGUMMY</strong></p>
                 </div>

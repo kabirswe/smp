@@ -57,10 +57,7 @@ class RatingController extends Controller
         $product = Product::where('id', $request->product_id)->first('slug');
         return redirect()->route('product.details', $product->slug)->with([
             'success' => trans('Comment send successfully')
-        ]);
-        // return redirect()->route('rating')->with([
-        //     'success' => trans('Rating send successfully')
-        // ]);
+        ]);        
     }
 
     /**
