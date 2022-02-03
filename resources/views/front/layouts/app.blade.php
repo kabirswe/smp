@@ -79,6 +79,34 @@
         var no_data_found = 'No data found';
     </script>
     <script src="{{ asset('js/admin/main.js') }}"></script>
+    <script>
+        window.onclick = () => {
+            $('.result-block').addClass('d-none');
+        }
+        function search(id) {
+            var search_text = document.getElementById('search').value;
+            $.ajax({
+                type: "GET",
+                url: SITEURL + '/search?search=' + search_text,
+                success: function (data) {
+                    if ( data.length > 0 ) {
+                        var dataOptions = "";
+                        $('#' + id).removeClass('d-none');
+                        data.map( function ( val ) {
+                            return dataOptions += '<span><a href="'+ SITEURL +'/product-details/' + val.slug + '">' + val.name + '</a></span>';
+                        });
+                        $('#' + id).html(dataOptions);
+                    } else {
+                        $('#' + id).removeClass('d-none');
+                        $('#' + id).html( '<span>No result found</span>' );
+                    }
+                },
+                error: function (data) {
+                    console.log('Error:', data);
+                }
+            });
+        }
+    </script>
 
     @stack('custom-scripts')
 </body>

@@ -25,17 +25,15 @@
                                 <div class="image-gallery-block">
                                     <div class="image-gallery-left">
                                         @foreach($product['images'] as $image)
-                                            <!-- @if(!$image->is_cover_image) -->
-                                                <div class="image-block">
-                                                    <img src="{{ asset($image->image_sm) }}" alt="">
-                                                </div>
-                                            <!-- @endif -->
+                                            <div class="image-block {{ $image->is_cover_image ? ' active' : ''}}" onclick="imageChange('{{ asset($image->image_sm) }}')">
+                                                <img src="{{ asset($image->image_sm) }}" alt="">
+                                            </div>
                                         @endforeach
                                     </div>
                                     <div class="image-gallery-right">
                                     @foreach($product['images'] as $image)
                                         @if($image->is_cover_image)
-                                            <img src="{{ asset($image->image_md) }}" alt="">
+                                            <img id="bigImage" src="{{ asset($image->image_md) }}" alt="">
                                         @endif
                                     @endforeach
                                     </div>
@@ -262,7 +260,7 @@
 
 @push('custom-scripts')
     <!-- Scripts -->
-    <script type="text/javascript">        
+    <script type="text/javascript">
         function saveInfo() {
             if (document.getElementById('checkout-create-ac').checked) {
                 var name = document.getElementById('name').value;
@@ -270,6 +268,9 @@
                 localStorage.setItem("name", name);
                 localStorage.setItem("email", email);
             }
+        }
+        function imageChange(params) {
+            document.getElementById('bigImage').src = params;
         }
         window.onload = function() {
             var url = new URL(window.location.href);

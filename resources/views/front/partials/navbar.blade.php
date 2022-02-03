@@ -75,8 +75,9 @@
                     <p>Call Us 24/7: 1-833-MYGUMMY</p>
                     <div class="search-block">
                         <div class="search">
-                            <input type="text" placeholder="search" />
+                            <input id="search" type="text" onkeyup="search('id_navbar')" placeholder="search" />
                             <i class="ti ti-search"></i>
+                            <div class="result-block d-none" id="id_navbar"></div>
                         </div>
                         <a href="{{ route('request_quote') }}" class="btn">Get a Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
