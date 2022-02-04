@@ -6,16 +6,28 @@ use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use DataTables;
 class OrderController extends Controller
+
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if ($request->ajax()) {
+            $orders = Order::all();
+            return DataTables::of($orders)
+                ->addIndexColumn()
+                ->addColumn('action-btn', function($row) {
+                    return $row->id;
+                })
+                ->rawColumns(['action-btn'])
+                ->make(true);
+        }
+        return view('admin.order.index');
     }
 
     /**
@@ -103,8 +115,19 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy(Request $request, $id)
     {
-        //
+        if ($request->ajax()) {
+            try {
+                $data = Order::find($id);
+                $data->delete();
+                return response()->json(['success' => 'place deleted']);
+            } catch (Exception $e) {
+                return response()->json([
+                    'status' => 500,
+                    'message' => $e->getMessage()
+                ]);
+            }
+        }
     }
 }

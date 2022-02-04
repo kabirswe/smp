@@ -29,12 +29,6 @@
                 </a>
             </li> 
             <li class="nav-item">
-                <a class="nav-link{{ Route::is('product_image.index', 'product_image.edit',  'product_image.create') ? ' active' : '' }}" href="{{ route('product_image.index') }}">
-                    <ion-icon name="people-outline"></ion-icon>
-                    Product Image
-                </a>
-            </li> 
-            <li class="nav-item">
                 <a class="nav-link{{ Route::is('post_category.index', 'post_category.edit',  'post_category.create') ? ' active' : '' }}" href="{{ route('post_category.index') }}">
                     <ion-icon name="people-outline"></ion-icon>
                     Post Category
@@ -50,6 +44,18 @@
                 <a class="nav-link{{ Route::is('post_comment.index', 'post_comment.edit',  'post_comment.create') ? ' active' : '' }}" href="{{ route('post_comment.index') }}">
                     <ion-icon name="people-outline"></ion-icon>
                     Post Comment
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Order
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <ion-icon name="people-outline"></ion-icon>
+                    Rating
                 </a>
             </li> 
                              

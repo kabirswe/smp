@@ -235,7 +235,7 @@
                     <h2>Gummy Vitamin Stock Formulas with Our Own Label</h2>
                     <p>Taste, color, shape, and size are all features of a superb gummy vitamin supplement. We thoroughly considered these criteria and have developed a set of some of the greatest formulas we have to offer you today:</p>
                     <div class="product-wrapper">
-                        <!-- @foreach($pre_manufactured_swiper as $item) -->
+                        @foreach($pre_manufactured_swiper as $item)
                         <div class="item">
                           @foreach($item['images'] as $image)
                           @if($image->is_cover_image)
@@ -255,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- @endforeach -->
+                        @endforeach
                     </div>
                 </div>
             </div>

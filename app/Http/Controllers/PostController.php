@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use App\Models\ProductCategory;
+use App\Models\PostCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
@@ -24,7 +24,7 @@ class PostController extends Controller
         $extension = $main_image->getClientOriginalExtension();
         $location = "/upload/$location_main/";
         $ImgName = date('Ymdhis') . rand(10000, 99999) . '.' . $extension;
-        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md415x410.' . $extension;
+        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md341x325.' . $extension;
         $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=116x132.' . $extension;
         // Instantiate SimpleImage class
         $image = Image::make($main_image)->encode($extension);
@@ -75,8 +75,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        $product_categories = ProductCategory::select('name','id')->get();
-        return view('admin.post.create', compact('product_categories'));
+        $post_categories = PostCategory::select('name','id')->get();
+        return view('admin.post.create', compact('post_categories'));
     }
 
     /**

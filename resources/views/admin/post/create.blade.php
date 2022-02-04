@@ -41,8 +41,8 @@
                     {!! Form::label('post_category_id', 'Post Category ID', ['class' => 'form-label']) !!}       
                     <select name="post_category_id" id="post_category_id" class="form-select" onchange="userFormatState('post_category_id')" required>
                         <option selected disabled value="">Choose...</option>
-                        @foreach($product_categories as $product_category)
-                            <option value="{{ $product_category->id }}">{{ $product_category->name }}</option>
+                        @foreach($post_categories as $post_category)
+                            <option value="{{ $post_category->id }}">{{ $post_category->name }}</option>
                         @endforeach
                     </select>
                     @if($errors->has('post_category_id'))

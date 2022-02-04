@@ -201,10 +201,17 @@
                                 @endforeach
                                 </div>
                             </div>
-                            <div class="search-products">
+                            <!-- <div class="search-products">
                                 <label>Search for:</label>
                                 <input type="search" value=""   class="form-control" placeholder="Search for products">
                                 <a class="btn common-btn">Search</a>
+                            </div> -->
+                            <div class="search-block">
+                                <div class="search">
+                                    <input id="search" type="text" onkeyup="search('id_product_list')" placeholder="search" />
+                                    <i class="ti ti-search"></i>
+                                    <div class="result-block d-none" id="id_product_list"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

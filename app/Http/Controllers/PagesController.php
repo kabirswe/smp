@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Product;
+use Illuminate\Support\Arr;
 use App\Models\Post;
 use App\Models\PostComment;
 use App\Models\Order;
@@ -71,6 +72,18 @@ class PagesController extends Controller
         return view('front.fulfillment');
     }
 
+    public function product_list(Request $request)
+    {
+        $products = Product::with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
+        ->orderBy('id')
+        ->paginate(10);
+        return view('front.product_page', compact('products'));
+    }
     public function product_type(Request $request, $slug)
     {
         $type = ProductType::where('slug', $slug)->first();
@@ -155,8 +168,12 @@ class PagesController extends Controller
         // dd($post->id);
         $comments = PostComment::where('post_id', $post->id)->get();
         $latest_posts = Post::select('id', 'slug', 'title')->orderBy('id', 'desc')->take(5)->get();
-        // dd($comments);
-        return view('front.blog-details', compact('post', 'comments', 'latest_posts'));
+        $random_post = Post::select('slug')->get();
+        $random_post_prev = Post::whereNotIn('id',  [$post->id])->inRandomOrder()->first();
+        // dd($post->id);
+        $random_post_next = Post::whereNotIn('id',  [$random_post_prev->id])->inRandomOrder()->first();
+        // dd($random_post_prev, $random_post_next);
+        return view('front.blog-details', compact('post', 'comments', 'latest_posts','random_post_next', 'random_post_prev'));
     }
     public function capsule_manufacturing()
     {
@@ -170,13 +187,33 @@ class PagesController extends Controller
     {
         return view('front.powder-manufacturing');
     }
-    public function softgel_manufacturing()
-    {
-        return view('front.softgel-manufacturing');
-    }
     public function gummy_vitamin_manufacturing()
     {
-        return view('front.gummy-vitamin-manufacturing');
+        $pre_manufactured_swiper = Product::with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            // 'product_product_categories.product',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
+        ->orderBy('id')
+        ->take(10)
+        ->get();
+        return view('front.gummy-vitamin-manufacturing', compact('pre_manufactured_swiper'));
+    }
+    public function softgel_manufacturing()
+    {
+        $pre_manufactured_swiper = Product::with([
+            'images:id,product_id,is_cover_image,image,image_sm,image_md',
+            'product_product_categories',
+            // 'product_product_categories.product',
+            'product_product_categories.category',
+            'type:id,name'
+        ])
+        ->orderBy('id')
+        ->take(10)
+        ->get();
+        return view('front.softgel-manufacturing', compact('pre_manufactured_swiper'));
     }
     public function liquid_capsule()
     {

@@ -69,7 +69,8 @@
                                         object-fit: cover;
                                         object-position: center;
                                     }
-                                    &:hover, &.active {
+                                    &:hover,
+                                    &.active {
                                         border: 2px solid #35b11b;
                                     }
                                 }
@@ -544,42 +545,111 @@
                             }
                         }
                     }
-                    .search-products {
-                        a {
-                            width: 130px;
-                            padding: 12px 6px;
-                            margin-top: 15px;
-                            font-size: 20px;
-                            height: 61px;
-                        }
-                        .form-control {
-                            display: block;
-                            width: 100%;
-                            height: 65px;
-                            padding: 10px 20px;
-                            font-size: 18px;
-                            font-weight: 400;
-                            color: #777;
-                            background-color: #fff;
-                            border: 1px solid #ebebeb;
-                            border-radius: 0;
-                            margin-bottom: 20px;
-                            outline-width: 0;
-                            &:focus {
-                                background-color: #fff;
-                                color: #777;
-                                box-shadow: none;
+                    // .search-products {
+                    //     a {
+                    //         width: 130px;
+                    //         padding: 12px 6px;
+                    //         margin-top: 15px;
+                    //         font-size: 20px;
+                    //         height: 61px;
+                    //     }
+                    //     .form-control {
+                    //         display: block;
+                    //         width: 100%;
+                    //         height: 65px;
+                    //         padding: 10px 20px;
+                    //         font-size: 18px;
+                    //         font-weight: 400;
+                    //         color: #777;
+                    //         background-color: #fff;
+                    //         border: 1px solid #ebebeb;
+                    //         border-radius: 0;
+                    //         margin-bottom: 20px;
+                    //         outline-width: 0;
+                    //         &:focus {
+                    //             background-color: #fff;
+                    //             color: #777;
+                    //             box-shadow: none;
+                    //             outline: none;
+                    //             border-color: none;
+                    //         }
+                    //     }
+                    //     label {
+                    //         color: #333;
+                    //         margin: 30px 0;
+                    //         font-size: 20px;
+                    //         font-weight: 700;
+                    //         line-height: 32px;
+                    //         text-transform: uppercase;
+                    //     }
+                    // }
+                    .search-block {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 25px;
+                        .search {
+                            display: flex;
+                            position: relative;
+                            input {
+                                font-style: italic;
+                                font-size: 14px;
+                                text-indent: 3px;
+                                display: inline-block;
+                                padding: 10px;
+                                margin: 0;
+                                width: 100px;
+                                height: 40px;
                                 outline: none;
-                                border-color: none;
+                                border: 1px solid #d6d6d6;
+                                background-color: transparent;
                             }
-                        }
-                        label {
-                            color: #333;
-                            margin: 30px 0;
-                            font-size: 20px;
-                            font-weight: 700;
-                            line-height: 32px;
-                            text-transform: uppercase;
+                            i {
+                                background: #35b11b;
+                                height: 40px;
+                                width: 30px;
+                                display: flex;
+                                color: #fff;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .result-block {
+                                display: flex;
+                                width: 200px;
+                                flex-direction: column;
+                                overflow: auto;
+                                position: absolute;
+                                top: 44px;
+                                right: -5px;
+                                background-color: #f4f4f4;
+                                max-height: 200px;
+                                box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+                                border: 1px solid #d6d6d6;
+                                border-radius: 3px;
+                                span {
+                                    padding: 4px 0;
+                                    a {
+                                        font-size: 14px;
+                                        color: #0c0c0c;
+                                        @include word_break(1);
+                                        background-color: transparent;
+                                        padding: 0;
+                                        margin-left: 6px;
+                                        text-align: left;
+                                        height: 20px;
+                                        width: 100%;
+                                    }
+                                    &:hover {
+                                        background-color: #35b11b;
+                                        a {
+                                            color: #fff;
+                                        }
+                                    }
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

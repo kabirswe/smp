@@ -5,12 +5,12 @@
 <main class="product-wrapper">
     <div class="man_intro_cont">
         <div class="container">
-            <h1>{{ Route::is('product.type') ? $type->name : $category->name }} </h1>
+            <h1>{{ Route::is('product.type') ? $type->name : ((Route::is('product.category') ? $category->name : 'All Stock Private Label Supplements')) }} </h1>
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">gummyspecialists.com | Your Premier Private Label Supplement Manufacturer</a><i class="ti ti-arrow-right"></i></li>
                 <li class="breadcrumb-item"><a href="#">Products</a><i class="ti ti-arrow-right"></i></li>
-                <li class="breadcrumb-item active" aria-current="page">{{ Route::is('product.type') ? $type->name : $category->name }}</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ Route::is('product.type') ? $type->name : ((Route::is('product.category') ? $category->name : 'All Stock Private Label Supplements')) }}</li>
             </ol>
             </nav>
         </div>
@@ -93,10 +93,19 @@
                                 @endforeach
                             </div>
                         </div>
-                        <div class="search-products">
+                        <!-- <div class="search-products">
                             <label>Search for:</label>
-                            <input type="search" value=""   class="form-control" placeholder="Search for products">
+                            <input id="search" type="text" onkeyup="search('id_product_list')" placeholder="search" />
+                                <div class="result-block d-none" id="id_product_list"></div>
                             <a class="btn common-btn">Search</a>
+                        </div> -->
+
+                        <div class="search-block">
+                            <div class="search">
+                                <input id="search" type="text" onkeyup="search('id_product_list')" placeholder="search" />
+                                <i class="ti ti-search"></i>
+                                <div class="result-block d-none" id="id_product_list"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

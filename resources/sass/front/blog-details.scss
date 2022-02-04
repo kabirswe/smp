@@ -55,8 +55,13 @@
                             font-weight: 700;
                             line-height: 28px;
                         }
+                        p {
+                            margin-top: 20px;
+                        }
                         img {
                             width: 100%;
+                            // width: 360px;
+                            // text-align: center;
                         }
                     }
                     // .about-author {
@@ -116,6 +121,7 @@
                         }
                     }
                     .reply-form {
+                        margin-bottom: 100px;
                         .comment-reply {
                             h3 {
                                 margin: 24px 0;
@@ -429,6 +435,10 @@
             .nav_previous {
                 width: 50%;
                 position: relative;
+                img {
+                    height: 430px;
+                    width: 100%;
+                }
                 .man_nav_over {
                     position: absolute;
                     top: 0;
@@ -479,7 +489,7 @@
                                 width: 10px;
                                 background: #fff;
                                 position: absolute;
-                                top: 3px;
+                                top: 4px;
                                 left: 2px;
                                 transition: all 0.3s;
                             }
@@ -495,28 +505,73 @@
             }
             .nav_next {
                 width: 50%;
-                background-color: rgb(96 80 139);
-                transition: all 0.3s;
                 position: relative;
+                img {
+                    height: 430px;
+                    width: 100%;
+                }
+                .man_nav_over {
+                    position: absolute;
+                    top: 0;
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(144, 111, 235, 0.48);
+                    transition: all 0.3s;
+                }
                 .man_nav_txt {
-                    padding: 0 200px 0 100px;
                     color: #fff;
                     position: absolute;
                     z-index: 1;
                     top: 50%;
                     transform: translateY(-50%);
                     width: 100%;
+                    padding: 0 200px 0 100px;
+                    a {
+                        display: block;
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                        text-transform: uppercase;
+                    }
                     h3 {
                         font-family: Oxygen;
                         line-height: 32px;
                         font-weight: 400;
                         font-size: 24px;
                         color: #fff;
-                        text-align: right;
+                    }
+                    span {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        position: relative;
+                        i {
+                            font-size: 10px;
+                            display: inline-block;
+                            position: absolute;
+                            margin-top: 9px;
+                            font-weight: bold;
+                            right: -30px;
+                            transition: all 0.3s;
+                            &::after {
+                                display: block;
+                                content: "";
+                                height: 1px;
+                                width: 10px;
+                                background: #fff;
+                                position: absolute;
+                                top: 4px;
+                                left: 2px;
+                                transition: all 0.3s;
+                            }
+                        }
                     }
                 }
-                &:hover {
-                    background-color: #fc1b15;
+                &:hover .man_nav_txt span i {
+                    right: -60px;
+                }
+                &:hover .man_nav_txt span i::after {
+                    width: 40px;
                 }
             }
         }
@@ -552,14 +607,6 @@
 }
 @media only screen and (max-width: 768px) {
     .blog-details-container {
-        .man_intro_cont {
-            h1 {
-                font-size: 40px;
-            }
-            .breadcrumb {
-                display: none;
-            }
-        }
         .mail-blog {
             .blog-content-area {
                 .blog-content {

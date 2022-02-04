@@ -16,7 +16,7 @@ class RatingController extends Controller
      */
     public function index()
     {
-        //
+        return "sss";
     }
 
     /**
@@ -37,7 +37,6 @@ class RatingController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
         $data = $request->all();
         $validation = Validator::make($data, [            
             'text_box' => 'required|max:200',
@@ -57,7 +56,7 @@ class RatingController extends Controller
         $product = Product::where('id', $request->product_id)->first('slug');
         return redirect()->route('product.details', $product->slug)->with([
             'success' => trans('Comment send successfully')
-        ]);        
+        ]); 
     }
 
     /**
@@ -100,8 +99,19 @@ class RatingController extends Controller
      * @param  \App\Models\Rating  $rating
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Rating $rating)
+    public function destroy(Request $request, $id)
     {
-        //
+        if ($request->ajax()) {
+            try {
+                $data = Rating::find($id);
+                $data->delete();
+                return response()->json(['success' => 'place deleted']);
+            } catch (Exception $e) {
+                return response()->json([
+                    'status' => 500,
+                    'message' => $e->getMessage()
+                ]);
+            }
+        }
     }
 }

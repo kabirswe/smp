@@ -137,18 +137,22 @@
         </div>           -->
         <div class="nearby_posts">
             <div class="nav_previous">
-                <img src="{{ asset('images/front/previous-img.jpg') }}" alt="">
+                <img src="{{ asset($random_post_prev->cover_image_md) }}" alt="">
                 <div class="man_nav_over"></div>
-                <div class="man_nav_txt">
+                <a href="{{ route('blog.details', $random_post_prev->slug) }}"><div  class="man_nav_txt">
                     <span><i class="ti ti-arrow-left"></i>Previous</span>
-                    <h3>How To Be A Supplement Rep For The Best Brands?</h3>
+                    <h3>{{ $random_post_prev->title }}</h3>
                 </div>
+                </a>
             </div>
             <div class="nav_next">
+                <img src="{{ asset($random_post_next->cover_image_md) }}" alt="">
                 <div class="man_nav_over"></div>
-                <div class="man_nav_txt">
-                    <h3>Gummy Specialists Donates 1,000 Vitamin D3 Bottles for COVID Relief!</h3>
+                <a href="{{ route('blog.details', $random_post_next->slug) }}"><div  class="man_nav_txt">
+                    <span><i class="ti ti-arrow-right"></i>Next</span>
+                    <h3>{{ $random_post_next->title }}</h3>
                 </div>
+                </a>
             </div>
         </div>
     </div>

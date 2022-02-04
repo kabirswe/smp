@@ -28,7 +28,7 @@
                                 </div>
                                 <div class="blog-text">
                                     <a href="{{route('blog.details', $post->slug) }}"><h2>{{ $post->title }}</h2></a>
-                                    <p>{{ $post->description }}</p>
+                                    <p>{!! $post->description !!}</p>
                                     <div class="news_item_date">
                                         <span class="read-more"><a href="{{route('blog.details', $post->slug) }}"><i class="ti ti-arrow-circle-right"></i>Read More</a></span>
                                         <span class="posted-on"><i class="ti ti-time"></i><time class="entry-date published" datetime="2020-10-09T17:20:24+00:00">{{ $post->created_at }}</time></span><br>

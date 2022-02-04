@@ -3,6 +3,7 @@
 .supplement-manufacturing-container {
     .video-container {
         position: relative;
+        height: 100vh;
         .overlay {
             content: "";
             position: absolute;
@@ -12,6 +13,10 @@
             bottom: 0;
             background-color: rgb(0 0 0 / 30%);
             z-index: 1;
+            height: 100vh;
+        }
+        iframe {
+            height: 100vh;
         }
         .video-content {
             position: absolute;
@@ -19,14 +24,14 @@
             z-index: 10;
             width: 50%;
             margin: 0 auto;
-            h2 {
+            left: 0;
+            right: 0;
+            h1 {
                 color: #ffffff;
                 font-weight: 700;
                 font-size: 42px;
                 line-height: 52px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                text-align: center;
             }
         }
     }
@@ -779,6 +784,15 @@
 
 @media only screen and (max-width: 992px) {
     .supplement-manufacturing-container {
+        .video-container {
+            height: 50vh;
+            iframe {
+                height: 50vh;
+            }
+            .overlay {
+                height: 50vh;
+            }
+        }
         .labels-wrapper {
             .labels-block-wrapper {
                 .labels-block-images {
@@ -833,10 +847,6 @@
             .video-content {
                 width: 90%;
                 top: 40%;
-                h2 {
-                    font-size: 24px;
-                    line-height: 30px;
-                }
             }
         }
         .labels-wrapper {

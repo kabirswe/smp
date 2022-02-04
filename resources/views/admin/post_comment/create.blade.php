@@ -1,7 +1,7 @@
-@extends('admin.layouts.app')
+<!-- @extends('admin.layouts.app')
 
 @push('custom-style')
-<!-- Styles -->
+
 @endpush
 
 @section('content')    
@@ -72,4 +72,4 @@
     </section>
 </main>
 @endsection
-            
+             -->

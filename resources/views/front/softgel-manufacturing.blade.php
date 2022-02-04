@@ -221,6 +221,23 @@
                             <!-- Swiper -->
                             <div class="swiper preManufacturedSwiper">
                             <div class="swiper-wrapper">
+                                @foreach($pre_manufactured_swiper as $item)
+                                @foreach($item['images'] as $image)
+                                @if($image->is_cover_image)
+                                <div class="swiper-slide"><img src="{{ asset($image->image_sm) }}" alt="{{ $item->name }}"></div>
+                                @endif
+                                @endforeach
+                                @endforeach
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="slider">
+                            Swiper
+                            <div class="swiper preManufacturedSwiper">
+                            <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
                                 <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png') }}" alt=""></div>
                                 <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
@@ -238,7 +255,7 @@
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                             </div>
-                        </div>                        
+                        </div>                         -->
                     </div>
                 </div>
             </div>
@@ -274,5 +291,5 @@
           prevEl: ".swiper-button-prev",
         },
       });
-    </script>
+    </script>   
 @endpush

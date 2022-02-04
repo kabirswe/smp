@@ -15,9 +15,9 @@
         </video> -->
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/FYTzoVkQdyk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
-        <div class="container">
+        <div class="container ">
             <div class="video-content">
-                <h2>Supplement Manufacturing About Our Services</h2>
+                <h1>Supplement Manufacturing About Our Services</h1>
             </div>
         </div>
     </div>
@@ -205,7 +205,7 @@
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/girlservice-01.png') }}" alt="">
+                        <img src="{{ asset('images/front/home/call service 989 654-01.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -302,7 +302,7 @@
                 </div>
                 <div class="stock-right">
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn common-btn">See Current Stock Products<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('product.list') }}" class="btn common-btn">See Current Stock Products<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -318,7 +318,7 @@
                         <p>We have many in-stock already manufactured supplement products in our warehouse, ready for you label to be put on. We have real-time catalog on our website updated everyday! Check to see our inventory of private label supplements. We also offer samples of every stock supplement for you to try before investing the product into your brand.</p>                       
                     </div>
                     <div class="slider-block">
-                        <a href="#" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>                        
+                        <a href="{{ route('product.list') }}" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>                        
                     </div>
                 </div>
             </div>

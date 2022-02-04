@@ -53,10 +53,10 @@
                         margin-bottom: 35px;
                         .blog-image {
                             width: calc(50% - 10px);
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
+                            // img {
+                            //     width: 100%;
+                            //     height: 100%;
+                            // }
                         }
                         .blog-text {
                             width: calc(50% - 10px);
@@ -74,6 +74,7 @@
                             p {
                                 line-height: 26px;
                                 font-size: 16px;
+                                @include word_break(3);
                             }
                             .news_item_date {
                                 margin-top: 40px;
@@ -433,14 +434,6 @@
 }
 @media only screen and (max-width: 768px) {
     .blog-wrapper {
-        .man_intro_cont {
-            h1 {
-                font-size: 40px;
-            }
-            .breadcrumb {
-                display: none;
-            }
-        }
         .mail-blog {
             .blog-content-area {
                 .blog-content {

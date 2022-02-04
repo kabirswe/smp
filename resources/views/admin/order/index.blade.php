@@ -11,21 +11,21 @@
     <section class="main-content">
         <div class="title-section d-flex justify-content-between align-items-center">
             <div class="text-block">
-                <h1 class="title">Product Image List</h1>
+                <h1 class="title">Order List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Product Image</a></li>
+                        <li class="breadcrumb-item"><a href="#">Order</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
             </div>
-            <div class="btn-block">
-                <a class="btn" href="{{ route('product_image.create') }}">
+            <!-- <div class="btn-block">
+                <a class="btn" href="{{ route('product_type.create') }}">
                 <ion-icon name="add-outline"></ion-icon>
-                    <span>Create Product Image</span>
+                    <span>Create Product Type</span>
                 </a>
-            </div>
+            </div> -->
         </div>
         @if ($message = Session::get('success'))
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -38,8 +38,13 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Cover Image</th>
-                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Product ID</th>
+                        <th>Quantity</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Comment</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -74,7 +79,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js" defer></script>
 
     <script type="text/javascript">
-        var listUrl = SITEURL + '/product_image';
+        var listUrl = SITEURL + '/order';
 
         $(document).ready( function () {
             var table = $('#data-table').DataTable({
@@ -90,14 +95,18 @@
                 },
                 columns: [
                     { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: true },
-                    { data: 'cover_image', name: 'cover_image', orderable: true },
-                    { data: 'image', name: 'image', orderable: true },
+                    { data: 'product_name', name: 'product_name', orderable: true },
+                    { data: 'product_id', name: 'product_id', orderable: true },
+                    { data: 'quantity', name: 'quantity', orderable: true },
+                    { data: 'name', name: 'name', orderable: true },
+                    { data: 'email', name: 'email', orderable: true },
+                    { data: 'phone', name: 'phone', orderable: true },
+                    { data: 'comment', name: 'comment', orderable: true },
                     {
                         data: 'action-btn',
                         orderable: false,
                         render: function (data) {
                             var btn = '';
-                            btn += '<a href="' + listUrl + '/' + data + '/edit" class="btn btn-dt-edit">Edit</a>';
                             btn += '<a href="javascript:void(0)" id="deleteData" data-toggle="tooltip" data-id="' + data + '" data-original-title="Delete" class="btn btn-dt-delete">Delete</a>';
                             return btn;
                         }
@@ -113,7 +122,7 @@
                 if(isDelete) {
                     $.ajax({
                         type: "DELETE",
-                        url: SITEURL + '/product_image/' + dataId,
+                        url: SITEURL + '/order/' + dataId,
                         success: function (data) {
                             var oTable = $('#data-table').dataTable();
                             oTable.fnDraw(false);

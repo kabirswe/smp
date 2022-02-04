@@ -39,10 +39,9 @@
                     <tr>
                         <th>No</th>
                         <th>Name</th>
+                        <th>Product Type ID</th>
                         <th>Quantity</th>
                         <th>Description</th>
-                        <th>Label</th>
-                        <th>Category</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -94,10 +93,9 @@
                 columns: [
                     { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: true },
                     { data: 'name', name: 'name', orderable: true },
+                    { data: 'product_type_id', name: 'product_type_id', orderable: true },
                     { data: 'quantity', name: 'quantity', orderable: true },
                     { data: 'description', name: 'description', orderable: true },
-                    { data: 'type', name: 'type', orderable: true },
-                    { data: 'category', name: 'category', orderable: true },
                     {
                         data: 'action-btn',
                         orderable: false,

@@ -63,22 +63,19 @@
                     <div class="swiper capabilitiesSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                            <img src="{{ asset('wp-content/uploads/2019/07/laboratory1.jpg') }}" />
+                            <img src="{{ asset('images/front/home/Our capabilities 1000 667-01.jpg') }}" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_1049657894.jpg') }}" />
+                            <img src="{{ asset('images/front/home/Our capabilities 1000 667-02.jpg') }}" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_250505101.jpg') }}" />
+                            <img src="{{ asset('images/front/home/Our capabilities 1000 667-03.jpg') }}" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="{{ asset('wp-content/uploads/2019/07/laboratory2.jpg') }}" />
+                            <img src="{{ asset('images/front/home/Our capabilities 1000 667-04.jpg') }}" />
                             </div>
                             <div class="swiper-slide">
-                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_416042059.jpg') }}" />
-                            </div>
-                            <div class="swiper-slide">
-                            <img src="{{ asset('wp-content/uploads/2020/03/shutterstock_412795528.jpg') }}" />
+                            <img src="{{ asset('images/front/home/Our capabilities 1000 667-05.jpg') }}" />
                             </div>
                         </div>
                     </div>
@@ -93,27 +90,27 @@
                 <p>Gummy Specialists has been covered by some of the top networks as a result of our hard work and commitment. Gummy Specialists is committed to providing our clients with the most up-to-date information and high-quality supplements. We are grateful for the acknowledgement of our work!</p>
                 <p>Gummy Specialists has been featured on the following networks:</p>
                 <div class="image-block second">
-                    <img src="{{ asset('images/front/fe12.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe13.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe14.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe15.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/01.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/02.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/03.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/05.png') }}" alt="">
                 </div>
                 <h2>Gummy Specialists Products Can Be Found In The Biggest Retailers & On The Largest Networks</h2>
                 <p>Gummy Specialists is delighted to partner with a variety of excellent brands that are available on some of the best marketplaces in the world, including Walmart, Target, The Vitamin Shoppe, GNC, and others!</p>
                 <p>With Gummy Specialists as your partner, you can build your brand and offer your supplements to these huge merchants!</p>
                 <div class="image-block second">
-                    <img src="{{ asset('images/front/fe16.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe17.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe18.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe19.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe20.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe21.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe22.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe23.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe24.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe25.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe26.png') }}" alt="">
-                    <img src="{{ asset('images/front/fe27.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-01.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-03.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-06.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-07.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-09.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-10.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-11.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-12.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-14.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/0-15.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/a-01.png') }}" alt="">
+                    <img src="{{ asset('images/front/home/a-02.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -255,7 +252,7 @@
                 </div>
                 <div class="stock-right">
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn common-btn">See All Current Stock Products<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('product.list') }}" class="btn common-btn">See All Current Stock Products<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -288,7 +285,7 @@
                             <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                        <a href="#" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
+                        <a href="{{ route('product.list') }}" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-block">

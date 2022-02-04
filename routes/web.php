@@ -14,7 +14,6 @@ use App\Http\Controllers\GetQuoteController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\ProductTypeController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProductImageController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostCommentController;
@@ -48,7 +47,9 @@ Route::get('/labdoor-partnership', [PagesController::class, 'labdoor_partnership
 Route::get('/who-to-contact', [PagesController::class, 'who_to_contact'])->name('who_to_contact');
 Route::get('/faq', [PagesController::class, 'faq'])->name('faq');
 Route::get('/fulfillment', [PagesController::class, 'fulfillment'])->name('fulfillment');
+Route::get('/product-list', [PagesController::class, 'product_list'])->name('product.list');
 Route::get('/product-type/{slug}', [PagesController::class, 'product_type'])->name('product.type');
+
 Route::get('/product-category/{slug}', [PagesController::class, 'product_category'])->name('product.category');
 Route::get('/product-details/{slug}', [PagesController::class, 'product_details'])->name('product.details');
 Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
@@ -90,10 +91,22 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
     Route::resource('product_category', ProductCategoryController::class);
     Route::resource('product_type', ProductTypeController::class);
     Route::resource('product', ProductController::class);
-    Route::resource('product_image', ProductImageController::class);
     Route::resource('post_category', PostCategoryController::class);
     Route::resource('post', PostController::class);
 
 });
 Route::resource('post_comment', PostCommentController::class);
 Route::resource('rating', RatingController::class);
+
+
+Route::get('send-mail', function () {
+    $details = [
+        'title' => 'Mail from ItSolutionStuff.com',
+        'body' => 'This is for testing email using smtp'
+    ];
+   
+   
+    \Mail::to('asaduzzamannurcse@gmail.com')->send(new \App\Mail\MyTestMail($details));
+    
+    dd("Email is Sent.");
+});

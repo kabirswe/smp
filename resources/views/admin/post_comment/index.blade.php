@@ -20,12 +20,12 @@
                     </ol>
                 </nav>
             </div>
-            <div class="btn-block">
+            <!-- <div class="btn-block">
                 <a class="btn" href="{{ route('post_comment.create') }}">
                 <ion-icon name="add-outline"></ion-icon>
                     <span>Create Post Comment</span>
                 </a>
-            </div>
+            </div> -->
         </div>
         @if ($message = Session::get('success'))
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -101,7 +101,7 @@
                         orderable: false,
                         render: function (data) {
                             var btn = '';
-                            btn += '<a href="' + listUrl + '/' + data + '/edit" class="btn btn-dt-edit">Edit</a>';
+                            // btn += '<a href="' + listUrl + '/' + data + '/edit" class="btn btn-dt-edit">Edit</a>';
                             btn += '<a href="javascript:void(0)" id="deleteData" data-toggle="tooltip" data-id="' + data + '" data-original-title="Delete" class="btn btn-dt-delete">Delete</a>';
                             return btn;
                         }
