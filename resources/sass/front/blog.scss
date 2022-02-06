@@ -75,6 +75,9 @@
                                 line-height: 26px;
                                 font-size: 16px;
                                 @include word_break(3);
+                                img {
+                                    display: none;
+                                }
                             }
                             .news_item_date {
                                 margin-top: 40px;

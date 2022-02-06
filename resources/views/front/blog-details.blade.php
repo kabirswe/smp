@@ -20,7 +20,8 @@
                 <div class="blog-content">
                     <div class="blog-item">
                         <img src="{{ asset($post->cover_image_md) }}" alt="">
-                        <p>{{ $post->description }}</p>
+                        <!-- <p>{{ $post->description }}</p> -->
+                        <p>{!! $post->description !!}</p>
                     </div>
                     <!-- <div class="about-author">
                         <div class="author-box">

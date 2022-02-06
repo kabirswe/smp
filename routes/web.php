@@ -97,6 +97,7 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
 });
 Route::resource('post_comment', PostCommentController::class);
 Route::resource('rating', RatingController::class);
+Route::resource('order', OrderController::class);
 
 
 Route::get('send-mail', function () {

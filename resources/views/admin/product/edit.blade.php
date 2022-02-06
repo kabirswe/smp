@@ -59,7 +59,7 @@
                         </div>
                     @endif
                 </div>                 
-                <div class="col-md-8">
+                <!-- <div class="col-md-8">
                     {!! Form::label('label', 'Label', ['class' => 'form-label']) !!}
                     {!! Form::text('label', $product->label, ['class' => 'form-control']) !!}
                     @if($errors->has('label'))
@@ -67,8 +67,8 @@
                             {{ $errors->first('label') }}
                         </div>
                     @endif
-                </div>                 
-                <div class="col-md-8">
+                </div>                  -->
+                <!-- <div class="col-md-8">
                     {!! Form::label('category', 'Category', ['class' => 'form-label']) !!}
                     {!! Form::text('category', $product->category, ['class' => 'form-control']) !!}
                     @if($errors->has('category'))
@@ -76,7 +76,7 @@
                             {{ $errors->first('category') }}
                         </div>
                     @endif
-                </div>          
+                </div>           -->
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Update</button>
                 </div>

@@ -8,8 +8,7 @@
         <h3>OVERVIEW</h3>
         <h1 class="h2">Dashboard</h1>
     </div>
-
-    <h2>Section title</h2>
+    <!-- <h2>Section title</h2>
     <div class="table-responsive">
     <table class="table table-striped table-sm">
         <thead>
@@ -136,6 +135,92 @@
         </tr>
         </tbody>
     </table>
-    </div>
+    </div> -->
 </main>
+<div class="dashboard-section col-md-9 ms-sm-auto col-lg-10 main-block px-md-4">
+        <div class="single-item-inner">
+            <div class="single-item">
+                <div class="section-title">
+                    <h6>Product</h6>
+                    <h1>{{ $product_all }}</h1>
+                    <a href="{{ route('product.index') }}">All product <i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="section-title">
+                    <h6>Post</h6>
+                    <h1>{{ $post_all }}</h1>
+                    <a href="{{ route('product.index') }}">All post <i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="section-title">
+                    <h6>Comment</h6>
+                    <h1>{{ $post_comment_all }}</h1>
+                    <a href="{{ route('product.index') }}">All comment <i class="ti ti-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="latest-order">
+            <div class="order-header">
+                <h6>Latest order</h6>
+                <a href="{{ route('order.index') }}">View all</a>
+            </div>
+            <div class="table-inner">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($orders as $order)
+                        <tr>
+                            <th scope="row">{{ $order->id }}</th>
+                            <td>{{ $order->product_name }}</td>
+                            <td>{{ $order->quantity }}</td>
+                            <td>{{ $order->name }}</td>
+                            <td>{{ $order->phone}}</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="latest-comment">
+            <div class="comment-header">
+                <h6>Latest comment</h6>
+                <a href="{{ route('post_comment.index') }}">View all</a>
+            </div>
+            <div class="table-inner">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">post_id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($post_comments as $post_comment)
+                        <tr>
+                            <th scope="row">{{ $post_comment->id }}</th>
+                            <td>{{ $post_comment->post_id }}</td>
+                            <td>{{ $post_comment->name }}</td>
+                            <td>{{ $post_comment->email }}</td>
+                            <td>{{ $post_comment->comment}}</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 @endsection

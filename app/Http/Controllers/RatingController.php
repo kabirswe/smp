@@ -14,9 +14,19 @@ class RatingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return "sss";
+        if ($request->ajax()) {
+            $ratings = Rating::all();
+            return DataTables::of($ratings)
+                ->addIndexColumn()
+                ->addColumn('action-btn', function($row) {
+                    return $row->id;
+                })
+                ->rawColumns(['action-btn'])
+                ->make(true);
+        }
+        return view('admin.rating.index');
     }
 
     /**
@@ -39,10 +49,12 @@ class RatingController extends Controller
     {
         $data = $request->all();
         $validation = Validator::make($data, [            
+            'product_id' => 'required|max:10',
             'text_box' => 'required|max:200',
             'name' => 'required|max:50',
             'email' => 'required|max:50',
         ],[
+            'product_id' => trans('error.name'),
             'text_box' => trans('error.name'),
             'name' => trans('error.name'),
             'email' => trans('error.name'),
