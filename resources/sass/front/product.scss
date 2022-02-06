@@ -65,7 +65,10 @@
                         display: flex;
                         text-align: center;
                         justify-content: space-between;
+                        padding-bottom: 10px;
                         .result-count {
+                            display: flex;
+                            align-items: center;
                             text-align: center;
                         }
                         .sort-by-product {
@@ -76,8 +79,8 @@
                                 background-color: #fff;
                                 margin-top: 0;
                                 position: relative;
-                                right: 10px;
-                                padding: 10px 20px !important;
+                                // right: 10px;
+                                padding: 10px 32px 10px 20px !important;
                                 border: none;
                             }
                         }

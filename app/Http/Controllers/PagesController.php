@@ -74,14 +74,36 @@ class PagesController extends Controller
 
     public function product_list(Request $request)
     {
-        $products = Product::with([
-            'images:id,product_id,is_cover_image,image,image_sm,image_md',
-            'product_product_categories',
-            'product_product_categories.category',
-            'type:id,name'
-        ])
-        ->orderBy('id')
-        ->paginate(10);
+        $filter = $request->query('filter');
+
+        if ($filter == 'trending') {
+            $products = Product::with([
+                    'images:id,product_id,is_cover_image,image,image_sm,image_md',
+                    'product_product_categories',
+                    'product_product_categories.category',
+                    'type:id,name'
+                ])
+                ->orderBy('trending', 'DESC')
+                ->paginate(10);
+        } elseif ($filter == 'latest') {
+            $products = Product::with([
+                'images:id,product_id,is_cover_image,image,image_sm,image_md',
+                'product_product_categories',
+                'product_product_categories.category',
+                'type:id,name'
+            ])
+            ->orderBy('id')
+            ->paginate(10);
+        } else {
+            $products = Product::with([
+                'images:id,product_id,is_cover_image,image,image_sm,image_md',
+                'product_product_categories',
+                'product_product_categories.category',
+                'type:id,name'
+            ])
+            ->orderBy('id', 'DESC')
+            ->paginate(10);
+        }
         return view('front.product_page', compact('products'));
     }
     public function product_type(Request $request, $slug)
@@ -189,7 +211,8 @@ class PagesController extends Controller
     }
     public function gummy_vitamin_manufacturing()
     {
-        $pre_manufactured_swiper = Product::with([
+        $pre_manufactured_swiper = Product::where('product_type_id', 1)
+            ->with([
             'images:id,product_id,is_cover_image,image,image_sm,image_md',
             'product_product_categories',
             // 'product_product_categories.product',
@@ -203,7 +226,8 @@ class PagesController extends Controller
     }
     public function softgel_manufacturing()
     {
-        $pre_manufactured_swiper = Product::with([
+        $pre_manufactured_swiper = Product::where('product_type_id', 2)
+            ->with([
             'images:id,product_id,is_cover_image,image,image_sm,image_md',
             'product_product_categories',
             // 'product_product_categories.product',

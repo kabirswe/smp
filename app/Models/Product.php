@@ -15,6 +15,7 @@ class Product extends Model
         'slug',
         'product_type_id',
         'quantity',
+        'trending',
         'description',
         'created_by',
         'updated_by'

@@ -105,12 +105,19 @@
                 <div class="col-md-3">
                     <div class="col-md-8">
                         {!! Form::label('quantity', 'Quantity', ['class' => 'form-label']) !!}
-                        {!! Form::text('quantity', null, ['class' => 'form-control']) !!}
+                        {!! Form::number('quantity', null, ['class' => 'form-control']) !!}
                         @if($errors->has('quantity'))
                             <div class="error_msg">
                                 {{ $errors->first('quantity') }}
                             </div>
                         @endif
+                    </div>
+                    <div class="d-flex flex-column pt-2">
+                        <p>Trending Product</p>
+                            <div class="form-check">
+                                <input name="trending" class="form-check-input" value="1" type="checkbox" id="trending">
+                                <label class="form-check-label" for="trending">Trending</label>
+                            </div>
                     </div>
                     <div class="d-flex flex-column pt-2">
                         <p>Select a type</p>

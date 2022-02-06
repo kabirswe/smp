@@ -32,9 +32,10 @@
                         </div>
                         <div class="sort-by-product">
                             <form class="woocommerce-ordering" method="get" data-hs-cf-bound="true">
-                                <select name="orderby" class="orderby">
-                                    <option value="menu_order" selected="selected">Sort by trending</option>
-                                    <option value="date">Sort by latest</option>
+                                <select id="product_filter" class="form-select" aria-label="Default select example" onchange="filterFunction();">
+                                    <option selected>Select filter</option>
+                                    <option value="trending">Sort by trending</option>
+                                    <option value="latest">Sort by latest</option>
                                 </select>
                             </form>
                         </div>
@@ -65,7 +66,7 @@
                                     <a href="{{ route('product.details', $item->slug) }}" class="btn common-btn">Order</a>
                                 </div>
                             </div>
-                           
+
                         </div>
                         @endforeach
                         @if (count($products) < 1)
@@ -114,3 +115,17 @@
     </div>
 </main>
 @endsection
+
+
+@push('custom-scripts')
+    <!-- Scripts -->
+    <script type="text/javascript">
+
+    function filterFunction() {
+        var selectBox = document.getElementById("product_filter");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        window.location.replace(SITEURL + "/product-list?filter=" + selectedValue);
+    }
+
+    </script>
+@endpush
