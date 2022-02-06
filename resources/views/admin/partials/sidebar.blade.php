@@ -47,18 +47,17 @@
                 </a>
             </li> 
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link{{ Route::is('order.index') ? ' active' : '' }}" href="{{ route('order.index') }}">
                     <ion-icon name="people-outline"></ion-icon>
                     Order
                 </a>
             </li> 
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link{{ Route::is('rating.index') ? ' active' : '' }}" href="{{ route('rating.index') }}">
                     <ion-icon name="people-outline"></ion-icon>
                     Rating
                 </a>
-            </li> 
-                             
+            </li>      
             <li class="nav-item">
                 <a class="nav-link{{ Route::is('users.index', 'users.edit', 'users.show', 'users.create') ? ' active' : '' }}" href="{{ route('users.index') }}">
                     <ion-icon name="people-outline"></ion-icon>

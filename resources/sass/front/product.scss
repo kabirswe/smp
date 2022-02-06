@@ -82,6 +82,9 @@
                                 // right: 10px;
                                 padding: 10px 32px 10px 20px !important;
                                 border: none;
+                                &:focus-visible {
+                                    outline: 0;
+                                }
                             }
                         }
                     }

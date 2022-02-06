@@ -18,7 +18,17 @@ class PostCommentController extends Controller
      */
     public function index(Request $request)
     {
-       
+        if ($request->ajax()) {
+            $postcomments = PostComment::all();
+            return DataTables::of($postcomments)
+                ->addIndexColumn()
+                ->addColumn('action-btn', function($row) {
+                    return $row->id;
+                })
+                ->rawColumns(['action-btn'])
+                ->make(true);
+        }
+        return view('admin.post_comment.index');
     }
 
     /**

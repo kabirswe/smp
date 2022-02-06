@@ -11,11 +11,11 @@
     <section class="main-content">
         <div class="title-section d-flex justify-content-between align-items-center">
             <div class="text-block">
-                <h1 class="title">Rating</h1>
+                <h1 class="title">Rating List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Order</a></li>
+                        <li class="breadcrumb-item"><a href="#">Rating</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -92,13 +92,10 @@
                 },
                 columns: [
                     { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: true },
-                    { data: 'product_name', name: 'product_name', orderable: true },
                     { data: 'product_id', name: 'product_id', orderable: true },
-                    { data: 'quantity', name: 'quantity', orderable: true },
                     { data: 'name', name: 'name', orderable: true },
                     { data: 'email', name: 'email', orderable: true },
-                    { data: 'phone', name: 'phone', orderable: true },
-                    { data: 'comment', name: 'comment', orderable: true },
+                    { data: 'text_box', name: 'text_box', orderable: true },
                     {
                         data: 'action-btn',
                         orderable: false,

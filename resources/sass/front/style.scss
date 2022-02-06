@@ -56,6 +56,12 @@ img {
         margin-left: 21px;
     }
 }
+.form-control:focus {
+    box-shadow: none;
+}
+.btn:focus {
+    box-shadow: none;
+}
 .product-card {
     display: flex;
     justify-content: flex-start;

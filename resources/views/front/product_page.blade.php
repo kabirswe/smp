@@ -63,10 +63,9 @@
                                     <p>{{ $item->name }}</p>
                                 </a>
                                 <div class="order-btn">
-                                    <a href="{{ route('product.details', $item->slug) }}" class="btn common-btn">Order</a>
+                                    <a href="{{ route('product.details', $item->slug) }}?order=true" class="btn common-btn">Order</a>
                                 </div>
                             </div>
-
                         </div>
                         @endforeach
                         @if (count($products) < 1)

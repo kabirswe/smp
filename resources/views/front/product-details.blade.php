@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="product-gallery-btn">
                                     <!-- <a href="#" class="btn">Order<i class="ti ti-arrow-right"></i></a> -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order</button>
+                                    <button type="button" class="btn common-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Order</button>
 
                                 </div>
                             </div>
@@ -97,30 +97,15 @@
                                                 <a href="{{ route('product.details', $item->slug) }}">
                                                     <p>{{ $item->name }}</p>
                                                 </a>
+                                                <div class="order-btn">
+                                                <a href="{{ route('product.details', $item->slug) }}?order=true" class="btn common-btn">Order</a>
+                                            </div>
                                             </div>
                                         </div>
                                         @endforeach
                                         @if (count($related_products) < 1)
                                             <h2>No Product Found!</h2>
                                         @endif
-                                        <!-- <div class="single-item">
-                                            <div class="product-image">
-                                                <img class="product-img" src="{{ asset('images/front/fe64.png') }}" alt="product image">
-                                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                                            </div>
-                                            <div class="product-descriptions">
-                                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
-                                            </div>
-                                        </div>
-                                        <div class="single-item">
-                                            <div class="product-image">
-                                                <img class="product-img" src="{{ asset('images/front/fe65.png') }}" alt="product image">
-                                                <img class="product-img-hover" src="{{ asset('images/front/hover-image.png') }}" alt="product hover image">
-                                            </div>
-                                            <div class="product-descriptions">
-                                                <p>Kids 4 In 1 Immune Quercetin Gummy + Vitamin C, D, & Zinc – Natural Raspberry Flavor – Gluten Free – Non-GMO – Vegetarian Friendly</p>
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -221,45 +206,48 @@
     </div>
 </main>
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog  modal-lg">
         <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-            <div class="mb-3">
-                <label for="product-name" class="col-form-label">Product Name</label>
-                <input type="text" class="form-control" value="{{$product->name}}" name="product_name" id="product-name">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Order Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-                <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">
-            <div class="mb-3">
-                <label for="quantity" class="col-form-label">Quantity</label>
-                <input type="text" class="form-control" placeholder="quantity" name="quantity" id="quantity">
+            <div class="modal-body">
+                <form action="{{ route('order.store') }}" method="POST">
+                    @csrf
+                    <div class="row">
+                        <div class="mb-3 col-md-9">
+                            <label for="product-name" class="col-form-label">Product Name*</label>
+                            <input type="text" class="form-control" value="{{$product->name}}" name="product_name" id="product-name" required>
+                        </div>
+                            <input type="hidden" class="form-control" value="{{$product->id}}" name="product_id" id="product_id">
+                        <div class="mb-3 col-md-3">
+                            <label for="quantity" class="col-form-label">Quantity*</label>
+                            <input type="text" class="form-control" placeholder="quantity" name="quantity" id="quantity" required>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="name" class="col-form-label">Name*</label>
+                            <input type="text" class="form-control" placeholder="name" name="name" id="name" required>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="email" class="col-form-label">Email*</label>
+                            <input type="email" class="form-control" placeholder="email" name="email" id="email" required>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="phone" class="col-form-label">Phone*</label>
+                            <input type="text" class="form-control" placeholder="phone" name="phone" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="col-form-label">Comment:</label>
+                            <textarea class="form-control" placeholder="comment" name="comment" id="Comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="cancel" class="btn common-btn" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn common-btn">Order Confirm</button>
+                    </div>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="name" class="col-form-label">Name</label>
-                <input type="text" class="form-control" placeholder="name" name="name" id="name">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="col-form-label">Email</label>
-                <input type="email" class="form-control" placeholder="email" name="email" id="email">
-            </div>
-            <div class="mb-3">
-                <label for="phone" class="col-form-label">Phone</label>
-                <input type="text" class="form-control" placeholder="phone" name="phone" id="phone">
-            </div>
-            <div class="mb-3">
-                <label for="comment" class="col-form-label">Comment:</label>
-                <textarea class="form-control" placeholder="comment" name="comment" id="Comment"></textarea>
-            </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary">Order Confirm</button>
-        </div>
         </div>
     </div>
 </div>
