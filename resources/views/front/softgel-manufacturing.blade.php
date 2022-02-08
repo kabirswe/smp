@@ -35,22 +35,22 @@
             <div class="labels-block-wrapper">
                 <div class="labels-block">
                     <div class="item">
-                        <i class="ti ti-layout-media-left-alt"></i>
+                        <i class="fas fa-chart-line"></i>
                         <h2>Preparation of Fill Materials</h2>
                         <p>Preparing the oil and ingredients to go into the softgel. This involves the use of processing tanks, sieves and mills, and vacuum homogenizers, among other things.</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-shopping-cart"></i>
+                        <i class="fas fa-treasure-chest"></i>
                         <h2>Encapsulation</h2>
                         <p>To make a softgel, place the ingredients and oil in a thin layer of gelatin and wrap the fill material over it.</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-package"></i>
+                        <i class="far fa-dryer-alt"></i>
                         <h2>Drying</h2>
                         <p>Releasing extra moisture from the shell and letting it shrink, resulting in a firmer and more lasting softgel.</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-agenda"></i>
+                        <i class="far fa-digging"></i>
                         <h2>Cleaning, Examining, and Sorting</h2>
                         <p>By rigorously evaluating the final product, we verify that all softgels are clear of moisture issues and errors.</p>
                     </div>
@@ -220,43 +220,21 @@
                         <div class="slider">
                             <!-- Swiper -->
                             <div class="swiper preManufacturedSwiper">
-                            <div class="swiper-wrapper">
-                                @foreach($pre_manufactured_swiper as $item)
-                                @foreach($item['images'] as $image)
-                                @if($image->is_cover_image)
-                                <div class="swiper-slide"><img src="{{ asset($image->image_sm) }}" alt="{{ $item->name }}"></div>
-                                @endif
-                                @endforeach
-                                @endforeach
+                                <div class="swiper-wrapper">
+                                    @foreach($pre_manufactured_swiper as $item)
+                                    @foreach($item['images'] as $image)
+                                    @if($image->is_cover_image)
+                                    <div class="swiper-slide"><img src="{{ asset($image->image_sm) }}" alt="{{ $item->name }}"></div>
+                                    @endif
+                                    @endforeach
+                                    @endforeach
+                                </div>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                        <!-- <div class="slider">
-                            Swiper
-                            <div class="swiper preManufacturedSwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2022/01/Kids-4-in-1-Quercetin-Gummies-1-300x300.png') }}" alt=""></div>
-                                <div class="swiper-slide"><img src="{{ asset('wp-content/uploads/2021/12/Multicollagen-Turmeric-Capsules-100948-1-300x300.png') }}" alt=""></div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
-                            </div>
-                        </div>                         -->
-                    </div>
                 </div>
             </div>
         </div>

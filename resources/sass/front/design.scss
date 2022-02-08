@@ -2,15 +2,6 @@
 @import "./mixins.scss";
 .design-container {
     .design {
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        h1 {
-            text-align: center;
-            font-size: 40px;
-            line-height: 48px;
-            font-weight: 700;
-        }
+        margin: 100px 0;
     }
 }

@@ -27,8 +27,6 @@
                 <div class="labels-block">
                     <div class="item">                        
                         <h2>Supplement Manufacturer</h2>
-                        <!-- <h3>The Manufacturing Facility</h3>
-                        <h4>We will manufacture your supplements in a combined total of 277,000 sqft GMP Registered and FDA-registered facility.</h4> -->
                         <p>Our facilities, which use the most up-to-date technologies for nutraceutical manufacture, can handle even the largest orders fast and efficiently. Our premises contain industrial licensing HVAC systems to keep the air purified, clean, and controlled in terms of temperature and moisture. We also have three laboratories dedicated to cGMP-compliant raw material testing, label analysis, and final product quality assurance. Our customer relationships and services are also something that sets us apart. Our long-term success is determined by your long-term success.</p>
                     </div>                    
                 </div>
@@ -85,22 +83,22 @@
                 </div>
                 <div class="labels-block">
                     <div class="item">
-                        <i class="ti ti-layout-media-left-alt"></i>
+                        <i class="far fa-analytics"></i>
                         <h2>Manufacturing Minimums</h2>
                         <p>The minimum order quantity (MOQ) for our stock products is 1500-2000 bottles. MOQs range from 2500-5000 bottles for custom manufacture.</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-shopping-cart"></i>
+                        <i class="fal fa-business-time"></i>
                         <h2>Experience</h2>
                         <p>Our workers have a combined expertise of more than a century in the dietary supplement industry.Softgels and gummies are commonly used types of supplementation. </p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-package"></i>
+                        <i class="far fa-paper-plane"></i>
                         <h2>Fully integrated Service </h2>
                         <p>We are unlike most other manufacturers in that we can complete all of the duties required to manufacture your product. Manufacturing, compliance, graphic design, and fulfillment are just a few examples.</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-agenda"></i>
+                        <i class="far fa-cogs"></i>
                         <h2>Testing</h2>
                         <p>GMP, gluten-free, identity, potency, microbials, heavy metals, and other allergy testing services are available via third parties.</p>
                     </div>

@@ -35,22 +35,22 @@
             <div class="labels-block-wrapper">
                 <div class="labels-block">
                     <div class="item">
-                        <i class="ti ti-layout-media-left-alt"></i>
+                        <i class="fad fa-flask"></i>
                         <h2>Mixing & Cooking</h2>
                         <p>To make a mixture, ingredients are collected and blended together. After mixing the ingredients, the liquid is heated until it thickens into a "slurry."</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-shopping-cart"></i>
+                        <i class="fal fa-hand-holding-medical"></i>
                         <h2>Molding</h2>
                         <p>The molds are prepped to be non-sticky before the liquid is poured. The liquid is poured into the mold to form the desired shape.</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-package"></i>
+                        <i class="far fa-temperature-low"></i>
                         <h2>Cooling & Unmolding</h2>
                         <p>After pouring the gummy vitamins into the mold, chill it to 65 degrees and leave it to form and cool for 26 hours. After that, the gummies are removed and dried in a huge drum tumbler.</p>
                     </div>
                     <div class="item">
-                        <i class="ti ti-agenda"></i>
+                        <i class="fad fa-luggage-cart"></i>
                         <h2>Filling Bottles/Bags</h2>
                         <p>Once we've made all of your vitamin gummies, we place them in the bottle or bag of your preference. We provide a variety of packaging options for your gummy vitamins.</p>
                     </div>

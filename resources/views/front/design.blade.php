@@ -8,7 +8,7 @@
 <main class="design-container">
     <div class="container">
         <div class="design">
-            <h1>“Graphics & Media Design; we can design your level & packaging”</h1>
+            <img src="{{ asset('images/front/home/300.jpg') }}" alt="">
         </div>
     </div>
 </main>

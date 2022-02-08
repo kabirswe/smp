@@ -29,6 +29,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/front/themify-icons.css') }}" />
+   <!-- fontwesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <link href="{{ asset('css/front/style.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/front/navbar.css') }}" rel="stylesheet" />

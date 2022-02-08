@@ -41,7 +41,8 @@
             background-color: $white;
             display: flex;
             .item {
-                padding: 100px 60px;
+                padding: 100px 40px;
+                width: 25%;
                 border-right: 1px solid #ededed;
                 &:hover {
                     background-color: #fc1b15;
@@ -605,6 +606,7 @@
             z-index: 10;
             .top-block {
                 display: flex;
+                align-items: center;
                 .content-block {
                     width: 50%;
                     padding-right: 20px;
@@ -632,6 +634,7 @@
                     position: relative;
                     .slider {
                         width: 100%;
+                        position: relative;
                         .swiper {
                             width: 100%;
                             height: 125px;
@@ -646,9 +649,18 @@
                                 }
                             }
                         }
+                        .swiper-button-next {
+                            right: -35px;
+                        }
+                        .swiper-button-prev {
+                            left: -35px;
+                        }
+                        .swiper-pagination {
+                            bottom: -35px;
+                        }
                     }
                     a {
-                        margin-top: 40px;
+                        margin-top: 60px;
                         width: 400px;
                     }
                 }
@@ -792,6 +804,7 @@
                     padding: 40px 30px;
                     border-right: none;
                     text-align: center;
+                    width: 100%;
                     h2 {
                         margin-top: 20px;
                         font-size: 16px;

@@ -79,7 +79,8 @@
             .labels-block {
                 display: flex;
                 .item {
-                    padding: 100px 60px;
+                    padding: 100px 40px;
+                    width: 25%;
                     border-right: 1px solid #ededed;
                     &:hover {
                         background-color: #fc1b15;
@@ -967,6 +968,7 @@
                     }
                     a {
                         max-width: 100%;
+                        margin: 0 auto;
                     }
                 }
                 .image-block {

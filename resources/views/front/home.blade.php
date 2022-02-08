@@ -26,23 +26,23 @@
         <div class="container">
             <div class="labels-block">
                 <div class="item">
-                    <i class="ti ti-layout-media-left-alt"></i>
+                    <i class="fas fa-industry-alt"></i>
                     <h2>Custom Manufacturing</h2>
                     <p>Looking for a manufacturer because custom manufacturing is intense for you? Well, we are here to take care of everything for you from formulation to encapsulation. Our team of experienced professionals work around the clock to make sure the highest quality is achieved.</p>
                 </div>
                 <div class="item">
-                    <i class="ti ti-shopping-cart"></i>
+                    <i class="far fa-cart-plus"></i>
                     <h2>Private Label Products</h2>
                     <p>Manufacturing custom vitamins can be a work-intense job. From formulation to sourcing to encapsulation; we can take care of everything for you at the highest quality achievable.</p>
                 </div>
                 <div class="item">
-                    <i class="ti ti-package"></i>
+                    <i class="far fa-box-full"></i>
                     <h2>Stunning Packaging</h2>
                     <p>Packaging plays an important role in the entire supply chain – from the product to the consumer.At Gummy Specialist, we are well known for our premium-quality packaging. Our product packaging whether it be bottles, labels, lids, boxes, etc. are also designed with the customer in mind, using unique designs to give the customer that little extra to draw them into purchasing a Gummy Specialists product.</p>
                 </div>
                 <div class="item">
-                    <i class="ti ti-agenda"></i>
-                    <h2>Order Fulfillment & Customer Servic</h2>
+                    <i class="far fa-calendar-check"></i>
+                    <h2>Order Fulfillment & Customer Service</h2>
                     <p>Our team of experienced professionals ensures a smooth operation for your product so you can have time to grow your business. The Gummy Specialist team is always available to provide the best in customer support. We strive to fulfill the needs of every customer. Please email us directly.</p>
                 </div>
             </div>
@@ -271,23 +271,23 @@
                         <div class="slider">
                             <!-- Swiper -->
                             <div class="swiper preManufacturedSwiper">
-                            <div class="swiper-wrapper">
-                                @foreach($pre_manufactured_swiper as $item)
-                                @foreach($item['images'] as $image)
-                                @if($image->is_cover_image)
-                                <div class="swiper-slide"><img src="{{ asset($image->image_sm) }}" alt="{{ $item->name }}"></div>
-                                @endif
-                                @endforeach
-                                @endforeach
+                                <div class="swiper-wrapper">
+                                    @foreach($pre_manufactured_swiper as $item)
+                                    @foreach($item['images'] as $image)
+                                    @if($image->is_cover_image)
+                                    <div class="swiper-slide"><img src="{{ asset($image->image_sm) }}" alt="{{ $item->name }}"></div>
+                                    @endif
+                                    @endforeach
+                                    @endforeach
+                                </div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
-                            </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                                </div>
+                            <a href="{{ route('product.list') }}" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
                         </div>
-                        <a href="{{ route('product.list') }}" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
                     </div>
-                </div>
                 <div class="product-block">
                     <h2>Our New Private Label Stock Products</h2>
                     <p>We're constantly adding new products, so stay up to speed on our most recent releases to obtain them before the others!</p>

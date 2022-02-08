@@ -39,16 +39,16 @@
                             <a href="{{ route('blog') }}">Blog</a>
                             <a href="#">Terms &amp; Conditions</a>
                             <!-- <a href="{{ route('awards_certifications') }}">Awards &amp; Certifications</a> -->
-                            <a href="#">Gummy Specialists Workflow</a>
-                            <a href="#">Careers</a>
+                            <a class="disabled">Gummy Specialists Workflow</a>
+                            <a class="disabled">Careers</a>
                         </div>
                         <div class="item">
                             <h3>Contact Us</h3>
-                            <a href="{{ route('faq') }}">Frequently Asked Questions</a>
                             <a href="{{ route('contact') }}">Contact Us</a>
-                            <a href="{{ route('who_to_contact') }}">Order Process &amp; Who To Contact</a>
+                            <a href="{{ route('faq') }}">FAQ</a>
                             <a href="{{ route('request_quote') }}">Request A Quote</a>
-                            <a href="{{ route('faq') }}">Supplier/Vendor Inquiry</a>
+                            <!-- <a href="{{ route('who_to_contact') }}">Order Process &amp; Who To Contact</a> -->
+                            <!-- <a href="{{ route('faq') }}">Supplier/Vendor Inquiry</a> -->
                         </div>
                     </div>
                     <div class="block">
@@ -64,8 +64,8 @@
                         </div>
                         <div class="item">
                             <h3>Additional Services</h3>
-                            <a href="#">Storage & Order Fulfillment</a>
-                            <a href="#">Label & Media Design</a>
+                            <a href="{{ route('fulfillment') }}">Fulfillment</a>
+                            <a href="{{ route('design') }}">Design</a>
                         </div>
                     </div>
                     <div class="block">
@@ -108,8 +108,8 @@
                         </div>
                         <div class="item">
                             <h3>In-Stock Inventory</h3>
-                            <a href="{{ route('faq') }}">Stock Products</a>
-                            <a href="#">Packaging</a>
+                            <a href="{{ route('product.list') }}">Stock Products</a>
+                            <a href="{{ route('design') }}">Design</a>
                         </div>
                     </div>
                 </div>

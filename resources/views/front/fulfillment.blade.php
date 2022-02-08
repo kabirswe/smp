@@ -44,7 +44,7 @@
                 </div>
                 <div class="single-item">
                     <h1>ENVIRONMENT WITH TEMPERATURE CONTROL</h1>
-                    <p>We can safely store any sort of private label supplement in our temperature-controlled warehouse, assuring the best possible care for your supplements. It is not only temperature controlled, but it is also hygienic and meets or surpasses all laws, making it an ideal facility for vitamin and supplement fulfillmen</p>
+                    <p>We can safely store any sort of private label supplement in our temperature-controlled warehouse, assuring the best possible care for your supplements. It is not only temperature controlled, but it is also hygienic and meets or surpasses all laws, making it an ideal facility for vitamin and supplement fulfillment.</p>
                 </div>
                 <!-- <div class="single-item">
                     <h1>ADVANCED 3PL SOFTWARE</h1>

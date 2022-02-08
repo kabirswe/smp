@@ -137,7 +137,7 @@
                              <label for="yes3">No</label>                        
                         </div>
                         <div class="form-group col-md-12">
-                             <label class="label-margin">Storage/Fulfillment gummy Specialists has FDA registered, climate control warehouses specifically made for vitamins & supplements. We have capabilities to store your bulk product safely.  We also offer product fulfillment to take care of shipping out orders from your customers every day, as they come into your e-commerce shopping cart, Amazon FBM, etc.</label><br>
+                             <label class="label-margin">Storage/Fulfillment <br>Gummy Specialists has FDA registered, climate control warehouses specifically made for vitamins & supplements. We have capabilities to store your bulk product safely.  We also offer product fulfillment to take care of shipping out orders from your customers every day, as they come into your e-commerce shopping cart, Amazon FBM, etc.</label><br>
                              <input type="radio" id="ps" name="storage_fulfillment" value="Product Storage">
                              <label for="ps">Product Storage</label><br>
                              <input type="radio" id="pof" name="storage_fulfillment" value="Product Storage + Product Order Fulfillment">
