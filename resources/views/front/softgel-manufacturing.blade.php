@@ -57,7 +57,7 @@
                 </div>
                 <div class="labels-block-image">
                     <div class="block-image-left">
-                        <img src="{{ asset('images/front/FDA-Registered-01.png') }}" alt="">
+                        <img src="{{ asset('images/front/home/FDA-Registered-01.png') }}" alt="">
                         <div class="block-image-content">
                             <p>
                                 <a>See Our FDA Registration Here</a>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

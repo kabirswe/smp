@@ -170,12 +170,14 @@
             justify-content: space-between;
             .content-block {
                 width: 50%;
+                padding-right: 20px;
                 p {
                     font-weight: 400;
                     font-style: normal;
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 30px;
+                    text-align: justify;
                 }
                 h2 {
                     line-height: 50px;
@@ -225,6 +227,7 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
+                    text-align: justify;
                 }
             }
             .image-block {
@@ -294,6 +297,7 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
+                    text-align: justify;
                 }
             }
             .image-block {
@@ -352,6 +356,7 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
+                    text-align: justify;
                 }
             }
             .image-block {
@@ -424,6 +429,7 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
+                    text-align: justify;
                 }
             }
             .image-block {
@@ -501,6 +507,7 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
+                    text-align: justify;
                 }
             }
             .image-block {
@@ -559,6 +566,7 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
+                    text-align: justify;
                 }
             }
             .image-block {
@@ -609,6 +617,7 @@
                     color: #4b4b4b;
                     font-size: 16px;
                     margin-bottom: 20px;
+                    text-align: justify;
                 }
                 a {
                     margin-top: 40px;
@@ -624,8 +633,6 @@
                     box-shadow 0.3s;
                 padding: 80px 40px 80px 40px;
                 background-color: #ffffff;
-                .images-right {
-                }
             }
         }
     }
@@ -675,6 +682,7 @@
                         color: #4b4b4b;
                         font-size: 16px;
                         margin-bottom: 20px;
+                        text-align: justify;
                     }
                 }
                 &:hover {

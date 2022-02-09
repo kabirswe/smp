@@ -40,7 +40,7 @@
                         <p>To make a mixture, ingredients are collected and blended together. After mixing the ingredients, the liquid is heated until it thickens into a "slurry."</p>
                     </div>
                     <div class="item">
-                        <i class="fal fa-hand-holding-medical"></i>
+                        <i class="fal fa-hand-holding-magic"></i>
                         <h2>Molding</h2>
                         <p>The molds are prepped to be non-sticky before the liquid is poured. The liquid is poured into the mold to form the desired shape.</p>
                     </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="labels-block-image">
                     <div class="block-image-left">
-                        <img src="{{ asset('images/front/FDA-Registered-01.png') }}" alt="">
+                        <img src="{{ asset('images/front/home/FDA-Registered-01.png') }}" alt="">
                         <div class="block-image-content">
                             <p>
                                 <a>See Our FDA Registration Here</a>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&rel=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

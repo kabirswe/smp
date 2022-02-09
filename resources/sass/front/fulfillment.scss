@@ -45,7 +45,8 @@
             .fulfillment-media-content {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
+                margin-top: 40px;
                 .fulfillment-media {
                     width: calc(50% - 10px);
                 }

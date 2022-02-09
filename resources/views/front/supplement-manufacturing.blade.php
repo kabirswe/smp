@@ -13,7 +13,7 @@
             <source src="{{ asset('images/front/home/videoplayback.mp4') }}" type="video/mp4">
             Your browser does not support HTML5 video.
         </video> -->
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FYTzoVkQdyk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FYTzoVkQdyk?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container ">
             <div class="video-content">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="labels-block-image">
                     <div class="block-image-left">
-                        <img src="{{ asset('images/front/FDA-Registered-01.png') }}" alt="">
+                        <img src="{{ asset('images/front/home/FDA-Registered-01.png') }}" alt="">
                         <div class="block-image-content">
                             <p>
                                 <a>See Our FDA Registration Here</a>
@@ -261,7 +261,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="{{ route('product.type', 'gummy') }}" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
                     <a href="{{ route('gummy_vitamin_manufacturing') }}" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -284,7 +284,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="{{ route('product.type', 'softgel') }}" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
                     <a href="{{ route('softgel_manufacturing') }}" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
