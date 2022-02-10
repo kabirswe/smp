@@ -315,14 +315,19 @@
     .nav-mobile-close {
         display: block !important;
         position: absolute;
-        left: 50px;
-        top: 30px;
-        font-size: 30px;
+        right: 20px;
+        top: 10px;
+        font-size: 22px;
         padding: 4px;
         z-index: 999;
+        color: #fff;
     }
     .main-navbar .navbar-block .nav-dropdown .dropdown-content {
         left: 50%;
         margin-left: -125px;
+    }
+    .main-navbar .navbar-block .nav-dropdown .dropbtn::after,
+    .main-navbar .navbar-block a::after {
+        background-color: transparent;
     }
 }
