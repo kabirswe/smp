@@ -25,10 +25,10 @@
         <div class="container">
             <div class="labels-block-wrapper">
                 <div class="labels-block">
-                    <div class="item">                        
+                    <div class="item">
                         <h2>Supplement Manufacturer</h2>
                         <p>Our facilities, which use the most up-to-date technologies for nutraceutical manufacture, can handle even the largest orders fast and efficiently. Our premises contain industrial licensing HVAC systems to keep the air purified, clean, and controlled in terms of temperature and moisture. We also have three laboratories dedicated to cGMP-compliant raw material testing, label analysis, and final product quality assurance. Our customer relationships and services are also something that sets us apart. Our long-term success is determined by your long-term success.</p>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="labels-block-image">
                     <div class="block-image-left">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="labels-block-images">
-                    <div class="block-image-left">                       
+                    <div class="block-image-left">
                         <div class="block-image-content">
                             <h3>Modern material handling equipment</h3>
                             <h3>Global product warehousing</h3>
@@ -61,7 +61,7 @@
                             <h3>Film and sugar coating equipment</h3>
                         </div>
                     </div>
-                    <div class="block-image-right">                        
+                    <div class="block-image-right">
                         <div class="block-image-content">
                             <h3>High-Speed encapsulation machines</h3>
                             <h3>Finishing label applicator and packaging equipment</h3>
@@ -102,9 +102,9 @@
                         <h2>Testing</h2>
                         <p>GMP, gluten-free, identity, potency, microbials, heavy metals, and other allergy testing services are available via third parties.</p>
                     </div>
-                </div>               
+                </div>
             </div>
-        </div>        
+        </div>
     </div>
     <div class="capabilities-wrapper">
         <div class="container">
@@ -118,34 +118,34 @@
                     <div class="video">
                         <div class="iteam">
                             <h4>Tablet Compression</h4>
-                            <h1>47Mil>32Mil</h1>
+                            <h1>32Mil</h1>
                             <p>million tablets per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Capsules</h4>
-                            <h1>32Mil>50Mil</h1>
+                            <h1>50Mil</h1>
                             <p>encapsulations per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Powder Blending</h4>
-                            <h1>180Mil>150Mil</h1>
+                            <h1>150Mil</h1>
                             <p>kilos per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Gummy Vitamins</h4>
-                            <h1>12Mil>20Mil</h1>
+                            <h1>20Mil</h1>
                             <p>gummies per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Gummy Vitamins</h4>
-                            <h1>470Mil>300Mil</h1>
+                            <h1>300Mil</h1>
                             <p>gummies per day</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
     <div class="encapsulation-process-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -168,7 +168,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <div class="in-house-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -191,7 +191,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="unrivaled-client-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -208,7 +208,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <div class="clean-label-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -231,7 +231,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="request-quote">
         <div class="container">
             <div class="row">
@@ -268,7 +268,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="softgel-manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -291,7 +291,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <div class="stock-wrapper">
         <div class="container">
             <div class="stock-now">
@@ -313,10 +313,10 @@
                 <div class="top-block">
                     <div class="content-block">
                         <h2>Pre-Manufactured In-Stock Private Label Formulas Available</h2>
-                        <p>We have many in-stock already manufactured supplement products in our warehouse, ready for you label to be put on. We have real-time catalog on our website updated everyday! Check to see our inventory of private label supplements. We also offer samples of every stock supplement for you to try before investing the product into your brand.</p>                       
+                        <p>We have many in-stock already manufactured supplement products in our warehouse, ready for you label to be put on. We have real-time catalog on our website updated everyday! Check to see our inventory of private label supplements. We also offer samples of every stock supplement for you to try before investing the product into your brand.</p>
                     </div>
                     <div class="slider-block">
-                        <a href="{{ route('product.list') }}" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>                        
+                        <a href="{{ route('product.list') }}" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
