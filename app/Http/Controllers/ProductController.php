@@ -33,10 +33,10 @@ class ProductController extends Controller
         $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=660x520.' . $extension;
         // Instantiate SimpleImage class
         $image = Image::make($main_image)->encode($extension);
-        $image_md = Image::make($main_image)->resize(800, 800, function ($aspect) {
+        $image_md = Image::make($main_image)->resize(2400, 2400, function ($aspect) {
             $aspect->aspectRatio();
         })->encode($extension);
-        $image_sm = Image::make($main_image)->resize(660, 520, function ($aspect) {
+        $image_sm = Image::make($main_image)->resize(1980, 1560, function ($aspect) {
             $aspect->aspectRatio();
         })->encode($extension);
         // Size:large
