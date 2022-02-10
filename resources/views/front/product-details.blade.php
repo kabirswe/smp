@@ -46,7 +46,8 @@
                             </div>
                             <div class="product-text">
                                 <div class="product-title">
-                                    <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2>
+                                    <!-- <h2>3 In 1 Gummy – Vitamin C 250mg – Zinc 10mg – Echinacea Purpurea Extract Polyphenols 100mg – Natural Orange Flavor & Color – Non-GMO – Gluten & Gelatin-Free – Vegan</h2> -->
+                                    <h2>{{$product->name}}</h2>
                                     <p class="availability">(Product Availability May Vary)</p>
                                 </div>
                                 <table width="189">

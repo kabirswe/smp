@@ -29,11 +29,11 @@ class PostController extends Controller
         $extension = $main_image->getClientOriginalExtension();
         $location = "/upload/$location_main/";
         $ImgName = date('Ymdhis') . rand(10000, 99999) . '.' . $extension;
-        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md342x325.' . $extension;
+        $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md680x650.' . $extension;
         $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=116x132.' . $extension;
         // Instantiate SimpleImage class
         $image = Image::make($main_image)->encode($extension);
-        $image_md = Image::make($main_image)->resize(342, 325, function ($aspect) {
+        $image_md = Image::make($main_image)->resize(680, 650, function ($aspect) {
             $aspect->aspectRatio();
         })->encode($extension);
         $image_sm = Image::make($main_image)->resize(116, 132, function ($aspect) {
@@ -114,8 +114,8 @@ class PostController extends Controller
             ;
 
             $data['cover_image'] = $filename['image'];
-            $data['cover_image_sm'] = $filename['image_md'];
-            $data['cover_image_md'] = $filename['image_sm'];
+            $data['cover_image_sm'] = $filename['image_sm'];
+            $data['cover_image_md'] = $filename['image_md'];
 
         }
         $postData = Post::create($data);
