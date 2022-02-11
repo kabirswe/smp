@@ -14,8 +14,7 @@
                 <h1 class="title">Post Category List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Post Category</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -48,7 +47,7 @@
         </div>
     </section>
 </main>
-@endsection    
+@endsection
 
 @push('custom-scripts')
     <!-- Scripts -->

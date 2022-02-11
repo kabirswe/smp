@@ -13,8 +13,8 @@
                 <h1 class="title">New Product Create</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Product</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('product.create') }}">Product</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -99,7 +99,7 @@
                         @endif
                     </div>
                     <div class="col-11">
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary mt-4">Save</button>
                     </div>
                 </div>
                 <div class="col-md-3">

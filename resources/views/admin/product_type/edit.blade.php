@@ -6,14 +6,14 @@
 
 @section('content')
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-block dashboard">
-    <section class="main-content"> 
+    <section class="main-content">
         <div class="title-section d-flex justify-content-between align-items-center">
             <div class="text-block">
                 <h1 class="title">Product Type Update</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Product Type</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('product_type.index') }}">Product Type</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -40,7 +40,7 @@
                             {{ $errors->first('name') }}
                         </div>
                     @endif
-                </div>                                
+                </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Update</button>
                 </div>

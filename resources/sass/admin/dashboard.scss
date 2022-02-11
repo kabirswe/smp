@@ -2,6 +2,7 @@
 @import "./variables.scss";
 
 .dashboard {
+    margin-top: 20px;
     .title-section {
         display: flex;
         border-bottom: 1px solid #e3ebf6;
@@ -15,6 +16,9 @@
                 margin: 0;
                 font-size: 24px;
                 margin-top: 10px;
+            }
+            a {
+                color: #6c757d;
             }
         }
         .btn-block {
@@ -192,6 +196,15 @@
                 margin-bottom: 0;
             }
         }
+        button[type="submit"] {
+            width: 200px;
+            background-color: #2cb11a;
+            border-color: #2cb11a;
+            margin-bottom: 60px;
+            &:hover {
+                opacity: .9;
+            }
+        }
     }
 }
 .form-block {
@@ -211,7 +224,7 @@
     }
 }
 .dashboard-section {
-    background-color: #edf2f9;
+    // background-color: #edf2f9;
     padding: 30px;
     .single-item-inner {
         display: flex;

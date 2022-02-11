@@ -6,11 +6,16 @@ use App\Models\PostComment;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-// use Illuminate\Support\Facades\Auth;
-// use DataTables;
+use DataTables;
 
 class PostCommentController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:post-comment', ['only' => ['index', 'store', 'destroy']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -32,16 +37,6 @@ class PostCommentController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -49,9 +44,9 @@ class PostCommentController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $data = $request->all();
-        
+
         $validation = Validator::make($data, [
             'post_id' => 'required',
             'name' => 'required|max:50',
@@ -71,44 +66,10 @@ class PostCommentController extends Controller
             ]);
         }
         $postcommentData = PostComment::create($data);
-        $post = Post::where('id', $request->post_id)->first('slug');        
+        $post = Post::where('id', $request->post_id)->first('slug');
         return redirect()->route('blog.details', $post->slug)->with([
             'success' => trans('Comment send successfully')
         ]);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\PostComment  $postComment
-     * @return \Illuminate\Http\Response
-     */
-    public function show(PostComment $postComment)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\PostComment  $postComment
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Request $request)
-    {
-        
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\PostComment  $postComment
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request)
-    {
-        
     }
 
 
@@ -120,6 +81,6 @@ class PostCommentController extends Controller
      */
     public function destroy(Request $request)
     {
-       
+
     }
 }

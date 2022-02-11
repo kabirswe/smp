@@ -1,13 +1,10 @@
 <x-jet-action-section>
-    <x-slot name="title">
-        {{ __('Browser Sessions') }}
-    </x-slot>
-
-    <x-slot name="description">
-        {{ __('Manage and log out your active sessions on other browsers and devices.') }}
-    </x-slot>
-
     <x-slot name="content">
+        <div class="col-span-6 sm:col-span-4">
+            <h2 class="text-2xl">Browser Sessions</h2>
+            <p class="text-sm">Manage and log out your active sessions on other browsers and devices.</p>
+            <br />
+        </div>
         <div class="max-w-xl text-sm text-gray-600">
             {{ __('If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.') }}
         </div>

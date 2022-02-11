@@ -16,11 +16,6 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('passport_number')->nullable();
-            $table->string('national_id')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('image', 255)->nullable();
-            $table->text('address')->nullable();
             // $table->timestamp('last_login')->nullable();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();

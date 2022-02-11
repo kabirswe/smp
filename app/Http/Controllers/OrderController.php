@@ -6,7 +6,7 @@ use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use DataTables;
+use DataTables, Exception;
 class OrderController extends Controller
 
 {
@@ -50,7 +50,7 @@ class OrderController extends Controller
     {
         // dd($request->all());
         $data = $request->all();
-        $validation = Validator::make($data, [  
+        $validation = Validator::make($data, [
             'quantity' => 'required|max:10',
             'name' => 'required|max:50',
             'email' => 'required|max:50',
@@ -69,10 +69,10 @@ class OrderController extends Controller
             ]);
         }
         $orderData = Order::create($data);
-        $product = Product::where('id', $request->product_id)->first('slug');        
+        $product = Product::where('id', $request->product_id)->first('slug');
         return redirect()->route('product.details', $product->slug)->with([
             'success' => trans('Order Confirm successfully')
-        ]);        
+        ]);
     }
 
     /**

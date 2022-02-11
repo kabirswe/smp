@@ -10,9 +10,14 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\ImageManagerStatic as Image;
 use DataTables;
+use Exception;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:post', ['only' => ['index', 'create', 'store', 'edit', 'update', 'destroy']]);
+    }
 
     // image upload in S3
     protected function imageUpload($requestFile, $location_main)
@@ -107,29 +112,19 @@ class PostController extends Controller
          if($data['cover_image'] != "") {
             $filename = $this->imageUpload($data['cover_image'], 'post')
             ;
-            
+
             $data['cover_image'] = $filename['image'];
             $data['cover_image_sm'] = $filename['image_md'];
-            $data['cover_image_md'] = $filename['image_sm'];         
-           
+            $data['cover_image_md'] = $filename['image_sm'];
+
         }
-        $postData = Post::create($data);      
-        
+        $postData = Post::create($data);
+
         return redirect()->route('post.index')->with([
             'success' => trans('Post create successfully')
         ]);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Post $post)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -167,7 +162,7 @@ class PostController extends Controller
         $oldData = Post::find($id);
         $oldData['updated_by'] = $user->id;
 
-        $oldData->update($data);        
+        $oldData->update($data);
 
         return redirect()->route('post.index')->with([
             'success' => trans('Post updated successfully')
@@ -186,7 +181,7 @@ class PostController extends Controller
             try {
                 $data = Post::find($id);
                 $data->delete();
-                return response()->json(['success' => 'place deleted']);
+                return response()->json(['success' => 'post deleted']);
             } catch (Exception $e) {
                 return response()->json([
                     'status' => 500,

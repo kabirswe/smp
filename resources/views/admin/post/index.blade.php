@@ -14,8 +14,7 @@
                 <h1 class="title">Post List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Post</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -42,7 +41,7 @@
                         <th>post category id</th>
                         <th>cover image</th>
                         <th>cover image sm</th>
-                        <th>cover image md</th>                        
+                        <th>cover image md</th>
                         <th>description</th>
                         <th>Action</th>
                     </tr>
@@ -86,8 +85,8 @@
                 responsive: true,
                 serverSide: true,
                 fixedHeader: true,
-                "pageLength": 20,
-                "lengthMenu": [ 20, 50, 100, 500 ],
+                "pageLength": 50,
+                "lengthMenu": [ 50, 100, 500, 1000 ],
                 ajax: {
                     url: listUrl,
                     type: 'GET'
@@ -98,7 +97,7 @@
                     { data: 'post_category_id', name: 'post_category_id', orderable: true },
                     { data: 'cover_image', name: 'cover_image', orderable: true },
                     { data: 'cover_image_sm', name: 'cover_image_sm', orderable: true },
-                    { data: 'cover_image_md', name: 'cover_image_md', orderable: true },                   
+                    { data: 'cover_image_md', name: 'cover_image_md', orderable: true },
                     { data: 'description', name: 'description', orderable: true },
                     {
                         data: 'action-btn',

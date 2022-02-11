@@ -7,10 +7,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use DataTables;
+use Exception;
 
 
 class ProductCategoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:product-category', ['only' => ['index', 'create', 'store', 'edit', 'update', 'destroy']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -73,17 +78,6 @@ class ProductCategoryController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\ProductCategory  $productCategory
-     * @return \Illuminate\Http\Response
-     */
-    public function show(ProductCategory $productCategory)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\ProductCategory  $productCategory
@@ -138,7 +132,7 @@ class ProductCategoryController extends Controller
             try {
                 $data = ProductCategory::find($id);
                 $data->delete();
-                return response()->json(['success' => 'place deleted']);
+                return response()->json(['success' => 'category deleted']);
             } catch (Exception $e) {
                 return response()->json([
                     'status' => 500,

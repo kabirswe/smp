@@ -4,16 +4,16 @@
 <!-- Styles -->
 @endpush
 
-@section('content')    
+@section('content')
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-block dashboard">
-    <section class="main-content">  
+    <section class="main-content">
         <div class="title-section d-flex justify-content-between align-items-center">
             <div class="text-block">
                 <h1 class="title">New Post Create</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Post</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('post.index') }}">Post</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -38,7 +38,7 @@
                     @endif
                 </div>
                 <div class="col-md-8">
-                    {!! Form::label('post_category_id', 'Post Category ID', ['class' => 'form-label']) !!}       
+                    {!! Form::label('post_category_id', 'Post Category ID', ['class' => 'form-label']) !!}
                     <select name="post_category_id" id="post_category_id" class="form-select" onchange="userFormatState('post_category_id')" required>
                         <option selected disabled value="">Choose...</option>
                         @foreach($post_categories as $post_category)
@@ -81,8 +81,8 @@
                                 </div>
                             @endif
                         </div>
-                    </div>                   
-                </div> 
+                    </div>
+                </div>
                 <div class="col-md-8">
                     {!! Form::label('description', 'Description', ['class' => 'form-label']) !!}
                     {!! Form::textarea('description', null, ['placeholder' => 'Description', 'class' => 'form-control', 'id' => 'description', 'type' => 'textarea']) !!}
@@ -113,7 +113,7 @@
         },100);
 </script>
 <script>
-    $(document).ready( function () { 
+    $(document).ready( function () {
         $('#category').select2();
     });
 </script>
@@ -159,4 +159,3 @@
         }
 </script>
 @endpush
-            

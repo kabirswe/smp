@@ -7,9 +7,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use DataTables;
+use Exception;
 
 class PostCategoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:post-category', ['only' => ['index', 'create', 'store', 'edit', 'update', 'destroy']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -69,17 +74,6 @@ class PostCategoryController extends Controller
         return redirect()->route('post_category.index')->with([
             'success' => trans('Post Category create successfully')
         ]);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\PostCategory  $postCategory
-     * @return \Illuminate\Http\Response
-     */
-    public function show(PostCategory $postCategory)
-    {
-        //
     }
 
     /**

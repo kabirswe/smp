@@ -6,6 +6,7 @@ use App\Models\Rating;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use DataTables, Exception;
 
 class RatingController extends Controller
 {
@@ -48,7 +49,7 @@ class RatingController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        $validation = Validator::make($data, [            
+        $validation = Validator::make($data, [
             'product_id' => 'required|max:10',
             'text_box' => 'required|max:200',
             'name' => 'required|max:50',
@@ -68,7 +69,7 @@ class RatingController extends Controller
         $product = Product::where('id', $request->product_id)->first('slug');
         return redirect()->route('product.details', $product->slug)->with([
             'success' => trans('Comment send successfully')
-        ]); 
+        ]);
     }
 
     /**

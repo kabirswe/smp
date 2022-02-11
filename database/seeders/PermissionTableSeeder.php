@@ -15,18 +15,20 @@ class PermissionTableSeeder extends Seeder
     public function run()
     {
         $permissions = [
-           ['name' => 'role-edit', 'display_name' => 'Role edit'],
-           ['name' => 'staff-create', 'display_name' => 'Staff create'],
+           ['name' => 'role', 'display_name' => 'Role'],
            ['name' => 'activity-log', 'display_name' => 'Activity logs'],
            ['name' => 'account-unblock', 'display_name' => 'Account Unblock'],
            ['name' => 'all-account-list', 'display_name' => 'All account'],
            ['name' => 'all-account-edit', 'display_name' => 'All account edit'],
            ['name' => 'all-account-delete', 'display_name' => 'All account delete'],
-           ['name' => 'place-list', 'display_name' => 'Places'],
-           ['name' => 'place-create', 'display_name' => 'Place create'],
-           ['name' => 'place-edit', 'display_name' => 'Place edit'],
-           ['name' => 'place-delete', 'display_name' => 'Place delete'],
-           ['name' => 'inquery', 'display_name' => 'Inquery page']
+           ['name' => 'product-category', 'display_name' => 'Product category'],
+           ['name' => 'product-type', 'display_name' => 'Product type'],
+           ['name' => 'product', 'display_name' => 'Product'],
+           ['name' => 'post-category', 'display_name' => 'Post category'],
+           ['name' => 'post', 'display_name' => 'Post'],
+           ['name' => 'post-comment', 'display_name' => 'Post comment'],
+           ['name' => 'order', 'display_name' => 'Order'],
+           ['name' => 'rating', 'display_name' => 'Rating'],
         ];
 
         foreach ($permissions as $permission) {

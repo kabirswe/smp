@@ -1,13 +1,12 @@
 <x-jet-action-section>
-    <x-slot name="title">
-        {{ __('Two Factor Authentication') }}
-    </x-slot>
-
-    <x-slot name="description">
-        {{ __('Add additional security to your account using two factor authentication.') }}
-    </x-slot>
 
     <x-slot name="content">
+
+        <div class="col-span-6 sm:col-span-4">
+            <h2 class="text-2xl">Two Factor Authentication</h2>
+            <p class="text-sm">Add additional security to your account using two factor authentication.</p>
+            <br />
+        </div>
         <h3 class="text-lg font-medium text-gray-900">
             @if ($this->enabled)
                 {{ __('You have enabled two factor authentication.') }}

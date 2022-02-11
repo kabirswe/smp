@@ -73,7 +73,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::group(['middleware' => ['auth'], ['role:admin']], function () {
+Route::group(['middleware' => ['auth', 'checkActiveUser'], ['role:admin|operator']], function () {
     // User management resources
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     // User management resources
@@ -98,16 +98,3 @@ Route::group(['middleware' => ['auth'], ['role:admin']], function () {
 Route::resource('post_comment', PostCommentController::class);
 Route::resource('rating', RatingController::class);
 Route::resource('order', OrderController::class);
-
-
-Route::get('send-mail', function () {
-    $details = [
-        'title' => 'Mail from ItSolutionStuff.com',
-        'body' => 'This is for testing email using smtp'
-    ];
-   
-   
-    \Mail::to('asaduzzamannurcse@gmail.com')->send(new \App\Mail\MyTestMail($details));
-    
-    dd("Email is Sent.");
-});

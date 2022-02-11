@@ -10,14 +10,18 @@ use App\Models\ProductImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\File;
-use League\Flysystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\ImageManagerStatic as Image;
 use DataTables;
+use Exception;
 
 class ProductController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:product', ['only' => ['index', 'create', 'store', 'edit', 'update', 'destroy']]);
+    }
+
 
     // image upload in S3
     protected function imageUpload($requestFile, $location_main)
@@ -155,16 +159,7 @@ class ProductController extends Controller
             'success' => trans('Product create successfully')
         ]);
     }
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Product $product)
-    {
-        //
-    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -222,7 +217,7 @@ class ProductController extends Controller
             try {
                 $data = Product::find($id);
                 $data->delete();
-                return response()->json(['success' => 'place deleted']);
+                return response()->json(['success' => 'product deleted']);
             } catch (Exception $e) {
                 return response()->json([
                     'status' => 500,

@@ -14,18 +14,11 @@
                 <h1 class="title">Order List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Order</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
             </div>
-            <!-- <div class="btn-block">
-                <a class="btn" href="{{ route('product_type.create') }}">
-                <ion-icon name="add-outline"></ion-icon>
-                    <span>Create Product Type</span>
-                </a>
-            </div> -->
         </div>
         @if ($message = Session::get('success'))
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -54,7 +47,7 @@
         </div>
     </section>
 </main>
-@endsection    
+@endsection
 
 @push('custom-scripts')
     <!-- Scripts -->
@@ -87,8 +80,8 @@
                 responsive: true,
                 serverSide: true,
                 fixedHeader: true,
-                "pageLength": 20,
-                "lengthMenu": [ 20, 50, 100, 500 ],
+                "pageLength": 50,
+                "lengthMenu": [ 50, 100, 500, 1000 ],
                 ajax: {
                     url: listUrl,
                     type: 'GET'

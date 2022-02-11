@@ -28,19 +28,7 @@ class UserController extends Controller
     function __construct()
     {
         // permission for admin
-        // $this->middleware('permission:all-account-list|all-account-delete|all-account-edit', ['only' => ['index']]);
-        // $this->middleware('permission:operator-create', ['only' => ['create']]);
-        // $this->middleware('permission:operator-create|seller-create|buyer-create|seller-buyer-create', ['only' => ['store']]);
-        // $this->middleware('permission:all-account-edit|buyer-edit|seller-edit|seller-buyer-edit', ['only' => ['edit', 'update']]);
-        // $this->middleware('permission:all-account-delete|buyer-delete|seller-delete|seller-buyer-delete', ['only' => ['destroy']]);
-
-        // // // permission for admin and operator
-        // $this->middleware('permission:buyer-list|buyer-delete|seller-buyer-list|seller-buyer-delete', ['only' => ['buyerList']]);
-        // $this->middleware('permission:buyer-create|seller-buyer-create', ['only' => ['buyerCreate']]);
-
-        // $this->middleware('permission:seller-list|seller-delete', ['only' => ['sellerList']]);
-        // $this->middleware('permission:seller-create', ['only' => ['sellerCreate']]);
-
+        $this->middleware('permission:all-account-list|all-account-delete|all-account-edit|all-account-delete|activity-log|account-unblock', ['only' => ['index', 'changeStatus', 'create', 'store']]);
     }
     /**
      * Display a listing of the resource.

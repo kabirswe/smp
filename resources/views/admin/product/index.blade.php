@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @push('custom-style')
-    <!-- <link rel="stylesheet" href="{{ asset('vendor/datatable/datatables.min.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('vendor/datatable/datatables.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.semanticui.min.css">
 @endpush
@@ -14,8 +14,7 @@
                 <h1 class="title">Product List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Product</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -41,7 +40,6 @@
                         <th>Name</th>
                         <th>Product Type ID</th>
                         <th>Quantity</th>
-                        <th>Description</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -84,8 +82,8 @@
                 responsive: true,
                 serverSide: true,
                 fixedHeader: true,
-                "pageLength": 20,
-                "lengthMenu": [ 20, 50, 100, 500 ],
+                "pageLength": 50,
+                "lengthMenu": [ 50, 100, 500, 1000 ],
                 ajax: {
                     url: listUrl,
                     type: 'GET'
@@ -95,7 +93,6 @@
                     { data: 'name', name: 'name', orderable: true },
                     { data: 'product_type_id', name: 'product_type_id', orderable: true },
                     { data: 'quantity', name: 'quantity', orderable: true },
-                    { data: 'description', name: 'description', orderable: true },
                     {
                         data: 'action-btn',
                         orderable: false,

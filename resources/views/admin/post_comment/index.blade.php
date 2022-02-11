@@ -14,18 +14,11 @@
                 <h1 class="title">Post Comment List</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Post Comment</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
             </div>
-            <!-- <div class="btn-block">
-                <a class="btn" href="{{ route('post_comment.create') }}">
-                <ion-icon name="add-outline"></ion-icon>
-                    <span>Create Post Comment</span>
-                </a>
-            </div> -->
         </div>
         @if ($message = Session::get('success'))
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -51,7 +44,7 @@
         </div>
     </section>
 </main>
-@endsection    
+@endsection
 
 @push('custom-scripts')
     <!-- Scripts -->
@@ -84,8 +77,8 @@
                 responsive: true,
                 serverSide: true,
                 fixedHeader: true,
-                "pageLength": 20,
-                "lengthMenu": [ 20, 50, 100, 500 ],
+                "pageLength": 50,
+                "lengthMenu": [50, 100, 500, 1000 ],
                 ajax: {
                     url: listUrl,
                     type: 'GET'
@@ -101,7 +94,6 @@
                         orderable: false,
                         render: function (data) {
                             var btn = '';
-                            // btn += '<a href="' + listUrl + '/' + data + '/edit" class="btn btn-dt-edit">Edit</a>';
                             btn += '<a href="javascript:void(0)" id="deleteData" data-toggle="tooltip" data-id="' + data + '" data-original-title="Delete" class="btn btn-dt-delete">Delete</a>';
                             return btn;
                         }
