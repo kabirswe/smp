@@ -42,6 +42,13 @@
                             </p>
                         </div>
                     </div>
+                    <div class="block-image-left">
+                        <img src="{{ asset('images/front/FDA-Registered-02.png') }}" alt="">
+                        <div class="block-image-content">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
                     <div class="block-image-right">
                         <img src="{{ asset('images/front/good-manu.jpg') }}" alt="">
                         <div class="block-image-content">

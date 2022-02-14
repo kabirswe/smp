@@ -47,13 +47,13 @@
                                 @foreach($item['images'] as $image)
                                 @if($image->is_cover_image)
                                 <a href="{{ route('product.details', $item->slug) }}">
-                                    <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
+                                    <img class="product-img" src="{{ asset($image->image_sm) }}" alt="product image">
                                 </a>
                                 @endif
                                 @if($loop->index == 1)
                                 <a href="{{ route('product.details', $item->slug) }}">
                                     <div class="overlay-image"></div>
-                                    <img class="product-images-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                    <img class="product-images-hover" src="{{ asset($image->image_sm) }}" alt="product hover image">
                                 </a>
                                 @endif
                                 @endforeach

@@ -14,7 +14,6 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('product.create') }}">Product</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                     </ol>
                 </nav>
@@ -32,7 +31,7 @@
                 <div class="col-md-9">
                     <div class="col-md-11">
                         {!! Form::label('name', 'Title', ['class' => 'form-label']) !!}
-                        {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                        {!! Form::text('name', null, ['class' => 'form-control', 'required' => true]) !!}
                         @if($errors->has('name'))
                             <div class="error_msg">
                                 {{ $errors->first('name') }}
@@ -48,7 +47,7 @@
                                     <div class="select-btn" id="drop-container" data-id="coverImage">
                                         {!! Form::label('coverImage', 'Select files', ['class'=>'']) !!}
                                         {!! Form::hidden('coverImage_data',"", ['id' => 'coverImage_data', 'class' => 'product-image']) !!}
-                                        {!! Form::file('coverimage', ['onchange' => 'imageUpload(this)', 'id' => 'coverImage','class' => 'drop-area-text']) !!}
+                                        {!! Form::file('coverimage', ['onchange' => 'imageUpload(this)', 'id' => 'coverImage','class' => 'drop-area-text', 'required' => true]) !!}
                                     </div>
                                     <div class="delete-btn" id="coverImageDelete" onclick="removeImage('coverImage')">Delete image</div>
                                 </div>
@@ -71,7 +70,7 @@
                                     <div class="select-btn" id="drop-container-1" data-id="thumbnail_image1">
                                         {!! Form::label('thumbnail_image1', 'Select files') !!}
                                         {!! Form::hidden('thumbnail_image1_data',"", ['id' => 'thumbnail_image1_data', 'class' => 'product-image']) !!}
-                                        {!! Form::file('thumbnail_image[]', ['onchange' => 'imageUpload(this)', 'id' => 'thumbnail_image1']) !!}
+                                        {!! Form::file('thumbnail_image[]', ['onchange' => 'imageUpload(this)', 'id' => 'thumbnail_image1', 'required' => true]) !!}
                                     </div>
                                     <div class="delete-btn" id="thumbnail_image1Delete"  onclick="removeImage('thumbnail_image1', true)">Delete image</div>
                                 </div>
@@ -91,7 +90,7 @@
 
                     <div class="col-md-11">
                         {!! Form::label('description', 'Description', ['class' => 'form-label']) !!}
-                        {!! Form::textarea('description', null, ['placeholder' => 'Description', 'class' => 'form-control', 'id' => 'description', 'type' => 'textarea']) !!}
+                        {!! Form::textarea('description', null, ['placeholder' => 'Description', 'class' => 'form-control', 'id' => 'description', 'type' => 'textarea', 'required' => true]) !!}
                         @if($errors->has('description'))
                             <div class="error_msg">
                                 {{ $errors->first('description') }}
@@ -105,7 +104,7 @@
                 <div class="col-md-3">
                     <div class="col-md-8">
                         {!! Form::label('quantity', 'Quantity', ['class' => 'form-label']) !!}
-                        {!! Form::number('quantity', null, ['class' => 'form-control']) !!}
+                        {!! Form::number('quantity', null, ['class' => 'form-control', 'required' => true]) !!}
                         @if($errors->has('quantity'))
                             <div class="error_msg">
                                 {{ $errors->first('quantity') }}
@@ -123,7 +122,7 @@
                         <p>Select a type</p>
                         @foreach($types as $type)
                             <div class="form-check">
-                                <input name="product_type_id" class="form-check-input" value="{{ $type->id }}" type="radio" name="type" id="type{{ $type->id }}">
+                                <input name="product_type_id" class="form-check-input" value="{{ $type->id }}" type="radio" name="type" id="type{{ $type->id }}"{{ $loop->index == 0 ? ' checked' : '' }}>
                                 <label class="form-check-label" for="type{{ $type->id }}">
                                     {{ $type->name }}
                                 </label>
@@ -152,24 +151,6 @@
     <script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
     <script type="text/javascript">
         var noImage = "{{ asset('images/admin/default.jpg') }}";
-        // form validation js
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                }, false);
-                });
-            }, false);
-        })();
 
         // ckeditor init js
         setTimeout(function(){
@@ -246,39 +227,5 @@
             $( '#' + id + 'Delete' ).css( 'display', 'none' );
         }
 
-        // // image preview js
-        // function changeImage() {
-        //     $('#customFile').click();
-        // }
-
-        // function readURL(input) {
-        //     if (input.files && input.files[0]) {
-        //         var reader = new FileReader();
-        //         reader.readAsDataURL(input.files[0]);
-        //         reader.onload = function (e) {
-        //             $('#preview').attr('src', e.target.result);
-        //             $('.label-text').hide();
-        //         };
-        //     }
-        // }
-
-        // function removeImage() {
-        //     $('#preview').attr('src', noImage);
-        //     $('.label-text').show();
-        // }
-
-        // $(document).ready(function() {
-        //     $('#customFile').change(function () {
-        //         var imgPath = this.value;
-        //         var ext = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
-        //         if (ext == "gif" || ext == "png" || ext == "jpg" || ext == "jpeg") {
-        //             readURL(this);
-        //         } else {
-        //             alert("Please select image file (jpg, jpeg, png).")
-        //         }
-        //     });
-        //     // $('#type').append('<option value="" selected="selected">Select a option please</option>');
-        //     $('#type').select2();
-        // });
     </script>
 @endpush

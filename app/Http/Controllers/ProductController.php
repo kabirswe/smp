@@ -36,13 +36,13 @@ class ProductController extends Controller
         $ImgName_md = date('Ymdhis') . rand(10000, 99999) . '_md800x800.' . $extension;
         $ImgName_sm = date('Ymdhis') . rand(10000, 99999) . '_sm=660x520.' . $extension;
         // Instantiate SimpleImage class
-        $image = Image::make($main_image)->encode($extension);
-        $image_md = Image::make($main_image)->resize(2400, 2400, function ($aspect) {
+        $image = Image::make($main_image)->encode($extension, 75);
+        $image_md = Image::make($main_image)->resize(1600, 1600, function ($aspect) {
             $aspect->aspectRatio();
-        })->encode($extension);
-        $image_sm = Image::make($main_image)->resize(1980, 1560, function ($aspect) {
+        })->encode($extension, 60);
+        $image_sm = Image::make($main_image)->resize(1320, 1040, function ($aspect) {
             $aspect->aspectRatio();
-        })->encode($extension);
+        })->encode($extension, 60);
         // Size:large
         Storage::disk('local')->put($location . $ImgName, (string) $image);
         // // Size:medium
@@ -170,7 +170,20 @@ class ProductController extends Controller
     public function edit(Request $request, $id)
     {
         $product = Product::findOrFail($id);
-        return view('admin.product.edit', compact('product'));
+        $types = ProductType::select('id', 'name')->get();
+        $categories = ProductCategory::select('id', 'name')->get();
+        $selected_categories = ProductProductCategory::where('product_id', $product->id)->pluck('product_categorie_id')->toArray();
+        $selected_images = ProductImage::where('product_id', $product->id)->get();
+        return view(
+            'admin.product.edit',
+            compact(
+                'product',
+                'types',
+                'categories',
+                'selected_categories',
+                'selected_images'
+            )
+        );
     }
 
     /**

@@ -25,7 +25,7 @@
                                 <div class="image-gallery-block">
                                     <div class="image-gallery-left">
                                         @foreach($product['images'] as $image)
-                                            <div class="image-block {{ $image->is_cover_image ? ' active' : ''}}" onclick="imageChange('{{ asset($image->image_sm) }}')">
+                                            <div class="image-block {{ $image->is_cover_image ? ' active' : ''}}" onclick="imageChange('{{ asset($image->image_md) }}')">
                                                 <img src="{{ asset($image->image_sm) }}" alt="">
                                             </div>
                                         @endforeach
@@ -83,13 +83,13 @@
                                             @foreach($item['images'] as $image)
                                                 @if($image->is_cover_image)
                                                 <a href="{{ route('product.details', $item->slug) }}">
-                                                    <img class="product-img" src="{{ asset($image->image_md) }}" alt="product image">
+                                                    <img class="product-img" src="{{ asset($image->image_sm) }}" alt="product image">
                                                 </a>
                                                 @endif
                                                 @if($loop->index == 1)
                                                 <a href="{{ route('product.details', $item->slug) }}">
                                                 <div class="overlay-image"></div>
-                                                    <img class="product-images-hover" src="{{ asset($image->image_md) }}" alt="product hover image">
+                                                    <img class="product-images-hover" src="{{ asset($image->image_sm) }}" alt="product hover image">
                                                 </a>
                                                 @endif
                                             @endforeach

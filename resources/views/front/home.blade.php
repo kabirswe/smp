@@ -51,7 +51,7 @@
     <div class="capabilities-wrapper">
         <div class="container">
             <div class="capabilities">
-                <div class="content-block">                    
+                <div class="content-block">
                     <h2>Our Capabilities</h2>
                     <p>We're the gummy specialists!</p>
                     <p>Gummy Specialist is an industry leader in providing innovative and high-quality private label gummies. We have never compromised with quality since the day we opened our doors for business. We have been able to create innovative and high-quality gummies for our customers, which has given us the opportunity to grow into one of the most successful companies in this industry.</p>
@@ -189,7 +189,7 @@
                     <h3>Bottle/Bag Filling</h3>
                 </div>
                 <div class="video-block">
-                    <div class="video">                        
+                    <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="{{ route('product.type', 'gummy') }}" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
@@ -220,7 +220,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <!-- <div class="powder-manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -298,7 +298,7 @@
                           @if($image->is_cover_image)
                           <div class="products-thumbnail">
                               <a href="{{ route('product.details', $item->slug) }}">
-                              <img src="{{ asset($image->image_md) }}" alt="{{ $item->name }}">
+                              <img src="{{ asset($image->image_sm) }}" alt="{{ $item->name }}">
                               </a>
                           </div>
                           @endif
@@ -348,5 +348,5 @@
           prevEl: ".swiper-button-prev",
         },
       });
-    </script>   
+    </script>
 @endpush
