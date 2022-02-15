@@ -120,6 +120,7 @@
                     padding: 80px 60px;
                     img {
                         width: 100%;
+                        background: #fff;
                     }
                     .block-image-content {
                         p {
@@ -166,7 +167,7 @@
         background-color: #f4f4f4;
         .capabilities {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             .content-block {
                 width: 50%;
@@ -205,7 +206,7 @@
         .manufacturing {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
@@ -237,10 +238,8 @@
                 border-color: #ededed;
                 transition: background 0.3s, border 0.3s, border-radius 0.3s,
                     box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
+                padding-left: 10px;
                 background-color: #ffffff;
-                .images-right {
-                }
             }
         }
     }
@@ -366,8 +365,7 @@
                 border-color: #ededed;
                 transition: background 0.3s, border 0.3s, border-radius 0.3s,
                     box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
+                padding-left: 10px;
                 .images-right {
                     p {
                         margin-bottom: 30px;
@@ -538,7 +536,7 @@
         .manufacturing {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
@@ -575,10 +573,12 @@
                 border-width: 0px 0px 0px 0px;
                 border-color: #ededed;
                 transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
+                box-shadow 0.3s;
+                padding-left: 10px;
                 .images-right {
+                    img {
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    }
                     h3 {
                         color: #3c763d;
                         background-color: #dff0d8;
@@ -598,7 +598,7 @@
         .manufacturing {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             .content-block {
                 width: calc(50% - 10px);
                 h2 {
@@ -630,9 +630,11 @@
                 border-width: 0px 0px 0px 0px;
                 border-color: #ededed;
                 transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                    box-shadow 0.3s;
-                padding: 80px 40px 80px 40px;
-                background-color: #ffffff;
+                box-shadow 0.3s;
+                padding-left: 10px;
+                img {
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                }
             }
         }
     }

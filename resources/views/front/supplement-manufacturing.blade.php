@@ -9,11 +9,11 @@
 <main class="supplement-manufacturing-container">
     <div class="video-container">
         <span class="overlay"></span>
-        <!-- <video width="100%" autoplay muted loop id="myVideo">
-            <source src="{{ asset('images/front/home/videoplayback.mp4') }}" type="video/mp4">
+        <video width="100%" autoplay muted loop id="myVideo">
+            <source src="{{ asset('images/front/videoplayback-about.mp4') }}" type="video/mp4">
             Your browser does not support HTML5 video.
-        </video> -->
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FYTzoVkQdyk?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </video>
+        <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/FYTzoVkQdyk?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container ">
             <div class="video-content">
@@ -126,7 +126,7 @@
                         <div class="iteam">
                             <h4>Tablet Compression</h4>
                             <h1>32Mil</h1>
-                            <p>million tablets per day</p>
+                            <p>tablets per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Capsules</h4>
@@ -136,7 +136,7 @@
                         <div class="iteam">
                             <h4>Powder Blending</h4>
                             <h1>150Mil</h1>
-                            <p>kilos per day</p>
+                            <p>per day</p>
                         </div>
                         <div class="iteam">
                             <h4>Gummy Vitamins</h4>

@@ -67,6 +67,13 @@
                             </p>
                         </div>
                     </div>
+                    <div class="block-image-left">
+                        <img src="{{ asset('images/front/FDA-Registered-02.png') }}" alt="">
+                        <div class="block-image-content">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
                     <div class="block-image-right">
                         <img src="{{ asset('images/front/good-manu.jpg') }}" alt="">
                         <div class="block-image-content">
@@ -94,7 +101,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <div class="manufacturing-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -102,7 +109,7 @@
                 <div class="content-block">
                     <h2>The Production of Gummy Vitamins</h2>
                     <h4>When it comes to making gummy vitamins, it's clear to see how much more complicated the procedure may be compared to other types of vitamin production.</h4>
-                    <p>Gummy vitamins should be chewy, pleasant, and yet contain all of the necessary nutrients. These components can be difficult to regulate, but once the process is finished, the result can be replicated over and over again.</p>           
+                    <p>Gummy vitamins should be chewy, pleasant, and yet contain all of the necessary nutrients. These components can be difficult to regulate, but once the process is finished, the result can be replicated over and over again.</p>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
@@ -201,13 +208,13 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <div class="gelatin-capsules">
         <div class="overlay"></div>
         <div class="container">
             <div class="manufacturing">
                 <div class="content-block">
-                    <h2>Gummy Specialists Wants To Be Your Go-To Gummy Vitamin Manufacturer</h2>                   
+                    <h2>Gummy Specialists Wants To Be Your Go-To Gummy Vitamin Manufacturer</h2>
                     <p>It might be difficult to get in touch with the top gummy vitamin manufacturer and maintain healthy communication. If you cooperate with us, we can function as a marketing tool because we are one of the leading gummy makers in the United States. The fact that it is created in the United States might be used as a powerful marketing factor on your label. Not only that, but we can constantly provide bulk gummy vitamins. We can make the process of making your private label gummy vitamin as efficient as possible with the greatest communication and excellent outcomes since we work as a contract manufacturer.</p>
                     <a href="{{ route('request_quote') }}" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
                 </div>
@@ -225,7 +232,7 @@
             <div class="pre-manufactured">
                 <div class="top-block">
                     <div class="content-block">
-                        <img src="{{ asset('images/front/Gummy-Vitamin-Search-Trend.jpg') }}" alt="">                        
+                        <img src="{{ asset('images/front/Gummy-Vitamin-Search-Trend.jpg') }}" alt="">
                         <h3>Gummy Vitamins' Rising Popularity</h3>
                         <p>It has become a trend to see gummy vitamins being searched for more and more with each passing year.This steady increase indicates how popular gummy vitamins have become in comparison to other kinds of encapsulation.</p>
                         <p>The increase in searches might be due to a variety of factors, including more children using supplements, more people looking for something delightful, or a new taste preference. Gummy Specialists has climbed to the top of the supplement manufacturing sector, establishing its place by producing the highest-quality gummies available.</p>

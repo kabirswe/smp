@@ -90,7 +90,7 @@
                     margin-top: 110px;
                     .capabilities {
                         display: flex;
-                        align-items: center;
+                        align-items: flex-start;
                         .content-block {
                             width: 50%;
                             padding-right: 40px;
@@ -116,9 +116,6 @@
                         }
                         .video-block {
                             width: 50%;
-                            margin-top: 70px;
-                            .video {
-                            }
                         }
                     }
                 }

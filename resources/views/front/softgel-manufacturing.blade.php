@@ -67,6 +67,13 @@
                             </p>
                         </div>
                     </div>
+                    <div class="block-image-left">
+                        <img src="{{ asset('images/front/FDA-Registered-02.png') }}" alt="">
+                        <div class="block-image-content">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
                     <div class="block-image-right">
                         <img src="{{ asset('images/front/good-manu.jpg') }}" alt="">
                         <div class="block-image-content">
@@ -78,7 +85,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <div class="capabilities-wrapper">
         <div class="container">
             <div class="capabilities">
@@ -157,16 +164,16 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Using Softgels to Encapsulate Your Formula</h2>
-                    <h4>In the case of softgels, the process of encapsulating the formula occurs simultaneously with the addition of the shell to a machine alongside the mix. This entire procedure is conducted in a temperaturecontrolled chamber with a humidity level of roughly 20%. It is critical to have appropriate softgel production conditions in order to produce a high-quality end product.</h4>                                                      
+                    <h4>In the case of softgels, the process of encapsulating the formula occurs simultaneously with the addition of the shell to a machine alongside the mix. This entire procedure is conducted in a temperaturecontrolled chamber with a humidity level of roughly 20%. It is critical to have appropriate softgel production conditions in order to produce a high-quality end product.</h4>
                 </div>
                 <div class="image-block">
                     <div class="images-right">
                         <p>The method of making a complete softgel begins with a gelatin blend that has been produced beforehand. The gelatin mixture will be placed into two extremely cold drums. The gelatin mixture dries and rolls off as a solid sheet as the drums continue to roll, however it will be divided in two. Now that both sides are finished, they will go through a procedure that will cut them to the proper size and form. Your customized mix will be put into a heated wedge before the two parts are joined together. Both parts of the softgel will encase this hot wedge. The wedge will inject the unique formula into the softgel once it is in position as well as the softgel is nearly closed. The wedge is removed at this point in the process, and the softgel is immediately sealed or coated as specified before being placed away to cool and set.</p>
-                    </div>                 
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="dry-granulation-wrapper">
         <div class="overlay"></div>
         <div class="container">
@@ -187,7 +194,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <div class="vegetarian-capsules">
         <div class="overlay"></div>
         <div class="container">
@@ -217,6 +224,9 @@
                         <a href="{{ route('product.type', 'softgel') }}" class="btn common-btn">See Our Private Label Softgel Products Here<i class="ti ti-arrow-right"></i></a>
                     </div>
                     <div class="slider-block">
+                        @if (count($pre_manufactured_swiper) < 1)
+                           <h1>No Product Found!</h1>
+                        @else
                         <div class="slider">
                             <!-- Swiper -->
                             <div class="swiper preManufacturedSwiper">
@@ -235,6 +245,7 @@
                             <div class="swiper-pagination"></div>
                             </div>
                         </div>
+                        @endif
                 </div>
             </div>
         </div>
@@ -269,5 +280,5 @@
           prevEl: ".swiper-button-prev",
         },
       });
-    </script>   
+    </script>
 @endpush
