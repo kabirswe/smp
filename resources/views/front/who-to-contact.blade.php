@@ -23,258 +23,108 @@
 						<div class="accordion-item">
 						<h2 class="accordion-header" id="headingOne">
 							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								For Our Frequently Asked Questions
+							Gummy Specialist’s gummy don’t contain any artificial colors or flavors. What ingredients are used?
 							</button>
 						</h2>
 						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Visit out Frequently Asked Questions page <a href="#">here</a>.
+							Our gummies are 100% natural. The colorings and flavors we use to make the gummies are drawn from natural sources.
 							</div>
 						</div>
 						</div>
 						<div class="accordion-item">
 						<h2 class="accordion-header" id="headingTwo">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								For Your Product Spec Sheet
+								What is your minimum order quantity?
 							</button>
 						</h2>
 						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please contact your sales representative or sales administrator.
+							To know the MOQ, you can contact with your queries to our customer service. We will get back to you shortly.
 							</div>
 						</div>
 						</div>
 						<div class="accordion-item">
 						<h2 class="accordion-header" id="headingThree">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								For International Sales Information
+							What does it cost to launch a product?
 							</button>
 						</h2>
 						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please contact John Riccobono<br>
-								<a href="#">sales@gummyspecialists.com</a>	
+							There are many variables that influence the cost of launching a product. When it comes to launching a custom product, it would be dependent on the cost of ingredients, you can contact with your queries to our customer service.
 							</div>
 						</div>
 						</div>				
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingFour">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								For Product Samples
+							Can you assist with Marketing?
 							</button>
 							</h2>
 							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please fill out this <a href="#">form</a> or you can purchase your samples <a href="#">here.</a>
+							Yes. We can fulfill all your marketing needs.
 							</div>
 							</div>
 						</div>
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingFive">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-								For Shipping and Logistics
+							Can you send me samples?
 							</button>
 							</h2>
 							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please contact Esmerelda Rodriguez<br>
-								<a href="#">sales@gummyspecialists.com</a>
+							We're constantly searching for new ways to improve your experience with us. Please contact us at sales@gummyspecialists.com if you're interested in receiving samples.
 							</div>
 							</div>
 						</div>
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingSix">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-								For Your Graphic Design Needs
+							Gummy contains gelatin, how can Gummy Specialists gummies be vegan?
 							</button>
 							</h2>
 							<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please contact:<br>							
-								<strong>Sharon Rubin</strong><br>							
-								<a href="#">sales@gummyspecialists.com</a>
-								<br>
-								or
-								<strong>Karen Carrasco</strong><br>	
-								<a href="#">sales@gummyspecialists.com</a>	
+							The gummies of Gummy Specialists can be enjoyed by everyone and so we developed a gummy with pectin rather than gelatin. Gelatin & pectin usually provides the same structure and binding of gummies. Pectin is extracted from the peels of fruit, and so it’s a great vegan alternative to animal-based gelatin.
 							</div>
 							</div>
 						</div>
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingSeven">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-								For Label Compliance Check
+							Can I consume more than the recommended dosage?
 							</button>
 							</h2>
 							<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please contact Amber Palazzo<br>
-								<a href="#">sales@gummyspecialists.com</a>
+							We don’t recommend consuming more than the recommended dosage. Keeping the vitamin reserves well below harmful levels that are how we recommend
 							</div>
 							</div>
 						</div>
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingEight">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-								For Label Printing
+							How should I store my gummies?
 							</button>
 							</h2>
 							<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please contact Nick Aglio<br>
-								<a href="#">sales@gummyspecialists.com</a>
+							Store your gummies in the closed bottle in a cool and dry place at room temperature. There’s no need to store your gummies in the refrigerator, and this may even affect the structure of the gummies.
 							</div>
 							</div>
 						</div>
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingNine">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-								For Customer Service Updates
+							How can I get in touch with customer service?
 							</button>
 							</h2>
 							<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
-								Please contact Anders Fritzen<br>
-								<a href="#">sales@gummyspecialists.com</a>
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingTen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-								For Your Fulfillment Needs
-							</button>
-							</h2>
-							<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact our fulfillment team<br>
-								<a href="#">sales@gummyspecialists.com</a>
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingEleven">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-								For Your Website Design Needs						
-							</button>
-							</h2>
-							<div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact:<br>
-								<strong>Zach Passarella</strong><br>
-								<a href="#">sales@gummyspecialists.com</a><br>
-								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingTwelve">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-								For Your Digital Marketing Needs
-							</button>
-							</h2>
-							<div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact:<br>
-								<strong>Zach Passarella</strong><br>		
-								<a href="#">sales@gummyspecialists.com</a><br>	
-								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingThirteen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-								For Your Videography Needs
-							</button>
-							</h2>
-							<div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact:<br>
-								<strong>Billy Harrison</strong> <br>
-								billy@gummyspecialists.com.com<br>			
-								You can also visit gummyspecialists.com for more information on all of our digital marketing services.							
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingFourteen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-								For Your Social Media Needs
-							</button>
-							</h2>
-							<div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact:<br>
-								<strong>Zach Passarella</strong><br>
-								<a href="#">sales@gummyspecialists.com</a><br>					
-								You can also visit gummyspecialists.com for more information on all of our digital marketing services.
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingFifteen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-								For Liability Insurance						
-							</button>
-							</h2>
-							<div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact Brittany Milano<br>
-								<a href="#">sales@gummyspecialists.com.com</a>
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingSixteen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-								For Trademark and Legal
-							</button>
-							</h2>
-							<div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact Steven Milano<br>
-								<a href="#">sales@gummyspecialists.com</a>	
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingSeventeen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-								For Your Merchant Account
-							</button>
-							</h2>
-							<div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact Zach Passarella<br>
-								<a href="#">sales@gummyspecialists.com</a>
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingEighteen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-								For International Sales Information
-							</button>
-							</h2>
-							<div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact John Riccobono
-								<a href="#">sales@gummyspecialists.com</a>
-							</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="headingNineteen">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-								For Lid Stickers or Product Boxes
-							</button>
-							</h2>
-							<div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Please contact Nick Aglio<br>
-								<a href="#">sales@gummyspecialists.com</a>					
-								We can also print a custom company gusset bag that can fit all of your products to replace a box. (Big brands are now doing using bags over boxes)
+							We always love hearing from you, whether you have a query or it’s just to say hi. You can visit us on Facebook or Instagram and send us a message or comment in our post. You can also send an email to sales@gummyspecialists.com or call us at 1-833-MYGUMMY. We will get back to you shortly.
 							</div>
 							</div>
 						</div>						  

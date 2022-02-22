@@ -58,29 +58,9 @@
                 <div class="labels-block-image">
                     <div class="block-image-left">
                         <img src="{{ asset('images/front/home/FDA-Registered-01.png') }}" alt="">
-                        <div class="block-image-content">
-                            <p>
-                                <a>See Our FDA Registration Here</a>
-                            </p>
-                            <p>
-                                <a>See Our FDA Regsistration Verification Here</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block-image-left">
-                        <img src="{{ asset('images/front/FDA-Registered-02.png') }}" alt="">
-                        <div class="block-image-content">
-                            <p>
-                            </p>
-                        </div>
                     </div>
                     <div class="block-image-right">
                         <img src="{{ asset('images/front/good-manu.jpg') }}" alt="">
-                        <div class="block-image-content">
-                            <p>
-                                <a>See Our FDA Registration Here</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>

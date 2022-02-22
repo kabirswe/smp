@@ -122,19 +122,6 @@
                         width: 100%;
                         background: #fff;
                     }
-                    .block-image-content {
-                        p {
-                            text-align: center;
-                            margin: 30px 0 20px;
-                            transition: 0.3s;
-                            &:last-child {
-                                margin: 0 0 0;
-                            }
-                            &:hover {
-                                color: #fff;
-                            }
-                        }
-                    }
                     &:hover {
                         background-color: #fc1b15;
                     }
@@ -144,16 +131,6 @@
                     padding: 80px 60px;
                     img {
                         width: 100%;
-                    }
-                    .block-image-content {
-                        p {
-                            text-align: center;
-                            margin-top: 20px;
-                            transition: 0.3s;
-                            &:hover {
-                                color: #fff;
-                            }
-                        }
                     }
                     &:hover {
                         background-color: #fc1b15;
@@ -573,7 +550,7 @@
                 border-width: 0px 0px 0px 0px;
                 border-color: #ededed;
                 transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                box-shadow 0.3s;
+                    box-shadow 0.3s;
                 padding-left: 10px;
                 .images-right {
                     img {
@@ -630,7 +607,7 @@
                 border-width: 0px 0px 0px 0px;
                 border-color: #ededed;
                 transition: background 0.3s, border 0.3s, border-radius 0.3s,
-                box-shadow 0.3s;
+                    box-shadow 0.3s;
                 padding-left: 10px;
                 img {
                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
