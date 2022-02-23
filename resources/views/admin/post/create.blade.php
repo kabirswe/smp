@@ -30,7 +30,7 @@
                 @csrf
                 <div class="col-md-8">
                     {!! Form::label('title', 'Title', ['class' => 'form-label']) !!}
-                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('title', null, ['class' => 'form-control',  'required' => true]) !!}
                     @if($errors->has('title'))
                         <div class="error_msg">
                             {{ $errors->first('title') }}
@@ -66,7 +66,7 @@
                                     <div class="select-btn" id="drop-container" data-id="coverImage">
                                         {!! Form::label('cover_image', 'Select files', ['class'=>'']) !!}
                                         {!! Form::hidden('cover_image_data',"", ['id' => 'cover_image_data', 'class' => 'product-image']) !!}
-                                        {!! Form::file('cover_image', ['onchange' => 'imageUpload(this)', 'id' => 'cover_image','class' => 'drop-area-text']) !!}
+                                        {!! Form::file('cover_image', ['onchange' => 'imageUpload(this)', 'id' => 'cover_image','class' => 'drop-area-text', 'required' => true]) !!}
                                     </div>
                                     <div class="delete-btn" id="cover_imageDelete" onclick="removeImage('cover_image')">Delete image</div>
                                 </div>
