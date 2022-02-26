@@ -32,9 +32,6 @@
                             <i class="ti ti-angle-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <!-- <a href="{{ route('capsule_manufacturing') }}">Capsule Manufacturing</a>
-                                <a href="{{ route('tablet_manufacturing') }}">Tablet Manufacturing</a>
-                                <a href="{{ route('powder_manufacturing') }}">Powder Manufacturing</a> -->
                                 <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamin Manufacturing</a>
                                 <a href="{{ route('softgel_manufacturing') }}">Softgel Manufacturing</a>
                                 <!-- <a href="{{ route('liquid_capsule') }}">Liquid Capsule Manufacturing</a> -->
