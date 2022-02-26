@@ -38,7 +38,6 @@
                             <a href="{{ route('supplement_manufacturing') }}">About Us</a>
                             <a href="{{ route('blog') }}">Blog</a>
                             <a href="#">Terms &amp; Conditions</a>
-                            <!-- <a href="{{ route('awards_certifications') }}">Awards &amp; Certifications</a> -->
                             <a class="disabled">Gummy Specialists Workflow</a>
                             <a class="disabled">Careers</a>
                         </div>
@@ -47,20 +46,14 @@
                             <a href="{{ route('contact') }}">Contact Us</a>
                             <a href="{{ route('faq') }}">FAQ</a>
                             <a href="{{ route('request_quote') }}">Request A Quote</a>
-                            <!-- <a href="{{ route('who_to_contact') }}">Order Process &amp; Who To Contact</a> -->
-                            <!-- <a href="{{ route('faq') }}">Supplier/Vendor Inquiry</a> -->
                         </div>
                     </div>
                     <div class="block">
                         <div class="item">
                             <h3>Custom Manufacturing</h3>
-                            <!-- <a href="{{ route('capsule_manufacturing') }}">Capsules</a>
-                            <a href="{{ route('tablet_manufacturing') }}">Tablets</a>
-                            <a href="{{ route('powder_manufacturing') }}">Powder</a> -->
-                            <a href="{{ route('softgel_manufacturing') }}">Softgels</a>
                             <a href="{{ route('gummy_vitamin_manufacturing') }}">Gummy Vitamins</a>
-                            <!-- <a href="{{ route('liquid_capsule') }}">Liquid Capsules</a> -->
-                            <!-- <a href="#">Liquids</a> -->
+                            <a href="{{ route('softgel_manufacturing') }}">Softgels</a>
+                         
                         </div>
                         <div class="item">
                             <h3>Additional Services</h3>
@@ -71,45 +64,25 @@
                     <div class="block">
                         <div class="item">
                             <h3>Specialty Manufacturing</h3>
-                            <a href="#">Collagen</a>
-                            <a href="#">Protein</a>
-                            <a href="#">Vitamins</a>
-                            <a href="#">Herbals</a>
-                            <a href="#">Probiotics</a>
-                            <a href="#">Bone Broth</a>
-                            <a href="#">Pet Supplements</a>
-                            <a href="#">Flavoring</a>
-                            <a href="#">Fish Oil</a>
-                            <a href="#">Elderberry</a>
-                            <a href="#">Skincare</a>
-                            <a href="#">Biotin</a>
-                            <a href="#">Ashwagandha</a>
-                            <a href="#">BCAA</a>
-                            <a href="#">Amino Acid Supplements</a>
-                            <a href="#">Keto Supplements</a>
-                            <a href="#">Vegan Supplements</a>
+                            @if(getProductCategories())
+                                @foreach(getProductCategories() as $key=>$category)
+                                    @if($key < 16 )
+                                        <a href="{{ route('product.category', $category->slug) }}">{{ $category->name }}</a>
+                                    @endif
+                                @endforeach
+                            @endif
                         </div>
                     </div>
                     <div class="block">
                         <div class="item">
                             <h3>Specialty Manufacturing</h3>
-                            <a href="#">Private Labeling</a>
-                            <a href="#">Prenatal</a>
-                            <a href="#">CoQ10</a>
-                            <a href="#">Apple Cider Vinegar</a>
-                            <a href="#">Fitness/Sports</a>
-                            <a href="#">Turmeric</a>
-                            <a href="#">Creatine</a>
-                            <a href="#">5-HTP</a>
-                            <a href="#">Glucosamine</a>
-                            <a href="#">Weight Loss Supplements</a>
-                            <a href="#">Liposomal Supplements</a>
-                            <a href="#">Post Workout Supplements</a>
-                        </div>
-                        <div class="item">
-                            <h3>In-Stock Inventory</h3>
-                            <a href="{{ route('product.list') }}">Stock Products</a>
-                            <a href="{{ route('design') }}">Design</a>
+                            @if(getProductCategories())
+                                @foreach(getProductCategories() as $key=>$category)
+                                    @if($key >= 16 )
+                                        <a href="{{ route('product.category', $category->slug) }}">{{ $category->name }}</a>
+                                    @endif
+                                @endforeach
+                            @endif
                         </div>
                     </div>
                 </div>

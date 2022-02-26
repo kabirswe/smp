@@ -9,7 +9,7 @@
 <main class="home-container">
     <div class="video-container">
         <span class="overlay"></span>
-        <video width="100%" autoplay muted loop id="myVideo">
+        <video width="100%" autoplay muted="false" loop id="myVideo">
             <source src="{{ asset('images/front/home/videoplayback.mp4') }}" type="video/mp4">
                 Your browser does not support HTML5 video.
         </video>

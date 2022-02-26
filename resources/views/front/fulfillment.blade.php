@@ -20,12 +20,12 @@
                 </div>
                 <div class="fulfillment-text">
                     <h1>All of Your Products Can Be Stored and Shipped Through Us.</h1>
-                    <p>You'll need a reputable, dependable facility to store and ship your private label supplement when it sells out. We can handle any size order and might be the ideal place for your vitamin order fulfillment. We've known that for years and have all the resources to fulfill and store your private label supplements, according to our experience working with clients that purchase in bulk. Please contact us if you have any queries regarding our fulfillment services.</p>
+                    <p>We can handle any size order and might be the ideal place for your vitamin order fulfillment. We've known that for years and have all the resources to fulfill and store your private label supplements, according to our experience working with clients that purchase in bulk. Please contact us if you have any queries regarding our fulfillment services.</p>
                 </div>
             </div>
             <div class="fulfillment-media-content">
                 <div class="fulfillment-media">
-                    <img src="{{ asset('images/front/shutterstock_1038530737.jpg') }}" alt="">
+                    <img src="{{ asset('images/front/home/IMG_20220224_140623.jpg') }}" alt="">
                 </div>
                 <div class="fulfillment-text">
                     <h1>VITAMINS DISTRIBUTION</h1>
