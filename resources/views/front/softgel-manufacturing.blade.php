@@ -22,7 +22,6 @@
             <source src="{{ asset('images/front/home/videoplayback.mp4') }}" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
-        <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container">
             <div class="video-content">
                 <h2>Your Custom<br /> Nutraceutical Softgel<br /> Manufacturer</h2>
