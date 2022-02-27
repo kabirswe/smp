@@ -59,6 +59,7 @@ Route::get('/tablet-manufacturing', [PagesController::class, 'tablet_manufacturi
 Route::get('/powder-manufacturing', [PagesController::class, 'powder_manufacturing'])->name('powder_manufacturing');
 Route::get('/softgel-manufacturing', [PagesController::class, 'softgel_manufacturing'])->name('softgel_manufacturing');
 Route::get('/gummy-vitamin-manufacturing', [PagesController::class, 'gummy_vitamin_manufacturing'])->name('gummy_vitamin_manufacturing');
+Route::get('/privacy-policy', [PagesController::class, 'privacy_policy'])->name('privacy_policy');
 
 Route::get('/request-quote', [PagesController::class, 'request_quote'])->name('request_quote');
 Route::post('/request-quote/store', [GetQuoteController::class, 'store'])->name('store.request_quote');

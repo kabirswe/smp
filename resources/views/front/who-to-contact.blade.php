@@ -132,7 +132,7 @@
 				</div>
 			</div>
 			<div class="content-note">
-				<p><span>IMPORTANT NOTE:</span> Please be respectful of our employees as they are working with many of our partners each and every day. If for any reason we find any person or company using the contact information provided for prospect or spam mail, their contact information will be removed from our system immediately. If you’d like to contact any of our team members about anything non-related to supplement manufacturing, please feel free to reach out to them via LinkedIn.</p>
+			<p><span>IMPORTANT NOTE: </span>Kindly consider our employees with respect because they deal with many of our partners on a daily basis. If we discover that someone or a company is utilizing the contact information given for prospecting or spamming purposes, we will promptly delete their information from our system. Please feel free to reach out to any of our team members via LinkedIn concerning anything other than supplement manufacture.</p>
 			</div>
 		</div>
 	</div>

@@ -61,10 +61,11 @@
                         <div class="form-group col-md-12">
                             <label class="label-margin" for="nmd">Nutraceutical Manufacturing Details</label><br>
                             <label class="label-margin" for="pformat">Product Format*</label><br>
-                            <input type="checkbox" name="radio_two" id="softgel" value="Softgel">
-                            <label for="softgel">Softgel</label><br>                 
                             <input type="checkbox" name="radio_two" id="gummy" value="Gummy">
-                            <label for="gummy">Gummy</label>                 
+                            <label for="gummy">Gummy</label> <br> 
+                            <input type="checkbox" name="radio_two" id="softgel" value="Softgel">
+                            <label for="softgel">Softgel</label>                
+                                            
                         </div>
                         <div class="form-group col-md-6">
                             <label for="qnt">Desired Finished Product Quantity*</label>

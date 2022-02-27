@@ -1,0 +1,52 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+.privacy-policy-wrapper {
+    .man_intro_cont {
+        text-align: center;
+        width: 800px;
+        max-width: 100%;
+        padding-top: 135px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        h1 {
+            line-height: 60px;
+            font-weight: 700;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .breadcrumb {
+            background-color: #fff;
+            .breadcrumb-item {
+                color: #000;
+                text-align: center;
+                margin: 0 auto;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                &::before {
+                    content: none;
+                }
+                i {
+                    margin-left: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .privacy-policy {
+        background-color: #f4f4f4;
+        padding: 80px 0;
+        .privacy-policy-content {
+            p {
+                margin-bottom: 15px;
+            }
+            .text-margin {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

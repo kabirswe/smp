@@ -37,7 +37,8 @@
                             <a href="{{ route('home') }}">Home</a>
                             <a href="{{ route('supplement_manufacturing') }}">About Us</a>
                             <a href="{{ route('blog') }}">Blog</a>
-                            <a href="#">Terms &amp; Conditions</a>
+                            <!-- <a href="#">Terms &amp; Conditions</a> -->
+                            <a href="{{ route('privacy_policy') }}">Privacy Policy</a>
                             <a class="disabled">Gummy Specialists Workflow</a>
                             <a class="disabled">Careers</a>
                         </div>
@@ -101,33 +102,33 @@
                         </div>
                         <ul>
 							<li>
-					            <a href="https://www.facebook.com/gummyspecialists">
+					            <a target="_blank" href="https://www.facebook.com/gummyspecialists">
 							        <i class="ti ti-facebook"></i>
 								</a>
 							</li><li>
-					            <a href="https://twitter.com/GummySpecs">
+					            <a target="_blank" href="https://twitter.com/GummySpecs">
 							        <i class="ti ti-twitter-alt"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="https://www.linkedin.com/company/gummyspecs">
+					            <a target="_blank" href="https://www.linkedin.com/company/gummyspecs">
 							        <i class="ti ti-linkedin"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="https://www.youtube.com/channel/UCR9Lt2f62pphUvC155XSRZg">
+					            <a target="_blank" href="https://www.youtube.com/channel/UCR9Lt2f62pphUvC155XSRZg">
 							        <i class="ti ti-youtube"></i>
 								</a>
 							</li>
                             <li>
-					            <a href="https://www.instagram.com/gummyspecialists/">
+					            <a target="_blank" href="https://www.instagram.com/gummyspecialists/">
 							        <i class="ti ti-instagram"></i>
 								</a>
 							</li>
 						</ul>
                     </div>
                     <div class="bottom-block">
-                        <p><em>*Before using any product, always check the product label or packaging All the information provided on this website does not, and in no way is intended to serve as legal or regulatory counsel. You are encouraged to seek legal advice or other professional advice if you are concerned about a specific legal or regulatory issue. Any statements or claims about the possible health benefits have not been evaluated by the Food and Drug Administration(FDA). These products are not intended to diagnose, treat, cure, or prevent any disease.<br></em></p>
+                        <p><em>*Before using any product, always check the product label or packaging. All the information provided on this website does not, and in no way is intended to serve as legal or regulatory counsel. You are encouraged to seek legal advice or other professional advice if you are concerned about a specific legal or regulatory issue. Any statements or claims about the possible health benefits have not been evaluated by the Food and Drug Administration(FDA). These products are not intended to diagnose, treat, cure, or prevent any disease.<br></em></p>
                     </div>
                 </div>
             </div>

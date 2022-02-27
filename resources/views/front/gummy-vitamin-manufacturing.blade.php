@@ -76,7 +76,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&rel=0&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PNZ9HYwQC4M?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/shutterstock_715849465.jpg') }}" alt="">
+                        <img src="{{ asset('images/front/home/The Production of Gummy Vitamins.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/Screen-Shot-2020-01-23-at-2.40.18-PM-1024x695.png') }}" alt="">
+                        <img src="{{ asset('images/front/home/Putting Your Gummy Formula Together-01.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="image-block">
                     <div class="images-right">
-                        <img src="{{ asset('images/front/Screen-Shot-2020-01-23-at-3.29.28-PM.png') }}" alt="">
+                        <img src="{{ asset('images/front/home/Bottling & Lebeling.jpg') }}" alt="">
                     </div>
                 </div>
             </div>

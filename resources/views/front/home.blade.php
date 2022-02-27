@@ -27,18 +27,18 @@
             <div class="labels-block">
                 <div class="item">
                     <i class="fas fa-industry-alt"></i>
-                    <h2>Custom Manufacturing</h2>
+                    <h2>Custom Manufacturing </h2>
                     <p>Looking for a manufacturer because custom manufacturing is intense for you? Well, we are here to take care of everything for you from formulation to encapsulation. Our team of experienced professionals work around the clock to make sure the highest quality is achieved.</p>
                 </div>
                 <div class="item">
                     <i class="far fa-cart-plus"></i>
                     <h2>Private Label Products</h2>
-                    <p>Manufacturing custom vitamins can be a work-intense job. From formulation to sourcing to encapsulation; we can take care of everything for you at the highest quality achievable.</p>
+                    <p>Browse through our site and see the many options we have for you. Also, if you would like more information on a particular item or would like us to provide a custom label for your business, please contact us. We look forward to speaking with you soon!</p>
                 </div>
                 <div class="item">
                     <i class="far fa-box-full"></i>
                     <h2>Stunning Packaging</h2>
-                    <p>Packaging plays an important role in the entire supply chain – from the product to the consumer.At Gummy Specialist, we are well known for our premium-quality packaging. Our product packaging whether it be bottles, labels, lids, boxes, etc. are also designed with the customer in mind, using unique designs to give the customer that little extra to draw them into purchasing a Gummy Specialists product.</p>
+                    <p>Packaging plays an important role in the entire supply chain – from the product to the consumer. At Gummy Specialist, we are well known for our premium-quality packaging. Our product packaging whether it be bottles, labels, lids, boxes, etc. are also designed with the customer in mind, using unique designs to give the customer that little extra to draw them into purchasing a Gummy Specialists product.</p>
                 </div>
                 <div class="item">
                     <i class="far fa-calendar-check"></i>
@@ -190,7 +190,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PNZ9HYwQC4M?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="{{ route('product.type', 'gummy') }}" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
                     <a href="{{ route('gummy_vitamin_manufacturing') }}" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -213,7 +213,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/adUIyvgreWo?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="{{ route('product.type', 'softgel') }}" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
                     <a href="{{ route('softgel_manufacturing') }}" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -221,29 +221,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="powder-manufacturing-wrapper">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="manufacturing">
-                <div class="content-block">
-                    <h2>Powder Manufacturing</h2>
-                    <p>Powders are a very popular form of supplement. For example products such as collagen, greens powders and whey protein are very popular powder supplements. People like the ability to mix it with whatever you like.</h3>
-                    <h3>Ingredient Blending</h3>
-                    <h3>Free Flow Mixtures</h3>
-                    <h3>Cohesive Mixtures</h3>
-                    <h3>Bottle/Bag Filling</h3>
-                    <h3>Container Polishing & Inspection</h3>
-                </div>
-                <div class="video-block">
-                    <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pzBWZNoAFMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="#" class="btn common-btn">Stock Powder Products<i class="ti ti-arrow-right"></i></a>
-                    <a href="#" class="btn common-btn">Custom Powder Manufacturing<i class="ti ti-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="stock-wrapper">
         <div class="container">
             <div class="stock-now">

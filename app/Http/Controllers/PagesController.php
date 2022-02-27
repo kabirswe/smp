@@ -255,6 +255,10 @@ class PagesController extends Controller
     {
         return view('front.design');
     }
+    public function privacy_policy()
+    {
+        return view('front.privacy-policy');
+    }
 
 
 }

@@ -132,34 +132,17 @@
 						<div class="content-block">
 							<!-- <p>Our Capabilities</p> -->
 							<h2>Custom Gummy Vitamin Manufacturing</h2>
-							<p>We have capabilities to manufacture any gummy vitamin formula. From sourcing each ingredient in your formula, to post filling inspection; we do it all at the best prices and the fastest lead times. We have the experience to help you formulate a new product for your target audience, or discuss with you how to properly scale your manufacturing. As your partner, it is our job for long-term gummy vitamin manufacturing success</p>
-							<a href="{{ route('gummy_vitamin_manufacturing') }}" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
+							<p>We are capable of producing any gummy vitamin formula. We handle everything from collecting each ingredient in your formula through post-filling inspection at the most competitive costs and with the shortest turnaround times. We have the skills to assist you in developing a new product for your customer base or discussing how to grow your manufacturing effectively. It is our responsibility as your partner to ensure long-term gummy vitamin manufacturing success.</p>
+							<a href="{{ route('request_quote') }}" class="btn common-btn">Get A Custom Gummy Vitamin Quote<i class="ti ti-arrow-right"></i></a>
 						</div>
 						<div class="video-block">
 							<div class="video">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/PNZ9HYwQC4M?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
-
-			<!-- <div class="pdf-reader">
-				<embed src="https://smpnutra.com/wp-content/uploads/2020/12/SMP-Nutra-Sales-Brochure.pdf" width="800px" height="2100px"> </embed>
-			</div>
-			<div class="faq-text">
-				<h2>Are your ready to build your own brand or enhance your current supply? Partner with us at Gummy Specialists!</h2>
-			</div>
-			<div class="faq-button">
-				<div class="button-left">
-					<a href="#" class="btn">View Our Catalog of Stock Formulas</a>
-				</div>
-				<div class="button-right">
-					<a href="#">Contact Us Today</a>
-				</div>
-			</div> -->
 		</div>
 	</div>
 </div>

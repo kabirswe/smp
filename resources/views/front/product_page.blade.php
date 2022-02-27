@@ -20,11 +20,12 @@
             <div class="product-content-inner">
                 <div class="product-content">
                     <div class="product-content-top">
-                        <h2>Gummy Specialists is Proud To Be A Premier Quality Supplier Of Private Label Supplements</h2>
-                        <p>At Gummy Specialists we are dedicated to giving you the most competitive stock private label supplements available in terms of quality and price. Our products in-stock are inspired by Amazon’s best-sellers and researched market trends.</p>
-                        <p>We ensure all our formulas are better quality than what is “best-selling” in the market today.</p>
-                        <p>As your partner in nutraceutical products, it is our job to make it easy for you to create a highly competitive formula quickly and inexpensively.</p>
-                        <p>Below you will see a list of all of our available stock private label nutra formula products. We offer samples for all these, so if you are interested and want to try before you invest that is available for you.</p>
+                        <h2>Gummy Specialists is Proud to be a Top-tier Private Label Supplement Supplier.</h2>
+                        <p>Gummy Specialists is committed to providing you with the most cost-effective and high-quality stock private label supplements available.</p>
+                        <p>Our in-stock products are influenced by Amazon's best-sellers and market research.</p>
+                        <p>We make certain that all of our formulas are of higher quality than what is currently "bestselling" on the market.</p>
+                        <p>It is our responsibility as your nutraceutical product partner to make it simple for you to build a super competitive formula promptly and affordably.</p>
+                        <p>A list of all of our available stock private label Nutra formula items can be seen below. We have samples for all of them, so if you're eager and want to give them a try before purchasing, you can surely do it.</p>
                     </div>
                     <div class="shop_info">
                         <div class="result-count">

@@ -17,7 +17,7 @@
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container ">
             <div class="video-content">
-                <h1>Supplement Manufacturing About Our Services</h1>
+                <h1>Supplement Manufacturing <br>About Our Services</h1>
             </div>
         </div>
     </div>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="iteam">
                             <h4>Powder Blending</h4>
-                            <h1>150Mil</h1>
+                            <h1>150K</h1>
                             <p>per day</p>
                         </div>
                         <div class="iteam">
@@ -125,7 +125,7 @@
                         </div>
                         <div class="iteam">
                             <h4>Gummy Vitamins</h4>
-                            <h1>300Mil</h1>
+                            <h1>300K</h1>
                             <p>gummies per day</p>
                         </div>
                     </div>
@@ -223,8 +223,8 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-center flex-column w-100">
-                    <h2>Request A Price<br/>Quote</h2>
-                    <p>Fill out our “request a quote” form so we we can give you a custom price quote to get started with manufacturing your neutraceutical supplements.</p>
+                    <h2>Request A Custom Quote</h2>
+                    <p>Fill out our "get a custom quote" form and we'll send you a custom price quote so you can start making your nutraceutical supplements.</p>
                     <div class="d-flex justify-content-center">
                         <a href="{{ route('request_quote') }}" class="btn common-btn">Get a Custom Quote<i class="ti ti-arrow-right"></i></a>
                     </div>
@@ -239,7 +239,7 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Gummy Vitamin Manufacturing</h2>
-                    <p>We are able to help you get your gummy vitamins manufactured the fastest, and with no stress. Gummy vitamins are able to have its shape, color, and size customized to however you please. Gummies are loved by children, and adults alike. It is truly great as it is typically very tasty.</h3>
+                    <p>Stick to gummy vitamins which are created with natural sweeteners. You can choose the size and can even get them personalized based on your target audience when you purchase gummy vitamins from us. It is incredibly simple, and our experienced staffs are here to help you. With the gummies we offer, you can get the right kind for your preferences and also at the best price and the fastest lead time. As your partner, we are always ready to deliver the products to you as soon as possible.</p>
                     <h3>Ingredient Blending</h3>
                     <h3>Mixing & Cooling</h3>
                     <h3>Molding</h3>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_noXRmaHGBw?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PNZ9HYwQC4M?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="{{ route('product.type', 'gummy') }}" class="btn common-btn">Stock Gummy Vitamin Products<i class="ti ti-arrow-right"></i></a>
                     <a href="{{ route('gummy_vitamin_manufacturing') }}" class="btn common-btn">Custom Gummy Vitamin Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -262,7 +262,7 @@
             <div class="manufacturing">
                 <div class="content-block">
                     <h2>Softgel Manufacturing</h2>
-                    <p>Softgels are able to have its shape, color, and size customized to however you please. Softgels offer encapsulation of liquids, instead of powder which can lead to increased absorbability.</p>
+                    <p>Nutraceutical Softgels are our specialty. We use industry-leading technologies to formulate softgels for your target audience. Our premium quality softgels have many desirable properties and several advantages. Our experienced staffs are here to provide you with the most elegant, effective & efficient way to achieve your branding goals. Our softgels are available in a range of delicious flavors, textures, and sizes, making them an attractive, convenient way to deliver your supplement to your target audience. We strive to be the best as your partner.</p>
                     <h3>Fill Material Prep</h3>
                     <h3>Gelatin Filling & Encapsulation</h3>
                     <h3>Tumble Drying</h3>
@@ -271,7 +271,7 @@
                 </div>
                 <div class="video-block">
                     <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkS-QKa1jCY?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/adUIyvgreWo?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <a href="{{ route('product.type', 'softgel') }}" class="btn common-btn">Stock Softgel Products<i class="ti ti-arrow-right"></i></a>
                     <a href="{{ route('softgel_manufacturing') }}" class="btn common-btn">Custom Softgel Manufacturing<i class="ti ti-arrow-right"></i></a>
@@ -283,7 +283,7 @@
         <div class="container">
             <div class="stock-now">
                 <div class="stock-left">
-                    <h3>See Our Incredible Private Label Supplements In-Stock Now!</h3>
+                    <h3>Check out our amazing Private Label Supplements that are currently in stock!</h3>
                 </div>
                 <div class="stock-right">
                     <div class="d-flex justify-content-center">
@@ -300,7 +300,7 @@
                 <div class="top-block">
                     <div class="content-block">
                         <h2>Pre-Manufactured In-Stock Private Label Formulas Available</h2>
-                        <p>We have many in-stock already manufactured supplement products in our warehouse, ready for you label to be put on. We have real-time catalog on our website updated everyday! Check to see our inventory of private label supplements. We also offer samples of every stock supplement for you to try before investing the product into your brand.</p>
+                        <p>We have a large number of already manufactured supplement products in stock in our warehouse, ready for you to label. On our website, we have a genuine catalog that is updated nearly every day! Check out our private label supplement range. We also provide free samples of each stock supplement so you can check it out before investing in it for your business.</p>
                     </div>
                     <div class="slider-block">
                         <a href="{{ route('product.list') }}" class="btn common-btn">See Our Private Label Stock Supplements<i class="ti ti-arrow-right"></i></a>
