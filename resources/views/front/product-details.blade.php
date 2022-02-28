@@ -53,8 +53,8 @@
                                 <table width="189">
                                     <tbody>
                                         <tr>
-                                            <td width="125"><strong>Gummy Specialists’s SKU:</strong></td>
-                                            <td width="64">100597</td>
+                                       
+                                            <td width="125"><strong> {!! $product->description !!}</strong></td>
                                         </tr>
                                     </tbody>
                                 </table>

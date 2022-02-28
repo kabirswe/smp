@@ -16,6 +16,12 @@ class ProductCategorySeeder extends Seeder
     {
         $datas = [
             [
+                'name' => 'All Stock Private Label Supplements', 
+                'slug' => 'all-stock-private-label-supplements', 
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],   
+            [
                 'name' => 'Beauty', 
                 'slug' => 'beauty', 
                 'created_by' => '1',

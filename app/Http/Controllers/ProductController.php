@@ -44,13 +44,13 @@ class ProductController extends Controller
             $aspect->aspectRatio();
         })->encode($extension, 60);
         // Size:large
-        Storage::disk('local')->put($location . $ImgName, (string) $image);
+        // Storage::disk('local')->put($location . $ImgName, (string) $image);
         // // Size:medium
         Storage::disk('local')->put($location . $ImgName_md, (string) $image_md);
         // // Size:small
         Storage::disk('local')->put($location . $ImgName_sm, (string) $image_sm);
 
-        $filename['image'] = "/upload/product/$location_main/" . $ImgName;
+        $filename['image'] = "/upload/product/$location_main/" . $ImgName_md;
         $filename['image_md'] = "/upload/product/$location_main/" . $ImgName_md;
         $filename['image_sm'] = "/upload/product/$location_main/" . $ImgName_sm;
         return $filename;

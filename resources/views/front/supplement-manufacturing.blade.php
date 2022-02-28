@@ -9,8 +9,8 @@
 <main class="supplement-manufacturing-container">
     <div class="video-container">
         <span class="overlay"></span>
-        <video width="100%" autoplay muted loop id="myVideo">
-            <source src="{{ asset('images/front/home/Gummy Specialists Trailer.mp4') }}" type="video/mp4">
+        <video width="100%" autoplay controls loop id="myVideo">
+            <source src="{{ asset('images/front/home/Gummy-Specialists-Trailer.mp4') }}" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
         <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/FYTzoVkQdyk?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
