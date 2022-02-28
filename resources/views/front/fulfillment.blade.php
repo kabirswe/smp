@@ -25,7 +25,7 @@
             </div>
             <div class="fulfillment-media-content">
                 <div class="fulfillment-media">
-                    <img src="{{ asset('images/front/home/IMG_20220224_140623.jpg') }}" alt="">
+                    <img src="{{ asset('images/front/home/Vitamin Distribution.jpg') }}" alt="">
                 </div>
                 <div class="fulfillment-text">
                     <h1>VITAMINS DISTRIBUTION</h1>
