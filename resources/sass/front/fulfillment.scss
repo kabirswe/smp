@@ -74,11 +74,13 @@
                     margin-right: 20px;
                     margin-bottom: 60px;
                     h1 {
-                        font-size: 35px;
+                        font-size: 25px;
                         font-family: "Oxygen", sans-serif;
                         font-weight: 700;
                         margin-bottom: 34px;
                         text-align: justify;
+                        @include word_break(2);
+                        height: 60px;
                     }
                     p {
                         text-align: justify;
@@ -142,6 +144,7 @@
                     margin-bottom: 20px !important;
                     h1 {
                         margin-bottom: 15px !important;
+                        height: auto !important;
                     }
                 }
             }

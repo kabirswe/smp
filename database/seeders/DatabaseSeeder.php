@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(ProductSeeder::class);
         // $this->call(ProductImageSeeder::class);
         $this->call(PostCategorySeeder::class);
-        $this->call(PostSeeder::class);
+        // $this->call(PostSeeder::class);
         // $this->call(PostCommentSeeder::class);
     }
 }

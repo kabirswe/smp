@@ -53,7 +53,6 @@
                                 <table width="189">
                                     <tbody>
                                         <tr>
-                                       
                                             <td width="125"><strong> {!! $product->description !!}</strong></td>
                                         </tr>
                                     </tbody>
