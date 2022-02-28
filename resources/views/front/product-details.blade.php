@@ -51,11 +51,7 @@
                                     <p class="availability">(Product Availability May Vary)</p>
                                 </div>
                                 <table width="189">
-                                    <tbody>
-                                        <tr>
-                                            <td width="125"><strong> {!! $product->description !!}</strong></td>
-                                        </tr>
-                                    </tbody>
+                                {!! $product->description !!}
                                 </table>
                                 <div class="product_meta">
                                     <span class="posted_in">
