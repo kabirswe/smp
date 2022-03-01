@@ -12,7 +12,7 @@ class PostCommentController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('permission:post-comment', ['only' => ['index', 'store', 'destroy']]);
+        $this->middleware('permission:post-comment', ['only' => ['index', 'destroy']]);
     }
 
 
