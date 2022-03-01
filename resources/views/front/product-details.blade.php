@@ -30,7 +30,7 @@
                                             </div>
                                         @endforeach
                                     </div>
-                                    <div class="image-gallery-right">
+                                    <div class="image-gallery-right" id="img-container">
                                     @foreach($product['images'] as $image)
                                         @if($image->is_cover_image)
                                             <img id="bigImage" src="{{ asset($image->image_md) }}" alt="">
@@ -250,8 +250,18 @@
 @endsection
 
 @push('custom-scripts')
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
     <!-- Scripts -->
     <script type="text/javascript">
+        var options2 = {
+            fillContainer: true,
+            offset: {vertical: 0, horizontal: 10},
+            zoomPosition: "original"
+        };
+        // {"img":"1.jpg","offset":{"vertical":0,"horizontal":10},"zoomPosition":"original"}
+
+        new ImageZoom(document.getElementById("img-container"), options2);
+
         function saveInfo() {
             if (document.getElementById('checkout-create-ac').checked) {
                 var name = document.getElementById('name').value;
