@@ -253,14 +253,13 @@
     <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
     <!-- Scripts -->
     <script type="text/javascript">
-        var options2 = {
+        var options = {
             fillContainer: true,
             offset: {vertical: 0, horizontal: 10},
             zoomPosition: "original"
         };
-        // {"img":"1.jpg","offset":{"vertical":0,"horizontal":10},"zoomPosition":"original"}
 
-        new ImageZoom(document.getElementById("img-container"), options2);
+        new ImageZoom(document.getElementById("img-container"), options);
 
         function saveInfo() {
             if (document.getElementById('checkout-create-ac').checked) {
@@ -272,6 +271,7 @@
         }
         function imageChange(params) {
             document.getElementById('bigImage').src = params;
+            $('.js-image-zoom__zoomed-image').css('background-image', 'url('+ params +')');
         }
         window.onload = function() {
             var url = new URL(window.location.href);
