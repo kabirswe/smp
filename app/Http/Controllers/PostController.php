@@ -109,9 +109,9 @@ class PostController extends Controller
         $data['created_by'] = $user->id;
         $data['updated_by'] = $user->id;
          // cover image data save
-         if($data['cover_image'] != "") {
-            $filename = $this->imageUpload($data['cover_image'], 'post')
-            ;
+         if($data['cover_image_data'] != "") {
+             dd($data['cover_image']);
+            $filename = $this->imageUpload($data['cover_image'], 'post');
 
             $data['cover_image'] = $filename['image'];
             $data['cover_image_sm'] = $filename['image_sm'];

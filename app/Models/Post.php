@@ -12,6 +12,8 @@ class Post extends Model
     protected $fillable = [
         'title',
         'slug',
+        'meta_title',
+        'meta_description',
         'post_category_id',
         'cover_image',
         'cover_image_sm',
@@ -33,5 +35,10 @@ class Post extends Model
                 'source' => ['title', 'id']
             ]
         ];
+    }
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\PostCategory', 'post_category_id');
     }
 }

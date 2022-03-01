@@ -17,9 +17,11 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('slug');
-            $table->string('cover_image', 255)->nullable;
-            $table->string('cover_image_sm', 255)->nullable;
-            $table->string('cover_image_md', 255)->nullable;
+            $table->string('meta_title', 255)->nullable();
+            $table->text('meta_description')->nullable();   
+            $table->string('cover_image', 255)->nullable();
+            $table->string('cover_image_sm', 255)->nullable();
+            $table->string('cover_image_md', 255)->nullable();
             $table->unsignedBigInteger('post_category_id');
             $table->foreign('post_category_id')->references('id')->on('post_categories');
             $table->text('description');
