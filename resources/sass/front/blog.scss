@@ -53,10 +53,9 @@
                         margin-bottom: 35px;
                         .blog-image {
                             width: calc(50% - 10px);
-                            // img {
-                            //     width: 100%;
-                            //     height: 100%;
-                            // }
+                            img {
+                                height: 354px;
+                            }
                         }
                         .blog-text {
                             width: calc(50% - 10px);
@@ -70,8 +69,9 @@
                                 line-height: 32px;
                                 color: #b0cf4a;
                                 margin-bottom: 30px;
+                                @include word_break(2);
                             }
-                            p {
+                            .description {
                                 line-height: 26px;
                                 font-size: 16px;
                                 @include word_break(3);
