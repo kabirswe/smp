@@ -79,6 +79,9 @@
                                 width: calc(80% - 10px);
                                 display: flex;
                                 justify-content: center;
+                                .js-image-zoom__zoomed-image {
+                                    background-color: $white;
+                                }
                             }
                         }
                         .product-gallery-btn {
