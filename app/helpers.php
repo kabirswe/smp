@@ -23,7 +23,7 @@ function getPostCategories()
 
 function getProductCategories()
 {
-    $product_categories = ProductCategory::select('name', 'slug')->get();
+    $product_categories = ProductCategory::select('name', 'slug')->orderBy('name', 'asc')->get();
     return $product_categories;
 }
 

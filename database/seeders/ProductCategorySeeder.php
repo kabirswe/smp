@@ -165,6 +165,12 @@ class ProductCategorySeeder extends Seeder
                 'created_by' => '1',
                 'updated_by' => '1'
             ],        
+            [
+                'name' => 'Collagen', 
+                'slug' => 'collagen', 
+                'created_by' => '1',
+                'updated_by' => '1'
+            ],        
         ];
 
         foreach($datas as $data)
