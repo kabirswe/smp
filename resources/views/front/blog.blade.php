@@ -23,8 +23,7 @@
                                 <div class="blog-item">
                                 <div class="blog-image">
                                     <a href="{{route('blog.details', $post->slug) }}">
-                                        @if($post->cover_image_md)
-                                        
+                                    @if($post->cover_image_md)
                                     <img src="{{ asset($post->cover_image_md) }}" alt="">
                                     @else 
                                     <img src="{{ asset('images/front/home/no-image.jpg') }}" alt="">

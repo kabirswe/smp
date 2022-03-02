@@ -78,26 +78,6 @@
                     </div>
                 </div>
                 <div class="blog-sidebar">
-                    <!-- <div class="sidebar-top">
-                        <img src="{{ asset('images/front/1581626444.png') }}" alt="">
-                        <h5>Learn How To Generate The Best Source Of Customers For Supplement Brands!</h5>
-                        <p>We put together case studies of very successful supplement brands in relation to organic search traffic. We also included a step-by-step guide so you can start building this incredible source of web traffic today!</p>
-                        <a class="btn common-btn">Download Slideshow</a>
-                    </div> -->
-                    <!-- <div class="about-author">
-                        <h3>ABOUT AUTHOR</h3>
-                        <div class="author-box">
-                            <img src="{{ asset('images/front/authr-image.png') }}" alt="">
-                            <h3>Will Cartwright</h3>
-                        </div>
-                        <p>Will is a Co-Founder of Gummy Specialists, founder of GetKnownPros, and owns a handful of supplement brands. Will has extensive knowledge of trends in the nutraceutical industry after contract-manufacturing for hundreds of brands. Will has spent the last decade learning the best online marketing & brand-building techniques for supplement & vitamin brands and enjoys sharing this unique knowledge with his nutra-entrepreneur community.</p>
-                        <div class="comment-link">
-                            <a href="#">Learn More About Will Here</a>
-                            <a href="#">Connect With Me On LinkedIn</a>
-                            <a href="#">Work Together With Me On Your Nutra Marketing</a>
-                            <a href="#">View app posts</a>
-                        </div>
-                    </div> -->
                     <div class="product_categories">
                         <h3>categories</h3>
                         <div class="block">
@@ -138,7 +118,11 @@
         </div>           -->
         <div class="nearby_posts">
             <div class="nav_previous">
+                @if($random_post_prev->cover_image_md)
                 <img src="{{ asset($random_post_prev->cover_image_md) }}" alt="">
+                @else 
+                <img src="{{ asset('images/front/home/white-bg.jpg') }}" alt="">
+                @endif
                 <div class="man_nav_over"></div>
                 <a href="{{ route('blog.details', $random_post_prev->slug) }}"><div  class="man_nav_txt">
                     <span><i class="ti ti-arrow-left"></i>Previous</span>
@@ -147,7 +131,11 @@
                 </a>
             </div>
             <div class="nav_next">
+                @if($random_post_next->cover_image_md)
                 <img src="{{ asset($random_post_next->cover_image_md) }}" alt="">
+                @else 
+                <img src="{{ asset('images/front/home/white-bg.jpg') }}" alt="">
+                @endif
                 <div class="man_nav_over"></div>
                 <a href="{{ route('blog.details', $random_post_next->slug) }}"><div  class="man_nav_txt">
                     <span><i class="ti ti-arrow-right"></i>Next</span>

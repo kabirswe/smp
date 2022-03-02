@@ -93,7 +93,7 @@ class PagesController extends Controller
                 'type:id,name'
             ])
             ->orderBy('id')
-            ->paginate(10);
+            ->paginate(12);
         } else {
             $products = Product::with([
                 'images:id,product_id,is_cover_image,image,image_sm,image_md',
@@ -102,7 +102,7 @@ class PagesController extends Controller
                 'type:id,name'
             ])
             ->orderBy('id', 'DESC')
-            ->paginate(10);
+            ->paginate(12);
         }
         return view('front.product_page', compact('products'));
     }
@@ -119,7 +119,7 @@ class PagesController extends Controller
             'type:id,name'
         ])
         ->orderBy('id')
-        ->paginate(10);
+        ->paginate(12);
         return view('front.product_page', compact('products','type'));
     }
 
@@ -138,7 +138,7 @@ class PagesController extends Controller
         ])
         ->orderBy('id')
         // ->get();
-        ->paginate(10);
+        ->paginate(12);
         // dd($products->toArray());
         return view('front.product_page', compact('products','category' ));
     }

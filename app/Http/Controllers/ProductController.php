@@ -85,7 +85,7 @@ class ProductController extends Controller
     public function create()
     {
         $types = ProductType::select('id', 'name')->get();
-        $categories = ProductCategory::select('id', 'name')->get();
+        $categories = ProductCategory::select('id', 'name')->orderBy('name', 'asc')->get();
         return view('admin.product.create', compact('types', 'categories'));
     }
 
