@@ -15,7 +15,7 @@
         </video>
         <!-- <img width="100%" src="{{ asset('images/front/home/1.png') }}" alt=""> -->
         <div class="container">
-                <div class="video-content">
+            <div class="video-content">
                 <h2>Your Partner In<br /> Manufacturing Amazing<br /> Nutraceuticals</h2>
                 <p>GS stands for Gummy Specialists. Our team is committed to assisting you in scaling up your vitamin manufacturing business in the most efficient way possible.</p>
                 <a href="{{ route('supplement_manufacturing') }}" class="btn common-btn">About Our Facilities<i class="ti ti-arrow-right"></i></a>
@@ -301,8 +301,18 @@
 @push('custom-scripts')
     <!-- Scripts -->
     <script src="{{ asset('vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <!-- <script src="{{ asset('js/admin/main.js') }}"></script> -->
     <script>
+        window.addEventListener("scroll", myFunction);
+
+        function myFunction() {
+            var thetarget = document.getElementById("myVideo");
+            var targetheight = thetarget.offsetHeight + 150;
+            if (document.documentElement.scrollTop > targetheight) {
+                document.getElementById("myVideo").volume = 0.0;
+            } else {
+                document.getElementById("myVideo").volume = 1.0;
+            }
+        }
       new Swiper(".capabilitiesSwiper", {
         effect: "fade",
         autoplay: {

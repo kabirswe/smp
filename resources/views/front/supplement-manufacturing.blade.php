@@ -325,6 +325,19 @@
     <script src="{{ asset('vendor/swiper/swiper-bundle.min.js') }}"></script>
     <!-- <script src="{{ asset('js/admin/main.js') }}"></script> -->
     <script>
+
+        window.addEventListener("scroll", myFunction);
+
+        function myFunction() {
+            var thetarget = document.getElementById("myVideo");
+            var targetheight = thetarget.offsetHeight + 150;
+            if (document.documentElement.scrollTop > targetheight) {
+                document.getElementById("myVideo").volume = 0.0;
+            } else {
+                document.getElementById("myVideo").volume = 1.0;
+            }
+        }
+
       new Swiper(".capabilitiesSwiper", {
         effect: "fade",
         autoplay: {
