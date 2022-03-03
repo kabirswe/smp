@@ -53,7 +53,12 @@
                                         {!! Form::hidden('coverImage_data',"", ['id' => 'coverImage_data', 'class' => 'product-image']) !!}
                                         {!! Form::file('coverimage', ['onchange' => 'imageUpload(this)', 'id' => 'coverImage','class' => 'drop-area-text']) !!}
                                     </div>
-                                    <div style="display:flex" class="delete-btn" id="coverImageDelete" onclick="removeImage('coverImage')">Delete image</div>
+
+                                    @foreach($selected_images as $image)
+                                        @if($image->is_cover_image)
+                                        <div style="display:flex" class="delete-btn" id="coverImageDelete" onclick="removeImage('coverImage', false, {{ $image->id }})">Delete image</div>
+                                        @endif
+                                    @endforeach
                                 </div>
                                 <div class="image-name" id="coverImageName">Not selected</div>
                                 <div class="product-image">
@@ -82,7 +87,7 @@
                                             {!! Form::hidden('thumbnail_image'.$loop->index.'_data',"", ['id' => 'thumbnail_image'.$loop->index.'_data', 'class' => 'product-image']) !!}
                                             {!! Form::file('thumbnail_image[]', ['onchange' => 'imageUpload(this)', 'id' => 'thumbnail_image'.$loop->index]) !!}
                                         </div>
-                                        <div style="display:flex" class="delete-btn" id="thumbnail_image{{ $loop->index }}Delete"  onclick="removeImage('thumbnail_image{{ $loop->index }}', true)">Delete image</div>
+                                        <div style="display:flex" class="delete-btn" id="thumbnail_image{{ $loop->index }}Delete"  onclick="removeImage('thumbnail_image{{ $loop->index }}', true, {{ $image->id }})">Delete image</div>
                                     </div>
                                     <div class="image-name space-top" id="thumbnail_image{{ $loop->index }}Name">Not selected</div>
                                     <div class="product-image">
@@ -187,7 +192,7 @@
             view += '<input id="thumbnail_image' + imageCounter +'_data" class="product-image" name="thumbnail_image' + imageCounter +'_data" type="hidden" value="">';
             view += '<input onchange="imageUpload(this)" id="thumbnail_image' + imageCounter +'" name="thumbnail_image[]" type="file">';
             view += '</div>';
-            view += '<div class="delete-btn" id="thumbnail_image' + imageCounter +'Delete" onclick="removeImage(\'' + removeThumbnail_image +'\', true)">Delete image</div>';
+            view += '<div class="delete-btn" id="thumbnail_image' + imageCounter +'Delete" onclick="removeImage(\'' + removeThumbnail_image +'\', true, false)">Delete image</div>';
             view += '</div>';
             view += '<div class="image-name space-top" id="thumbnail_image' + imageCounter +'Name">Not selected</div>';
             view += '<div class="product-image">';
@@ -228,13 +233,26 @@
             }
         }
 
-        function removeImage( id, noPreview ) {
+        function removeImage( id, noPreview, dataId ) {
             $( "#" + id ).val( null );
+            console.log(id);
             if ( noPreview ) {
                 $( '#' + id + 'Preview' ).attr( 'src', noImage ).hide();
             } else {
                 $( '#' + id + 'Preview' ).attr( 'src', noImage );
             }
+            // if (dataId){
+            //     $.ajax({
+            //     type: "GET",
+            //     url: SITEURL + '/product/image/detele/' + dataId,
+            //     success: function (data) {
+            //        console.log(data);
+            //     },
+            //     error: function (data) {
+            //         console.log('Error:', data);
+            //     }
+            //     });
+            // }
             $( '#' + id + 'Name' ).html( 'Not selected' );
             $( '#' + id + 'Delete' ).css( 'display', 'none' );
         }

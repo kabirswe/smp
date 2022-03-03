@@ -174,6 +174,7 @@ class ProductController extends Controller
         $categories = ProductCategory::select('id', 'name')->get();
         $selected_categories = ProductProductCategory::where('product_id', $product->id)->pluck('product_categorie_id')->toArray();
         $selected_images = ProductImage::where('product_id', $product->id)->get();
+        // dd($selected_images);
         return view(
             'admin.product.edit',
             compact(
@@ -214,39 +215,54 @@ class ProductController extends Controller
         $oldData->update($data);
 
         // cover image data save
-        // if($data['coverimage'] != "") {
-        //     $filename = $this->imageUpload($data['coverimage'], 'coverimage');
-        //     ProductImage::create([
-        //         'product_id' => $productData->id,
-        //         'image' => $filename['image'],
-        //         'image_sm' => $filename['image_md'],
-        //         'image_md' => $filename['image_sm'],
-        //         'is_cover_image' => 1,
-        //         'created_by' =>  $user->id,
-        //         'updated_by' => $user->id
-        //     ]);
-        // }
+        if($data['coverImage_data'] != "") {
+            $filename = $this->imageUpload($data['coverimage'], 'coverimage');
+            ProductImage::create([
+                'product_id' => $oldData->id,
+                'image' => $filename['image'],
+                'image_sm' => $filename['image_md'],
+                'image_md' => $filename['image_sm'],
+                'is_cover_image' => 1,
+                'created_by' =>  $user->id,
+                'updated_by' => $user->id
+            ]);
+        }
         // thumbnail image data save
-        // if (!empty($data['thumbnail_image'])) {
-        //     foreach ($request->thumbnail_image as $data) {
-        //         $filename = $this->imageUpload($data, 'image');
-        //         ProductImage::create([
-        //             'product_id' => $productData->id,
-        //             'image' => $filename['image'],
-        //             'image_sm' => $filename['image_md'],
-        //             'image_md' => $filename['image_sm'],
-        //             'is_cover_image' => 0,
-        //             'created_by' =>  $user->id,
-        //             'updated_by' => $user->id
-        //         ]);
-        //     }
-        // }
+        if (!empty($data['thumbnail_image'])) {
+            foreach ($request->thumbnail_image as $data) {
+                $filename = $this->imageUpload($data, 'image');
+                ProductImage::create([
+                    'product_id' => $oldData->id,
+                    'image' => $filename['image'],
+                    'image_sm' => $filename['image_md'],
+                    'image_md' => $filename['image_sm'],
+                    'is_cover_image' => 0,
+                    'created_by' =>  $user->id,
+                    'updated_by' => $user->id
+                ]);
+            }
+        }
 
         return redirect()->route('product.index')->with([
             'success' => trans('Product updated successfully')
         ]);
     }
-
+    public function product_image_detele(Request $request, $id)
+    {
+        if ($request->ajax()) {
+            try {
+                $data = ProductImage::find($id);
+                 Storage::delete([$data->image, $data->image_sm, $data->image_md]);
+                $data->delete();
+                return response()->json(['success' => 'product images deleted']);
+            } catch (Exception $e) {
+                return response()->json([
+                    'status' => 500,
+                    'message' => $e->getMessage()
+                ]);
+            }
+        }
+    }
 
     /**
      * Remove the specified resource from storage.

@@ -9,6 +9,7 @@ class ProductImage extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'id',
         'product_id',
         'is_cover_image',
         'image',

@@ -167,7 +167,7 @@ class PostController extends Controller
         // cover image data save
         if($data['cover_image_data'] != "") {
             // Size:large
-        Storage::delete([$oldData->cover_image, $oldData->cover_image_sm, $oldData->cover_image_md]);
+            Storage::delete([$oldData->cover_image, $oldData->cover_image_sm, $oldData->cover_image_md]);
             //  dd($data['cover_image']);
             $filename = $this->imageUpload($data['cover_image'], 'post');
 

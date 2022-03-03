@@ -93,6 +93,7 @@ Route::group(['middleware' => ['auth', 'checkActiveUser'], ['role:admin|operator
     Route::resource('product_category', ProductCategoryController::class);
     Route::resource('product_type', ProductTypeController::class);
     Route::resource('product', ProductController::class);
+    Route::get('product/image/detele/{id}', [ProductController::class, 'product_image_detele'])->name('product.image.detele');
     Route::resource('post_category', PostCategoryController::class);
     Route::resource('post', PostController::class);
 
