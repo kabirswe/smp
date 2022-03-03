@@ -35,7 +35,7 @@
                 <div class="col-md-9">
                     <div class="col-md-11">
                         {!! Form::label('name', 'Title', ['class' => 'form-label']) !!}
-                        {!! Form::text('name', $product->name, ['class' => 'form-control', 'required' => true]) !!}
+                        {!! Form::text('name', $product->name, ['placeholder' => 'Product Title','class' => 'form-control', 'required' => true]) !!}
                         @if($errors->has('name'))
                             <div class="error_msg">
                                 {{ $errors->first('name') }}
@@ -51,13 +51,17 @@
                                     <div class="select-btn" id="drop-container" data-id="coverImage">
                                         {!! Form::label('coverImage', 'Select files', ['class'=>'']) !!}
                                         {!! Form::hidden('coverImage_data',"", ['id' => 'coverImage_data', 'class' => 'product-image']) !!}
-                                        {!! Form::file('coverimage', ['onchange' => 'imageUpload(this)', 'id' => 'coverImage','class' => 'drop-area-text', 'required' => true]) !!}
+                                        {!! Form::file('coverimage', ['onchange' => 'imageUpload(this)', 'id' => 'coverImage','class' => 'drop-area-text']) !!}
                                     </div>
-                                    <div class="delete-btn" id="coverImageDelete" onclick="removeImage('coverImage')">Delete image</div>
+                                    <div style="display:flex" class="delete-btn" id="coverImageDelete" onclick="removeImage('coverImage')">Delete image</div>
                                 </div>
                                 <div class="image-name" id="coverImageName">Not selected</div>
                                 <div class="product-image">
-                                    <img id="coverImagePreview" src="{{ asset('images/admin/default.jpg') }}" alt="">
+                                    @foreach($selected_images as $image)
+                                        @if($image->is_cover_image)
+                                            <img id="bigImage" src="{{ asset($image->image_md) }}" alt="">
+                                        @endif
+                                    @endforeach
                                     <span class="formate-error coverImageerror">Select a jpg, jpeg, png type image file.</span>
                                 </div>
                                 @if($errors->has('cover_image'))
@@ -67,23 +71,27 @@
                                 @endif
                             </div>
                             <hr>
-                            <div class="data-block pb-0 drop-container" data-id="1">
-                                <div class="field-text mt-30">Additional image</div>
-                                <div class="upload-btn-block">
-                                    <p class="index">image1*</p>
-                                    <div class="select-btn" id="drop-container-1" data-id="thumbnail_image1">
-                                        {!! Form::label('thumbnail_image1', 'Select files') !!}
-                                        {!! Form::hidden('thumbnail_image1_data',"", ['id' => 'thumbnail_image1_data', 'class' => 'product-image']) !!}
-                                        {!! Form::file('thumbnail_image[]', ['onchange' => 'imageUpload(this)', 'id' => 'thumbnail_image1', 'required' => true]) !!}
+                            @foreach($selected_images as $image)
+                                @if(!$image->is_cover_image)
+                                <div class="data-block pb-0 drop-container" data-id="{{ $loop->index }}">
+                                    <div class="field-text mt-30">Additional image</div>
+                                    <div class="upload-btn-block">
+                                        <p class="index">image{{ $loop->index }}*</p>
+                                        <div class="select-btn" id="drop-container-{{ $loop->index }}" data-id="thumbnail_image{{ $loop->index }}">
+                                            {!! Form::label('thumbnail_image'.$loop->index, 'Select files') !!}
+                                            {!! Form::hidden('thumbnail_image'.$loop->index.'_data',"", ['id' => 'thumbnail_image'.$loop->index.'_data', 'class' => 'product-image']) !!}
+                                            {!! Form::file('thumbnail_image[]', ['onchange' => 'imageUpload(this)', 'id' => 'thumbnail_image'.$loop->index]) !!}
+                                        </div>
+                                        <div style="display:flex" class="delete-btn" id="thumbnail_image{{ $loop->index }}Delete"  onclick="removeImage('thumbnail_image{{ $loop->index }}', true)">Delete image</div>
                                     </div>
-                                    <div class="delete-btn" id="thumbnail_image1Delete"  onclick="removeImage('thumbnail_image1', true)">Delete image</div>
+                                    <div class="image-name space-top" id="thumbnail_image{{ $loop->index }}Name">Not selected</div>
+                                    <div class="product-image">
+                                        <img id="thumbnail_image{{ $loop->index }}Preview" src="{{ asset($image->image_sm) }}" alt="">
+                                        <span class="formate-error thumbnail_image{{ $loop->index }}error">Select a jpg, jpeg, png type image file.</span>
+                                    </div>
                                 </div>
-                                <div class="image-name space-top" id="thumbnail_image1Name">Not selected</div>
-                                <div class="product-image">
-                                    <img id="thumbnail_image1Preview" src="{{ asset('images/admin/default.jpg') }}" alt="">
-                                    <span class="formate-error thumbnail_image1error">Select a jpg, jpeg, png type image file.</span>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
 
                         <div class="col-md-12 d-flex w-100 justify-content-center">
@@ -102,7 +110,7 @@
                         @endif
                     </div>
                     <div class="col-11">
-                        <button type="submit" class="btn btn-primary mt-4">Save</button>
+                        <button type="submit" class="btn btn-primary mt-4">Update</button>
                     </div>
                 </div>
                 <div class="col-md-3">

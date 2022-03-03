@@ -30,7 +30,7 @@
                 @csrf
                 <div class="col-md-8">
                     {!! Form::label('name', 'Name', ['class' => 'form-label']) !!}
-                    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('name', null, ['placeholder' => 'Product Type Name','class' => 'form-control']) !!}
                     @if($errors->has('name'))
                         <div class="error_msg">
                             {{ $errors->first('name') }}

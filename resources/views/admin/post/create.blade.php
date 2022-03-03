@@ -31,7 +31,7 @@
                 <div class="col-md-9">
                     <div class="col-md-12">
                         {!! Form::label('title', 'Title', ['class' => 'form-label']) !!}
-                        {!! Form::text('title', null, ['class' => 'form-control',  'required' => true]) !!}
+                        {!! Form::text('title', null, ['placeholder' => 'Post Title','class' => 'form-control',  'required' => true]) !!}
                         @if($errors->has('title'))
                             <div class="error_msg">
                                 {{ $errors->first('title') }}

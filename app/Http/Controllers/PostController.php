@@ -96,7 +96,7 @@ class PostController extends Controller
         $user = Auth::user();
         $data = $request->all();
         $validation = Validator::make($data, [
-            'title' => 'required|max:200'
+            'title' => 'required|max:100'
         ],[
             'title.unique' => trans('error.name')
         ]);
@@ -110,7 +110,7 @@ class PostController extends Controller
         $data['updated_by'] = $user->id;
          // cover image data save
          if($data['cover_image_data'] != "") {
-             dd($data['cover_image']);
+            //  dd($data['cover_image']);
             $filename = $this->imageUpload($data['cover_image'], 'post');
 
             $data['cover_image'] = $filename['image'];
@@ -135,7 +135,8 @@ class PostController extends Controller
     public function edit(Request $request, $id)
     {
         $post = Post::findOrFail($id);
-        return view('admin.post.edit', compact('post'));
+        $post_categories = PostCategory::select('name','id')->get();
+        return view('admin.post.edit', compact('post', 'post_categories'));
     }
 
     /**
@@ -147,6 +148,7 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // dd($request->all());
         $user = Auth::user();
         $data = $request->all();
         $validation = Validator::make($data, [
@@ -161,6 +163,19 @@ class PostController extends Controller
         }
         $oldData = Post::find($id);
         $oldData['updated_by'] = $user->id;
+
+        // cover image data save
+        if($data['cover_image_data'] != "") {
+            // Size:large
+        Storage::delete([$oldData->cover_image, $oldData->cover_image_sm, $oldData->cover_image_md]);
+            //  dd($data['cover_image']);
+            $filename = $this->imageUpload($data['cover_image'], 'post');
+
+            $data['cover_image'] = $filename['image'];
+            $data['cover_image_sm'] = $filename['image_sm'];
+            $data['cover_image_md'] = $filename['image_md'];
+
+        }
 
         $oldData->update($data);
 

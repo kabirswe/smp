@@ -31,7 +31,7 @@
                 <div class="col-md-9">
                     <div class="col-md-11">
                         {!! Form::label('name', 'Title', ['class' => 'form-label']) !!}
-                        {!! Form::text('name', null, ['class' => 'form-control', 'required' => true]) !!}
+                        {!! Form::text('name', null, ['placeholder' => 'Product Title','class' => 'form-control', 'required' => true]) !!}
                         @if($errors->has('name'))
                             <div class="error_msg">
                                 {{ $errors->first('name') }}
@@ -104,7 +104,7 @@
                 <div class="col-md-3">
                     <div class="col-md-8">
                         {!! Form::label('quantity', 'Quantity', ['class' => 'form-label']) !!}
-                        {!! Form::number('quantity', null, ['class' => 'form-control', 'required' => true]) !!}
+                        {!! Form::number('quantity', null, ['placeholder' => 'Product Qty','class' => 'form-control', 'required' => true]) !!}
                         @if($errors->has('quantity'))
                             <div class="error_msg">
                                 {{ $errors->first('quantity') }}
