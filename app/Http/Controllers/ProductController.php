@@ -195,7 +195,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        dd( $request->all());
+        // dd( $request->all());
         $user = Auth::user();
         $data = $request->all();
         $validation = Validator::make($data, [
@@ -214,33 +214,33 @@ class ProductController extends Controller
         $oldData->update($data);
 
         // cover image data save
-        if($data['coverimage'] != "") {
-            $filename = $this->imageUpload($data['coverimage'], 'coverimage');
-            ProductImage::create([
-                'product_id' => $productData->id,
-                'image' => $filename['image'],
-                'image_sm' => $filename['image_md'],
-                'image_md' => $filename['image_sm'],
-                'is_cover_image' => 1,
-                'created_by' =>  $user->id,
-                'updated_by' => $user->id
-            ]);
-        }
+        // if($data['coverimage'] != "") {
+        //     $filename = $this->imageUpload($data['coverimage'], 'coverimage');
+        //     ProductImage::create([
+        //         'product_id' => $productData->id,
+        //         'image' => $filename['image'],
+        //         'image_sm' => $filename['image_md'],
+        //         'image_md' => $filename['image_sm'],
+        //         'is_cover_image' => 1,
+        //         'created_by' =>  $user->id,
+        //         'updated_by' => $user->id
+        //     ]);
+        // }
         // thumbnail image data save
-        if (!empty($data['thumbnail_image'])) {
-            foreach ($request->thumbnail_image as $data) {
-                $filename = $this->imageUpload($data, 'image');
-                ProductImage::create([
-                    'product_id' => $productData->id,
-                    'image' => $filename['image'],
-                    'image_sm' => $filename['image_md'],
-                    'image_md' => $filename['image_sm'],
-                    'is_cover_image' => 0,
-                    'created_by' =>  $user->id,
-                    'updated_by' => $user->id
-                ]);
-            }
-        }
+        // if (!empty($data['thumbnail_image'])) {
+        //     foreach ($request->thumbnail_image as $data) {
+        //         $filename = $this->imageUpload($data, 'image');
+        //         ProductImage::create([
+        //             'product_id' => $productData->id,
+        //             'image' => $filename['image'],
+        //             'image_sm' => $filename['image_md'],
+        //             'image_md' => $filename['image_sm'],
+        //             'is_cover_image' => 0,
+        //             'created_by' =>  $user->id,
+        //             'updated_by' => $user->id
+        //         ]);
+        //     }
+        // }
 
         return redirect()->route('product.index')->with([
             'success' => trans('Product updated successfully')
