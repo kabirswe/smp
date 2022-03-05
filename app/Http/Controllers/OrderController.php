@@ -81,7 +81,7 @@ class OrderController extends Controller
             'phone' => $orderData->phone,
             'comment' => $orderData->comment
         ];
-        Mail::to($orderData->email)->send(new OrderMail($details));
+        Mail::to('sales@gummyspecialists.com')->send(new OrderMail($details));
         return redirect()->route('product.details', $product->slug)->with([
             'success' => trans('Order Confirm successfully')
         ]);
