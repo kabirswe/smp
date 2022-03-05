@@ -7,6 +7,8 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use DataTables, Exception;
+use Mail;
+use App\Mail\OrderMail;
 class OrderController extends Controller
 
 {
@@ -70,6 +72,16 @@ class OrderController extends Controller
         }
         $orderData = Order::create($data);
         $product = Product::where('id', $request->product_id)->first('slug');
+        $details = [
+            'title' => 'Mail from Gummyspecialists',
+            'product' => $product->name,
+            'quantity' => $orderData->quantity,
+            'name' => $orderData->name,
+            'email' => $orderData->email,
+            'phone' => $orderData->phone,
+            'comment' => $orderData->comment
+        ];
+        Mail::to('kabir.swe@gmail.com')->send(new OrderMail($details));
         return redirect()->route('product.details', $product->slug)->with([
             'success' => trans('Order Confirm successfully')
         ]);
