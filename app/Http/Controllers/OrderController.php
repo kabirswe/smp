@@ -71,10 +71,10 @@ class OrderController extends Controller
             ]);
         }
         $orderData = Order::create($data);
-        $product = Product::where('id', $request->product_id)->first('slug');
+        $product = Product::where('id', $request->product_id)->first('slug', 'name');
         $details = [
             'title' => 'Mail from Gummyspecialists',
-            'product' => $orderData->name,
+            'product' => $product->name,
             'quantity' => $orderData->quantity,
             'name' => $orderData->name,
             'email' => $orderData->email,
