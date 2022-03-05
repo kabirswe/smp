@@ -74,7 +74,7 @@ class OrderController extends Controller
         $product = Product::where('id', $request->product_id)->first('slug');
         $details = [
             'title' => 'Mail from Gummyspecialists',
-            'product' => $product->name,
+            'product' => $orderData->name,
             'quantity' => $orderData->quantity,
             'name' => $orderData->name,
             'email' => $orderData->email,
