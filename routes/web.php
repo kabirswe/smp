@@ -20,6 +20,7 @@ use App\Http\Controllers\PostCommentController;
 use App\Http\Controllers\RatingController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\CkeditorController;
+use Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,6 +69,15 @@ Route::post('/request-quote/store', [GetQuoteController::class, 'store'])->name(
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('store.contact');
 Route::get('/design', [PagesController::class, 'design'])->name('design');
+
+Route::get('send-mail', function () {
+    $details = [
+        'title' => 'Mail from ItSolutionStuff.com',
+        'body' => 'This is for testing email using smtp'
+    ];
+    Mail::to('your_receiver_email@gmail.com')->send(new \App\Mail\MyTestMail($details));
+    dd("Email is Sent.");
+});
 
 Route::get('/liquid-capsule', [PagesController::class, 'liquid_capsule'])->name('liquid_capsule');
 
