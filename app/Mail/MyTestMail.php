@@ -11,7 +11,7 @@ class MyTestMail extends Mailable
 {
     use Queueable, SerializesModels;
     public $details;
-    
+
     /**
      * Create a new message instance.
      *
@@ -19,11 +19,10 @@ class MyTestMail extends Mailable
      */
     public function __construct($details)
     {
-        
         $this->details = $details;
-        
+
     }
-  
+
     /**
      * Build the message.
      *
@@ -32,6 +31,6 @@ class MyTestMail extends Mailable
     public function build()
     {
         return $this->subject('Mail from ItSolutionStuff.com')
-                    ->view('emails.myTestMail');
+                    ->markdown('emails.myTestMail')->with('details', $this->details);
     }
 }

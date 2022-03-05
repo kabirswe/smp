@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Storage;
 use Intervention\Image\ImageManagerStatic as Image;
 use DataTables;
 use Exception;
+use Mail;
+use App\Mail\MyTestMail;
 
 class ProductController extends Controller
 {
@@ -284,5 +286,21 @@ class ProductController extends Controller
                 ]);
             }
         }
+    }
+
+    /**
+     * Mail the specified resource from storage.
+     *
+     * @param  \App\Models\Product  $product
+     * @return \Illuminate\Http\Response
+     */
+    public function order_mail(Request $request)
+    {
+        $details = [
+            'title' => 'Mail from ItSolutionStuff.com',
+            'body' => 'This is for testing email using smtp'
+        ];
+        Mail::to('kabir.swe@gmail.com')->send(new MyTestMail($details));
+        dd("Email is Sent.");
     }
 }
