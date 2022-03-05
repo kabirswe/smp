@@ -68,8 +68,6 @@ Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('store.contact');
 Route::get('/design', [PagesController::class, 'design'])->name('design');
 
-Route::get('/send-mail', [ProductController::class, 'order_mail'])->name('order.mail');
-
 Route::get('/liquid-capsule', [PagesController::class, 'liquid_capsule'])->name('liquid_capsule');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
