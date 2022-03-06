@@ -72,7 +72,7 @@
                                         {!! Form::hidden('thumbnail_image1_data',"", ['id' => 'thumbnail_image1_data', 'class' => 'product-image']) !!}
                                         {!! Form::file('thumbnail_image[]', ['onchange' => 'imageUpload(this)', 'id' => 'thumbnail_image1', 'required' => true]) !!}
                                     </div>
-                                    <div class="delete-btn" id="thumbnail_image1Delete"  onclick="removeImage('thumbnail_image1', true)">Delete image</div>
+                                    <div class="delete-btn" id="thumbnail_image1Delete"  onclick="removeImage('thumbnail_image1')">Delete image</div>
                                 </div>
                                 <div class="image-name space-top" id="thumbnail_image1Name">Not selected</div>
                                 <div class="product-image">
@@ -175,7 +175,7 @@
             view += '<input id="thumbnail_image' + imageCounter +'_data" class="product-image" name="thumbnail_image' + imageCounter +'_data" type="hidden" value="">';
             view += '<input onchange="imageUpload(this)" id="thumbnail_image' + imageCounter +'" name="thumbnail_image[]" type="file">';
             view += '</div>';
-            view += '<div class="delete-btn" id="thumbnail_image' + imageCounter +'Delete" onclick="removeImage(\'' + removeThumbnail_image +'\', true)">Delete image</div>';
+            view += '<div class="delete-btn" id="thumbnail_image' + imageCounter +'Delete" onclick="removeImage(\'' + removeThumbnail_image +'\')">Delete image</div>';
             view += '</div>';
             view += '<div class="image-name space-top" id="thumbnail_image' + imageCounter +'Name">Not selected</div>';
             view += '<div class="product-image">';
@@ -216,13 +216,9 @@
             }
         }
 
-        function removeImage( id, noPreview ) {
+        function removeImage(id) {
             $( "#" + id ).val( null );
-            if ( noPreview ) {
-                $( '#' + id + 'Preview' ).attr( 'src', noImage ).hide();
-            } else {
-                $( '#' + id + 'Preview' ).attr( 'src', noImage );
-            }
+            $( '#' + id + 'Preview' ).attr( 'src', noImage );
             $( '#' + id + 'Name' ).html( 'Not selected' );
             $( '#' + id + 'Delete' ).css( 'display', 'none' );
         }

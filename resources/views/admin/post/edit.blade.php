@@ -208,6 +208,8 @@
 </script>
 <script type="text/javascript">
     // image upload and preview js
+
+    var noImage = "{{ asset('images/admin/default.jpg') }}";
     function imageUpload( e ) {
             var imgPath = e.value;
             var ext = imgPath.substring( imgPath.lastIndexOf( '.' ) + 1 ).toLowerCase();
@@ -236,13 +238,9 @@
             }
         }
 
-        function removeImage( id, noPreview ) {
+        function removeImage(id) {
             $( "#" + id ).val( null );
-            if ( noPreview ) {
-                $( '#' + id + 'Preview' ).attr( 'src', noImage ).hide();
-            } else {
-                $( '#' + id + 'Preview' ).attr( 'src', noImage );
-            }
+            $( '#' + id + 'Preview' ).attr( 'src', noImage );
             $( '#' + id + 'Name' ).html( 'Not selected' );
             $( '#' + id + 'Delete' ).css( 'display', 'none' );
         }
