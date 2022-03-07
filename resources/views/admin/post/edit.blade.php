@@ -140,7 +140,7 @@
                                     </div>
                                 <div class="image-name" id="cover_imageName">Not selected</div>
                                 <div class="product-image">
-                                    <img id="cover_imagePreview" src="{{ asset($post->cover_image) }}" alt="">
+                                    <img id="cover_imagePreview" src="{{ asset($post->cover_image ? $post->cover_image : 'images/admin/default.jpg') }}" alt="">
                                     <span class="formate-error cover_imageerror">Select a jpg, jpeg, png type image file.</span>
                                 </div>
                                 @if($errors->has('cover_image'))
